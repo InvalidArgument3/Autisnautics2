@@ -180,6 +180,8 @@
 				title: "&bAll the cheese you can eat..."
 				type: "custom"
 			}]
+			shape: "hexagon"
+			size: 1.5d
 			tasks: [{
 				dimension: "ad_astra:moon"
 				icon: "ad_astra:moon_globe"

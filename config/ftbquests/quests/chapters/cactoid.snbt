@@ -137,6 +137,11 @@
 		}
 		{
 			dependencies: ["71659ADD9BF9E5A1"]
+			description: [
+				"It's said that once in every Cactoid's life, he enters a strange mood and seeks out rare organic materials. In this temporary state, the Cactoid's genetically-engineered instincts let it fuse biology with metal to forge a unique living tool, a phenomenon known as \"biosmithing\"."
+				"Your instincts cry out - this crossbow could be something more, if only you had the right parts! You sense the need for tentacles, yes... giant orange tentacles, from a leviathan of the deep sea! But even if such a beast existed in this world, you might never find it..."
+				"Plan B: slaughter enough fish, rip open their guts, and surely you'd find a few decent tentacles in their stomachs."
+			]
 			icon: {
 				Count: 1
 				id: "artifacts:novelty_drinking_hat"
@@ -265,6 +270,8 @@
 				title: "&dReclaim the ancient knowledge that is your birthright."
 				type: "command"
 			}]
+			shape: "hexagon"
+			size: 1.5d
 			subtitle: " If I met my creator, I'd punch him in the face"
 			tasks: [{
 				entity: "ad_astra:lunarian"

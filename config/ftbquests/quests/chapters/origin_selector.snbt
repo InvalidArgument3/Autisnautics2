@@ -104,7 +104,10 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["6E3CD6919EAA9EE4"]
+			dependencies: [
+				"6E3CD6919EAA9EE4"
+				"4FE493562DC11639"
+			]
 			description: ["eek"]
 			disable_toast: true
 			hide_dependency_lines: true
@@ -156,7 +159,10 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["0DCC71420C57E089"]
+			dependencies: [
+				"0DCC71420C57E089"
+				"085150E24AC92F5C"
+			]
 			description: ["Grappling squok reward for Cactoid"]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
@@ -184,6 +190,69 @@
 			title: "squok_reward"
 			x: -2.5d
 			y: 1.5d
+		}
+		{
+			dependencies: ["0F7D65050E1F7A6E"]
+			description: [""]
+			disable_toast: true
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			icon: "factory_blocks:hazard"
+			id: "21E2FD715F43CCC2"
+			invisible: true
+			rewards: [
+				{
+					auto: "enabled"
+					count: 6
+					id: "7089A042CB607DCF"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+				{
+					id: "32ABCCA5473475A1"
+					item: "mna:animus_dust"
+					type: "item"
+				}
+			]
+			secret: true
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "27E80C4A5B37AFA0"
+				type: "dimension"
+			}]
+			title: "redstone_blood"
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"1688D58F977334FB"
+				"451CB26EBDE58A25"
+			]
+			description: ["remove the daemon's physical debuffs"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			icon: "factory_blocks:hazard"
+			id: "4A5F78CCBAA649D0"
+			rewards: [
+				{
+					auto: "enabled"
+					command: "/attribute @p minecraft:generic.max_health base set 24"
+					elevate_perms: true
+					id: "3F6A9204C1B3E633"
+					silent: true
+					type: "command"
+				}
+				{
+					command: "/attribute @p minecraft:generic.attack_damage base set 2"
+					id: "11C583D7201722F9"
+					type: "command"
+				}
+			]
+			secret: true
+			title: "transcendence_reward"
+			x: 3.5d
+			y: 2.5d
 		}
 	]
 	title: "! Origin Selector"

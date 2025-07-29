@@ -150,9 +150,10 @@
 			]
 			secret: true
 			tasks: [{
-				dimension: "minecraft:overworld"
-				id: "50E7E202BE242E6E"
-				type: "dimension"
+				id: "6FB5133ABBE790E3"
+				stat: "minecraft:play_time"
+				type: "stat"
+				value: 1
 			}]
 			title: "rat_parts"
 			x: 3.5d
@@ -183,9 +184,10 @@
 			}]
 			secret: true
 			tasks: [{
-				dimension: "minecraft:overworld"
-				id: "6AAB30B7345713D0"
-				type: "dimension"
+				id: "0E383BAD0CF45A91"
+				stat: "minecraft:play_time"
+				type: "stat"
+				value: 1
 			}]
 			title: "squok_reward"
 			x: -2.5d
@@ -216,9 +218,10 @@
 			]
 			secret: true
 			tasks: [{
-				dimension: "minecraft:overworld"
-				id: "27E80C4A5B37AFA0"
-				type: "dimension"
+				id: "3D342E076001C058"
+				stat: "minecraft:play_time"
+				type: "stat"
+				value: 1
 			}]
 			title: "redstone_blood"
 			x: 2.5d
@@ -250,9 +253,41 @@
 				}
 			]
 			secret: true
+			tasks: [{
+				id: "0E7033896DD04519"
+				stat: "minecraft:play_time"
+				type: "stat"
+				value: 1
+			}]
 			title: "transcendence_reward"
 			x: 3.5d
 			y: 2.5d
+		}
+		{
+			dependencies: [
+				"04041B7DDE8154A4"
+				"22107772A91372B0"
+			]
+			description: ["adds Power III to flinging sword so it's not useless"]
+			icon: "factory_blocks:hazard"
+			id: "12DC1012CBEBB6F0"
+			rewards: [{
+				command: "/tconstruct modifiers @p add tconstruct:power 3"
+				elevate_perms: true
+				id: "1E7184193EC1B06F"
+				silent: true
+				type: "command"
+			}]
+			secret: true
+			tasks: [{
+				id: "2BF436E8D37096E5"
+				stat: "minecraft:play_time"
+				type: "stat"
+				value: 1
+			}]
+			title: "flingingsword_power"
+			x: 0.0d
+			y: 2.0d
 		}
 	]
 	title: "! Origin Selector"

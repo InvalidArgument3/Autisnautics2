@@ -115,6 +115,7 @@
 				entity: "minecraft:enderman"
 				icon: "tconstruct:enderman_head"
 				id: "04041B7DDE8154A4"
+				title: "Kill an Enderman with your Tinker sword"
 				type: "kill"
 				value: 1L
 			}]
@@ -146,7 +147,7 @@
 				ignore_dimension: false
 				position: [I;
 					-500000
-					325
+					350
 					-500000
 				]
 				size: [I;
@@ -154,7 +155,7 @@
 					1
 					1000000
 				]
-				title: "Reach Y > 325"
+				title: "Reach Y > 350"
 				type: "location"
 			}]
 			title: "Pierce the Heavens"

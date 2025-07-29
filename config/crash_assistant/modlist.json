@@ -587,6 +587,11 @@
     "modId": "disableaccessibilityscreen",
     "version": "1.0.1"
   },
+  "DistantHorizons-2.3.4-b-1.20.1-fabric-forge.jar": {
+    "jarName": "DistantHorizons-2.3.4-b-1.20.1-fabric-forge.jar",
+    "modId": "distanthorizons",
+    "version": "2.3.4-b"
+  },
   "do_a_barrel_roll-forge-3.5.6+1.20.1.jar": {
     "jarName": "do_a_barrel_roll-forge-3.5.6+1.20.1.jar",
     "modId": "do_a_barrel_roll",

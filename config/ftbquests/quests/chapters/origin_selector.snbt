@@ -27,7 +27,6 @@
 				"You shouldn't be seeing this unless you're in edit mode."
 			]
 			id: "5378EDF26A6861D0"
-			secret: true
 			tasks: [{
 				icon: "minecraft:paper"
 				id: "779DF22D10B39A32"
@@ -156,7 +155,7 @@
 				value: 1
 			}]
 			title: "rat_parts"
-			x: 3.5d
+			x: 3.0d
 			y: -1.0d
 		}
 		{
@@ -288,6 +287,50 @@
 			title: "flingingsword_power"
 			x: 0.0d
 			y: 2.0d
+		}
+		{
+			dependencies: ["5378EDF26A6861D0"]
+			description: [
+				"this quest is never completed, so it ensures its dependent quests can never be completed"
+				""
+				"(this probably isn't necessary)"
+			]
+			id: "2809AE02EA018BFA"
+			tasks: [{
+				icon: "architects_palette:hazard_sign"
+				id: "6F92078B9D357163"
+				title: ">ywn complete this task"
+				type: "custom"
+			}]
+			title: "never"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"4EAB29CE8895395E"
+				"001545FF84357A11"
+			]
+			description: ["adds Power III to flinging staff so it's not useless"]
+			icon: "factory_blocks:hazard"
+			id: "5A64DBCFBF78856B"
+			rewards: [{
+				command: "/tconstruct modifiers @p add tconstruct:power 3"
+				elevate_perms: true
+				id: "7AE8838B28BE5BB1"
+				silent: true
+				type: "command"
+			}]
+			secret: true
+			tasks: [{
+				id: "35E30EEEB48204EA"
+				stat: "minecraft:play_time"
+				type: "stat"
+				value: 1
+			}]
+			title: "flingingstaff_power"
+			x: -3.0d
+			y: -1.0d
 		}
 	]
 	title: "! Origin Selector"

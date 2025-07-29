@@ -1,0 +1,18 @@
+{
+	id: "32CDC1BB627EF8D6"
+	loot_size: 1
+	order_index: 2
+	rewards: [
+		{ item: "rats:farmer_hat" }
+		{
+			item: {
+				Count: 1
+				id: "youkaishomecoming:straw_hat"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+	]
+	title: "intro_blobbian_farmer_hats"
+}

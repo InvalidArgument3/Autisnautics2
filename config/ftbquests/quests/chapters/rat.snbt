@@ -29,6 +29,7 @@
 						value: "minecraft:logs"
 					}
 				}
+				title: "16x Any Log"
 				type: "item"
 			}]
 			title: "Gnawing Logs"

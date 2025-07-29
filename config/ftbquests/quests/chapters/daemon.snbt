@@ -86,6 +86,11 @@
 				}
 				id: "psi:cad"
 				tag: {
+					CapabilityData: {
+						Battery: 0
+						Memory: [ ]
+						Time: 0
+					}
 					componentASSEMBLY: {
 						Count: 1b
 						id: "psi:cad_assembly_iron"
@@ -208,7 +213,7 @@
 		}
 		{
 			dependencies: ["7C26B21C40608612"]
-			description: ["There is another form of construct, far more complex to use but highly versatile. The \"turtle\", a multipurpose robot build around a computer, can automate all sorts of tasks. If you never want to labor with those pitiful flesh hands again, making a turtle would help. Though you'll have to develop some sophisticated technology to even build one."]
+			description: ["There is another form of construct, far more complex to use but highly versatile. The \"turtle\", a multipurpose robot build around a computer, can automate all sorts of tasks. If you never want to labor with those pitiful flesh hands again, making a turtle would help. You'll have to develop some sophisticated technology to even build one... unless a village might have one laying around?"]
 			id: "2F51EA6259AD6A44"
 			rewards: [{
 				count: 2
@@ -242,7 +247,7 @@
 			]
 			id: "451CB26EBDE58A25"
 			rewards: [{
-				command: "/power remove @p autisorigins:weak_flesh"
+				command: "/power grant @p autisorigins:strong_flesh"
 				elevate_perms: true
 				icon: "kubejs:computation_matrix"
 				id: "7B279197C7396287"

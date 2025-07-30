@@ -682,11 +682,6 @@
     "modId": "enigmaticlegacy",
     "version": "2.30.1"
   },
-  "eureka-1201-1.5.1-beta.3.jar": {
-    "jarName": "eureka-1201-1.5.1-beta.3.jar",
-    "modId": "vs_eureka",
-    "version": "1.5.1-beta.3"
-  },
   "everycomp-1.20-2.7.19.jar": {
     "jarName": "everycomp-1.20-2.7.19.jar",
     "modId": "everycomp",
@@ -1270,10 +1265,10 @@
     "modId": "notenoughcrashes",
     "version": "4.4.9+1.20.1"
   },
-  "NuclearCraft-1.20.1-1.2.5-beta.2.jar": {
-    "jarName": "NuclearCraft-1.20.1-1.2.5-beta.2.jar",
+  "NuclearCraft-1.20.1-1.2.6-beta.2.jar": {
+    "jarName": "NuclearCraft-1.20.1-1.2.6-beta.2.jar",
     "modId": "nuclearcraft",
-    "version": "1.2.5-beta.2"
+    "version": "1.2.6-beta.2"
   },
   "Nullscape_1.20.x_v1.2.8.jar": {
     "jarName": "Nullscape_1.20.x_v1.2.8.jar",

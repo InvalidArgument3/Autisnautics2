@@ -7,7 +7,7 @@
 		"2": "create:block/copper_casing",
 		"3": "create:block/fluid_tank_connected",
 		"4": "create:block/copper_underside",
-		"5": "create:block/hose_pulley_coil",
+		"5": "create:block/hose_pulley_rope",
 		"6": "create:block/item_drain_side",
 		"7": "create:block/fluid_tank_window",
 		"particle": "create:block/copper_casing"

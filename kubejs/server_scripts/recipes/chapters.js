@@ -500,7 +500,7 @@ ServerEvents.recipes(event => {
     zincMachine(event, Item.of("thermal:device_collector", 1), "minecraft:ender_pearl")
     zincMachine(event, Item.of("thermal:device_nullifier", 1), "minecraft:lava_bucket")
     zincMachine(event, Item.of("thermal:device_potion_diffuser", 1), "minecraft:glass_bottle")
-    zincMachine(event, Item.of("torchmaster:megatorch", 1), "minecraft:torch")
+    //zincMachine(event, Item.of("torchmaster:megatorch", 1), "minecraft:torch")
     zincMachine(event, Item.of("thermal:upgrade_augment_2", 1), "minecraft:redstone")
     // Foundry Controller Recipe
     event.remove({ id: "tconstruct:smeltery/casting/scorched/foundry_controller" })

@@ -1,3 +1,8 @@
+//i hate the antichrist
+const BlockGetter = Java.loadClass("net.minecraft.world.level.BlockGetter")
+const ClipContext = Java.loadClass("net.minecraft.world.level.ClipContext")
+const LevelReader = Java.loadClass("net.minecraft.world.level.LevelReader")
+
 ////hooking create_sa:grapplin_whisk to/from shipyard coordinates
 const unHookWhisk = function (event, whisk) {
     let newStack = whisk.copy()
@@ -10,18 +15,20 @@ const unHookWhisk = function (event, whisk) {
     event.player.tell(Text.red(`Your Grapplin Whisk is repulsed by the ship's Gellar Field and falls out of your hand.`))
 }
 
-//prevent hooking the shipyard
+//prevent hooking the shipyard, for real this time
 ItemEvents.firstRightClicked(event => {
     let jsItem = Item.of(event.item)
     
-    let targetX = event.player.rayTrace(255).block.getX()//no need to check further than whisk range but I dunno what it is
     if (jsItem.getId() == "create_sa:grapplin_whisk") {
-        if ( Math.abs(targetX) > 1000000 ) {
-            unHookWhisk(event, jsItem)
+        let targetPos = event.player.level.clip(new ClipContext(event.player.getEyePosition(1.0), event.player.getEyePosition(1.0).add(event.player.getViewVector(1.0).scale(75.0)), ClipContext.Block.COLLIDER, ClipContext.Fluid.NONE, event.player)).getBlockPos()
+        if (!event.player.level.isEmptyBlock(targetPos)) {
+            let targetX = targetPos.getX()
+            if ( Math.abs(targetX) > 1000000 ) {
+                unHookWhisk(event, jsItem)
+            }
         }
     }
 })
-
 
 //unhooking create_sa:grapplin_whisk for a player that crashed out
 PlayerEvents.loggedIn(event => {

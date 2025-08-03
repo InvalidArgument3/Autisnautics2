@@ -309,11 +309,6 @@
     "modId": "chunksending",
     "version": "1.20.1-2.8"
   },
-  "Chunky-1.3.146.jar": {
-    "jarName": "Chunky-1.3.146.jar",
-    "modId": "chunky",
-    "version": "1.3.146"
-  },
   "citadel-2.6.2-1.20.1.jar": {
     "jarName": "citadel-2.6.2-1.20.1.jar",
     "modId": "citadel",
@@ -348,6 +343,11 @@
     "jarName": "Clumps-forge-1.20.1-12.0.0.4.jar",
     "modId": "clumps",
     "version": "12.0.0.4"
+  },
+  "cobblegenrandomizer-1.20.1-1.2.jar": {
+    "jarName": "cobblegenrandomizer-1.20.1-1.2.jar",
+    "modId": "cobblegenrandomizer",
+    "version": "1.20.1-1.2"
   },
   "cobweb-forge-1.20.1-1.0.1.jar": {
     "jarName": "cobweb-forge-1.20.1-1.0.1.jar",
@@ -1827,11 +1827,6 @@
     "jarName": "vs_sails-1.20.1-0.1.7-forge.jar",
     "modId": "vs_sails",
     "version": "0.1.7"
-  },
-  "vs_sup_fix-1.20.1-forge-1.3.jar": {
-    "jarName": "vs_sup_fix-1.20.1-forge-1.3.jar",
-    "modId": "vs_sup_fix",
-    "version": "1.20.1-forge-1.3"
   },
   "waterframes-FORGE-mc1.20.1-v2.1.15.jar": {
     "jarName": "waterframes-FORGE-mc1.20.1-v2.1.15.jar",

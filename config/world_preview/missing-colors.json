@@ -1,4 +1,15 @@
 [
+  "ad_astra:glacio_ice_peaks",
+  "ad_astra:glacio_snowy_barrens",
+  "ad_astra:infernal_venus_barrens",
+  "ad_astra:lunar_wastelands",
+  "ad_astra:martian_canyon_creek",
+  "ad_astra:martian_polar_caps",
+  "ad_astra:martian_wastelands",
+  "ad_astra:mercury_deltas",
+  "ad_astra:orbit",
+  "ad_astra:venus_wastelands",
+  "ae2:spatial_storage",
   "alexscaves:abyssal_chasm",
   "alexscaves:candy_cavity",
   "alexscaves:forlorn_hollows",
@@ -10,6 +21,7 @@
   "galosphere:crystal_canyons",
   "galosphere:lichen_caves",
   "galosphere:pink_salt_caves",
+  "nuclearcraft:wasteland",
   "quark:glimmering_weald",
   "regions_unexplored:alpha_grove",
   "regions_unexplored:ancient_delta",
@@ -83,6 +95,7 @@
   "regions_unexplored:tropics",
   "regions_unexplored:willow_forest",
   "terrablender:deferred_placeholder",
+  "vanillabackport:pale_garden",
   "yungscavebiomes:frosted_caves",
   "yungscavebiomes:lost_caves"
 ]

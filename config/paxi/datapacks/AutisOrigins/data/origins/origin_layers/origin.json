@@ -11,7 +11,8 @@
         "autisorigins:haniwa",
         "autisorigins:hedgehog",
         "autisorigins:khajiit",
-        "autisorigins:rat"
+        "autisorigins:rat",
+        "autisorigins:snail"
     ],
     "enabled": true,
     "allow_random": true

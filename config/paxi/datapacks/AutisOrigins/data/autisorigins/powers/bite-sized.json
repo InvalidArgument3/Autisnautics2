@@ -12,13 +12,13 @@
                 "name": "Max Health Reduced"
             },
             {
-                "attribute": "reach-entity-attributes:attack_range",
+                "attribute": "forge:entity_reach",
                 "operation": "addition",
-                "value": -0.25,
+                "value": -1,
                 "name": "Attack Range Reduced"
             },
             {
-                "attribute": "reach-entity-attributes:reach",
+                "attribute": "forge:block_reach",
                 "operation": "addition",
                 "value": -1,
                 "name": "Block Reach Reduced"

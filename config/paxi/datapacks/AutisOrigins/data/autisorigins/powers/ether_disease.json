@@ -16,7 +16,7 @@
     "interval": 1200,
     "entity_action": {
         "type": "origins:chance",
-        "chance": 0.004,
+        "chance": 0.05,
         "action": {
             "type": "origins:and",
             "actions": [

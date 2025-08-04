@@ -37,8 +37,8 @@ ServerEvents.customCommand('allocate_give', event => {
 })
 
 ////Ether Disease
-const etherMutationArray = ["autisorigins:ether__carapace","autisorigins:ether__hooves","autisorigins:ether__neck","autisorigins:ether__wing","autisorigins:ether__slaughter","autisorigins:ether__hand","autisorigins:ether__gravity","autisorigins:ether__rain","autisorigins:ether__head","autisorigins:ether__eye","autisorigins:ether__enemy","autisorigins:ether__dementia","autisorigins:ether__weakening","autisorigins:ether__mouth","autisorigins:ether__explodingknees","autisorigins:ether__gigantism","autisorigins:ether__dwarfism","autisorigins:ether__flourescent","autisorigins:ether__pregnant","autisorigins:ether__ragnarok","autisorigins:ether__stomach","autisorigins:ether__ehekatl","autisorigins:ether__lulwy","autisorigins:ether__kumiromi","autisorigins:ether__regeneration","autisorigins:ether__icyveins","autisorigins:ether__burningblood","autisorigins:ether__weakarm","autisorigins:ether__stupid","autisorigins:ether__litheleg","autisorigins:ether__vampirism","autisorigins:ether__secondheart","autisorigins:ether__hives"]
-const etherMutationMessageArray = ["You are covered by a heavy carapace.","Your feet transformed into hooves.","Your neck is extremely thick.","Your back has grown a single feather.","Desire for violence arises within you.","Poison drips from your hands.","You generate gravity.","Clouds of rain follow you.","Your head has grown huge.","You have 3 eyes.","Your existence provokes living things.","You have dementia.","You suffer debilitation.","You have multiple mouths.","Your knees are explosive.","You feel like everything is getting smaller.","You feel like everything is getting bigger.","You glow in the dark.","You swallow something bad.","Let's Ragnarok!!!","Your stomach can digest rotten things.","You are licked by a passing black cat. 'Umimyaa!'","You feel a lash on your back. 'You're such a slowpoke. Work instead of praying.'","You gain knowledge of a secret experience. 'I shall reward you...'","Your heart regenerates your body.","Your blood runs cold.","Your blood starts to boil.","Your arms become thin and long.","Your brain degenerates.","Your legs become lithe.","Your skin becomes pale.","You grow a second heart.","You have sores on your face."]
+const etherMutationArray = ["autisorigins:ether__carapace","autisorigins:ether__hooves","autisorigins:ether__neck","autisorigins:ether__wing","autisorigins:ether__slaughter","autisorigins:ether__hand","autisorigins:ether__gravity","autisorigins:ether__rain","autisorigins:ether__head","autisorigins:ether__eye","autisorigins:ether__enemy","autisorigins:ether__dementia","autisorigins:ether__weakening","autisorigins:ether__mouth","autisorigins:ether__explodingknees","autisorigins:ether__gigantism","autisorigins:ether__dwarfism","autisorigins:ether__fluorescent","autisorigins:ether__pregnant","autisorigins:ether__ragnarok","autisorigins:ether__stomach","autisorigins:ether__ehekatl","autisorigins:ether__lulwy","autisorigins:ether__kumiromi","autisorigins:ether__regeneration","autisorigins:ether__icyveins","autisorigins:ether__burningblood","autisorigins:ether__weakarm","autisorigins:ether__stupid","autisorigins:ether__litheleg","autisorigins:ether__vampirism","autisorigins:ether__secondheart","autisorigins:ether__hives","autisorigins:ether__placebo"]
+const etherMutationMessageArray = ["You are covered by a heavy carapace.","Your feet transformed into hooves.","Your neck is extremely thick.","Your back has grown a single feather.","Desire for violence arises within you.","Poison drips from your hands.","You generate gravity.","Clouds of rain follow you.","Your head has grown huge.","You have 3 eyes.","Your existence provokes living things.","You have dementia.","You suffer debilitation.","You have multiple mouths.","Your knees are explosive.","You feel like everything is getting smaller.","You feel like everything is getting bigger.","You glow in the dark.","You swallow something bad.","Let's Ragnarok!!!","Your stomach can digest rotten things.","You are licked by a passing black cat. 'Umimyaa!'","You feel a lash on your back. 'You're such a slowpoke. Work instead of praying.'","You gain knowledge of a secret experience. 'I shall reward you...'","Your heart regenerates your body.","Your blood runs cold.","Your blood starts to boil.","Your arms become thin and long.","Your brain degenerates.","Your legs become lithe.","Your skin becomes pale.","You grow a second heart.","You have sores on your face.","You feel as though a stroke of good fortune passes by."]
 
 var etherMutation = "autisorigins:ether__fallback"//fallback power
 var mutationMessage = "You mutate imperceptibly."//fallback message
@@ -56,6 +56,10 @@ const getEtherMutation = function (event) {
             mutationMessage = etherMutationMessageArray[randomIndex]
             break
         }
+        else {
+            etherMutation = "autisorigins:ether__fallback"
+            mutationMessage = "You mutate imperceptibly."
+        }
     }
 }
 
@@ -68,9 +72,28 @@ ServerEvents.customCommand('ether_mutate', event => {
                 e.server.runCommandSilent(`/power grant ${e.player.getName().getString()} ${etherMutation}`) 
             }
             if (mutationMessage != "You mutate imperceptibly.") {
+                let playerX = e.player.getX()
+                let playerY = e.player.getY()
+                let playerZ = e.player.getZ()
+                e.server.runCommandSilent(`/particle minecraft:poof ${e.player.getX()} ${e.player.getY()} ${e.player.getZ()} 0 1 0 0.2 100`)
+                e.server.runCommandSilent(`/execute at ${e.player.getName().getString()} run playsound minecraft:entity.shulker.shoot neutral @a ~ ~ ~ 1 0.6`)
                 e.server.runCommand(`/tellraw ${e.player.getName().getString()} ["",{"text":"Your ether disease has progressed.","italic":true,"color":"gray"},{"text":"\\n"},{"text":"${mutationMessage}","italic":true,"color":"aqua"}]`)
             }
         })
     }
     callback(event)
+})
+
+//debug command for now
+ServerEvents.customCommand('ether_cure', event => {
+    let etherArray = event.player.getNbt().get("ForgeCaps").get("apoli:powers").toString().match(/autisorigins:ether__[a-z_]+(?=")/gi)//doesn't match subpowers
+    
+    for (let i = 0; i < etherArray.length; i++) {
+        event.server.runCommandSilent(`/power revoke ${event.player.getName().getString()} ${etherArray[i]}`)
+        event.server.runCommand(`/tellraw ${event.player.getName().getString()} ["",{"text":"Curing ${etherArray[i]}.","italic":true,"color":"gray"}]`)
+    }
+    if (etherArray.length > 0) {
+        event.server.runCommandSilent(`/execute at ${event.player.getName().getString()} run playsound minecraft:entity.zombie_villager.cure neutral @a ~ ~ ~`)
+        event.server.runCommand(`/tellraw ${event.player.getName().getString()} ["",{"text":"Your ether disease has been cured... for now.","italic":true,"color":"aqua"}]`)
+    }
 })

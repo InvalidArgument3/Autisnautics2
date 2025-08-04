@@ -4,12 +4,17 @@
     "type": "origins:action_over_time",
     "interval": 20,
     "entity_action": {
-        "type": "origins:revoke_power",
-        "power": "autisorigins:ether__kumiromi",
-        "source": "apoli:command"
-    },
-    "rising_action": {
-        "type": "origins:add_xp",
-        "levels": 30
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:add_xp",
+                "levels": 30
+            },
+            {
+                "type": "origins:revoke_power",
+                "power": "autisorigins:ether__kumiromi",
+                "source": "apoli:command"
+            }
+        ]
     }
 }

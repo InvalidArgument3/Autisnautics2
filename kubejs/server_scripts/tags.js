@@ -207,9 +207,14 @@ ServerEvents.tags("item", event => {
         .add("#forge:dusts/zinc")
         .add("#forge:dusts/lead")
         .add("#forge:dusts/nickel")
-
+        
     // This tag auto adds the beacon_payment_items tag which we don't want
     event.remove("create:create_ingots", "create:andesite_alloy")
+    
+    //A2
+    event.add("forge:slag", "tfmg:slag")
+    event.add(`forge:dusts/wood`, "nuclearcraft:sawdust")//useless?
+    
 })
 
 ServerEvents.tags("block", event => {

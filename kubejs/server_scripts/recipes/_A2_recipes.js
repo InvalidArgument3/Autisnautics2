@@ -76,4 +76,45 @@ ServerEvents.recipes(event => {
     event.remove({ output: "immersive_aircraft:engine" })
     brassMachine(event, Item.of("immersive_aircraft:engine", 1), "minecraft:blast_furnace")
     
+    ////tfmg/IE integration
+    //thermal rockwool and IE slag glass conflict: rockwool is now blasting only, slag glass is smelting only
+    event.remove({ type: "minecraft:smelting", output: "thermal:white_rockwool"})
+    event.remove({ type: "create:fan_blasting", output: "immersiveengineering:slag_glass"})
+    
+    //conflict with thermal:slag_block: slag brick is now stonecutting only
+    event.remove({ type: "minecraft:crafting_shaped", output: "immersiveengineering:slag_brick"})
+    
+    //get all our slags in one place
+    event.replaceInput({}, "thermal:slag", "#forge:slag")
+    event.replaceInput({}, "tfmg:slag", "#forge:slag")
+    event.replaceInput({}, "immersiveengineering:slag", "#forge:slag")
+    event.replaceOutput({}, "thermal:slag", "tfmg:slag")
+    event.replaceOutput({}, "immersiveengineering:slag", "tfmg:slag")//IE might still give IE slag
+    //isn't almostunified supposed to do this?
+    
+    event.remove({ output: "immersiveengineering:sawdust"})//sawdust floor conflicts with JAOPCA storage block
+    event.shaped("immersiveengineering:sawdust", [
+        "   ",
+        "   ",
+        "SSS"
+    ], {
+        S: "#forge:dusts/wood"
+    })
+    
+    //unify sawdusts
+    event.remove({output: "jaopca:storage_blocks.wood"})
+    event.remove({input: "jaopca:storage_blocks.wood"})
+    event.replaceInput({}, "thermal:sawdust", "#forge:dusts/wood")
+    event.replaceInput({}, "immersiveengineering:dust_wood", "#forge:dusts/wood")
+    event.replaceInput({}, "nuclearcraft:sawdust", "#forge:dusts/wood")
+    event.replaceOutput({}, "immersiveengineering:dust_wood", "thermal:sawdust")//IE might still give IE sawdust
+    event.replaceOutput({}, "nuclearcraft:sawdust", "thermal:sawdust")
+    
+    //remove vanilla blast furnace -> steel (lol?)
+    event.remove({type:"minecraft:blasting", input: "minecraft:iron_ingot"})//done by input in case of steel unification changes
+    //chainmail no longer meltable (it gave steel and chainmail can be crafted)
+    event.remove({type:"tconstruct:damagable_melting", input: "minecraft:chainmail_helmet"})
+    event.remove({type:"tconstruct:damagable_melting", input: "minecraft:chainmail_chestplate"})
+    event.remove({type:"tconstruct:damagable_melting", input: "minecraft:chainmail_leggings"})
+    event.remove({type:"tconstruct:damagable_melting", input: "minecraft:chainmail_boots"})
 })

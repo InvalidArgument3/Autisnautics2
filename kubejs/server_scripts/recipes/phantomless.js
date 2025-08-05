@@ -18,8 +18,10 @@ ServerEvents.recipes(event => {
             { "item": "minecraft:piston" },
             { "item": "tconstruct:sky_slime" },
             { "item": "minecraft:piston" },
-            { "item": "trials:wind_charge" },
-            { "item": "trials:wind_charge" }
+            { "item": "thermal:blitz_powder" },
+            { "item": "thermal:blitz_powder" }
+            //{ "item": "trials:wind_charge" },
+            //{ "item": "trials:wind_charge" }
         ],
         "result": "tconstruct:double_jump",
         "slots": {

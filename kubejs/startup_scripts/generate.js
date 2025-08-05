@@ -129,15 +129,15 @@ StartupEvents.registry("block", event => {
 
     event.create("trial_copper_block").model("minecraft:block/copper_block").soundType("metal").tagBlock("mineable/pickaxe").tagBlock("needs_stone_tool").requiresTool(true).hardness(3.0).resistance(6.0)
     event.create("trial_cut_copper").model("minecraft:block/cut_copper").soundType("metal").tagBlock("mineable/pickaxe").tagBlock("needs_stone_tool").requiresTool(true).hardness(3.0).resistance(6.0)
-    event.create("trial_chiseled_copper").model("trials:block/chiseled_copper").soundType("metal").tagBlock("mineable/pickaxe").tagBlock("needs_stone_tool").requiresTool(true).hardness(3.0).resistance(6.0)
-    event.create("trial_copper_grate").model("trials:block/copper_grate").soundType("metal").tagBlock("mineable/pickaxe").tagBlock("needs_stone_tool").requiresTool(true).hardness(3.0).resistance(6.0).notSolid().waterlogged()
+    event.create("trial_chiseled_copper").model("everythingcopper:block/chiseled_copper").soundType("metal").tagBlock("mineable/pickaxe").tagBlock("needs_stone_tool").requiresTool(true).hardness(3.0).resistance(6.0)
+    event.create("trial_copper_grate").model("everythingcopper:block/copper_grate").soundType("metal").tagBlock("mineable/pickaxe").tagBlock("needs_stone_tool").requiresTool(true).hardness(3.0).resistance(6.0).notSolid().waterlogged()
     event.create("trial_cut_copper_stairs", "stairs").textureAll("minecraft:block/cut_copper").soundType("metal").tagBlock("mineable/pickaxe").tagBlock("needs_stone_tool").requiresTool(true).hardness(3.0).resistance(6.0)
     event.create("trial_cut_copper_slab", "slab").textureAll("minecraft:block/cut_copper").soundType("metal").tagBlock("mineable/pickaxe").tagBlock("needs_stone_tool").requiresTool(true).hardness(3.0).resistance(6.0)
 
     event.create("trial_oxidized_copper").model("minecraft:block/oxidized_copper").soundType("metal").tagBlock("mineable/pickaxe").tagBlock("needs_stone_tool").requiresTool(true).hardness(3.0).resistance(6.0)
     event.create("trial_oxidized_cut_copper").model("minecraft:block/oxidized_cut_copper").soundType("metal").tagBlock("mineable/pickaxe").tagBlock("needs_stone_tool").requiresTool(true).hardness(3.0).resistance(6.0)
-    event.create("trial_chiseled_copper_oxidized").model("trials:block/chiseled_copper_oxidized").soundType("metal").tagBlock("mineable/pickaxe").tagBlock("needs_stone_tool").requiresTool(true).hardness(3.0).resistance(6.0)
-    event.create("trial_copper_grate_oxidized").model("trials:block/copper_grate_oxidized").soundType("metal").tagBlock("mineable/pickaxe").tagBlock("needs_stone_tool").requiresTool(true).hardness(3.0).resistance(6.0).notSolid().waterlogged()
+    event.create("trial_oxidized_chiseled_copper").model("everythingcopper:block/oxidized_chiseled_copper").soundType("metal").tagBlock("mineable/pickaxe").tagBlock("needs_stone_tool").requiresTool(true).hardness(3.0).resistance(6.0)
+    event.create("trial_oxidized_copper_grate").model("everythingcopper:block/oxidized_copper_grate").soundType("metal").tagBlock("mineable/pickaxe").tagBlock("needs_stone_tool").requiresTool(true).hardness(3.0).resistance(6.0).notSolid().waterlogged()
     event.create("trial_oxidized_cut_copper_stairs", "stairs").textureAll("minecraft:block/oxidized_cut_copper").soundType("metal").tagBlock("mineable/pickaxe").tagBlock("needs_stone_tool").requiresTool(true).hardness(3.0).resistance(6.0)
     event.create("trial_oxidized_cut_copper_slab", "slab").textureAll("minecraft:block/oxidized_cut_copper").soundType("metal").tagBlock("mineable/pickaxe").tagBlock("needs_stone_tool").requiresTool(true).hardness(3.0).resistance(6.0)
 

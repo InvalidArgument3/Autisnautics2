@@ -282,6 +282,9 @@ ServerEvents.tags("block", event => {
         .add(/trials:copper_grate*/)
         .add(/trials:waxed_copper_grate*/)
         .add(/kubejs:trial_copper_grate*/)
+        
+        .add("everythingcopper:copper_grate")
+        .add("everythingcopper:oxidized_copper_grate")
 
     // Add tags to basic vanilla-like chests and inventories to allow function with create contraptions
     event.get("create:chest_mounted_storage")

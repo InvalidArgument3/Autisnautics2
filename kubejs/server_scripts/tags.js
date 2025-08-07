@@ -39,7 +39,7 @@ ServerEvents.tags("item", event => {
     event.get("forbidden_arcanus:modifier/eternal_incompatible")
         .add(/exchangers:.*/)
         .add(/reliquary:.*/)
-        .add(/waterstrainer:.*/)
+        //.add(/waterstrainer:.*/)
         // .add("#occultism:miners/ores")
         .add("projectred_core:draw_plate")
         .add("projectred_core:multimeter")
@@ -52,7 +52,7 @@ ServerEvents.tags("item", event => {
 
     event.get("kubejs:machines").add("kubejs:andesite_machine").add("kubejs:copper_machine").add("kubejs:gold_machine").add("kubejs:brass_machine").add("kubejs:zinc_machine").add("kubejs:lead_machine").add("thermal:machine_frame").add("kubejs:enderium_machine").add("ae2:controller")
 
-    event.get("kubejs:sellable_discs").add("minecraft:music_disc_13", "minecraft:music_disc_cat", "minecraft:music_disc_blocks", "minecraft:music_disc_chirp", "minecraft:music_disc_far", "minecraft:music_disc_mall", "minecraft:music_disc_mellohi", "minecraft:music_disc_stal", "minecraft:music_disc_strad", "minecraft:music_disc_ward", "minecraft:music_disc_11", "minecraft:music_disc_wait", "minecraft:music_disc_otherside", "minecraft:music_disc_5", "minecraft:music_disc_pigstep", "minecraft:music_disc_relic", "supplementaries:music_disc_heave_ho", "quark:music_disc_endermosh", "trials:music_disc_creator_box", "trials:music_disc_precipice", "trials:music_disc_creator", "biomesoplenty:music_disc_wanderer");
+    event.get("kubejs:sellable_discs").add("minecraft:music_disc_13", "minecraft:music_disc_cat", "minecraft:music_disc_blocks", "minecraft:music_disc_chirp", "minecraft:music_disc_far", "minecraft:music_disc_mall", "minecraft:music_disc_mellohi", "minecraft:music_disc_stal", "minecraft:music_disc_strad", "minecraft:music_disc_ward", "minecraft:music_disc_11", "minecraft:music_disc_wait", "minecraft:music_disc_otherside", "minecraft:music_disc_5", "minecraft:music_disc_pigstep", "minecraft:music_disc_relic", "supplementaries:music_disc_heave_ho", "quark:music_disc_endermosh");
     event.get("kubejs:transaction_cards").add("#kubejs:transaction_cards/import")
     event.get("kubejs:transaction_cards").add("#kubejs:transaction_cards/profession")
 
@@ -311,4 +311,12 @@ ServerEvents.tags("block_entity_type", event => {
         .add(/^everycomp:q.*_chest$/)
         .add("farmersdelight:cabinet")
         .add("ae2:sky_chest")
+})
+
+ServerEvents.tags("fluid", event => {
+    //seed oils are not a substitute for water, please seek medical attention
+    event.remove("createadditions:seed_oil","minecraft:water")
+    event.remove("createaddition:flowing_seed_oil","minecraft:water")
+    event.remove("createadditions:bioethanol","minecraft:water")
+    event.remove("createaddition:flowing_bioethanol","minecraft:water")
 })

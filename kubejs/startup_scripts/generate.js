@@ -105,7 +105,7 @@ StartupEvents.registry("item", event => {
     event.create("invar_compound","create:sequenced_assembly").texture("cabin:item/invar_compound").displayName("Unprocessed Invar Ingot")
     event.create("dye_entangled_singularity").texture("cabin:item/dye_entangled_singularity").unstackable().displayName("Chromatic Singularity")
 
-    event.create("strainer_filter").texture("waterstrainer:items/strainer_survivalist").displayName("Strainer Filter").maxDamage(384)
+    //event.create("strainer_filter").texture("waterstrainer:items/strainer_survivalist").displayName("Strainer Filter").maxDamage(384)
     event.create("chromatic_resonator").texture("cabin:item/chromatic_resonator").displayName("Chromatic Resonator").maxDamage(512)
     event.create("flash_drive").texture("cabin:item/boot_medium").displayName("Flash Drive").maxDamage(512)
 
@@ -189,7 +189,8 @@ StartupEvents.registry("block", event => {
             .renderType("translucent")
             .displayName(name)
             .hardness(0)
-            .material("COLOR_ORANGE") // Set a material (affects the sounds and some properties)
+            //.material("COLOR_ORANGE") // Set a material (affects the sounds and some properties)
+            .mapColor("COLOR_ORANGE")
             .soundType("glass")
             .waterlogged()
     }
@@ -209,7 +210,8 @@ StartupEvents.registry("block", event => {
             .model(model)
             .displayName(name)
             .renderType("cutout")
-            .material("glass")
+            //.material("glass")
+            .mapColor("NONE")//same as glass
             .waterlogged()
         block.item(e => e
             .color(0, c1)

@@ -1,3 +1,4 @@
+/*
 JEIAddedEvents.registerCategories((event) => {
     event.custom("kubejs:straining", (category) => {
         let guiHelper = category.jeiHelpers.getGuiHelper();
@@ -34,3 +35,4 @@ JEIAddedEvents.registerRecipes((event) => {
     event.custom("kubejs:straining")
         .add({input: strainer_filter, output: [{Item: "#kubejs:strainer/sands", Chance: 0.75}, {Item: "minecraft:clay_ball", Chance: 0.25}]})
 });
+*/

@@ -117,4 +117,18 @@ ServerEvents.recipes(event => {
     event.remove({type:"tconstruct:damagable_melting", input: "minecraft:chainmail_chestplate"})
     event.remove({type:"tconstruct:damagable_melting", input: "minecraft:chainmail_leggings"})
     event.remove({type:"tconstruct:damagable_melting", input: "minecraft:chainmail_boots"})
+    
+    
+    //Create Addition: disable rotational force/energy conversion because tfmg does it better
+    event.remove({output: "createaddition:electric_motor"})
+    event.remove({input: "createaddition:electric_motor"})
+    event.remove({output: "createaddition:alternator"})
+    
+    //nuclearcraft: charcoal dust was useless?
+    event.replaceOutput({}, "nuclearcraft:charcoal_dust", "nuclearcraft:coal_dust")
+    
+    //melting every mob in the game shouldn't give liquid soul
+    event.remove({type:"tconstruct:entity_melting", output: "#tconstruct:liquid_soul"})
+    //might not work, unsure why
+    
 })

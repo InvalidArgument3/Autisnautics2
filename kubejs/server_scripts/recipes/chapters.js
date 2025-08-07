@@ -125,7 +125,7 @@ ServerEvents.recipes(event => {
     andesiteMachine(event, Item.of("create:portable_storage_interface", 2))
     andesiteMachine(event, Item.of("create:encased_fan", 1), "create:propeller")
     andesiteMachine(event, Item.of("create:mechanical_press", 1), "minecraft:iron_block")
-    andesiteMachine(event, Item.of("mbd2:strainer", 1), "minecraft:iron_bars")
+    //andesiteMachine(event, Item.of("mbd2:strainer", 1), "minecraft:iron_bars")
     andesiteMachine(event, Item.of("create:mechanical_mixer", 1), "create:whisk")
     andesiteMachine(event, Item.of("create:mechanical_drill", 1), "thermal:drill_head")
     andesiteMachine(event, Item.of("create:mechanical_saw", 1), "thermal:saw_blade")
@@ -500,7 +500,7 @@ ServerEvents.recipes(event => {
     zincMachine(event, Item.of("thermal:device_collector", 1), "minecraft:ender_pearl")
     zincMachine(event, Item.of("thermal:device_nullifier", 1), "minecraft:lava_bucket")
     zincMachine(event, Item.of("thermal:device_potion_diffuser", 1), "minecraft:glass_bottle")
-    //zincMachine(event, Item.of("torchmaster:megatorch", 1), "minecraft:torch")
+    zincMachine(event, Item.of("torchmaster:megatorch", 1), "minecraft:torch")
     zincMachine(event, Item.of("thermal:upgrade_augment_2", 1), "minecraft:redstone")
     // Foundry Controller Recipe
     event.remove({ id: "tconstruct:smeltery/casting/scorched/foundry_controller" })
@@ -583,6 +583,7 @@ ServerEvents.recipes(event => {
 
     donutCraft(event, "kubejs:lead_machine", "kubejs:lead_casing", "kubejs:logistic_mechanism")
 
+    /*A2: remove nu-create recipes
     leadMachine(event, Item.of("create:package_frogport", 1), "#forge:slimeballs")
     leadMachine(event, Item.of("create:packager", 1), "create:cardboard_block")
     leadMachine(event, Item.of("create:repackager", 1), "create:bound_cardboard_block")
@@ -591,6 +592,7 @@ ServerEvents.recipes(event => {
 
     // Stock Link Recipe
     event.replaceInput({ id: "create:crafting/logistics/stock_link" }, "create:item_vault", "kubejs:lead_casing")
+    */
 
     // - - - - - Chapter 3 - - - - -
     // Fern Transmutation

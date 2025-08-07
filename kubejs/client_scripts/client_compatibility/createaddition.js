@@ -1,16 +1,18 @@
-if (Platform.isLoaded("createdieselgenerators")) {
+if (Platform.isLoaded("createaddition")) {
     JEIEvents.hideItems(event => {
         event.hide("createaddition:capacitor")
 
         event.hide("kubejs:incomplete_large_connector")
         event.hide("kubejs:incomplete_connector")
-
+        
+        
         event.hide("thermal:diamond_dust")
         event.hide("thermal:electrum_ingot")
         event.hide("thermal:electrum_nugget")
         event.hide("thermal:electrum_plate")
+        
     })
-
+    
     ClientEvents.highPriorityAssets(event=>{
         event.add("forge:models/tag/item/dusts/diamond",
             {
@@ -44,10 +46,12 @@ if (Platform.isLoaded("createdieselgenerators")) {
                 }
             }
         )
+        /*
         event.add("forge:models/tag/item/storage_blocks/electrum",
             {
                 "parent": "createaddition:block/electrum_block/block"
             }
         )
+        */
     })
 }

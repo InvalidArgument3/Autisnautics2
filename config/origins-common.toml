@@ -2189,3 +2189,12 @@
 		"autisorigins:empty_mask" = true
 		"autisorigins:starting_soda" = true
 
+	[origins."autisorigins:snail"]
+		enabled = true
+		"autisorigins:snaily" = true
+		"autisorigins:snails_pace" = true
+		"autisorigins:snail_shell" = true
+		"autisorigins:tourist" = true
+		"autisorigins:ether_disease" = true
+		"autisorigins:starting_fishing_rod" = true
+

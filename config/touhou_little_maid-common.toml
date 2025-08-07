@@ -145,7 +145,7 @@
 
 [ai]
 	#Whether or not to enable the AI LLM feature
-	LLMEnabled = true
+	LLMEnabled = false
 	#LLM temperature, the higher this value, the more random the output will be
 	#Range: 0.0 ~ 2.0
 	LLMTemperature = 0.7
@@ -153,7 +153,7 @@
 	#The maid will be able to interact with the game after it is enabled, but it will increase the amount of token used
 	FunctionCallEnable = false
 	#Whether to automatically generate the maid's settings
-	AutoGenSettingEnabled = true
+	AutoGenSettingEnabled = false
 	#LLM AI Proxy Address, such as 127.0.0.1:1080, empty is no proxy, SOCKS proxies are not supported
 	LLMProxyAddress = ""
 	#The maximum token supported by the LLM AI

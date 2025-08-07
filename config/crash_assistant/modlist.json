@@ -184,11 +184,6 @@
     "modId": "betteradvancements",
     "version": "0.4.2.25"
   },
-  "BetterClouds-1.1.jar": {
-    "jarName": "BetterClouds-1.1.jar",
-    "modId": "betterclouds",
-    "version": "1.0"
-  },
   "bettercombat-forge-1.8.6+1.20.1.jar": {
     "jarName": "bettercombat-forge-1.8.6+1.20.1.jar",
     "modId": "bettercombat",
@@ -1707,11 +1702,6 @@
     "jarName": "theurgy-1.20.1-1.23.4.jar",
     "modId": "theurgy",
     "version": "1.23.4"
-  },
-  "threadtweak-fabric-1.20.2-0.1.1.jar": {
-    "jarName": "threadtweak-fabric-1.20.2-0.1.1.jar",
-    "modId": "threadtweak",
-    "version": "1.20.2-0.1.1"
   },
   "tide-forge-1.20.1-1.6.2.jar": {
     "jarName": "tide-forge-1.20.1-1.6.2.jar",

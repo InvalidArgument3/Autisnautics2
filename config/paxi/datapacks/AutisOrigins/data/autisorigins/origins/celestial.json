@@ -1,0 +1,17 @@
+{
+    "name": "Celestial",
+    "description": "Not quite divine… but fast, and absolutely determined to be a problem. A tiny, hyperactive gremlin with dreams of soaring among the heavens. Obsessed with speed, sugar, and all things celestial, they compensate for their lack of real wings with boundless energy and questionable acrobatics.",
+    "powers": [
+		"origins:elytra",
+		"origins:launch_into_air",
+		"origins:aerial_combatant",
+		"origins:light_armor",
+		"origins:claustrophobia",
+		"origins:more_kinetic_damage"
+    ],
+    "icon": {
+		"item": "minecraft:feather"
+    },
+    "order": 1,
+    "impact": 2
+}

@@ -12,7 +12,8 @@
         "autisorigins:hedgehog",
         "autisorigins:khajiit",
         "autisorigins:rat",
-        "autisorigins:snail"
+        "autisorigins:snail",
+        "autisorigins:celestial"
     ],
     "enabled": true,
     "allow_random": true

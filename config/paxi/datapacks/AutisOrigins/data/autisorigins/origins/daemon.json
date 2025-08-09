@@ -12,6 +12,6 @@
     "icon": {
         "item": "psi:psimetal_exosuit_helmet"
     },
-    "order": 3,
-    "impact": 1
+    "order": 1,
+    "impact": 2
 }

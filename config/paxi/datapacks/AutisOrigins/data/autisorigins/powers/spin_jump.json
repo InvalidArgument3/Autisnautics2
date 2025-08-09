@@ -13,7 +13,7 @@
         "sound": "create:fwoomp",
         "key": {
             "key": "key.origins.primary_active",
-            "continuous": true
+            "continuous": false
         }
     },
     "key1": {

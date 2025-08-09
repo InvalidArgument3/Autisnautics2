@@ -97,3 +97,33 @@ ServerEvents.customCommand('ether_cure', event => {
         event.server.runCommand(`/tellraw ${event.player.getName().getString()} ["",{"text":"Your ether disease has been cured... for now.","italic":true,"color":"aqua"}]`)
     }
 })
+
+
+////Angel Sugar Resource
+const DietApi = Java.loadClass("com.illusivesoulworks.diet.api.DietApi")
+var nameGroupArray = []
+var sugarsValue = 0
+
+function nameGroups(value, key, map) {
+    nameGroupArray.push(value.getName())
+    if (value.getName() == "sugars") {
+        sugarsValue = Math.floor(key * 1000)
+    }
+}
+
+//run by autisorigins:sugar_replenishment_food
+ServerEvents.customCommand('add_sugar', event => {
+    nameGroupArray = []
+    sugarsValue = 0
+    
+    let handDietResult = DietApi.getInstance().get(event.player, Item.of(event.player.getMainHandItem())).get()//Map<IDietGroup, Float>
+    handDietResult.forEach(nameGroups)
+    if (nameGroupArray.includes("sugars") && sugarsValue != 0) {
+        event.server.runCommandSilent(`/resource change ${event.player.getName().getString()} autisorigins:sugar_addict ${sugarsValue.toString()}`)
+    }
+})
+
+//debug command
+ServerEvents.customCommand('lower_sugar', event => {
+    event.server.runCommand(`/resource change ${event.player.getName().getString()} autisorigins:sugar_addict -100`)
+})

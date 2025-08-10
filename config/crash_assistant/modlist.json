@@ -1558,6 +1558,11 @@
     "modId": "simplyswords",
     "version": "1.56.0-1.20.1"
   },
+  "sizeshiftingpotions-1.7.1-forge.jar": {
+    "jarName": "sizeshiftingpotions-1.7.1-forge.jar",
+    "modId": "sizeshiftingpotions",
+    "version": "1.7.1"
+  },
   "skinlayers3d-forge-1.8.1-mc1.20.1.jar": {
     "jarName": "skinlayers3d-forge-1.8.1-mc1.20.1.jar",
     "modId": "skinlayers3d",

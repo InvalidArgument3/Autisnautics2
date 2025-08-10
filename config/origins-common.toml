@@ -2207,3 +2207,19 @@
 		"origins:claustrophobia" = true
 		"origins:more_kinetic_damage" = true
 
+	[origins."autisorigins:angel"]
+		enabled = true
+		"autisorigins:miniature" = true
+		"autisorigins:featherlight" = true
+		"autisorigins:speedy_gremlin" = true
+		"autisorigins:dexterous_fighter" = true
+		"autisorigins:bottomless_pit" = true
+		"autisorigins:sugar_addict" = true
+		"autisorigins:sugar_replenishment_food" = true
+		"autisorigins:sugar_replenishment_raw" = true
+		"autisorigins:sugar_withdrawal" = true
+		"autisorigins:envy_of_flight" = true
+		"autisorigins:envy_of_flight_effect" = true
+		"autisorigins:swoop" = true
+		"autisorigins:starting_candy" = true
+

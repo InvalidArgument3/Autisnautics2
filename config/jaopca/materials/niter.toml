@@ -13,7 +13,7 @@
 	#The model type of the material.
 	modelType = "crystal"
 	#The color of this material.
-	color = 0x9F9194
+	color = 10457492
 
 [theurgy]
 	#The alchemical sulfur tier of this material.

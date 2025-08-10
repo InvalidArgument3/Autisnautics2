@@ -13,7 +13,7 @@
 	#The model type of the material.
 	modelType = "crystal"
 	#The color of this material.
-	color = 0xA55861
+	color = 10836065
 
 [molten]
 	#The temperature of this molten fluid.

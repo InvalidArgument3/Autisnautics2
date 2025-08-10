@@ -1060,6 +1060,11 @@
     "modId": "letmedespawn",
     "version": "1.5.0"
   },
+  "lexiconfig-forge-1.4.18-1.jar": {
+    "jarName": "lexiconfig-forge-1.4.18-1.jar",
+    "modId": "lexiconfig",
+    "version": "1.4.18-1"
+  },
   "lithostitched-forge-1.20.1-1.4.11.jar": {
     "jarName": "lithostitched-forge-1.20.1-1.4.11.jar",
     "modId": "lithostitched",
@@ -1255,10 +1260,10 @@
     "modId": "notenoughcrashes",
     "version": "4.4.9+1.20.1"
   },
-  "NuclearCraft-1.20.1-1.2.6-beta.2.jar": {
-    "jarName": "NuclearCraft-1.20.1-1.2.6-beta.2.jar",
+  "NuclearCraft-1.20.1-1.2.6-beta.7.jar": {
+    "jarName": "NuclearCraft-1.20.1-1.2.6-beta.7.jar",
     "modId": "nuclearcraft",
-    "version": "1.2.6-beta.2"
+    "version": "1.2.6-beta.7"
   },
   "Nullscape_1.20.x_v1.2.8.jar": {
     "jarName": "Nullscape_1.20.x_v1.2.8.jar",
@@ -1543,6 +1548,11 @@
     "modId": "shut_up_gl_error",
     "version": "2.0.0+1.20.1"
   },
+  "simpleradio-forge-1.20.1-3.4.6.jar": {
+    "jarName": "simpleradio-forge-1.20.1-3.4.6.jar",
+    "modId": "simpleradio",
+    "version": "3.4.6"
+  },
   "simplyswords-forge-1.56.0-1.20.1.jar": {
     "jarName": "simplyswords-forge-1.56.0-1.20.1.jar",
     "modId": "simplyswords",
@@ -1808,10 +1818,10 @@
     "modId": "the_vmod",
     "version": "1.6.0"
   },
-  "voicechat-forge-1.20.1-2.5.35.jar": {
-    "jarName": "voicechat-forge-1.20.1-2.5.35.jar",
+  "voicechat-forge-1.20.1-2.5.36.jar": {
+    "jarName": "voicechat-forge-1.20.1-2.5.36.jar",
     "modId": "voicechat",
-    "version": "1.20.1-2.5.35"
+    "version": "1.20.1-2.5.36"
   },
   "vs_sails-1.20.1-0.1.7-forge.jar": {
     "jarName": "vs_sails-1.20.1-0.1.7-forge.jar",
@@ -1823,10 +1833,10 @@
     "modId": "waterframes",
     "version": "2.1.15"
   },
-  "watermedia-2.1.25.jar": {
-    "jarName": "watermedia-2.1.25.jar",
+  "watermedia-2.1.28.jar": {
+    "jarName": "watermedia-2.1.28.jar",
     "modId": "watermedia",
-    "version": "2.1.25"
+    "version": "2.1.28"
   },
   "waystones-forge-1.20.1-14.1.15.jar": {
     "jarName": "waystones-forge-1.20.1-14.1.15.jar",

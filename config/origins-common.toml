@@ -2198,3 +2198,12 @@
 		"autisorigins:ether_disease" = true
 		"autisorigins:starting_fishing_rod" = true
 
+	[origins."autisorigins:celestial"]
+		enabled = true
+		"origins:elytra" = true
+		"origins:launch_into_air" = true
+		"origins:aerial_combatant" = true
+		"origins:light_armor" = true
+		"origins:claustrophobia" = true
+		"origins:more_kinetic_damage" = true
+

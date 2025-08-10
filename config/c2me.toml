@@ -20,7 +20,7 @@ version = 3
 # 
 defaultGlobalExecutorParallelismExpression = "default"
 # (Default: 6) Configures the parallelism of global executor
-globalExecutorParallelism = "default"
+globalExecutorParallelism = 2
 
 [generalOptimizations]
 	# (Default: 100000) The task interval of mid-tick chunk tasks in nanoseconds (-1 to disable)  

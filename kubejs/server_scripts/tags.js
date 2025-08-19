@@ -320,8 +320,8 @@ ServerEvents.tags("block_entity_type", event => {
 
 ServerEvents.tags("fluid", event => {
     //seed oils are not a substitute for water, please seek medical attention
-    event.remove("createadditions:seed_oil","minecraft:water")
+    event.remove("createaddition:seed_oil","minecraft:water")
     event.remove("createaddition:flowing_seed_oil","minecraft:water")
-    event.remove("createadditions:bioethanol","minecraft:water")
+    event.remove("createaddition:bioethanol","minecraft:water")
     event.remove("createaddition:flowing_bioethanol","minecraft:water")
 })

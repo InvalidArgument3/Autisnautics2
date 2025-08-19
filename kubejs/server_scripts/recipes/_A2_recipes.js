@@ -127,8 +127,65 @@ ServerEvents.recipes(event => {
     //nuclearcraft: charcoal dust was useless?
     event.replaceOutput({}, "nuclearcraft:charcoal_dust", "nuclearcraft:coal_dust")
     
-    //melting every mob in the game shouldn't give liquid soul
-    event.remove({type:"tconstruct:entity_melting", output: "#tconstruct:liquid_soul"})
-    //might not work, unsure why
+    ////using thermal:device_fisher in place of the water strainer mod
+    //use canvas in slot to get sand and/or clay
+    event.recipes.thermal.fisher_boost('farmersdelight:canvas', 2, 0.02, 'autisnautics2datapack:gameplay/straining')
+    //add a few more sources of straw for canvas
+    event.custom({//wheat
+        "type": "farmersdelight:cutting",
+        "ingredients": [{ "item": "minecraft:wheat" }],
+        "result": [
+            { "item": "farmersdelight:straw" },
+            { "chance": 0.25, "item": "minecraft:wheat_seeds" }
+        ],
+        "tool": { "tag": "forge:tools/knives" }
+    })
+    event.custom({//flax
+        "type": "farmersdelight:cutting",
+        "ingredients": [{ "item": "supplementaries:flax" }],
+        "result": [
+            { "item": "farmersdelight:straw" },
+            { "item": "minecraft:string" }
+        ],
+        "tool": { "tag": "forge:tools/knives" }
+    })
+    //modify aquatic entangler recipe so it's easier to get
+    event.replaceInput({output: "thermal:device_fisher"}, "thermal:redstone_servo", "minecraft:barrel")
+    //make junk net more expensive (it's unbreakable and surprisingly useful)
+    event.replaceInput({output: "thermal:junk_net"}, "minecraft:iron_nugget", "#forge:ingots/lead")
+    event.replaceInput({output: "thermal:junk_net"}, "minecraft:stick", "rats:garbage_pile")
+    
+    ////chapter fixes
+    //unfuck wood plank cutting
+    event.remove({output: "cuisinedelight:plate"})
+    event.remove({output: "tfmg:formwork_block"})
+    let handrailTypes = ["oak","birch","spruce","jungle","dark_oak","acacia","crimson","warped","mangrove","cherry","bamboo"]
+    let removeHandrails = (wood) => {
+        let resourceLocation = "youkaishomecoming:" + wood + "_handrail"
+        if (Item.exists(resourceLocation)) {
+            event.remove({output: resourceLocation})
+        }
+    }
+    handrailTypes.forEach(removeHandrails)
+    
+    //another step of sawing turns a wooden slab into 8 plates
+    event.recipes.create.cutting(Item.of("cuisinedelight:plate", 8), "#minecraft:wooden_slabs").processingTime(150).id(`kubejs:cutting/wooden_slab_to_plates`)
+    //formwork blocks are stonecut from hollow logs
+    event.stonecutting(Item.of("tfmg:formwork_block", 8), "#quark:hollow_logs")
+    //handrails get a shaped recipe
+    let addHandrails = (wood) => {
+        let resultingHandrail = "youkaishomecoming:" + wood + "_handrail"
+        let woodItem = "minecraft:" + wood + "_slab"
+        if (Item.exists(resultingHandrail)) {
+            event.shaped(Item.of(resultingHandrail, 4), [
+                "SSS",
+                "T T"
+            ], {
+            S: woodItem,
+            T: "minecraft:stick"
+            })
+        }
+    }
+    handrailTypes.forEach(addHandrails)
     
 })

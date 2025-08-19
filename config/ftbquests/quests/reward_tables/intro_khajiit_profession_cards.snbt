@@ -1,0 +1,16 @@
+{
+	id: "0B11C7AA60EF9AC4"
+	loot_size: 1
+	order_index: 4
+	rewards: [
+		{ item: "kubejs:profession_card_farming" }
+		{ item: "kubejs:profession_card_carpentry" }
+		{ item: "kubejs:profession_card_mining" }
+		{ item: "kubejs:profession_card_masonry" }
+		{ item: "kubejs:profession_card_hunting" }
+		{ item: "kubejs:profession_card_cooking" }
+		{ item: "kubejs:profession_card_fishing" }
+		{ item: "kubejs:profession_card_smithing" }
+	]
+	title: "intro_khajiit_profession_cards"
+}

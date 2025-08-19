@@ -332,6 +332,96 @@
 			x: -3.0d
 			y: -1.0d
 		}
+		{
+			id: "0ED0EB18E3E3C99C"
+			secret: true
+			tasks: [{
+				icon: "magistuarmory:duck_decoration"
+				id: "7EDF16E3873D8970"
+				title: "Duckborn"
+				type: "custom"
+			}]
+			x: -1.5d
+			y: -4.5d
+		}
+		{
+			id: "1E1BA732F69158CB"
+			secret: true
+			tasks: [{
+				icon: "enigmaticlegacy:golden_ring"
+				id: "7F263AF0F6955616"
+				title: "Hedgehog"
+				type: "custom"
+			}]
+			x: -0.5d
+			y: -4.5d
+		}
+		{
+			id: "3AD0072806C85E8A"
+			secret: true
+			tasks: [{
+				icon: "minecraft:decorated_pot"
+				id: "0C6BEF8733F14AFD"
+				title: "Haniwa"
+				type: "custom"
+			}]
+			x: 0.5d
+			y: -4.5d
+		}
+		{
+			id: "4B8D31141A3D2965"
+			secret: true
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "rats:black_death_mask"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "5311FC1A857C5DE9"
+				title: "Alchemist"
+				type: "custom"
+			}]
+			x: 1.5d
+			y: -4.5d
+		}
+		{
+			id: "29DCAFA75FB1AB55"
+			secret: true
+			tasks: [{
+				icon: "reliquary:angelic_feather"
+				id: "23EC365CF994DD7C"
+				title: "Angel"
+				type: "custom"
+			}]
+			x: 1.5d
+			y: -2.5d
+		}
+		{
+			id: "07A744D2AF509711"
+			secret: true
+			tasks: [{
+				icon: "minecraft:cat_spawn_egg"
+				id: "1B0AEACBE2CEFD7A"
+				title: "Khajiit"
+				type: "custom"
+			}]
+			x: -2.5d
+			y: -4.5d
+		}
+		{
+			id: "2FE4393E7DADB6B0"
+			secret: true
+			tasks: [{
+				icon: "minecraft:nautilus_shell"
+				id: "47E78F1FDE6AE4C9"
+				title: "Snail"
+				type: "custom"
+			}]
+			x: 2.5d
+			y: -4.5d
+		}
 	]
 	title: "! Origin Selector"
 }

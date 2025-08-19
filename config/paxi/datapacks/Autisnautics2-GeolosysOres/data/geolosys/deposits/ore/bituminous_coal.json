@@ -1,0 +1,39 @@
+{
+  "type": "geolosys:deposit_layer",
+  "config": {
+    "yMin": -32,
+    "yMax": -16,
+    "radius": 4,
+    "depth": 5,
+    "biomeTag": "#minecraft:is_overworld",
+    "blocks": {
+      "default": [
+        {
+          "block": "geolosys:bituminous_coal_ore",
+          "chance": 0.55
+        },
+        {
+          "block": null,
+          "chance": 0.45
+        }
+      ],
+      "minecraft:deepslate": [
+        {
+          "block": "geolosys:deepslate_bituminous_coal_ore",
+          "chance": 0.55
+        },
+        {
+          "block": null,
+          "chance": 0.45
+        }
+      ]
+    },
+    "samples": [
+      {
+        "block": "geolosys:bituminous_coal_ore_sample",
+        "chance": 1.0
+      }
+    ],
+    "generationWeight": 5
+  }
+}

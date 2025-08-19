@@ -1,0 +1,31 @@
+{
+  "type": "geolosys:deposit_sparse",
+  "config": {
+    "yMin": -16,
+    "yMax": 32,
+    "size": 32,
+    "spread": 32,
+    "biomeTag": "#forge:is_plains",
+    "blocks": {
+      "default": [
+        {
+          "block": "geolosys:galena_ore",
+          "chance": 1.0
+        }
+      ],
+      "minecraft:deepslate": [
+        {
+          "block": "geolosys:deepslate_galena_ore",
+          "chance": 1.0
+        }
+      ]
+    },
+    "samples": [
+      {
+        "block": "geolosys:galena_ore_sample",
+        "chance": 1.0
+      }
+    ],
+    "generationWeight": 6
+  }
+}

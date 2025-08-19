@@ -73,7 +73,7 @@ globalExecutorParallelism = 2
 	enforceSafeWorldRandomAccess = false
 
 [threadedWorldGen]
-	# (Default: true) Whether to enable this feature
+	# (Default: false) Whether to enable this feature
 	enabled = "default"
 	# (Default: true) Whether to allow feature generation (world decorations like trees, ores and etc.) run in parallel
 	# (may cause incompatibility with other mods)
@@ -122,7 +122,7 @@ globalExecutorParallelism = 2
 [noTickViewDistance]
 	# (Default: true) Whether to enable no-tick view distance
 	enabled = "default"
-	# (Default: 7) No-tick view distance max concurrent chunk loads 
+	# (Default: 3) No-tick view distance max concurrent chunk loads 
 	#  Lower this for a better latency and higher this for a faster loading
 	maxConcurrentChunkLoads = "default"
 	# (Default: true) Whether to use compatibility mode to send chunks 

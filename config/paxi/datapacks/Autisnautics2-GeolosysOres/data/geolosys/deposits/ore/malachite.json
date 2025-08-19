@@ -1,0 +1,38 @@
+{
+  "type": "geolosys:deposit_dense",
+  "config": {
+    "blocks": {
+      "default": [
+        {
+          "block": "geolosys:malachite_ore",
+          "chance": 0.9
+        },
+        {
+          "block": null,
+          "chance": 0.1
+        }
+      ],
+      "minecraft:deepslate": [
+        {
+          "block": "geolosys:deepslate_malachite_ore",
+          "chance": 0.9
+        },
+        {
+          "block": null,
+          "chance": 0.1
+        }
+      ]
+    },
+    "samples": [
+      {
+        "block": "geolosys:malachite_ore_sample",
+        "chance": 1.0
+      }
+    ],
+    "yMin": -16,
+    "yMax": 90,
+    "size": 45,
+    "biomeTag": "#minecraft:is_overworld",
+    "generationWeight": 6
+  }
+}

@@ -94,6 +94,9 @@ config/fancymenu/customization/pack_credit_screen_layout.txt
 !/config/**/darkmodeeverywhere-client.toml
 !/config/immersiveengineering-client.toml
 !/config/alexscaves-client.toml
+!/config/cofh_core-client.toml
+!/config/kiwi-client.yaml
+!/config/geolosys-client.toml
 
 defaultconfigs/ftbultimine/ftbultimine-client.snbt
 defaultconfigs/ftbultimine/ftbultimine-server.snbt

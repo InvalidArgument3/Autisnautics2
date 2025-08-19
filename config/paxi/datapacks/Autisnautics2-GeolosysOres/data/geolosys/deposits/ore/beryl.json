@@ -1,0 +1,38 @@
+{
+  "type": "geolosys:deposit_dike",
+  "config": {
+    "yMin": -56,
+    "yMax": 19,
+    "baseRadius": 2,
+    "biomeTag": "#minecraft:is_mountain",
+    "blocks": {
+      "default": [
+        {
+          "block": "geolosys:beryl_ore",
+          "chance": 0.45
+        },
+        {
+          "block": null,
+          "chance": 0.55
+        }
+      ],
+      "minecraft:deepslate": [
+        {
+          "block": "geolosys:deepslate_beryl_ore",
+          "chance": 0.45
+        },
+        {
+          "block": null,
+          "chance": 0.55
+        }
+      ]
+    },
+    "samples": [
+      {
+        "block": "geolosys:beryl_ore_sample",
+        "chance": 1.0
+      }
+    ],
+    "generationWeight": 2
+  }
+}

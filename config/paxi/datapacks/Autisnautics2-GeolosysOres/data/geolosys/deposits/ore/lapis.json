@@ -1,0 +1,31 @@
+{
+  "type": "geolosys:deposit_sparse",
+  "config": {
+    "yMin": -64,
+    "yMax": 64,
+    "size": 30,
+    "spread": 24,
+    "biomeTag": "#forge:is_dry/overworld",
+    "blocks": {
+      "default": [
+        {
+          "block": "geolosys:lapis_ore",
+          "chance": 1.0
+        }
+      ],
+      "minecraft:deepslate": [
+        {
+          "block": "geolosys:deepslate_lapis_ore",
+          "chance": 1.0
+        }
+      ]
+    },
+    "samples": [
+      {
+        "block": "geolosys:lapis_ore_sample",
+        "chance": 1.0
+      }
+    ],
+    "generationWeight": 5
+  }
+}

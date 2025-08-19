@@ -19,11 +19,6 @@
     "modId": "adhooks",
     "version": "10.1.2.1"
   },
-  "AdLods-1.20.1-8.1.6.0-build.1450.jar": {
-    "jarName": "AdLods-1.20.1-8.1.6.0-build.1450.jar",
-    "modId": "adlods",
-    "version": "8.1.6.0"
-  },
   "AdvancedPeripherals-1.20.1-0.7.41r.jar": {
     "jarName": "AdvancedPeripherals-1.20.1-0.7.41r.jar",
     "modId": "advancedperipherals",
@@ -856,6 +851,11 @@
     "jarName": "GeckoLibOculusCompat-Forge-1.0.1.jar",
     "modId": "geckoanimfix",
     "version": "1.0.0"
+  },
+  "Geolosys-1.20.1-7.0.14.jar": {
+    "jarName": "Geolosys-1.20.1-7.0.14.jar",
+    "modId": "geolosys",
+    "version": "7.0.14"
   },
   "gliders-forge-1.1.7.jar": {
     "jarName": "gliders-forge-1.1.7.jar",
@@ -1847,6 +1847,11 @@
     "jarName": "waystones-forge-1.20.1-14.1.15.jar",
     "modId": "waystones",
     "version": "14.1.15"
+  },
+  "World Stripper-1.20-3.3.0.jar": {
+    "jarName": "World Stripper-1.20-3.3.0.jar",
+    "modId": "worldstripper",
+    "version": "3.3.0"
   },
   "world_preview-forge-1.20.1-1.3.1.jar": {
     "jarName": "world_preview-forge-1.20.1-1.3.1.jar",

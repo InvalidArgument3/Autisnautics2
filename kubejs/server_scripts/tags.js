@@ -1,6 +1,12 @@
 
 ServerEvents.tags("item", event => {
 
+    //clockwork wanderlite (and other ores that didnt get picked up in the forge:ores purge)
+    event.add("forge:ores", "vs_clockwork:wanderlite_deepslate_ore")
+    event.add("forge:ores", "vs_clockwork:wanderlite_end_ore")
+    event.add("c:ores", "vs_clockwork:wanderlite_deepslate_ore")
+    event.add("c:ores", "vs_clockwork:wanderlite_end_ore")
+
     event.add("forge:dusts/obsidian", "create:powdered_obsidian")
     event.add("forge:dusts", "create:powdered_obsidian")
 
@@ -214,7 +220,6 @@ ServerEvents.tags("item", event => {
     //A2
     event.add("forge:slag", "tfmg:slag")
     event.add(`forge:dusts/wood`, "nuclearcraft:sawdust")//useless?
-    
 })
 
 ServerEvents.tags("block", event => {

@@ -1,0 +1,30 @@
+{
+  "type": "geolosys:deposit_dike",
+  "config": {
+    "yMin": -64,
+    "yMax": -48,
+    "baseRadius": 7,
+    "biomeTag": "#minecraft:is_overworld",
+    "blocks": {
+      "default": [
+        {
+          "block": "geolosys:quartz_ore",
+          "chance": 1.0
+        }
+      ],
+      "minecraft:deepslate": [
+        {
+          "block": "geolosys:deepslate_quartz_ore",
+          "chance": 1.0
+        }
+      ]
+    },
+    "samples": [
+      {
+        "block": "geolosys:quartz_ore_sample",
+        "chance": 1.0
+      }
+    ],
+    "generationWeight": 6
+  }
+}

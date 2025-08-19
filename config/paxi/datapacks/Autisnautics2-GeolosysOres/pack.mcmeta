@@ -1,0 +1,12 @@
+{
+    "pack": {
+        "name": "Autisnautics 2 GeolosysOres
+        "id": "autisnautics2geolosys",
+        "pack_format": 15,
+        "version": "1.21",
+        "authors": [
+            "me"
+        ],
+        "description": "ores but cool thanks to geolosys"
+    }
+}

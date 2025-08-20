@@ -8,4 +8,6 @@ JEIEvents.hideItems(event => {
     event.hide("create_sa:heat_engine")
     event.hide("create_sa:steam_engine")
     event.hide("create_sa:hydraulic_engine")
+    //replaced with polished equivalent
+    event.hide("create:rose_quartz")
 })

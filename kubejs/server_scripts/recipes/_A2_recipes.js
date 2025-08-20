@@ -155,15 +155,44 @@ ServerEvents.recipes(event => {
     event.replaceInput({output: "thermal:junk_net"}, "minecraft:iron_nugget", "#forge:ingots/lead")
     event.replaceInput({output: "thermal:junk_net"}, "minecraft:stick", "rats:garbage_pile")
     
+    //tfmg/ie synthetic leathers support
+    event.replaceInput({}, "minecraft:leather", "#forge/leathers")
+    
+    //make tome of alkahestry an endgame item
+    event.remove({type: "minecraft:crafting_shapeless", input:"reliquary:witch_hat", output:"reliquary:alkahestry_tome"})
+    event.recipes.create.mechanical_crafting("reliquary:alkahestry_tome", [
+        " HTE ",
+        "  A  ",
+        "SXADW",
+        "PGMRP",
+        "OOCOO"
+    ],{
+        T: "enigmaticlegacy:withered_tome",
+        E: "reliquary:eye_of_the_storm",
+        G: "kubejs:accelerator_glowstone",
+        R: "kubejs:accelerator_redstone",
+        M: "kubejs:missingno",
+        C: "botania:conjuration_catalyst",
+        H: "dungeonnowloading:chaotic_hexahedron",
+        O: "minecraft:crying_obsidian",
+        P: "embers:alchemy_pedestal",
+        X: "enigmaticlegacy:forbidden_axe",
+        S: "minecraft:player_head",
+        D: "reliquary:phoenix_down",
+        A: "reliquary:alkahestry_altar",
+        W: "minecraft:wither_skeleton_skull",
+        
+    })
+    
     ////chapter fixes
     //unfuck wood plank cutting
     event.remove({output: "cuisinedelight:plate"})
     event.remove({output: "tfmg:formwork_block"})
     let handrailTypes = ["oak","birch","spruce","jungle","dark_oak","acacia","crimson","warped","mangrove","cherry","bamboo"]
     let removeHandrails = (wood) => {
-        let resourceLocation = "youkaishomecoming:" + wood + "_handrail"
-        if (Item.exists(resourceLocation)) {
-            event.remove({output: resourceLocation})
+        let originalHandrail = "youkaishomecoming:" + wood + "_handrail"
+        if (Item.exists(originalHandrail)) {
+            event.remove({output: originalHandrail})
         }
     }
     handrailTypes.forEach(removeHandrails)
@@ -188,4 +217,36 @@ ServerEvents.recipes(event => {
     }
     handrailTypes.forEach(addHandrails)
     
+    //replace create big cannons mould recipes which are all the exact same recipe because the modder is a twisted psychopath
+    let mouldTypes = ["very_small","small","medium","large","very_large","cannon_end","sliding_breech","screw_breech","autocannon_breech","autocannon_recoil_spring","autocannon_barrel"]
+    let removeMould = (type) => {
+        let originalMould = "createbigcannons:" + type + "_cast_mould"
+        if (Item.exists(originalMould)) {
+            event.remove({output: originalMould})
+        }
+    }
+    mouldTypes.forEach(removeMould)
+    //all moulds now start from the very large cast mould, by deploying a saw on any log
+    event.recipes.create.deploying("createbigcannons:very_large_cast_mould", ["#minecraft:logs", "#kubejs:saws"])
+    //smaller moulds are made by sawing the very large mould down smaller and smaller
+    event.recipes.create.deploying("createbigcannons:large_cast_mould", ["createbigcannons:very_large_cast_mould", "#kubejs:saws"])
+    event.recipes.create.deploying("createbigcannons:medium_cast_mould", ["createbigcannons:large_cast_mould", "#kubejs:saws"])
+    event.recipes.create.deploying("createbigcannons:small_cast_mould", ["createbigcannons:medium_cast_mould", "#kubejs:saws"])
+    event.recipes.create.deploying("createbigcannons:very_small_cast_mould", ["createbigcannons:small_cast_mould", "#kubejs:saws"])
+    event.recipes.create.deploying("createbigcannons:autocannon_breech_cast_mould", ["createbigcannons:very_small_cast_mould", "#kubejs:saws"])
+    event.recipes.create.deploying("createbigcannons:autocannon_recoil_spring_cast_mould", ["createbigcannons:autocannon_breech_cast_mould", "#kubejs:saws"])
+    event.recipes.create.deploying("createbigcannons:autocannon_barrel_cast_mould", ["createbigcannons:autocannon_recoil_spring_cast_mould", "#kubejs:saws"])
+    //the other moulds branch off from the generic ones by chiseling or sawing
+    event.recipes.create.deploying("createbigcannons:sliding_breech_cast_mould", ["createbigcannons:large_cast_mould", "#chiselsandbits:chisel"])
+    event.recipes.create.deploying("createbigcannons:cannon_end_cast_mould", ["createbigcannons:medium_cast_mould", "#chiselsandbits:chisel"])
+    event.recipes.create.deploying("createbigcannons:screw_breech_cast_mould", ["createbigcannons:cannon_end_cast_mould", "#kubejs:saws"])
+    
+    //might as well fix this createbigcannons shit while i'm at it
+    event.remove({id: "createbigcannons/cutting/autocannon_cartridge_sheet_copper"})//duplicate
+    event.replaceInput({output: "createbigcannons:spring_wire"}, "#forge:plates/iron", "#forge:plates/lead")//another ingredient+type with multiple outputs
+    
+    
+    //remove redundant "rose quartz" for polished rose quartz
+    event.replaceOutput({}, "create:rose_quartz", "create:polished_rose_quartz")//jaopca only
+    event.replaceInput({}, "create:rose_quartz", "create:polished_rose_quartz")//jaopca, cosmetic stonecutting block, rock candy
 })

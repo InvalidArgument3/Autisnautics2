@@ -378,7 +378,8 @@ ServerEvents.recipes(event => {
         ]
     })
     // Rose Quartz
-    event.shapeless("create:rose_quartz", [["minecraft:quartz", "ae2:certus_quartz_crystal", "ae2:charged_certus_quartz_crystal"], "minecraft:redstone", "minecraft:redstone", "minecraft:redstone", "minecraft:redstone"])
+    //event.shapeless("create:rose_quartz", [["minecraft:quartz", "ae2:certus_quartz_crystal", "ae2:charged_certus_quartz_crystal"], "minecraft:redstone", "minecraft:redstone", "minecraft:redstone", "minecraft:redstone"])
+    //A2: no reason for this to exist, replaced
     // Polished Rose Quartz
     event.custom({
         "type": "create:mixing",

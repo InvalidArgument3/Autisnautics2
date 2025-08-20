@@ -220,6 +220,11 @@ ServerEvents.tags("item", event => {
     //A2
     event.add("forge:slag", "tfmg:slag")
     event.add(`forge:dusts/wood`, "nuclearcraft:sawdust")//useless?
+    event.get("kubejs:saws")
+        .add("projectred_exploration:gold_saw")
+        .add("projectred_exploration:ruby_saw")
+        .add("projectred_exploration:sapphire_saw")
+        .add("projectred_exploration:peridot_saw")
 })
 
 ServerEvents.tags("block", event => {

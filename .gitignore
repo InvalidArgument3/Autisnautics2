@@ -103,6 +103,9 @@ defaultconfigs/ftbultimine/ftbultimine-server.snbt
 
 ./options.txt
 
+# pack icon
+!icon.png
+
 # dotenv
 .env
 

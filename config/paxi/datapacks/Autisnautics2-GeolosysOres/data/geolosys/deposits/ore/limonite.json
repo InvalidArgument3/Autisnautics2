@@ -2,7 +2,7 @@
   "type": "geolosys:deposit_dike",
   "config": {
     "yMin": -48,
-    "yMax": -32,
+    "yMax": 320,
     "baseRadius": 6,
     "biomeTag": "#geolosys:is_marshy",
     "blocks": {

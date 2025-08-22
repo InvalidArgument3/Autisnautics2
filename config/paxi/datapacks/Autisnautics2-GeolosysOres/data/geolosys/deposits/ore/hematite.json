@@ -2,7 +2,7 @@
   "type": "geolosys:deposit_dike",
   "config": {
     "yMin": 32,
-    "yMax": 60,
+    "yMax": 320,
     "baseRadius": 2,
     "biomeTag": "#minecraft:is_overworld",
     "blocks": {

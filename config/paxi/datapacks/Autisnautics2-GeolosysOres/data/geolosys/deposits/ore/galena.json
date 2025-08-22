@@ -2,7 +2,7 @@
   "type": "geolosys:deposit_sparse",
   "config": {
     "yMin": -16,
-    "yMax": 32,
+    "yMax": 320,
     "size": 32,
     "spread": 32,
     "biomeTag": "#forge:is_plains",

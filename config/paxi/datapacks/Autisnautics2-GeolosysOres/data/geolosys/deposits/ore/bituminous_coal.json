@@ -2,7 +2,7 @@
   "type": "geolosys:deposit_layer",
   "config": {
     "yMin": -32,
-    "yMax": -16,
+    "yMax": 320,
     "radius": 4,
     "depth": 5,
     "biomeTag": "#minecraft:is_overworld",

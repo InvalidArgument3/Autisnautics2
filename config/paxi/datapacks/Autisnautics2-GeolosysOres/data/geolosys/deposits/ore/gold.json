@@ -2,7 +2,7 @@
   "type": "geolosys:deposit_dense",
   "config": {
     "yMin": -64,
-    "yMax": 32,
+    "yMax": 320,
     "size": 40,
     "biomeTag": "#minecraft:is_overworld",
     "blocks": {

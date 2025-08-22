@@ -19,6 +19,11 @@
     "modId": "adhooks",
     "version": "10.1.2.1"
   },
+  "advanced-xray-forge-1.20.1-2.18.1-build.22.jar": {
+    "jarName": "advanced-xray-forge-1.20.1-2.18.1-build.22.jar",
+    "modId": "xray",
+    "version": "1.20.1-2.18.1-build.22"
+  },
   "AdvancedPeripherals-1.20.1-0.7.41r.jar": {
     "jarName": "AdvancedPeripherals-1.20.1-0.7.41r.jar",
     "modId": "advancedperipherals",
@@ -1833,6 +1838,11 @@
     "modId": "vs_sails",
     "version": "0.1.7"
   },
+  "vstuff-0.1.6+a037637846.jar": {
+    "jarName": "vstuff-0.1.6+a037637846.jar",
+    "modId": "vstuff",
+    "version": "0.1.6"
+  },
   "waterframes-FORGE-mc1.20.1-v2.1.15.jar": {
     "jarName": "waterframes-FORGE-mc1.20.1-v2.1.15.jar",
     "modId": "waterframes",
@@ -1857,6 +1867,11 @@
     "jarName": "world_preview-forge-1.20.1-1.3.1.jar",
     "modId": "world_preview",
     "version": "1.3.1"
+  },
+  "xercamusic-1.20.1-1.0.2.jar": {
+    "jarName": "xercamusic-1.20.1-1.0.2.jar",
+    "modId": "xercamusic",
+    "version": "1.20.1-1.0.2"
   },
   "xercapaint-1.20.1-1.0.1.jar": {
     "jarName": "xercapaint-1.20.1-1.0.1.jar",

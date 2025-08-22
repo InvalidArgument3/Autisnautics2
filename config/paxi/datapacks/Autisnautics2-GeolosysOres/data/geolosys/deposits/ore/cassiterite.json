@@ -2,7 +2,7 @@
   "type": "geolosys:deposit_dense",
   "config": {
     "yMin": 44,
-    "yMax": 68,
+    "yMax": 320,
     "size": 24,
     "density": 1.0,
     "biomeTag": "#geolosys:is_sandy",

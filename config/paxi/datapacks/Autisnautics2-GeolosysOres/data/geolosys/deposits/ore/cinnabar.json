@@ -2,7 +2,7 @@
   "type": "geolosys:deposit_sparse",
   "config": {
     "yMin": -60,
-    "yMax": 15,
+    "yMax": 320,
     "size": 64,
     "spread": 48,
     "biomeTag": "#minecraft:is_overworld",

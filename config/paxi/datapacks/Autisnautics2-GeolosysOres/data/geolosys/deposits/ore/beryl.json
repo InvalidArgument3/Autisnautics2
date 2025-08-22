@@ -2,7 +2,7 @@
   "type": "geolosys:deposit_dike",
   "config": {
     "yMin": -56,
-    "yMax": 19,
+    "yMax": 320,
     "baseRadius": 2,
     "biomeTag": "#minecraft:is_mountain",
     "blocks": {

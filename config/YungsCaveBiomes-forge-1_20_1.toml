@@ -43,7 +43,7 @@
 			#Range: -1.0 ~ 1.0
 			"Temperature Min" = -1.0
 			#Range: -1.0 ~ 1.0
-			"Temperature Max" = -0.7
+			"Temperature Max" = 0.15
 			#Range: -1.0 ~ 1.0
 			"Humidity Min" = -1.0
 			#Range: -1.0 ~ 1.0

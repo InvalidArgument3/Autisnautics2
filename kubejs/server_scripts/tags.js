@@ -225,6 +225,7 @@ ServerEvents.tags("item", event => {
         .add("projectred_exploration:ruby_saw")
         .add("projectred_exploration:sapphire_saw")
         .add("projectred_exploration:peridot_saw")
+    event.add("forge:ingots/plastic", "nuclearcraft:bioplastic")
 })
 
 ServerEvents.tags("block", event => {
@@ -325,8 +326,12 @@ ServerEvents.tags("block_entity_type", event => {
 
 ServerEvents.tags("fluid", event => {
     //seed oils are not a substitute for water, please seek medical attention
-    event.remove("createaddition:seed_oil","minecraft:water")
-    event.remove("createaddition:flowing_seed_oil","minecraft:water")
-    event.remove("createaddition:bioethanol","minecraft:water")
-    event.remove("createaddition:flowing_bioethanol","minecraft:water")
+    event.remove("minecraft:water","createaddition:seed_oil")
+    event.remove("minecraft:water","createaddition:flowing_seed_oil")
+    event.remove("minecraft:water","createaddition:bioethanol")
+    event.remove("minecraft:water","createaddition:flowing_bioethanol")
+    
+    event.add("forge:ingots/plastic","nuclearcraft:bioplastic")
+    event.add("kubejs:milk","minecraft:milk")//nuclearcraft recipe meme
+    event.add("kubejs:liquid_plastic","tfmg:liquid_plastic")//^
 })

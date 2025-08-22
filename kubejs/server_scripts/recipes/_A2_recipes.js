@@ -77,6 +77,8 @@ ServerEvents.recipes(event => {
     brassMachine(event, Item.of("immersive_aircraft:engine", 1), "minecraft:blast_furnace")
     
     ////tfmg/IE integration
+    //re-add blasting mixture recipe as metallurgy.js removes all input:#create:crushed_raw_materials
+    event.recipes.create.mixing("tfmg:blasting_mixture", [Item.of("#forge:dusts/iron", 3), "tfmg:limesand"])
     //thermal rockwool and IE slag glass conflict: rockwool is now blasting only, slag glass is smelting only
     event.remove({ type: "minecraft:smelting", output: "thermal:white_rockwool"})
     event.remove({ type: "create:fan_blasting", output: "immersiveengineering:slag_glass"})
@@ -155,8 +157,12 @@ ServerEvents.recipes(event => {
     event.replaceInput({output: "thermal:junk_net"}, "minecraft:iron_nugget", "#forge:ingots/lead")
     event.replaceInput({output: "thermal:junk_net"}, "minecraft:stick", "rats:garbage_pile")
     
-    //tfmg/ie synthetic leathers support
-    event.replaceInput({}, "minecraft:leather", "#forge/leathers")
+    //tfmg/ie synthetic leathers and strings support
+    event.replaceInput({}, "minecraft:leather", "#forge:leathers")
+    event.replaceInput({}, "minecraft:string", "#forge:string")
+    //fix synethetic leather recipe collision with immersiveengineering:plate_duroplast
+    event.remove({output: "tfmg:synthetic_leather"})
+    event.recipes.create.deploying("tfmg:synthetic_leather", ["#forge:ingots/plastic", "minecraft:paper"])
     
     //make tome of alkahestry an endgame item
     event.remove({type: "minecraft:crafting_shapeless", input:"reliquary:witch_hat", output:"reliquary:alkahestry_tome"})
@@ -245,6 +251,277 @@ ServerEvents.recipes(event => {
     event.remove({id: "createbigcannons/cutting/autocannon_cartridge_sheet_copper"})//duplicate
     event.replaceInput({output: "createbigcannons:spring_wire"}, "#forge:plates/iron", "#forge:plates/lead")//another ingredient+type with multiple outputs
     
+    ////Chapter 2B: Lead Machines replacement
+    //replacing the chassis with the lead machine
+    event.remove({output: "nuclearcraft:chassis"})
+    event.replaceInput({output: "nuclearcraft:turbine_casing"}, "nuclearcraft:chassis", "kubejs:lead_casing")//exception
+    event.replaceInput({}, "nuclearcraft:chassis", "kubejs:lead_machine")
+    //gate manufactory and alloy smelter behind lead machine as well
+    event.replaceInput({output: "nuclearcraft:manufactory"}, "minecraft:piston", "kubejs:lead_machine")
+    event.replaceInput({output: "nuclearcraft:alloy_smelter"}, "minecraft:blast_furnace", "kubejs:lead_machine")
+   
+    ////atomic mechanisms
+    //Logistic Mechanism and kubejs pulp recipes removed in chapters.js
+    event.custom({
+        "type": "create:sequenced_assembly",
+        "ingredient": { "item": "create:precision_mechanism" },
+        "results": [
+            { "item": "kubejs:logistic_mechanism" }
+        ],
+        "loops": 1,
+        "sequence": [
+            {
+                "type": "create:filling",
+                "ingredients": [
+                    { "item": "kubejs:incomplete_logistic_mechanism" },
+                    { "fluid": "tfmg:molten_steel", "amount": 90 }//can't use tags for fluids
+                ],
+                "results": [
+                    { "item": "kubejs:incomplete_logistic_mechanism" }
+                ]
+            },
+            {
+                "type": "create:filling",
+                "ingredients": [
+                    { "item": "kubejs:incomplete_logistic_mechanism" },
+                    { "fluid": "tconstruct:molten_uranium", "amount": 10 }
+                ],
+                "results": [
+                    { "item": "kubejs:incomplete_logistic_mechanism" }
+                ]
+            },
+            {
+                "type": "create:filling",
+                "ingredients": [
+                    { "item": "kubejs:incomplete_logistic_mechanism" },
+                    { "fluid": "tconstruct:molten_lead", "amount": 90 }
+                ],
+                "results": [
+                    { "item": "kubejs:incomplete_logistic_mechanism" }
+                ]
+            },
+            {
+                "type": "create:filling",
+                "ingredients": [
+                    { "item": "kubejs:incomplete_logistic_mechanism" },
+                    { "fluid": "nuclearcraft:radaway", "amount": 250 }
+                ],
+                "results": [
+                    { "item": "kubejs:incomplete_logistic_mechanism" }
+                ]
+            }
+        ],
+        "transitionalItem": { "item": "kubejs:incomplete_logistic_mechanism" }
+    }).id("kubejs:logistic_mechanism")
+    //Radaway: 3x glowing mushroom and 1 bottle of milk, heated mixing
+    event.recipes.create.mixing([Fluid.of("nuclearcraft:radaway", 250)], [Item.of("nuclearcraft:glowing_mushroom", 3), Fluid.of("minecraft:milk", 250)]).heated()
+    //original NC recipe: replace Ethanol with Milk
+    event.remove({output: Fluid.of("nuclearcraft:radaway")})
+    event.remove({output: Fluid.of("nuclearcraft:radaway_slow")})
+    //remove NC ethanol while we're at it, other mods do it better
+    event.remove({output: Fluid.of("nuclearcraft:ethanol")})
+    event.remove({output: Fluid.of("nuclearcraft:redstone_ethanol")})
+    event.remove({output: "nuclearcraft:ethanol_bucket"})
+    event.remove({output: "nuclearcraft:redstone_ethanol_bucket"})
+    
+    event.custom({
+        "type": "nuclearcraft:fluid_enricher",
+        "input": [
+            {
+            "count": 3,
+            "item": "nuclearcraft:glowing_mushroom"
+            }
+        ],
+        "inputFluids": [
+            {
+            "amount": 250,
+            "tag": "kubejs:milk"
+            }
+        ],
+        "outputFluids": [
+            {
+            "amount": 250,
+            "tag": "forge:radaway"
+            }
+        ],
+        "powerModifier": 1.0,
+        "radiation": 1.0,
+        "timeModifier": 1.0
+    })
+    event.custom({
+        "type": "nuclearcraft:fluid_enricher",
+        "input": [
+            {
+            "count": 1,
+            "item": "minecraft:redstone"
+            }
+        ],
+        "inputFluids": [
+            {
+            "amount": 250,
+            "tag": "forge:radaway"
+            }
+        ],
+        "outputFluids": [
+            {
+            "amount": 250,
+            "tag": "forge:radaway_slow"
+            }
+        ],
+        "powerModifier": 1.0,
+        "radiation": 1.0,
+        "timeModifier": 1.0
+    })
+    //synthetic glowing mushroom recipe: 50mb of Potion of Glowing on a brown mushroom
+    event.recipes.create.filling("nuclearcraft:glowing_mushroom", ["minecraft:brown_mushroom", Fluid.of("create:potion", 50, '{Potion:"alexscaves:glowing"}')])
+    //potion of glowing recipe in startup_scripts
+    
+    
+    ////just one word: PLASTICS
+    //tag/integrate nuclearcraft:bioplastic and rats:raw_plastic
+    //remove rats:raw_plastic, replace with plastic sheet
+    event.remove({output: "rats:raw_plastic"})
+    event.replaceInput({}, "rats:raw_plastic", "tfmg:plastic_sheet")
+    //loot removal below
+    event.remove({input: "rats:plastic_waste"})//just in case?
+    
+    //converting plastic waste to liquid plastic by "recycling"
+    event.recipes.create.mixing([Fluid.of("tfmg:liquid_plastic", 200), "quark:dirty_shard"], [Item.of("rats:plastic_waste", 9), Fluid.of("minecraft:water", 1000)]).heated()
+    //glass shard gives em an extra step to process plus it's a glass source I guess
+    //alt recipe: nuclearcraft melter, 1 plastic waste -> 25mb liquid plastic (8:1 and no waste product)
+    event.custom({
+        "type": "nuclearcraft:melter",
+        "input": [
+            {
+            "count": 1,
+            "item": "rats:plastic_waste"
+            }
+        ],
+        "outputFluids": [
+            {
+            "amount": 25,
+            "tag": "kubejs:liquid_plastic"//might have to tag this too?
+            }
+        ],
+        "powerModifier": 1.0,
+        "radiation": 1.0,
+        "timeModifier": 1.0
+    })
+    event.custom({
+        "type": "nuclearcraft:melter",
+        "input": [
+            {
+            "count": 1,
+            "tag": "forge:ingots/plastic"
+            }
+        ],
+        "outputFluids": [
+            {
+            "amount": 200,
+            "tag": "kubejs:liquid_plastic"
+            }
+        ],
+        "powerModifier": 1.0,
+        "radiation": 1.0,
+        "timeModifier": 1.0
+    })
+    //same as above but for "raw plastic" (found as loot only since i couldn't remove it with kube i guess)
+    event.recipes.create.mixing([Fluid.of("tfmg:liquid_plastic", 25)], [Item.of("rats:raw_plastic", 1), Fluid.of("minecraft:water", 250)]).heated()
+    event.custom({
+        "type": "nuclearcraft:melter",
+        "input": [
+            {
+            "count": 1,
+            "item": "rats:raw_plastic"
+            }
+        ],
+        "outputFluids": [
+            {
+            "amount": 25,
+            "tag": "kubejs:liquid_plastic"//might have to tag this too?
+            }
+        ],
+        "powerModifier": 1.0,
+        "radiation": 1.0,
+        "timeModifier": 1.0
+    })
+    //replace sugarcane for bioplastic with biomass
+    event.remove({output: "nuclearcraft:bioplastic"})
+    event.custom({
+        "type": "nuclearcraft:manufactory",
+        "input": [
+            {
+            "count": 2,
+            "item": "createaddition:biomass"
+            }
+        ],
+        "output": [
+            {
+            "amount": 1,
+            "item": "nuclearcraft:bioplastic"
+            }
+        ],
+        "powerModifier": 1.0,
+        "radiation": 1.0,
+        "timeModifier": 1.0
+    })
+    //oredict the plastics
+    event.replaceInput({}, "tfmg:plastic_sheet", "#forge:ingots/plastic")
+    event.replaceInput({}, "nuclearcraft:bioplastic", "#forge:ingots/plastic")
+    
+    //fix broken radaway item recipes
+    event.remove({output: Item.of("nuclearcraft:radaway")})
+    event.remove({output: Item.of("nuclearcraft:radaway_slow")})
+    event.recipes.create.filling("nuclearcraft:radaway", ["#forge:ingots/plastic", Fluid.of("nuclearcraft:radaway", 250)])
+    event.recipes.create.filling("nuclearcraft:radaway_slow", ["#forge:ingots/plastic", Fluid.of("nuclearcraft:radaway_slow", 250)])
+    event.custom({
+        "type": "nuclearcraft:fluid_infuser",
+        "inputFluids": [
+            {
+            "amount": 250,
+            "tag": "forge:radaway"
+            }
+        ],
+        "input": [
+            {
+            "count": 1,
+            "tag": "forge:ingots/plastic"
+            }
+        ],
+        "output": [
+            {
+            "amount": 1,
+            "item": "nuclearcraft:radaway"
+            }
+        ],
+        "powerModifier": 1.0,
+        "radiation": 1.0,
+        "timeModifier": 1.0
+    })
+    event.custom({
+        "type": "nuclearcraft:fluid_infuser",
+        "inputFluids": [
+            {
+            "amount": 250,
+            "tag": "forge:radaway_slow"
+            }
+        ],
+        "input": [
+            {
+            "count": 1,
+            "tag": "forge:ingots/plastic"
+            }
+        ],
+        "output": [
+            {
+            "amount": 1,
+            "item": "nuclearcraft:radaway_slow"
+            }
+        ],
+        "powerModifier": 1.0,
+        "radiation": 1.0,
+        "timeModifier": 1.0
+    })
     
     //remove redundant "rose quartz" for polished rose quartz
     event.replaceOutput({}, "create:rose_quartz", "create:polished_rose_quartz")//jaopca only

@@ -520,8 +520,10 @@ ServerEvents.recipes(event => {
     // Logistic Mechanisms
     // TODO: make the line for this, uses above as a placeholder
 
-
+    
     // Liquid Pulp
+    //A2: removed
+    /*
     event.custom({
         "type": "create:mixing",
         "heatRequirement": "heated",
@@ -533,7 +535,10 @@ ServerEvents.recipes(event => {
             { "fluid": "kubejs:liquid_pulp", "amount": 500 }
         ]
     })
+    */
 
+    //A2: replaced, see _A2_recipes.js
+    /*
     event.custom({
         "type": "create:sequenced_assembly",
         "ingredient": { "item": "create:precision_mechanism" },
@@ -585,6 +590,7 @@ ServerEvents.recipes(event => {
         ],
         "transitionalItem": { "item": "kubejs:incomplete_logistic_mechanism" }
     }).id("kubejs:logistic_mechanism")
+    */
 
     donutCraft(event, "kubejs:lead_machine", "kubejs:lead_casing", "kubejs:logistic_mechanism")
 

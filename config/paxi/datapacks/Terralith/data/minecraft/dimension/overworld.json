@@ -1146,7 +1146,7 @@
           }
         },
         {
-          "biome": "terralith:frozen_cliffs",
+          "biome": "minecraft:frozen_ocean",
           "parameters": {
             "continentalness": [
               -0.2,
@@ -1176,7 +1176,7 @@
           }
         },
         {
-          "biome": "terralith:white_cliffs",
+          "biome": "minecraft:cold_ocean",
           "parameters": {
             "continentalness": [
               -0.2,
@@ -1206,7 +1206,7 @@
           }
         },
         {
-          "biome": "minecraft:stony_shore",
+          "biome": "minecraft:ocean",
           "parameters": {
             "continentalness": [
               -0.2,
@@ -1236,7 +1236,7 @@
           }
         },
         {
-          "biome": "minecraft:stony_shore",
+          "biome": "minecraft:ocean",
           "parameters": {
             "continentalness": [
               -0.2,
@@ -1266,7 +1266,7 @@
           }
         },
         {
-          "biome": "terralith:basalt_cliffs",
+          "biome": "minecraft:lukewarm_ocean",
           "parameters": {
             "continentalness": [
               -0.2,
@@ -1296,7 +1296,7 @@
           }
         },
         {
-          "biome": "terralith:granite_cliffs",
+          "biome": "minecraft:warm_ocean",
           "parameters": {
             "continentalness": [
               -0.2,
@@ -1326,7 +1326,7 @@
           }
         },
         {
-          "biome": "terralith:granite_cliffs",
+          "biome": "minecraft:warm_ocean",
           "parameters": {
             "continentalness": [
               -0.2,
@@ -1356,7 +1356,7 @@
           }
         },
         {
-          "biome": "minecraft:stony_shore",
+          "biome": "minecraft:ocean",
           "parameters": {
             "continentalness": [
               -0.2,
@@ -2106,7 +2106,7 @@
           }
         },
         {
-          "biome": "minecraft:snowy_beach",
+          "biome": "minecraft:frozen_ocean",
           "parameters": {
             "continentalness": [
               -0.2,
@@ -2136,7 +2136,7 @@
           }
         },
         {
-          "biome": "minecraft:beach",
+          "biome": "minecraft:ocean",
           "parameters": {
             "continentalness": [
               -0.2,
@@ -9546,7 +9546,7 @@
           }
         },
         {
-          "biome": "minecraft:stony_shore",
+          "biome": "minecraft:ocean",
           "parameters": {
             "continentalness": [
               -0.2,
@@ -9576,7 +9576,7 @@
           }
         },
         {
-          "biome": "minecraft:stony_shore",
+          "biome": "minecraft:ocean",
           "parameters": {
             "continentalness": [
               -0.2,
@@ -9606,7 +9606,7 @@
           }
         },
         {
-          "biome": "terralith:granite_cliffs",
+          "biome": "minecraft:warm_ocean",
           "parameters": {
             "continentalness": [
               -0.2,
@@ -11046,7 +11046,7 @@
           }
         },
         {
-          "biome": "minecraft:snowy_beach",
+          "biome": "minecraft:frozen_ocean",
           "parameters": {
             "continentalness": [
               -0.2,
@@ -11076,7 +11076,7 @@
           }
         },
         {
-          "biome": "minecraft:beach",
+          "biome": "minecraft:ocean",
           "parameters": {
             "continentalness": [
               -0.2,
@@ -13326,7 +13326,7 @@
           }
         },
         {
-          "biome": "terralith:frozen_cliffs",
+          "biome": "minecraft:frozen_ocean",
           "parameters": {
             "continentalness": [
               -0.2,
@@ -13356,7 +13356,7 @@
           }
         },
         {
-          "biome": "terralith:white_cliffs",
+          "biome": "minecraft:cold_ocean",
           "parameters": {
             "continentalness": [
               -0.2,
@@ -13806,7 +13806,7 @@
           }
         },
         {
-          "biome": "terralith:granite_cliffs",
+          "biome": "minecraft:warm_ocean",
           "parameters": {
             "continentalness": [
               -0.2,
@@ -17376,7 +17376,7 @@
           }
         },
         {
-          "biome": "minecraft:snowy_beach",
+          "biome": "minecraft:frozen_ocean",
           "parameters": {
             "continentalness": [
               -0.2,
@@ -17406,7 +17406,7 @@
           }
         },
         {
-          "biome": "terralith:gravel_beach",
+          "biome": "minecraft:ocean",
           "parameters": {
             "continentalness": [
               -0.2,
@@ -17436,7 +17436,7 @@
           }
         },
         {
-          "biome": "terralith:gravel_beach",
+          "biome": "minecraft:lukewarm_ocean",
           "parameters": {
             "continentalness": [
               -0.2,
@@ -17466,7 +17466,7 @@
           }
         },
         {
-          "biome": "minecraft:snowy_beach",
+          "biome": "minecraft:frozen_ocean",
           "parameters": {
             "continentalness": [
               -0.2,
@@ -17496,7 +17496,7 @@
           }
         },
         {
-          "biome": "minecraft:beach",
+          "biome": "minecraft:ocean",
           "parameters": {
             "continentalness": [
               -0.2,
@@ -20316,7 +20316,7 @@
           }
         },
         {
-          "biome": "minecraft:snowy_beach",
+          "biome": "minecraft:frozen_ocean",
           "parameters": {
             "continentalness": [
               -0.2,
@@ -20346,7 +20346,7 @@
           }
         },
         {
-          "biome": "terralith:gravel_beach",
+          "biome": "minecraft:ocean",
           "parameters": {
             "continentalness": [
               -0.2,
@@ -20376,7 +20376,7 @@
           }
         },
         {
-          "biome": "terralith:gravel_beach",
+          "biome": "minecraft:lukewarm_ocean",
           "parameters": {
             "continentalness": [
               -0.2,
@@ -27246,7 +27246,7 @@
           }
         },
         {
-          "biome": "terralith:frozen_cliffs",
+          "biome": "minecraft:frozen_ocean",
           "parameters": {
             "continentalness": [
               -0.2,
@@ -27276,7 +27276,7 @@
           }
         },
         {
-          "biome": "terralith:white_cliffs",
+          "biome": "minecraft:cold_ocean",
           "parameters": {
             "continentalness": [
               -0.2,
@@ -27636,7 +27636,7 @@
           }
         },
         {
-          "biome": "terralith:granite_cliffs",
+          "biome": "minecraft:warm_ocean",
           "parameters": {
             "continentalness": [
               -0.2,
@@ -27696,7 +27696,7 @@
           }
         },
         {
-          "biome": "terralith:granite_cliffs",
+          "biome": "minecraft:warm_ocean",
           "parameters": {
             "continentalness": [
               -0.2,
@@ -28266,7 +28266,7 @@
           }
         },
         {
-          "biome": "minecraft:snowy_beach",
+          "biome": "minecraft:frozen_ocean",
           "parameters": {
             "continentalness": [
               -0.2,
@@ -28296,7 +28296,7 @@
           }
         },
         {
-          "biome": "minecraft:beach",
+          "biome": "minecraft:ocean",
           "parameters": {
             "continentalness": [
               -0.2,
@@ -28326,7 +28326,7 @@
           }
         },
         {
-          "biome": "minecraft:beach",
+          "biome": "minecraft:lukewarm_ocean",
           "parameters": {
             "continentalness": [
               -0.2,
@@ -28446,7 +28446,7 @@
           }
         },
         {
-          "biome": "minecraft:beach",
+          "biome": "minecraft:lukewarm_ocean",
           "parameters": {
             "continentalness": [
               -0.2,
@@ -28716,7 +28716,7 @@
           }
         },
         {
-          "biome": "minecraft:snowy_beach",
+          "biome": "minecraft:frozen_ocean",
           "parameters": {
             "continentalness": [
               -0.2,
@@ -28746,7 +28746,7 @@
           }
         },
         {
-          "biome": "minecraft:beach",
+          "biome": "minecraft:ocean",
           "parameters": {
             "continentalness": [
               -0.2,
@@ -36276,7 +36276,7 @@
           }
         },
         {
-          "biome": "minecraft:snowy_beach",
+          "biome": "minecraft:frozen_ocean",
           "parameters": {
             "continentalness": [
               -0.2,
@@ -36306,7 +36306,7 @@
           }
         },
         {
-          "biome": "minecraft:beach",
+          "biome": "minecraft:ocean",
           "parameters": {
             "continentalness": [
               -0.2,
@@ -36336,7 +36336,7 @@
           }
         },
         {
-          "biome": "minecraft:beach",
+          "biome": "minecraft:lukewarm_ocean",
           "parameters": {
             "continentalness": [
               -0.2,
@@ -43956,7 +43956,7 @@
           }
         },
         {
-          "biome": "minecraft:stony_shore",
+          "biome": "minecraft:ocean",
           "parameters": {
             "continentalness": [
               -0.2,
@@ -43986,7 +43986,7 @@
           }
         },
         {
-          "biome": "minecraft:stony_shore",
+          "biome": "minecraft:ocean",
           "parameters": {
             "continentalness": [
               -0.2,
@@ -44016,7 +44016,7 @@
           }
         },
         {
-          "biome": "terralith:granite_cliffs",
+          "biome": "minecraft:warm_ocean",
           "parameters": {
             "continentalness": [
               -0.2,
@@ -44046,7 +44046,7 @@
           }
         },
         {
-          "biome": "terralith:frozen_cliffs",
+          "biome": "minecraft:frozen_ocean",
           "parameters": {
             "continentalness": [
               -0.2,
@@ -44076,7 +44076,7 @@
           }
         },
         {
-          "biome": "terralith:white_cliffs",
+          "biome": "minecraft:cold_ocean",
           "parameters": {
             "continentalness": [
               -0.2,
@@ -48306,7 +48306,7 @@
           }
         },
         {
-          "biome": "minecraft:stony_shore",
+          "biome": "minecraft:ocean",
           "parameters": {
             "continentalness": [
               -0.2,
@@ -48366,7 +48366,7 @@
           }
         },
         {
-          "biome": "terralith:granite_cliffs",
+          "biome": "minecraft:warm_ocean",
           "parameters": {
             "continentalness": [
               -0.2,

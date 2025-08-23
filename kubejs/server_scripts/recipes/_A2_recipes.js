@@ -526,4 +526,8 @@ ServerEvents.recipes(event => {
     //remove redundant "rose quartz" for polished rose quartz
     event.replaceOutput({}, "create:rose_quartz", "create:polished_rose_quartz")//jaopca only
     event.replaceInput({}, "create:rose_quartz", "create:polished_rose_quartz")//jaopca, cosmetic stonecutting block, rock candy
+    
+    //remove bugged melting recipe for "raw tungsten" which doesn't exist
+    event.remove({id: "tconstruct:smeltery/melting/metal/tungsten/raw"})
+    event.remove({id: "tconstruct:smeltery/melting/metal/tungsten/raw_block"})
 })

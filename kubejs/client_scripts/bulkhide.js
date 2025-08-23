@@ -48,7 +48,8 @@ JEIEvents.hideItems(event => {
     event.hide(["ad_astra:deepslate_desh_ore", "ad_astra:deepslate_ice_shard_ore"])
 
     event.hide("biomesoplenty:blood")
-
+    
+    /*A2: unhiding ores for now
     event.hide("create:crushed_raw_tin")
     event.hide("create:crushed_raw_osmium")
     event.hide("create:crushed_raw_platinum")
@@ -56,6 +57,7 @@ JEIEvents.hideItems(event => {
     event.hide("create:crushed_raw_quicksilver")
     event.hide("create:crushed_raw_aluminum")
     event.hide("create:crushed_raw_uranium")
+    */
     event.hide("create:sturdy_sheet")
     event.hide("create:unprocessed_obsidian_sheet")
 
@@ -152,6 +154,7 @@ JEIEvents.hideItems(event => {
     event.hide("thermal:iron_plate")
     event.hide("thermal:copper_plate")
     event.hide("thermal:netherite_plate")
+    /*A2: re-add silver ore and tin
     event.hide("thermal:silver_ore")
     event.hide("thermal:deepslate_silver_ore")
     event.hide("thermal:tin_ore")
@@ -164,6 +167,7 @@ JEIEvents.hideItems(event => {
     event.hide("thermal:tin_gear")
     event.hide("thermal:raw_tin")
     event.hide("thermal:raw_tin_block")
+    */
     event.hide("thermal:netherite_nugget")
     event.hide("thermal:copper_nugget")
     event.hide("thermal:ender_pearl_dust")
@@ -178,6 +182,6 @@ JEIEvents.hideItems(event => {
 })
 
 JEIEvents.hideFluids(event => {
-    event.hide("tconstruct:molten_tin")
+    //event.hide("tconstruct:molten_tin")
     event.hide("ad_astra:cryo_fuel")
 })

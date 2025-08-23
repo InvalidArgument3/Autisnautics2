@@ -80,9 +80,9 @@ ServerEvents.lowPriorityData(event => {
     addOregenOverworld(event, "kubejs:ore_nickel_underground_big", "thermal:nickel_ore", "minecraft:trapezoid", -40, 40, 0.002, 64, 0, "#minecraft:is_overworld")
     //niter
     //peridot
-    addOregenOverworld(event, "kubejs:ore_peridot_underground_olivine", "projectred_exploration:peridot_ore", "minecraft:uniform", -64, -57, 5, 4, 0, "#minecraft:is_overworld")
-    addOregenOverworld(event, "kubejs:ore_peridot_underground_olivine_mantle", "projectred_exploration:peridot_ore", "minecraft:trapezoid", -158, 30, 5, 4, 0, "terralith:mantle_caves")
-    addOregenOverworld(event, "kubejs:ore_peridot_islands_olivine_volcanic", "projectred_exploration:peridot_ore", "minecraft:uniform", 92, 400, 5, 4, 0, "#minecraft:is_overworld")
+    addOregenOverworld(event, "kubejs:ore_peridot_underground_olivine", "projectred_exploration:peridot_ore", "minecraft:uniform", -64, -57, 1, 4, 0, "#minecraft:is_overworld")
+    addOregenOverworld(event, "kubejs:ore_peridot_underground_olivine_mantle", "projectred_exploration:peridot_ore", "minecraft:trapezoid", -158, 30, 5, 4, 0, "terralith:cave/mantle_caves")
+    addOregenOverworld(event, "kubejs:ore_peridot_islands_olivine_volcanic", "projectred_exploration:peridot_ore", "minecraft:uniform", 92, 400, 5, 4, 0, "#terralith:volcanic")
     //phosphorite
     addOregenOverworld(event, "kubejs:ore_phosphorite_underground_big", "scguns:phosphorite", "minecraft:uniform", 0, 36, 0.01, 64, 0, "#minecraft:is_overworld")
     //rich_phosphorite - original feature not disabled because it only spawns inside phosphorite, which we want
@@ -97,8 +97,8 @@ ServerEvents.lowPriorityData(event => {
     //silver
     addOregenOverworld(event, "kubejs:ore_silver_islands_alluvial", "thermal:silver_ore", "minecraft:uniform", 92, 400, 25, 3, 0, "#minecraft:is_river")
     addOregenOverworld(event, "kubejs:ore_silver_islands_alluvial_cold", "thermal:silver_ore", "minecraft:uniform", 92, 400, 200, 3, 0, ["minecraft:frozen_river", "regions_unexplored:cold_river"])
-    addOregenOverworld(event, "kubejs:ore_silver_islands_ice", "thermal:silver_ore", "minecraft:trapezoid", 92, 700, 0.05, 6, 0, ["minecraft:ice_spikes", "terralith:glacial_chasm"])
-    addOregenOverworld(event, "kubejs:ore_silver_underground_frostfire", "thermal:silver_ore", "minecraft:trapezoid", -168, 40, 0.01, 6, 0, "terralith:cave/frostfire_caves")
+    addOregenOverworld(event, "kubejs:ore_silver_islands_ice", "thermal:silver_ore", "minecraft:trapezoid", 112, 912, 1, 6, 0, ["minecraft:ice_spikes", "terralith:glacial_chasm"])
+    addOregenOverworld(event, "kubejs:ore_silver_underground_frostfire", "thermal:silver_ore", "minecraft:trapezoid", -168, 40, 0.1, 20, 0, "terralith:cave/frostfire_caves")
     //striated "ores" (stones) from tfmg (galena/lignite/bauxite): cannot be replaced by this method, found between 40-90
     //sulfur
     //thorium

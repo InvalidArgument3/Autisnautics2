@@ -1,12 +1,12 @@
 // look here, or maybe use another mod to handle biome ores like Geosys https://wiki.latvian.dev/books/kubejs-legacy/page/worldgen-events 
-
+/*
 WorldgenEvents.remove(autisnautics => {
   autisnautics.removeOres(props => {
     props.worldgenLayer = 'underground_ores';
     props.blocks = [
-      "#forge:ores",
-      "vs_clockwork:wanderlite_deepslate_ore",
-      "vs_clockwork:wanderlite_end_ore"// they didnt have the forge:ores tag so gotta remove them manually rip
+      //"#forge:ores",
+      //"vs_clockwork:wanderlite_deepslate_ore",
+      //"vs_clockwork:wanderlite_end_ore"// they didnt have the forge:ores tag so gotta remove them manually rip
 
 
       //"railcraft:lead_ore",
@@ -64,3 +64,4 @@ WorldgenEvents.remove(autisnautics => {
     ]
   })
 })
+*/

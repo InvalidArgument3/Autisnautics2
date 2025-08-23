@@ -407,7 +407,7 @@ const removeFeature = function(event, featureName) {
 /** Used in a datapack event to add ore generation for an ore to the overworld
  * This function only works for ores with both a stone and deepslate variant
 */
-const addOregenOverworld = function(event, featureName, blockName, heightType, heightMin, heightMax, veinCount, veinSize, discardChanceOnAirExposure) {
+const addOregenOverworld = function(event, featureName, blockName, heightType, heightMin, heightMax, veinCount, veinSize, discardChanceOnAirExposure, biomeTag) {
     featureName = featureName.split(":")
     let namespace = featureName[0]
     let identifier = featureName[1]
@@ -415,6 +415,12 @@ const addOregenOverworld = function(event, featureName, blockName, heightType, h
     blockName = blockName.split(":")
     let blockNamespace = blockName[0]
     let blockIdentifier = blockName[1]
+    
+    //A2: shorthand for <1 vein per chunk
+    let rarityFilter = 1
+    if( veinCount < 1 ) {
+        rarityFilter = Math.max(1, Math.floor(1 / veinCount))
+    }
 
     event.addJson(`${namespace}:worldgen/configured_feature/${identifier}`, {
         "type": "minecraft:ore",
@@ -439,12 +445,13 @@ const addOregenOverworld = function(event, featureName, blockName, heightType, h
     if (heightMin < -64) {
         minInclusive = {"above_bottom": heightMin + 64}
         maxInclusive = {"above_bottom": heightMax + 64}
-    } else if (heightMax > 320) {
-        minInclusive = {"below_top": -(heightMin - 320)}
-        maxInclusive = {"below_top": -(heightMax - 320)}
+    } else if (heightMax > 512) {
+        minInclusive = {"below_top": -(heightMin - 512)}
+        maxInclusive = {"below_top": -(heightMax - 512)}
     }
 
-    event.addJson(`${namespace}:worldgen/placed_feature/${identifier}`, {
+    if (rarityFilter == 1) {
+        event.addJson(`${namespace}:worldgen/placed_feature/${identifier}`, {
         "feature": `${namespace}:${identifier}`,
         "placement": [
             {"type": "minecraft:count", "count": veinCount},
@@ -459,11 +466,31 @@ const addOregenOverworld = function(event, featureName, blockName, heightType, h
             },
             {"type": "minecraft:biome"}
         ]
-    })
+        })
+    }
+    else {
+        event.addJson(`${namespace}:worldgen/placed_feature/${identifier}`, {
+        "feature": `${namespace}:${identifier}`,
+        "placement": [
+            {"type": "minecraft:rarity_filter", "chance": rarityFilter},
+            {"type": "minecraft:in_square"},
+            {
+                "type": "minecraft:height_range",
+                "height": {
+                    "type": heightType,
+                    "min_inclusive": minInclusive,
+                    "max_inclusive": maxInclusive
+                }
+            },
+            {"type": "minecraft:biome"}
+        ]
+        })
+    }
+    
 
     event.addJson(`${namespace}:forge/biome_modifier/${identifier}`, {
         "type": "forge:add_features",
-        "biomes": "#minecraft:is_overworld",
+        "biomes": biomeTag,
         "features": `${namespace}:${identifier}`,
         "step": "underground_ores"
     })

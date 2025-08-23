@@ -28,7 +28,30 @@
     "ridges": "skylands_over_the_sea:ridges/final",
     "initial_density_without_jaggedness": {
       "type": "minecraft:add",
-      "argument1": 0.1171875,
+      "argument1": {
+        "type": "minecraft:mul",
+        "argument1": 10.0,
+        "argument2": {
+        "type": "minecraft:min",
+        "argument1": {
+          "type": "minecraft:y_clamped_gradient",
+          "from_value": 1.0,
+          "from_y": 46,
+          "to_value": 0.0,
+          "to_y": 50
+        },
+        "argument2": {
+          "type": "minecraft:y_clamped_gradient",
+          "from_value": 0.0,
+          "from_y": 42,
+          "to_value": 1.0,
+          "to_y": 46
+        }
+      }
+      },
+      "argument2": {
+      "type": "minecraft:add",
+      "argument1": 0.4,
       "argument2": {
         "type": "minecraft:mul",
         "argument1": {
@@ -40,7 +63,7 @@
         },
         "argument2": {
           "type": "minecraft:add",
-          "argument1": -0.1171875,
+          "argument1": -0.4,
           "argument2": {
             "type": "minecraft:add",
             "argument1": -0.078125,
@@ -84,6 +107,7 @@
             }
           }
         }
+      }
       }
     },
     "final_density": "skylands_over_the_sea:terrain/combined",

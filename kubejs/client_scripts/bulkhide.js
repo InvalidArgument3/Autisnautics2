@@ -96,9 +96,10 @@ JEIEvents.hideItems(event => {
 
     event.hide("projectred_core:ruby")
     event.hide("projectred_core:sapphire")
-    event.hide("projectred_core:peridot")
-    event.hide("projectred_core:electrotine_ingot")
-    event.hide("projectred_core:electrotine_dust")
+    //A2: re-add projectred ores
+    //event.hide("projectred_core:peridot")
+    //event.hide("projectred_core:electrotine_ingot")
+    //event.hide("projectred_core:electrotine_dust")
     event.hide("projectred_core:electrotine_iron_comp")
     event.hide("projectred_core:conductive_plate")
     event.hide("projectred_core:wired_plate")

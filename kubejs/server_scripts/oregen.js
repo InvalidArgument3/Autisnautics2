@@ -32,7 +32,7 @@ ServerEvents.lowPriorityData(event => {
     //addOreGenOverworld(event, featureName, blockName, heightType, heightMin, heightMax, veinCount, veinSize, discardChanceOnAirExposure, biomeTag)
     //                                                                                    max:256    max:64
     //aluminum
-    ////tfmg:bauxite > aluminum
+    ////tfmg:bauxite disabled
     //anthralite
     //apatite
     //boron
@@ -40,9 +40,12 @@ ServerEvents.lowPriorityData(event => {
     //coal
     addOregenOverworld(event, "kubejs:ore_coal_islands", "minecraft:coal_ore", "minecraft:uniform", 92, 400, 15, 18, 0, "#minecraft:is_overworld")
     addOregenOverworld(event, "kubejs:ore_coal_islands_big", "minecraft:coal_ore", "minecraft:uniform", 92, 400, 0.05, 64, 0, "#minecraft:is_overworld")
-    ////tfmg:lignite > coal
+    addOregenOverworld(event, "kubejs:ore_coal_seabed_postdiluvian", "minecraft:coal_ore", "minecraft:trapezoid", 32, 70, 10, 12, 0.5, "#minecraft:is_overworld")
+    addOregenOverworld(event, "kubejs:ore_coal_seabed_postdiluvian_deep", "minecraft:coal_ore", "minecraft:trapezoid", 22, 62, 10, 12, 0.5, "#minecraft:is_deep_ocean")
+    addOregenOverworld(event, "kubejs:ore_coal_anthracite", "minecraft:coal_ore", "minecraft:trapezoid", -20, 25, 0.025, 64, 0.8, "#minecraft:is_overworld")
     addOregenOverworld(event, "kubejs:ore_coal_islands_swamp_lignite", "minecraft:coal_ore", "minecraft:uniform", 92, 400, 4, 36, 0.5, "#forge:is_swamp")
     addOregenOverworld(event, "kubejs:ore_coal_islands_swamp_lignite_big", "minecraft:coal_ore", "minecraft:uniform", 92, 400, 0.5, 52, 0.5, "#forge:is_swamp")
+    ////tfmg:lignite disabled
     //copper
     addOregenOverworld(event, "kubejs:ore_copper_islands_bottom", "minecraft:copper_ore", "minecraft:trapezoid", 80, 144, 16, 10, 0, "#minecraft:is_overworld")
     addOregenOverworld(event, "kubejs:ore_copper_islands_bottom_big", "minecraft:copper_ore", "minecraft:trapezoid", 80, 144, 0.005, 64, 0, "#minecraft:is_overworld")
@@ -51,7 +54,8 @@ ServerEvents.lowPriorityData(event => {
     addOregenOverworld(event, "kubejs:ore_diamond_underground_buried", "minecraft:diamond_ore", "minecraft:trapezoid", -144, 16, 4, 8, 1, "#minecraft:is_overworld")
     addOregenOverworld(event, "kubejs:ore_diamond_underground_big", "minecraft:diamond_ore", "minecraft:trapezoid", -144, 16, 0.11, 12, 0.7, "#minecraft:is_overworld")
     //electrotine
-    addOregenOverworld(event, "kubejs:ore_electrotine_underground_magnetic", "projectred_exploration:electrotine_ore", "minecraft:trapezoid", -168, 40, 0.25, 32, 0, "alexscaves:magnetic_caves")
+    addOregenOverworld(event, "kubejs:ore_electrotine_underground_magnetic", "projectred_exploration:electrotine_ore", "minecraft:trapezoid", -168, 40, 20, 32, 0, "alexscaves:magnetic_caves")
+    addOregenOverworld(event, "kubejs:ore_electrotine_islands_old", "projectred_exploration:electrotine_ore", "minecraft:uniform", 50, 400, 15, 18, 0, "regions_unexplored:alpha_grove")
     //emerald
     addOregenOverworld(event, "kubejs:ore_emerald_islands_5_mountains", "minecraft:emerald_ore", "minecraft:trapezoid", 272, 500, 10, 4, 0, "#forge:is_mountain")
     addOregenOverworld(event, "kubejs:ore_emerald_islands_peaks", "minecraft:emerald_ore", "minecraft:trapezoid", 100, 700, 30, 4, 0, "terralith:emerald_peaks")
@@ -60,19 +64,20 @@ ServerEvents.lowPriorityData(event => {
     addOregenOverworld(event, "kubejs:ore_gold_islands_alluvial_warm", "minecraft:gold_ore", "minecraft:uniform", 92, 400, 200, 3, 0, ["terralith:warm_river","regions_unexplored:tropical_river"])
     addOregenOverworld(event, "kubejs:ore_gold_islands_badlands", "minecraft:gold_ore", "minecraft:uniform", 92, 400, 25, 10, 0, "#minecraft:is_badlands")
     addOregenOverworld(event, "kubejs:ore_gold_underground_alluvial_delta", "minecraft:gold_ore", "minecraft:uniform", -64, 40, 25, 3, 0, "regions_unexplored:ancient_delta")
+    addOregenOverworld(event, "kubejs:ore_gold_underground_big", "minecraft:gold_ore", "minecraft:trapezoid", -64, 0, 0.01, 64, 0.7, "#minecraft:is_overworld")
     //iron
     addOregenOverworld(event, "kubejs:ore_iron_islands", "minecraft:iron_ore", "minecraft:uniform", 92, 400, 10, 9, 0, "#minecraft:is_overworld")
     addOregenOverworld(event, "kubejs:ore_iron_islands_big", "minecraft:iron_ore", "minecraft:uniform", 92, 400, 0.005, 64, 0, "#minecraft:is_overworld")
     addOregenOverworld(event, "kubejs:ore_iron_underground", "minecraft:iron_ore", "minecraft:uniform", -24, 56, 20, 9, 0, "#minecraft:is_overworld")
-    addOregenOverworld(event, "kubejs:ore_iron_underground_big", "minecraft:iron_ore", "minecraft:uniform", -48, 56, 0.01, 64, 0, "#minecraft:is_overworld")
+    addOregenOverworld(event, "kubejs:ore_iron_underground_big", "minecraft:iron_ore", "minecraft:uniform", -48, 56, 0.03, 64, 0, "#minecraft:is_overworld")
     addOregenOverworld(event, "kubejs:ore_iron_underground_magnetite", "minecraft:iron_ore", "minecraft:uniform", -64, 56, 10, 9, 0, "alexscaves:magnetic_caves")
     //lapis
     addOregenOverworld(event, "kubejs:ore_lapis_islands_mystical", "minecraft:lapis_ore", "minecraft:uniform", 92, 400, 6, 10, 0, "#terralith:mystical")
     addOregenOverworld(event, "kubejs:ore_lapis_islands_mystical_big", "minecraft:lapis_ore", "minecraft:uniform", 92, 400, 0.05, 64, 0, "#terralith:mystical")
     //lead
     addOregenOverworld(event, "kubejs:ore_lead_underground", "thermal:lead_ore", "minecraft:trapezoid", -60, 40, 6, 8, 0, "#minecraft:is_overworld")
-    addOregenOverworld(event, "kubejs:ore_lead_underground_big", "thermal:lead_ore", "minecraft:trapezoid", -20, 0, 0.0033, 64, 0, "#minecraft:is_overworld")
-    ////tfmg:galena > lead
+    addOregenOverworld(event, "kubejs:ore_lead_underground_big", "thermal:lead_ore", "minecraft:trapezoid", -20, 0, 0.01, 64, 0, "#minecraft:is_overworld")
+    ////tfmg:galena disabled, alexscaves:galena exists
     //lithium
     //magnesium
     //nickel
@@ -99,7 +104,7 @@ ServerEvents.lowPriorityData(event => {
     addOregenOverworld(event, "kubejs:ore_silver_islands_alluvial_cold", "thermal:silver_ore", "minecraft:uniform", 92, 400, 200, 3, 0, ["minecraft:frozen_river", "regions_unexplored:cold_river"])
     addOregenOverworld(event, "kubejs:ore_silver_islands_ice", "thermal:silver_ore", "minecraft:trapezoid", 112, 912, 1, 6, 0, ["minecraft:ice_spikes", "terralith:glacial_chasm"])
     addOregenOverworld(event, "kubejs:ore_silver_underground_frostfire", "thermal:silver_ore", "minecraft:trapezoid", -168, 40, 0.1, 20, 0, "terralith:cave/frostfire_caves")
-    //striated "ores" (stones) from tfmg (galena/lignite/bauxite): cannot be replaced by this method, found between 40-90
+    //striated "ores" (stones) from tfmg disabled
     //sulfur
     //thorium
     //tin
@@ -115,5 +120,6 @@ ServerEvents.lowPriorityData(event => {
     //zinc
     addOregenOverworld(event, "kubejs:ore_zinc_islands_5", "create:zinc_ore", "minecraft:trapezoid", 272, 400, 8, 12, 0, "#minecraft:is_overworld")
     addOregenOverworld(event, "kubejs:ore_zinc_islands_4", "create:zinc_ore", "minecraft:trapezoid", 224, 352, 2, 12, 0, "#minecraft:is_overworld")
+    
 
 })

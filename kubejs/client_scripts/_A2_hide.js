@@ -10,4 +10,9 @@ JEIEvents.hideItems(event => {
     event.hide("create_sa:hydraulic_engine")
     //replaced with polished equivalent
     event.hide("create:rose_quartz")
+    
+    //tfmg meme stones
+    event.hide("tfmg:lignite")
+    event.hide(/.*tfmg.*galena.*/)
+    event.hide(/.*tfmg.*bauxite.*/)
 })

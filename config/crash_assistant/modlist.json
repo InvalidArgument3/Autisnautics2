@@ -34,6 +34,11 @@
     "modId": "ae2netanalyser",
     "version": "1.20-1.0.6-forge"
   },
+  "ae2wtlib-15.2.3-forge.jar": {
+    "jarName": "ae2wtlib-15.2.3-forge.jar",
+    "modId": "ae2wtlib",
+    "version": "15.2.3-forge"
+  },
   "AkashicTome-1.7-27.jar": {
     "jarName": "AkashicTome-1.7-27.jar",
     "modId": "akashictome",
@@ -587,6 +592,11 @@
     "modId": "do_a_barrel_roll",
     "version": "3.5.6+1.20.1"
   },
+  "drivebywire-1.20.1-0.0.10.jar": {
+    "jarName": "drivebywire-1.20.1-0.0.10.jar",
+    "modId": "drivebywire",
+    "version": "0.0.10"
+  },
   "dummmmmmy-1.20-2.0.7.jar": {
     "jarName": "dummmmmmy-1.20-2.0.7.jar",
     "modId": "dummmmmmy",
@@ -856,11 +866,6 @@
     "jarName": "GeckoLibOculusCompat-Forge-1.0.1.jar",
     "modId": "geckoanimfix",
     "version": "1.0.0"
-  },
-  "Geolosys-1.20.1-7.0.14.jar": {
-    "jarName": "Geolosys-1.20.1-7.0.14.jar",
-    "modId": "geolosys",
-    "version": "7.0.14"
   },
   "gliders-forge-1.1.7.jar": {
     "jarName": "gliders-forge-1.1.7.jar",
@@ -1632,6 +1637,11 @@
     "jarName": "spawnanimations-v1.10.1-mc1.17-1.21.5-mod.jar",
     "modId": "spawnanimations",
     "version": "1.10.1+mod"
+  },
+  "stack-to-nearby-chests-mc1.20.1-0.5.10.jar": {
+    "jarName": "stack-to-nearby-chests-mc1.20.1-0.5.10.jar",
+    "modId": "stack-to-nearby-chests",
+    "version": "0.5.10"
   },
   "Steam_Rails-1.6.7+forge-mc1.20.1.jar": {
     "jarName": "Steam_Rails-1.6.7+forge-mc1.20.1.jar",

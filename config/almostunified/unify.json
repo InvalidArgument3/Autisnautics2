@@ -131,7 +131,7 @@
     "niter",
     "lithium"
   ],
-  "priorityOverrides": {},
+  "priorityOverrides": {"forge:ores/lithium":"nuclearcraft", "forge:ores/uranium":"nuclearcraft"},
   "customTags": {},
   "tagOwnerships": {
     "forge:rods/aluminum": [
@@ -157,9 +157,6 @@
     ],
     "forge:plates/aluminum": [
       "forge:plates/aluminium"
-    ],
-    "forge:plastic": [
-      "pneumaticcraft:plastic_sheets"
     ]
   },
   "itemTagInheritanceMode": "ALLOW",
@@ -167,7 +164,7 @@
   "blockTagInheritanceMode": "ALLOW",
   "blockTagInheritance": {},
   "ignoredTags": [],
-  "ignoredItems": [],
+  "ignoredItems": ["alexscaves:uranium"],
   "ignoredRecipeTypes": [
     "cucumber:shaped_tag"
   ],

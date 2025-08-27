@@ -226,6 +226,7 @@ ServerEvents.tags("item", event => {
         .add("projectred_exploration:sapphire_saw")
         .add("projectred_exploration:peridot_saw")
     event.add("forge:ingots/plastic", "nuclearcraft:bioplastic")
+    event.add("create:stone_types/limestone", "alexscaves:limestone")
 })
 
 ServerEvents.tags("block", event => {

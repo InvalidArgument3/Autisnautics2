@@ -530,4 +530,103 @@ ServerEvents.recipes(event => {
     //remove bugged melting recipe for "raw tungsten" which doesn't exist
     event.remove({id: "tconstruct:smeltery/melting/metal/tungsten/raw"})
     event.remove({id: "tconstruct:smeltery/melting/metal/tungsten/raw_block"})
+    
+    //tfmg meme stones
+    event.remove({input: /.*tfmg.*galena.*/})
+    event.remove({input: /.*tfmg.*bauxite.*/})
+    event.remove({input: "tfmg:lignite"})
+    event.remove({output: /.*tfmg.*galena.*/})
+    event.remove({output: /.*tfmg.*bauxite.*/})
+    event.remove({output: "tfmg:lignite"})
+    
+    //alexscaves limestone integration
+    event.replaceInput({}, "alexscaves:limestone", "#create:stone_types/limestone")
+    event.replaceInput({}, "create:limestone", "#create:stone_types/limestone")
+    
+    //alexscaves galena to lead
+    event.recipes.create.crushing([
+        Item.of("thermal:lead_dust", 1).withChance(.05),
+        Item.of("create:crushed_raw_lead", 1).withChance(.01),
+        Item.of("thermal:raw_lead", 1).withChance(.001)],//concentrated
+    "alexscaves:galena").processingTime(500)
+    
+    //alexscaves scrap metal gacha
+    event.recipes.create.crushing([
+        Item.of("minecraft:iron_nugget", 1).withChance(.5),
+        
+        Item.of("create:copper_nugget", 1).withChance(.025),
+        Item.of("create:zinc_nugget", 1).withChance(.025),
+        Item.of("thermal:tin_nugget", 1).withChance(.025),
+        Item.of("thermal:lead_nugget", 1).withChance(.025),
+        
+        Item.of("createbigcannons:cast_iron_nugget", 1).withChance(.0125),
+        Item.of("createdeco:industrial_iron_nugget", 1).withChance(.0125),
+        
+        Item.of("thermal:nickel_nugget", 1).withChance(.00625),
+        Item.of("thermal:bronze_nugget", 1).withChance(.00625),
+        Item.of("nuclearcraft:lithium_nugget", 1).withChance(.00625),
+        Item.of("scguns:anthralite_nugget", 1).withChance(.00625),
+        
+        Item.of("tconstruct:rose_gold_nugget", 1).withChance(.004),
+        Item.of("tconstruct:pig_iron_nugget", 1).withChance(.004),
+        Item.of("tconstruct:amethyst_bronze_nugget", 1).withChance(.004),
+        
+        
+        Item.of("tconstruct:steel_nugget", 1).withChance(.0025),
+        
+        Item.of("createaddition:electrum_nugget", 1).withChance(.0001),
+        Item.of("thermal:silver_nugget", 1).withChance(.0001),
+        
+        Item.of("rats:plastic_waste", 1).withChance(.05),
+        Item.of("youkaishomecoming:can", 1).withChance(.05),
+        
+        Item.of("tconstruct:debris_nugget", 1).withChance(.000001)
+    ],
+    "alexscaves:scrap_metal").processingTime(1000)
+    
+    //synthesize alexscaves neodymium using nuclearcraft neodymium dust which is otherwise useless
+    event.custom({
+        "type": "nuclearcraft:assembler",
+        "input": [
+            {
+            "count": 1,
+            "tag": "forge:dusts/neodymium"
+            },
+            {
+            "count": 1,
+            "tag": "forge:gems/cinnabar"
+            }
+        ],
+        "output": [
+            {
+            "amount": 1,
+            "item": "alexscaves:raw_scarlet_neodymium"
+            }
+        ],
+        "powerModifier": 1.0,
+        "radiation": 1.0,
+        "timeModifier": 1.0
+    })
+    event.custom({
+        "type": "nuclearcraft:assembler",
+        "input": [
+            {
+            "count": 1,
+            "tag": "forge:dusts/neodymium"
+            },
+            {
+            "count": 1,
+            "tag": "forge:gems/lapis"
+            }
+        ],
+        "output": [
+            {
+            "amount": 1,
+            "item": "alexscaves:raw_azure_neodymium"
+            }
+        ],
+        "powerModifier": 1.0,
+        "radiation": 1.0,
+        "timeModifier": 1.0
+    })
 })

@@ -510,7 +510,7 @@
 		allow_enderpearls = false
 
 	[tools.antique_ink]
-		enabled = true
+		enabled = false
 
 #General settings
 [general]

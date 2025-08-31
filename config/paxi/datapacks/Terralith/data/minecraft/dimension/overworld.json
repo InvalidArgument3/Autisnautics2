@@ -2556,7 +2556,7 @@
           }
         },
         {
-          "biome": "terralith:volcanic_crater",
+          "biome": "minecraft:stony_peaks",
           "parameters": {
             "continentalness": [
               -0.11,
@@ -7296,7 +7296,7 @@
           }
         },
         {
-          "biome": "terralith:white_mesa",
+          "biome": "terralith:savanna_badlands",
           "parameters": {
             "continentalness": [
               0.03,
@@ -12846,7 +12846,7 @@
           }
         },
         {
-          "biome": "terralith:volcanic_peaks",
+          "biome": "minecraft:stony_peaks",
           "parameters": {
             "continentalness": [
               -0.11,
@@ -15276,7 +15276,7 @@
           }
         },
         {
-          "biome": "terralith:volcanic_peaks",
+          "biome": "minecraft:stony_peaks",
           "parameters": {
             "continentalness": [
               0.03,
@@ -16506,7 +16506,7 @@
           }
         },
         {
-          "biome": "terralith:volcanic_peaks",
+          "biome": "minecraft:stony_peaks",
           "parameters": {
             "continentalness": [
               0.3,
@@ -39996,7 +39996,7 @@
           }
         },
         {
-          "biome": "terralith:white_mesa",
+          "biome": "terralith:savanna_badlands",
           "parameters": {
             "continentalness": [
               0.03,
@@ -42246,7 +42246,7 @@
           }
         },
         {
-          "biome": "terralith:white_mesa",
+          "biome": "terralith:savanna_badlands",
           "parameters": {
             "continentalness": [
               0.03,
@@ -43326,7 +43326,7 @@
           }
         },
         {
-          "biome": "terralith:white_mesa",
+          "biome": "terralith:savanna_badlands",
           "parameters": {
             "continentalness": [
               0.3,
@@ -44406,7 +44406,7 @@
           }
         },
         {
-          "biome": "terralith:white_mesa",
+          "biome": "terralith:savanna_badlands",
           "parameters": {
             "continentalness": [
               -0.11,

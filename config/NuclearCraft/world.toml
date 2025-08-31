@@ -5,5 +5,5 @@
 
 [Biome]
 	#Generate Wasteland Biome in Overworld
-	wasteland = true
+	wasteland = false
 

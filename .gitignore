@@ -79,6 +79,11 @@ config/embeddium++.toml
 config\darkmodeeverywhereshaders.json
 config\darkmodeeverywhereshaders.toml
 config/ichunutil/themes
+config/crash_assistant/modlist.json
+config/forgeendertech/Biomes/*
+config/everycomp-hazardous.properties
+config/skinrestorer/*
+config/stack-to-nearby-chests/locked-slots/*
 
 #Hide code-generated files
 kubejs/client_scripts/Dev_Capes.js

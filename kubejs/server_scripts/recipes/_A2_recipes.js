@@ -656,5 +656,17 @@ ServerEvents.recipes(event => {
         "radiation": 1.0,
         "timeModifier": 30.0
     })
-    //todo add globe recipe?
+    //globe
+    event.shaped("supplementaries:globe", [
+        "RM ",
+        "MBM",
+        " MR"
+    ], {
+        R: "createaddition:brass_rod",
+        M: "minecraft:map",
+        B: "#c:slimeballs"
+    })
+    //sodium chloride is salt
+    event.remove({input: "jaopca:storage_blocks.sodium_chloride"})
+    event.remove({output: "jaopca:storage_blocks.sodium_chloride"})
 })

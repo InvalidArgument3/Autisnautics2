@@ -344,7 +344,8 @@ StartupEvents.registry("fluid", event => {
     event.create("crude_oil").displayName("Crude Oil").stillTexture("thermal:block/fluids/crude_oil_still").flowingTexture("thermal:block/fluids/crude_oil_flow").bucketColor(0x222118)
     event.create("volatile_sky_solution").displayName("Volatile Sky Solution").stillTexture("tconstruct:fluid/molten/compat_alloy/refined_obsidian/still").flowingTexture("tconstruct:fluid/molten/compat_alloy/refined_obsidian/flowing").color(0x8feebf).bucketColor(0x1A1123)
     event.create("chromatic_waste").displayName("Chromatic Waste").stillTexture("tconstruct:fluid/molten/compat_alloy/enderium/still").flowingTexture("tconstruct:fluid/molten/compat_alloy/enderium/flowing").color(0x0B3E36)
-    event.create("liquid_pulp").displayName("Liquid Pulp").stillTexture("tconstruct:fluid/molten/compat_alloy/pewter/still").flowingTexture("tconstruct:fluid/molten/compat_alloy/pewter/still").color(0xb4a498)
+    //A2: molten anthralite
+	event.create("molten_anthralite").displayName("Molten Anthralite").stillTexture("tconstruct:fluid/molten/compat_alloy/pewter/still").flowingTexture("tconstruct:fluid/molten/compat_alloy/pewter/still").color(0xb4a498)
 //	event.create('liquid_smoke').displayName(`Liquid Smoke`).stillTexture('advancedrocketry:blocks/fluid/oxygen_still').flowingTexture('advancedrocketry:blocks/fluid/oxygen_flow').bucketColor(0xEBEBEB)
 })
 

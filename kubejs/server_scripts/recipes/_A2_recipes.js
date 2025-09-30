@@ -669,4 +669,16 @@ ServerEvents.recipes(event => {
     //sodium chloride is salt
     event.remove({input: "jaopca:storage_blocks.sodium_chloride"})
     event.remove({output: "jaopca:storage_blocks.sodium_chloride"})
+	
+	////createdeco 
+	//zinc sheets unification
+	event.replaceInput({}, "createdeco:zinc_sheet", "#forge:plates/zinc")
+	//remove useless netherite sheet
+	event.remove({output: "createdeco:netherite_sheet"})
+	//no counterfeiting
+	event.remove({input: /^createdeco:.*coin(stack)?$/})
+	event.remove({output: /^createdeco:.*coin(stack)?$/})
+	
+	//forcing the use of ae2 ender dust
+	event.replaceOutput({}, "thermal:ender_pearl_dust", "ae2:ender_dust")
 })

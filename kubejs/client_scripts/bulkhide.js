@@ -61,7 +61,7 @@ JEIEvents.hideItems(event => {
     event.hide("create:sturdy_sheet")
     event.hide("create:unprocessed_obsidian_sheet")
 
-    event.hide(/^createdeco:.*coin/)
+    event.hide(/^createdeco:.*coin(stack)?$/)
 
     event.hide(/incomplete/)
     event.hide(/kubejs:growing/)

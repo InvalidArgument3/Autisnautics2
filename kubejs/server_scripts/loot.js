@@ -1,3 +1,4 @@
+/*A2: dust thing is both undesired and broken
 let metal_ores_drop_dust = (id, crushedId, dustId) => {
     return {
         "type": "minecraft:block",
@@ -74,12 +75,12 @@ let metal_ores_drop_dust = (id, crushedId, dustId) => {
         ]
     }
 }
-
+*/
 ServerEvents.blockLootTables(event => {
 
     event.addSimpleBlock("minecraft:twisting_vines", "minecraft:twisting_vines")
     event.addSimpleBlock("minecraft:weeping_vines", "minecraft:weeping_vines")
-
+/*
     let extra_ores = ["minecraft:", "minecraft:deepslate_"]
 
     extra_ores.forEach(e => {
@@ -97,4 +98,5 @@ ServerEvents.blockLootTables(event => {
     event.addJson("thermal:lead_ore", metal_ores_drop_dust("thermal:lead_ore", "create:crushed_raw_lead", "thermal:lead_dust"))
     event.addJson("thermal:deepslate_lead_ore", metal_ores_drop_dust("thermal:deepslate_lead_ore", "create:crushed_raw_lead", "thermal:lead_dust"))
     event.addJson("ad_astra:moon_iron_ore", metal_ores_drop_dust("ad_astra:moon_iron_ore", "create:crushed_raw_iron", "thermal:iron_dust"))
+*/
 })

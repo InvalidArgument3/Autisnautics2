@@ -6,6 +6,7 @@
     "kubejs",
     "gtceu",
     "create",
+	"createdeco",
     "createaddition",
     "thermal",
     "tfmg",
@@ -131,7 +132,7 @@
     "niter",
     "lithium"
   ],
-  "priorityOverrides": {"forge:ores/lithium":"nuclearcraft", "forge:ores/uranium":"nuclearcraft"},
+  "priorityOverrides": {"forge:ores/lithium":"nuclearcraft", "forge:ores/uranium":"nuclearcraft", "forge:dusts/ender_pearl":"ae2", "forge:dusts/ender":"ae2"},
   "customTags": {},
   "tagOwnerships": {
     "forge:rods/aluminum": [

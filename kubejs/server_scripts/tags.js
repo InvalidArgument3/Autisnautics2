@@ -227,6 +227,17 @@ ServerEvents.tags("item", event => {
         .add("projectred_exploration:peridot_saw")
     event.add("forge:ingots/plastic", "nuclearcraft:bioplastic")
     event.add("create:stone_types/limestone", "alexscaves:limestone")
+	event.add("forge:plates", "createdeco:zinc_sheet")
+	event.add("forge:plates/zinc", "createdeco:zinc_sheet")
+	
+	event.add("forge:ingots", "scguns:anthralite_ingot")
+	event.add("forge:ingots/anthralite", "scguns:anthralite_ingot")
+	event.add("forge:dusts", "scguns:anthralite_dust")
+	event.add("forge:dusts/anthralite", "scguns:anthralite_dust")
+	event.add("create:crushed_raw_materials", "scguns:crushed_raw_anthralite")
+	event.add("create:crushed_raw_materials/anthralite", "scguns:crushed_raw_anthralite")
+	event.add("forge:raw_materials", "scguns:raw_anthralite")
+	event.add("forge:raw_materials/anthralite", "scguns:raw_anthralite")
 })
 
 ServerEvents.tags("block", event => {
@@ -335,4 +346,8 @@ ServerEvents.tags("fluid", event => {
     event.add("forge:ingots/plastic","nuclearcraft:bioplastic")
     event.add("kubejs:milk","minecraft:milk")//nuclearcraft recipe meme
     event.add("kubejs:liquid_plastic","tfmg:liquid_plastic")//^
+	
+	//kubejs molten anthralite
+	event.add("forge:molten_anthralite", "kubejs:molten_anthralite")
+	event.add("forge:anthralite", "kubejs:molten_anthralite")
 })

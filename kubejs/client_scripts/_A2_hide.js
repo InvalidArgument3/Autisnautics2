@@ -21,10 +21,18 @@ JEIEvents.hideItems(event => {
     event.hide("nuclearcraft:redstone_ethanol_bucket")
     //duplicate
     event.hide("jaopca:storage_blocks.sodium_chloride")
+	//we redstone now
+	event.hide("thermal:cinnabar_dust")
+	//no recipes
+	event.hide("createdeco:netherite_sheet")
 })
 
 JEIEvents.hideFluids(event => {
     //redundant
     event.hide("nuclearcraft:ethanol")
     event.hide("nuclearcraft:redstone_ethanol")
+})
+
+JEIEvents.addItems(event => {
+	event.add("ae2:ender_dust")//no idea why this is needed
 })

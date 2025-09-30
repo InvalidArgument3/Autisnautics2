@@ -17,7 +17,9 @@ const JsonObject = Java.loadClass("com.google.gson.JsonObject")
 const Level = Java.loadClass("net.minecraft.world.level.Level") // For some reason, Kubejs requires that you load this class to create explosions that damage blocks
 
 const colours = ["white", "orange", "magenta", "light_blue", "lime", "pink", "purple", "light_gray", "gray", "cyan", "brown", "green", "blue", "red", "black", "yellow"]
-const native_metals = ["iron", "zinc", "lead", "copper", "nickel", "gold"]
+const native_metals = ["iron", "zinc", "lead", "copper", "nickel", "gold",
+//A2: more metals
+"tin", "aluminum", "boron", "calorite", "cobalt", "desh", "lithium", "magnesium", "ostrum", "platinum", "silver", "thorium", "anthralite", "uranium"]
 
 const wood_types = ["minecraft:oak", "minecraft:spruce", "minecraft:birch", "minecraft:jungle", "minecraft:acacia", "minecraft:dark_oak", "minecraft:mangrove", "minecraft:cherry", "minecraft:crimson", "minecraft:warped"]
 
@@ -506,7 +508,9 @@ const getPreferredItemFromTag = (tag) => {
     /* Tried using mantle for this and it didn't work on first launch unfortunately */
     // return Item.of(ItemOutput.fromTag(TagKey.create(Registry.ITEM_REGISTRY, tag), 1).get()).getId();
     /* Create a copy of the mantle preferred mods list */
-    const preferredMods = ["minecraft", "create", "alloyed", "createdeco", "createaddition", "createbigcannons", "create_dd", "thermal", "tconstruct", "tmechworks"];
+    //const preferredMods = ["minecraft", "create", "alloyed", "createdeco", "createaddition", "createbigcannons", "create_dd", "thermal", "tconstruct", "tmechworks"];
+	//A2: copied list from unify.json
+	const preferredMods = ["minecraft", "kubejs", "create", "createdeco", "createaddition", "thermal", "tfmg", "tconstruct", "immersiveengineering", "ae2", "createaddition", "botania", "ad_astra", "scguns", "nuclearcraft", "embers"]
     const tagItems = Ingredient.of("#" + tag).itemIds;
     console.log(`Tag ${tag} contains items: ${tagItems}`)
     for (let i = 0;i < preferredMods.length;++i) { let modId = preferredMods[i];

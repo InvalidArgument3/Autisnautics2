@@ -54,7 +54,16 @@ ItemEvents.tooltip(tooltip => {
         tooltip.add(`kubejs:failed_alchemy_${i}`, Text.translatable("item.kubejs.failed_alchemy.tooltip"));
     }
 
-    const pureore = ["minecraft:raw_iron", "minecraft:raw_copper", "minecraft:raw_gold", "thermal:raw_lead", "thermal:raw_nickel", "create:raw_zinc", "alexscaves:uranium"];
+    const pureore = ["minecraft:raw_iron", "minecraft:raw_copper", "minecraft:raw_gold", "thermal:raw_lead", "thermal:raw_nickel", "create:raw_zinc", 
+	//A2: more pure ores
+	"alexscaves:uranium", 
+	"ad_astra:raw_desh", "ad_astra:raw_ostrum", "ad_astra:raw_calorite", 
+	"nuclearcraft:boron_chunk", "nuclearcraft:magnesium_chunk", "nuclearcraft:thorium_chunk",
+	"tconstruct:raw_cobalt",
+	"immersiveengineering:raw_bauxite",
+	"tfmg:raw_lithium",
+	"scguns:raw_anthralite",
+	"thermal:raw_silver", "thermal:raw_tin"];
     pureore.forEach(pureore => {
         tooltip.add(pureore, Text.translatable("item.kubejs.pureore.tooltip"));
     });

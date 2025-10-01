@@ -238,7 +238,18 @@ ServerEvents.tags("item", event => {
 	event.add("create:crushed_raw_materials/anthralite", "scguns:crushed_raw_anthralite")
 	event.add("forge:raw_materials", "scguns:raw_anthralite")
 	event.add("forge:raw_materials/anthralite", "scguns:raw_anthralite")
-})
+	event.get("forge:ores")
+		.add("scguns:anthralite_ore")
+		.add("scguns:deepslate_anthralite_ore")
+		.add("scguns:sulfur_ore")
+		.add("scguns:deepslate_sulfur_ore")
+		.add("scguns:nether_sulfur_ore")
+	event.add("forge:ores/anthralite", "scguns:anthralite_ore")
+	event.add("forge:ores/anthralite", "scguns:deepslate_anthralite_ore")
+	event.get("forge:ores/sulfur")
+		.add("scguns:sulfur_ore")
+		.add("scguns:deepslate_sulfur_ore")
+		.add("scguns:nether_sulfur_ore")
 
 ServerEvents.tags("block", event => {
 

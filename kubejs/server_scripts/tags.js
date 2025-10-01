@@ -250,6 +250,7 @@ ServerEvents.tags("item", event => {
 		.add("scguns:sulfur_ore")
 		.add("scguns:deepslate_sulfur_ore")
 		.add("scguns:nether_sulfur_ore")
+})
 
 ServerEvents.tags("block", event => {
 

@@ -78,7 +78,7 @@ ServerEvents.recipes(event => {
     
     ////tfmg/IE integration
     //re-add blasting mixture recipe as metallurgy.js removes all input:#create:crushed_raw_materials
-    event.recipes.create.mixing("tfmg:blasting_mixture", [Item.of("#forge:dusts/iron", 3), "tfmg:limesand"])
+    event.recipes.create.mixing("tfmg:blasting_mixture", [Item.of("thermal:iron_dust", 3), "tfmg:limesand"])//Item.of(#tag) doesnt work right for some reason
     //thermal rockwool and IE slag glass conflict: rockwool is now blasting only, slag glass is smelting only
     event.remove({ type: "minecraft:smelting", output: "thermal:white_rockwool"})
     event.remove({ type: "create:fan_blasting", output: "immersiveengineering:slag_glass"})
@@ -160,7 +160,7 @@ ServerEvents.recipes(event => {
     //tfmg/ie synthetic leathers and strings support
     event.replaceInput({}, "minecraft:leather", "#forge:leathers")
     event.replaceInput({}, "minecraft:string", "#forge:string")
-    //fix synethetic leather recipe collision with immersiveengineering:plate_duroplast
+    //fix synthetic leather recipe collision with immersiveengineering:plate_duroplast
     event.remove({output: "tfmg:synthetic_leather"})
     event.recipes.create.deploying("tfmg:synthetic_leather", ["#forge:ingots/plastic", "minecraft:paper"])
     
@@ -274,7 +274,7 @@ ServerEvents.recipes(event => {
                 "type": "create:filling",
                 "ingredients": [
                     { "item": "kubejs:incomplete_logistic_mechanism" },
-                    { "fluid": "tfmg:molten_steel", "amount": 90 }//can't use tags for fluids
+                    { "fluid": "tconstruct:molten_steel", "amount": 90 }//can't use tags for fluids
                 ],
                 "results": [
                     { "item": "kubejs:incomplete_logistic_mechanism" }
@@ -684,4 +684,14 @@ ServerEvents.recipes(event => {
 	
 	//adding electrotine alloy recipes (where did the original one go?)
 	event.shapeless("projectred_core:electrotine_ingot", [Item.of("projectred_core:electrotine_dust", 8), "minecraft:iron_ingot"])
+	
+	////fluid unification
+	//embers:molten_.*
+	event.remove({id: "embers:mixing/molten_invar"})//progression meme
+	//the rest is in A2 datapack (kubejs incompatible)
+	//nuclearcraft:molten_.*
+	let unifiedNCFluids = ["bronze", "cobalt", "electrum", "lead", "platinum", "silver", "tin", "uranium", "zinc"]
+	unifiedNCFluids.forEach(fluid => {
+		event.replaceOutput({type: "nuclearcraft:melter"}, "nuclearcraft:molten_" + fluid, "tconstruct:molten_" + fluid)
+	})
 })

@@ -160,14 +160,14 @@ ServerEvents.blockLootTables(event => {
 
 	jaopca_crushed_ore_types.forEach(metal => {
 		let jaopcaOreList = new RegExp("^.*:(deepslate_|nether_|moon_|mars_|venus_|mercury_|glacio_)?" + metal + "_(deepslate_)?ore$")
-		console.log(`oreList for ` + metal + ` is: ` + Ingredient.of(jaopcaOreList).itemIds.toString())
+		//console.log(`oreList for ` + metal + ` is: ` + Ingredient.of(jaopcaOreList).itemIds.toString())
 		Ingredient.of(jaopcaOreList).itemIds.forEach(ore => {
 			event.addJson(ore, metal_ores_json(ore, "jaopca:create_crushed." + metal))
 		})
 	})
 	create_crushed_ore_types.forEach(metal => {
 		let createOreList = new RegExp("^.*:(deepslate_|nether_|moon_|mars_|venus_|mercury_|glacio_)?" + metal + "_(deepslate_)?ore$")
-		console.log(`oreList for ` + metal + ` is: ` + Ingredient.of(createOreList).itemIds.toString())
+		//console.log(`oreList for ` + metal + ` is: ` + Ingredient.of(createOreList).itemIds.toString())
 		Ingredient.of(createOreList).itemIds.forEach(ore => {
 			event.addJson(ore, metal_ores_json(ore, "create:crushed_raw_" + metal))
 		})

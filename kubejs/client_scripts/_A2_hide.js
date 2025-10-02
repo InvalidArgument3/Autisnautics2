@@ -25,12 +25,21 @@ JEIEvents.hideItems(event => {
 	event.hide("thermal:cinnabar_dust")
 	//no recipes
 	event.hide("createdeco:netherite_sheet")
+	//fluid unification (buckets)
+	event.hide(/embers:molten_(?!dawnstone).*/)
+	//crimes against humanity
+	event.hide("tfmg:casting_basin")
+	event.hide("tfmg:casting_spout")
+	event.hide("tfmg:block_mold")
+	event.hide("tfmg:ingot_mold")
 })
 
-JEIEvents.hideFluids(event => {
+JEIEvents.hideFluids(event => {//TODO: none of this works for some reason
     //redundant
     event.hide("nuclearcraft:ethanol")
     event.hide("nuclearcraft:redstone_ethanol")
+	//fluid unification
+	event.hide(/embers:molten_(?!dawnstone).*/)
 })
 
 JEIEvents.addItems(event => {

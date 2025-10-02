@@ -343,6 +343,8 @@ ServerEvents.recipes(event => {
         let dustTag = ("#forge:dusts/" + materialName)
         let fluidByproduct = "tconstruct:molten_" + ByproductName
         let rawOreTag = ("#forge:raw_materials/" + materialName)
+		let fluidTag = ("#forge:molten_" + materialName)
+		let ingotTag = ("#forge:ingots/" + materialName)
 
         // slightly slower than passing the name directly but it reduces how many parameters this function needs.
         let ingot = getPreferredItemFromTag("forge:ingots/" + materialName);
@@ -378,7 +380,8 @@ ServerEvents.recipes(event => {
             { type: "create:milling", input: oreTag },
             //{ type: "occultism:crushing", input: oreTag },
 			//A2
-			{ id: /^immersiveengineering:crafting\/hammercrushing.*/ }
+			{ id: /^immersiveengineering:crafting\/hammercrushing.*/ },
+			{ type: "nuclearcraft:melter", input: oreTag }
         ])
 
         event.remove({ id: `thermal:machines/pulverizer/pulverizer_${materialName}_ore` })
@@ -412,17 +415,94 @@ ServerEvents.recipes(event => {
         event.recipes.create.milling([Item.of(dust, 3)], crushedOre).id("kubejs:ore_processing/milling/crushed/" + materialName)
         event.recipes.create.crushing([Item.of(dust, 3), Item.of(dust, 3).withChance(0.5)], crushedOre).id("kubejs:ore_processing/crushing/crushed/" + materialName)
         event.recipes.thermal.pulverizer([Item.of(dust, 6)], crushedOre, 0.2, 6400).id("kubejs:ore_processing/pulverizing/crushed/" + materialName)
+		//A2: nuclearcraft clean slurry to dust, tweak to even out the ore amounts
+		let cleanSlurryTag = "forge:" + materialName + "_clean_slurry"
+		event.remove({type: "nuclearcraft:crystallizer", output: dust})
+		event.custom({
+			"type": "nuclearcraft:crystallizer",
+			"inputFluids": [
+				{
+				"amount": 400,
+				"tag": cleanSlurryTag
+				}
+			],
+			"output": [
+				{
+				"count": 3,
+				"item": dust
+				}
+			],
+			"powerModifier": 1.0,
+			"radiation": 1.0,
+			"timeModifier": 1.0
+		})
 
         // ore dust to nuggets
         event.smelting(Item.of(nugget, 1), dustTag).cookingTime(40).id("kubejs:ore_processing/smelting/dust/" + materialName)
 
         // ore dust to fluid
         event.recipes.thermal.crucible(Fluid.of(fluid, 30), dustTag, 0, 3000).id("kubejs:ore_processing/crucible/dust/" + materialName)
-        event.recipes.create.mixing([Fluid.of(fluid, 180)], [Item.of(dustTag, 3), "ae2:matter_ball"]).superheated().id("kubejs:ore_processing/mixing/dust/" + materialName)
+        event.recipes.create.mixing([Fluid.of(fluid, 180)], [Item.of(dust, 3), "ae2:matter_ball"]).superheated().id("kubejs:ore_processing/mixing/dust/" + materialName)
+		//A2: NC melter
+		event.remove({type: "nuclearcraft:melter", input: dustTag})
+		event.custom({
+			"type": "nuclearcraft:melter",
+			"input": [
+				{
+					"tag": dustTag.slice(1)
+				}
+			],
+			"outputFluids": [
+				{
+					"amount": 30,
+					"fluid": fluid
+				}
+			],
+			"powerModifier": 1.0,
+			"radiation": 1.0,
+			"timeModifier": 1.0
+		})
+		//NC melter direct ore melting
+		event.custom({
+			"type": "nuclearcraft:melter",
+			"input": [
+			{
+				"tag": oreTag.slice(1)
+			}
+			],
+			"outputFluids": [
+			{
+				"amount": 180,
+				"fluid": fluid
+			}
+			],
+			"powerModifier": 1.0,
+			"radiation": 1.0,
+			"timeModifier": 1.0
+		})
+		//ingots too I guess
+		event.remove({type: "nuclearcraft:melter", input: ingotTag})
+		event.custom({
+			"type": "nuclearcraft:melter",
+			"input": [
+			{
+				"tag": ingotTag.slice(1)
+			}
+			],
+			"outputFluids": [
+			{
+				"amount": 90,
+				"fluid": fluid
+			}
+			],
+			"powerModifier": 1.0,
+			"radiation": 1.0,
+			"timeModifier": 1.0
+		})
 
         // ingots to fluid
         // event.recipes.thermal.crucible(Fluid.of(fluid, 90), ingot, 2000).id('kubejs:ore_processing/crucible/ingot/'+materialName) //now automatically ported
-
+		
         // melting crushed ores to nuggets
         event.custom({
             "type": "thermal:smelter",
@@ -616,4 +696,56 @@ ServerEvents.recipes(event => {
 			"cooling_time": 1
 		}).id(`kubejs:smeltery/casting/metal/${e}/wire_sand_cast`)
 	})
+	
+	//A2: Alloys in NC melter
+	let alloys = ["steel", "bronze", "constantan", "invar", "brass", "electrum"]
+	alloys.forEach(metal => {
+		let fluid = "tconstruct:molten_" + metal
+		let dustTag = "#forge:dusts/" + metal
+		let ingotTag = "#forge:ingots/" + metal
+		//dust melting
+		event.remove({type: "nuclearcraft:melter", input: dustTag})
+		event.custom({
+			"type": "nuclearcraft:melter",
+			"input": [
+			{
+				"tag": dustTag.slice(1)
+			}
+			],
+			"outputFluids": [
+			{
+				"amount": 30,
+				"fluid": fluid
+			}
+			],
+			"powerModifier": 1.0,
+			"radiation": 1.0,
+			"timeModifier": 1.0
+		})
+		//ingot melting
+		event.remove({type: "nuclearcraft:melter", input: ingotTag})
+		event.custom({
+			"type": "nuclearcraft:melter",
+			"input": [
+			{
+				"tag": ingotTag.slice(1)
+			}
+			],
+			"outputFluids": [
+			{
+				"amount": 90,
+				"fluid": fluid
+			}
+			],
+			"powerModifier": 1.0,
+			"radiation": 1.0,
+			"timeModifier": 1.0
+		})
+	})
+	//other alloys mostly unified in datapack: tfmg, createbigcannons
+	event.remove({type: "tfmg:casting"})//only works for steel, and fluid costs are both incorrect and hardcoded
+	event.remove({output: "tfmg:casting_basin"})
+	event.remove({output: "tfmg:casting_spout"})
+	event.remove({output: "tfmg:block_mold"})
+	event.remove({output: "tfmg:ingot_mold"})
 })

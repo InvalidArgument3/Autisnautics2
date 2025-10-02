@@ -362,4 +362,6 @@ ServerEvents.tags("fluid", event => {
 	//kubejs molten anthralite
 	event.add("forge:molten_anthralite", "kubejs:molten_anthralite")
 	event.add("forge:anthralite", "kubejs:molten_anthralite")
+	event.add("tconstruct:molten_anthralite", "kubejs:molten_anthralite")
+
 })

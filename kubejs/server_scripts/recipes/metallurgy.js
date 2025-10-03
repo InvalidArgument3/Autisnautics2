@@ -364,6 +364,7 @@ ServerEvents.recipes(event => {
             { type: "tconstruct:ore_melting", input: rawOreTag },
 			//A2
 			{ id: /^immersiveengineering:crafting\/raw_hammercrushing.*/ },
+			{ id: /^scguns:immersiveengineering.*hammercrushing/ },
 			{ type: "nuclearcraft:manufactory", input: rawOreTag },
 			{ type: "nuclearcraft:melter", input: rawOreTag }
         ])
@@ -381,6 +382,7 @@ ServerEvents.recipes(event => {
             //{ type: "occultism:crushing", input: oreTag },
 			//A2
 			{ id: /^immersiveengineering:crafting\/hammercrushing.*/ },
+			{ id: /^jaopca:immersiveengineering.*dust.*hammer.*/ },
 			{ type: "nuclearcraft:melter", input: oreTag }
         ])
 
@@ -590,6 +592,8 @@ ServerEvents.recipes(event => {
     })
 	*/
 
+	//A2: netherite redone below
+	/*
     event.custom({
         "type": "tconstruct:ore_melting",
         "ingredient": {
@@ -613,6 +617,7 @@ ServerEvents.recipes(event => {
             }
         ]
     })
+	*/
 
     // metal recycling
     event.custom({
@@ -647,7 +652,7 @@ ServerEvents.recipes(event => {
 				"tag": "tconstruct:casts/multi_use/rod"
 			},
 			"fluid": {
-				"tag": `#forge:molten_${e}`,
+				"tag": `forge:molten_${e}`,
 				"amount": 45
 			},
 			"result": {"tag": `forge:rods/${e}`},
@@ -661,7 +666,7 @@ ServerEvents.recipes(event => {
 			},
 			"cast_consumed": true,
 			"fluid": {
-				"tag": `#forge:molten_${e}`,
+				"tag": `forge:molten_${e}`,
 				"amount": 45
 			},
 			"result": {"tag": `forge:rods/${e}`},
@@ -675,7 +680,7 @@ ServerEvents.recipes(event => {
 				"tag": "tconstruct:casts/multi_use/wire"
 			},
 			"fluid": {
-				"tag": `#forge:molten_${e}`,
+				"tag": `forge:molten_${e}`,
 				"amount": 45
 			},
 			"result": {"tag": `forge:wires/${e}`},
@@ -689,7 +694,7 @@ ServerEvents.recipes(event => {
 			},
 			"cast_consumed": true,
 			"fluid": {
-				"tag": `#forge:molten_${e}`,
+				"tag": `forge:molten_${e}`,
 				"amount": 45
 			},
 			"result": {"tag": `forge:wires/${e}`},
@@ -748,4 +753,226 @@ ServerEvents.recipes(event => {
 	event.remove({output: "tfmg:casting_spout"})
 	event.remove({output: "tfmg:block_mold"})
 	event.remove({output: "tfmg:ingot_mold"})
+	
+	////A2: ancient debris/netherite tweaks
+	//configuring jaopca materials in kubejs because i'm a deranged maniac
+	event.remove({output: "jaopca:create_crushed.netherite_scrap"})
+	event.remove({output: "jaopca:dusts.netherite_scrap"})
+	event.remove({input: "jaopca:create_crushed.netherite_scrap"})
+	event.remove({input: "jaopca:dusts.netherite_scrap"})
+	//delete jaopca "molten netherite scrap"
+	event.remove({id: /^jaopca:.*molten.*netherite_scrap$/})
+	
+	//processing debris
+	//blasting/smelting: 1 scrap
+	//milling/grinding: 2 scrap
+	event.recipes.create.milling(Item.of("minecraft:netherite_scrap", 2), "minecraft:ancient_debris")
+	//crushing: 2 scrap + 50% chance of 3 + exp + gold byproduct
+	event.recipes.create.crushing([Item.of("minecraft:netherite_scrap", 2), Item.of("minecraft:netherite_scrap", 1).withChance(0.5), experience, Item.of("minecraft:gold_nugget").withChance(0.5)], "minecraft:ancient_debris")
+	//pulverizing: 3 scrap + gold byproduct
+	event.recipes.thermal.pulverizer([Item.of("minecraft:netherite_scrap").withChance(3.0), Item.of("minecraft:gold_nugget").withChance(0.2)], "minecraft:ancient_debris", 0.2)
+	//melting: 2.66 scrap or 2 scrap + byproducts
+	event.custom({
+        "type": "tconstruct:ore_melting",
+        "ingredient": {
+            "tag": "forge:ores/netherite_scrap"
+        },
+        "result": {
+            "fluid": "tconstruct:molten_debris",
+            "amount": 180
+        },
+        "temperature": 1175,
+        "time": 143,
+        "rate": "metal",
+        "byproducts": [
+            {
+                "fluid": "tconstruct:molten_diamond",
+                "amount": 75//actually 25mb
+            },
+            {
+                "fluid": "tconstruct:molten_gold",
+                "amount": 90//actually 30mb
+            }
+        ]
+    })
+	event.custom({
+			"type": "nuclearcraft:melter",
+			"input": [
+			{
+				"tag": "forge:ores/netherite_scrap"
+			}
+			],
+			"outputFluids": [
+			{
+				"amount": 240,
+				"fluid": "tconstruct:molten_debris"
+			}
+			],
+			"powerModifier": 2.0,
+			"radiation": 1.0,
+			"timeModifier": 4.0
+	})
+	event.custom({
+		"type": "embers:melting",
+		"bonus": {
+		"amount": 30,
+		"fluid": "tconstruct:molten_gold"
+		},
+		"input": {
+		"tag": "forge:ores/netherite_scrap"
+		},
+		"output": {
+		"amount": 180,
+		"fluid": "tconstruct:molten_debris"
+		}
+	})
+	
+	//processing storage blocks
+	//block from casting basin
+	event.custom({
+		"type": "tconstruct:casting_basin",
+		"cooling_time": 221,
+		"fluid": {
+			"amount": 810,
+			"tag": "forge:molten_debris"
+		},
+		"result": {
+			"tag": "forge:storage_blocks/netherite_scrap"
+		}
+	})
+	//molten from block
+	event.custom({
+		"type": "tconstruct:melting",
+			"ingredient": {
+			"tag": "forge:storage_blocks/netherite_scrap"
+		},
+		"result": {
+			"amount": 810,
+			"fluid": "tconstruct:molten_debris"
+		},
+		"temperature": 1175,
+		"time": 221
+	})
+	event.custom({
+		"type": "embers:melting",
+		"input": {
+			"tag": "forge:storage_blocks/netherite_scrap"
+		},
+		"output": {
+			"amount": 810,
+			"fluid": "tconstruct:molten_debris"
+		}
+	})
+	
+	//processing nuggets 
+	//molten from nugget
+	event.custom({
+		"type": "embers:melting",
+		"input": {
+			"tag": "forge:nuggets/netherite_scrap"
+		},
+		"output": {
+			"amount": 10,
+			"fluid": "tconstruct:molten_debris"
+		}
+	})
+	//nugget from molten
+	event.custom({
+		"type": "embers:stamping",
+		"fluid": {
+			"amount": 10,
+			"fluid": "tconstruct:molten_debris"
+		},
+		"output": {
+			"tag": "forge:nuggets/netherite_scrap"
+		},
+		"stamp": {
+			"item": "embers:nugget_stamp"
+		}
+	})
+	
+	//processing scrap
+	//molten from scrap
+	event.custom({
+		"type": "embers:melting",
+		"input": {
+			"tag": "forge:ingots/netherite_scrap"
+		},
+		"output": {
+			"amount": 90,
+			"fluid": "tconstruct:molten_debris"
+		}
+	})
+	//scrap from molten
+	event.custom({
+		"type": "embers:stamping",
+		"fluid": {
+			"amount": 90,
+			"fluid": "tconstruct:molten_debris"
+		},
+		"output": {
+			"tag": "forge:ingots/netherite_scrap"
+		},
+		"stamp": {
+			"item": "embers:ingot_stamp"
+		}
+	})
+	
+	//jaopca/embers melter output unification
+	let offendingMetals = ["zinc", "platinum", "uranium", "brass", "constantan", "invar"]
+	offendingMetals.forEach(metal => {
+		let idRegex = new RegExp("jaopca:embers.*to_molten\." + metal + "$")
+		event.remove({ id: idRegex })
+	})
+	
+	//casting recipes for molten NC metals and kubejs:molten_anthralite
+	let ncMetals = ["lithium", "thorium", "magnesium", "boron", "anthralite"]
+	let recipeMap = new Map([
+		["nugget", 10],
+		["ingot", 90],
+		["plate", 90]
+	])
+	
+	ncMetals.forEach(metal => {
+		function ncCast(value, key, map) {
+			if(!(metal == "anthralite" && key == "plate")){//doesn't exist
+			event.custom({
+				"type": "tconstruct:casting_table",
+				"cast": {
+					"tag": "tconstruct:casts/multi_use/" + key
+				},
+				"fluid": {
+					"tag": "forge:molten_" + metal,
+					"amount": value
+				},
+				"result": {"tag": "forge:" + key + "s/" + metal},
+				"cooling_time": 1
+			}).id("kubejs:smeltery/casting/metal/" + metal + "/" + key + "_gold_cast")
+			event.custom({
+				"type": "tconstruct:casting_table",
+				"cast": {
+					"tag": "tconstruct:casts/single_use/" + key
+				},
+				"fluid": {
+					"tag": "forge:molten_" + metal,
+					"amount": value
+				},
+				"result": {"tag": "forge:" + key + "s/" + metal},
+				"cooling_time": 1
+			}).id("kubejs:smeltery/casting/metal/" + metal + "/" + key + "_sand_cast")
+			}
+		}
+		recipeMap.forEach(ncCast)
+		event.custom({
+			"type": "tconstruct:casting_basin",
+			"cooling_time": 221,
+			"fluid": {
+				"amount": 810,
+				"tag": "forge:molten_" + metal
+			},
+			"result": {
+				"tag": "forge:storage_blocks/" + metal
+			}
+		})
+	})
 })

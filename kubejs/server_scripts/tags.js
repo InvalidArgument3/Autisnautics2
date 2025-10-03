@@ -230,6 +230,7 @@ ServerEvents.tags("item", event => {
 	event.add("forge:plates", "createdeco:zinc_sheet")
 	event.add("forge:plates/zinc", "createdeco:zinc_sheet")
 	
+	//scguns didn't bother with item tags
 	event.add("forge:ingots", "scguns:anthralite_ingot")
 	event.add("forge:ingots/anthralite", "scguns:anthralite_ingot")
 	event.add("forge:dusts", "scguns:anthralite_dust")
@@ -250,6 +251,10 @@ ServerEvents.tags("item", event => {
 		.add("scguns:sulfur_ore")
 		.add("scguns:deepslate_sulfur_ore")
 		.add("scguns:nether_sulfur_ore")
+	event.add("forge:storage_blocks/anthralite", "scguns:anthralite_block")
+	event.add("forge:storage_blocks/sulfur", "scguns:sulfur_block")
+	event.add("forge:storage_blocks/treated_iron", "scguns:treated_iron_block")
+	event.add("forge:storage_blocks", "scguns:treated_iron_block")
 })
 
 ServerEvents.tags("block", event => {
@@ -335,6 +340,9 @@ ServerEvents.tags("block", event => {
         // AE2 Sky stone chests (These don't work with the create:chest_mounted_storage tag for some reason so they are here instead)
         .add("ae2:sky_stone_chest")
         .add("ae2:smooth_sky_stone_chest")
+		
+	//why?
+	event.remove("forge:storage_blocks/iron", "scguns:treated_iron_block")
 })
 
 ServerEvents.tags("block_entity_type", event => {

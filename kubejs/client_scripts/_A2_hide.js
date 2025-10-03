@@ -32,6 +32,10 @@ JEIEvents.hideItems(event => {
 	event.hide("tfmg:casting_spout")
 	event.hide("tfmg:block_mold")
 	event.hide("tfmg:ingot_mold")
+	//removed
+	event.hide("jaopca:create_crushed.netherite_scrap")
+	event.hide("jaopca:dusts.netherite_scrap")
+	event.hide("jaopca:molten.netherite_scrap")
 })
 
 JEIEvents.hideFluids(event => {//TODO: none of this works for some reason

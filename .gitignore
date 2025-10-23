@@ -102,6 +102,7 @@ config/fancymenu/customization/pack_credit_screen_layout.txt
 !/config/cofh_core-client.toml
 !/config/kiwi-client.yaml
 !/config/geolosys-client.toml
+!/config/scguns-client.toml
 
 defaultconfigs/ftbultimine/ftbultimine-client.snbt
 defaultconfigs/ftbultimine/ftbultimine-server.snbt

@@ -1,0 +1,56 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "starting_gear"
+	group: "79DBEF62FF5CD2D9"
+	id: "714C446FA51AFBB3"
+	order_index: 1
+	quest_links: [ ]
+	quests: [{
+		description: [
+			"&7Spear hook"
+			"- attaches to any block except blocks with high hardness (metal blocks, obsidian, etc.)"
+			"- breaks glass"
+			"- makes damage to entities on hit"
+			"- long distance"
+			"- medium rope elasticity"
+			"- medium fire resistance"
+			""
+			"&9Web hook"
+			"- sticks to any surface except sandy blocks"
+			"- safe for other players (makes no damage)"
+			"- long distance"
+			"- high rope elasticity"
+			"- low fire resistance"
+			""
+			"&4Pudge hook"
+			"- attaches to tree leaves, poles, iron bars and fences"
+			"- rips out torches, bells and lanterns"
+			"- pulls entities and players"
+			"- dismounts riding entities"
+			"- auto-pulling"
+			"- medium distance"
+			"- high hook strength"
+			"- high fire resistance"
+		]
+		icon: "tide:fishing_hook"
+		id: "0937A1CC74795CF4"
+		rewards: [{
+			exclude_from_claim_all: true
+			id: "439C02A81A103EDE"
+			table_id: 560326316990004224L
+			type: "choice"
+		}]
+		shape: "gear"
+		size: 2.0d
+		tasks: [{
+			id: "122F9ED3858AD774"
+			title: "Hook 1"
+			type: "checkmark"
+		}]
+		title: "Choose Starting Hook"
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "Starting Gear"
+}

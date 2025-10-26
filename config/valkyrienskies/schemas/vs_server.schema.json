@@ -26,6 +26,32 @@
       },
       "additionalProperties" : false
     },
+    "Weather2" : {
+      "type" : "object",
+      "properties" : {
+        "stormDampening" : {
+          "type" : "number",
+          "format" : "float",
+          "description" : "Storm effect dampening on VS ships"
+        },
+        "stormRange" : {
+          "type" : "number",
+          "format" : "double",
+          "description" : "In what range storms affect VS ships"
+        },
+        "windMaxVel" : {
+          "type" : "number",
+          "format" : "float",
+          "description" : "The maximum velocity a VS ship can travel because of wind"
+        },
+        "windMultiplier" : {
+          "type" : "number",
+          "format" : "float",
+          "description" : "How much Weather 2's wind affects VS ships"
+        }
+      },
+      "additionalProperties" : false
+    },
     "aiOnShips" : {
       "type" : "boolean",
       "description" : "Allow rudimentary pathfinding on ships"

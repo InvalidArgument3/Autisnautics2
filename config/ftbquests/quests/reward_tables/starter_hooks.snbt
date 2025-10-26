@@ -1,0 +1,45 @@
+{
+	icon: "tide:fishing_hook"
+	id: "07C6ADD10A7DFC00"
+	loot_size: 1
+	order_index: 5
+	rewards: [
+		{
+			command: "/give @p adhooks:spear_launcher{Enchantments:[{id:\"ensorcellation:soulbound\",lvl:1s},{id:\"minecraft:unbreaking\",lvl:10s}]}"
+			icon: {
+				Count: 1
+				id: "adhooks:spear_launcher"
+				tag: {
+					Damage: 0
+				}
+			}
+			title: "Spear Hook Launcher"
+			type: "command"
+		}
+		{
+			command: "/give @p adhooks:web_launcher{Enchantments:[{id:\"ensorcellation:soulbound\",lvl:1s},{id:\"minecraft:unbreaking\",lvl:10s}]}"
+			icon: {
+				Count: 1
+				id: "adhooks:web_launcher"
+				tag: {
+					Damage: 0
+				}
+			}
+			title: "Web Hook Launcher"
+			type: "command"
+		}
+		{
+			command: "/give @p adhooks:pudge_launcher{Enchantments:[{id:\"ensorcellation:soulbound\",lvl:1s},{id:\"minecraft:unbreaking\",lvl:10s}]}"
+			icon: {
+				Count: 1
+				id: "adhooks:pudge_launcher"
+				tag: {
+					Damage: 0
+				}
+			}
+			title: "Pudge Hook Launcher"
+			type: "command"
+		}
+	]
+	title: "starter_hooks"
+}

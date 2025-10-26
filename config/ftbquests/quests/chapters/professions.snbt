@@ -532,11 +532,7 @@
 			subtitle: "{cabin.quest.1C5EA1173F4E592B.subtitle}"
 			tasks: [{
 				id: "7D2F867FD8A5A68A"
-				item: {
-					Count: 1
-					id: "minecraft:written_book"
-					tag: { }
-				}
+				item: "minecraft:written_book"
 				type: "item"
 			}]
 			title: "{cabin.quest.736FC31210F334F2.title}"

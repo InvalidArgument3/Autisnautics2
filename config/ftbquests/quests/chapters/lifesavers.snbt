@@ -513,11 +513,7 @@
 			}]
 			tasks: [{
 				id: "7AD38BD1318A493B"
-				item: {
-					Count: 1
-					id: "naturescompass:naturescompass"
-					tag: { }
-				}
+				item: "naturescompass:naturescompass"
 				type: "item"
 			}]
 			x: -4.0d
@@ -674,7 +670,10 @@
 				{
 					count: 2L
 					id: "63664BFD05DDCABE"
-					item: { Count: 2, id: "create:chain_conveyor" }
+					item: {
+						Count: 2
+						id: "create:chain_conveyor"
+					}
 					type: "item"
 				}
 				{

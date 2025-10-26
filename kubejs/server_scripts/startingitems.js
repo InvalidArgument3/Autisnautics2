@@ -3,11 +3,11 @@
  */
 
 PlayerEvents.loggedIn(event => {
-    // Check if player doesn't have "starting_items" stage yet
-    if (!event.player.stages.has("starting_items")) {
-    // Add the stage
-        event.player.stages.add("starting_items")
-        // Give qb to player
+    // Use persistent data instead of Game Stages for better reliability
+    let data = event.player.persistentData
+    if (!data.getBoolean("received_starting_items")) {
+        data.putBoolean("received_starting_items", true)
+        // Give quest book to player
         event.player.give("ftbquests:book")
     }
 })

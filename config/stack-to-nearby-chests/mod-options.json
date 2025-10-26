@@ -21,7 +21,7 @@
     },
     "stackToNearbyContainersButtonPosY": {
       "defaultValue": 170,
-      "value": 170
+      "value": 200
     },
     "restockFromNearbyContainersButtonPosX": {
       "defaultValue": 160,
@@ -29,7 +29,7 @@
     },
     "restockFromNearbyContainersButtonPosY": {
       "defaultValue": 170,
-      "value": 170
+      "value": 200
     },
     "quickStackButtonPosX": {
       "defaultValue": 6,

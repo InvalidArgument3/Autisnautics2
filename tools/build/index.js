@@ -46,7 +46,7 @@ const isServerMod = (filename) => {
         && !fillet.includes("legendarytooltips")
         && !fillet.includes("fancymenu")
         && !fillet.includes("drippyloadingscreen")
-        && !fillet.includes("betterclouds")
+        && !fillet.includes("better-clouds")
         && !fillet.includes("screenshot_viewer")
         && !fillet.includes("restorechatlinks")
         && !fillet.includes("shut_up_gl_error")

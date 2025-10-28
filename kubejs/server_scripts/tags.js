@@ -230,6 +230,14 @@ ServerEvents.tags("item", event => {
 	event.add("forge:plates", "createdeco:zinc_sheet")
 	event.add("forge:plates/zinc", "createdeco:zinc_sheet")
 	
+	//coal coke unification
+	event.add("forge:coal_coke", "tfmg:coal_coke")
+	event.add("forge:storage_blocks/coal_coke", "tfmg:coal_coke_block")
+	//coal coke is not coal
+	event.remove("forge:coal", "immersiveengineering:coal_coke")
+	event.remove("minecraft:coals", "immersiveengineering:coal_coke")
+	event.remove("c:coal", "immersiveengineering:coal_coke")
+	
 	//scguns didn't bother with item tags
 	event.add("forge:ingots", "scguns:anthralite_ingot")
 	event.add("forge:ingots/anthralite", "scguns:anthralite_ingot")
@@ -343,6 +351,7 @@ ServerEvents.tags("block", event => {
 		
 	//why?
 	event.remove("forge:storage_blocks/iron", "scguns:treated_iron_block")
+	
 })
 
 ServerEvents.tags("block_entity_type", event => {
@@ -371,5 +380,7 @@ ServerEvents.tags("fluid", event => {
 	event.add("forge:molten_anthralite", "kubejs:molten_anthralite")
 	event.add("forge:anthralite", "kubejs:molten_anthralite")
 	event.add("tconstruct:molten_anthralite", "kubejs:molten_anthralite")
-
+	
+	//creosote tagging
+	event.add("forge:creosote", "tfmg:creosote")
 })

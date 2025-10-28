@@ -773,13 +773,14 @@ ServerEvents.recipes(event => {
     event.shaped(Item.of("kubejs:circuit_scrap", 2), [" A ", "ABA", " A "], { A: "thermal:invar_ingot", B: "#kubejs:circuit_press" })
     // Pyrolyzer charcoal
     event.remove({ id: "thermal:machines/pyrolyzer/pyrolyzer_logs" })
-    event.recipes.thermal.pyrolyzer([Item.of("minecraft:charcoal", 2), Fluid.of("thermal:creosote", 50)], "#minecraft:logs", 0.15, 1000)
+    event.recipes.thermal.pyrolyzer([Item.of("minecraft:charcoal", 2), Fluid.of("immersiveengineering:creosote", 50)], "#minecraft:logs", 0.15, 1000)
     // Coal Coke
-    event.recipes.thermal.pyrolyzer(["thermal:coal_coke", Fluid.of("thermal:creosote", 50)], "minecraft:charcoal", 0.15, 2000)
+	event.recipes.thermal.pyrolyzer(["thermal:coal_coke", Fluid.of("immersiveengineering:creosote", 50)], "minecraft:charcoal", 0.15, 2000)
+	
     // Coke Chunk
     event.custom({
         "type": "create:sequenced_assembly",
-        "ingredient": { "item": "thermal:coal_coke" },
+        "ingredient": { "tag": "forge:coal_coke" },//A2: just in case
         "loops": 2,
         "results": [{ "item": "kubejs:coke_chunk" }],
         "sequence": [

@@ -1,0 +1,13 @@
+{
+    "type": "simple",
+    "max_trades": 16,
+	"xp": 2,
+    "price": {
+      "id": "thermal:coal_coke",
+      "Count": 12
+    },
+    "offer": {
+      "id": "minecraft:emerald",
+      "Count": 1
+    }
+}

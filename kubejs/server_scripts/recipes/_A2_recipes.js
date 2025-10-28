@@ -694,4 +694,22 @@ ServerEvents.recipes(event => {
 	unifiedNCFluids.forEach(fluid => {
 		event.replaceOutput({type: "nuclearcraft:melter"}, "nuclearcraft:molten_" + fluid, "tconstruct:molten_" + fluid)
 	})
+	
+	//remove jaopca "molten coal" for uselessness and possible dupe exploit
+	event.remove({id: /^jaopca:.*molten.*coal$/})
+	
+	//fixing weird coal coke storage block recipes
+	event.remove({id: "thermal:storage/coal_coke_block"})
+	event.remove({id: "immersiveengineering:crafting/coal_coke_to_coke"})
+	event.remove({id: "tfmg:crafting/coal_coke_block"})
+	
+	event.remove({id: "tfmg:crafting/coal_coke_from_block"})
+	event.remove({id: "immersiveengineering:crafting/coke_to_coal_coke"})
+	event.remove({output: "tfmg:coal_coke_block"})
+	event.shapeless("thermal:coal_coke_block", ["9x #forge:coal_coke"])
+	
+	////creosote unification - have to use IE because it's hardcoded
+	//tfmg hardened wood block = treated wood block + 125mb more creosote
+	event.remove({id: "tfmg:filling/hardened_wood_creosote"})
+	event.recipes.create.filling("tfmg:hardened_planks", ["#forge:treated_wood", Fluid.of("immersiveengineering:creosote", 125)])
 })

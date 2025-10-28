@@ -1,5 +1,6 @@
-/*
-
+# first, ignore everything.
+/* 
+# then un ignore these things.
 !/config
 !/config-overrides
 !/kubejs
@@ -157,3 +158,4 @@ config/darkmodeeverywhereshaders.json
 
 # Downloadable dependencies
 **/node_modules
+/config/DistantHorizons.toml

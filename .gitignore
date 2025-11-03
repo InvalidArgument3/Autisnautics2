@@ -159,3 +159,5 @@ config/darkmodeeverywhereshaders.json
 # Downloadable dependencies
 **/node_modules
 /config/DistantHorizons.toml
+/config/sound_physics_remastered/**
+/config/touhou_little_maid/info.json

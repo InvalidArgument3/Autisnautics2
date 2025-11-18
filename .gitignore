@@ -161,3 +161,10 @@ config/darkmodeeverywhereshaders.json
 /config/DistantHorizons.toml
 /config/sound_physics_remastered/**
 /config/touhou_little_maid/info.json
+
+# Pakku
+build/
+!.pakku/
+!pakku.jar
+!pakku.json
+!pakku-lock.json

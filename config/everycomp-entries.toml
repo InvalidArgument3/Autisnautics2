@@ -4,17 +4,6 @@
 
 	[types.cut_block_type]
 
-		[types.cut_block_type.scguns]
-			phosphorite_brick = true
-			asgharian_brick = true
-			cut_diamond_steel = true
-			diamond_steel_tiles = true
-			cut_anthralite = true
-			anthralite_tiles = true
-			cut_treated_iron = true
-			cut_treated_brass = true
-			treated_brass_tiles = true
-
 		[types.cut_block_type.immersiveengineering]
 			sheetmetal_copper = true
 			sheetmetal_aluminum = true
@@ -685,6 +674,17 @@
 			cut_galena_brick = true
 			small_galena_brick = true
 
+		[types.cut_block_type.scguns]
+			cut_diamond_steel = true
+			diamond_steel_tiles = true
+			cut_anthralite = true
+			anthralite_tiles = true
+			cut_treated_iron = true
+			phosphorite_brick = true
+			asgharian_brick = true
+			cut_treated_brass = true
+			treated_brass_tiles = true
+
 	[types.wood_type]
 
 		[types.wood_type.quark]
@@ -745,14 +745,14 @@
 		[types.wood_type.dungeonnowloading]
 			azuro_oak = true
 
-		[types.wood_type.minecraft]
-			pale_oak = true
-
 		[types.wood_type.tconstruct]
 			greenheart = true
 			skyroot = true
 			bloodshroom = true
 			enderbark = true
+
+		[types.wood_type.minecraft]
+			pale_oak = true
 
 	[types.leaves_type]
 
@@ -820,13 +820,13 @@
 		[types.leaves_type.dungeonnowloading]
 			azuro = true
 
-		[types.leaves_type.minecraft]
-			pale_oak = true
-
 		[types.leaves_type.tconstruct]
 			earth_slime = true
 			sky_slime = true
 			ender_slime = true
+
+		[types.leaves_type.minecraft]
+			pale_oak = true
 
 #Disables specific entries
 [entries]

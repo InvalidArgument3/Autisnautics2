@@ -81,6 +81,11 @@ config/emi.css
 config/darkmodeeverywhereshaders*
 config/ichunutil/themes/
 config/gtceu.yaml
+config/crash_assistant/
+config/offlineauth/
+config/dnl/
+config/world_preview/
+config/forge
 defaultconfigs/ftbultimine/ftbultimine-*.snbt
 
 # Linux

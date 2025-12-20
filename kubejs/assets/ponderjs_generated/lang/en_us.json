@@ -1,0 +1,12 @@
+{
+  "kubejs.ponder.alchemy_setup.header": "The Alchemical Laser",
+  "kubejs.ponder.alchemy_setup.text_1": "Start with an Invar Machine",
+  "kubejs.ponder.alchemy_setup.text_2": "Attach an Industrial Lamp of any colour",
+  "kubejs.ponder.alchemy_setup.text_3": "Place a Deployer targeting the Invar Machine",
+  "kubejs.ponder.alchemy_setup.text_4": "Set it to Punch mode using a Wrench",
+  "kubejs.ponder.alchemy_setup.text_5": "Whenever the Deployer activates...",
+  "kubejs.ponder.alchemy_setup.text_6": "...the Laser Lamp will emit a High-Energy Beam",
+  "kubejs.ponder.alchemy_setup.text_7": "Hopper Minecarts caught in the Beam will process their contained Items",
+  "cabin.ponder.tag.ponders": "CABIN",
+  "cabin.ponder.tag.ponders.description": "Components which are distinctive to A\u0026B and CABIN"
+}

@@ -1,0 +1,28 @@
+{
+  "type": "embers:melting",
+  "bonus": {
+    "amount": 30,
+    "fluid": "tconstruct:molten_gold"
+  },
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "create:crushed_raw_materials/copper"
+          }
+        }
+      ]
+    }
+  ],
+  "input": {
+    "tag": "create:crushed_raw_materials/copper"
+  },
+  "output": {
+    "amount": 90,
+    "fluid": "tconstruct:molten_copper"
+  }
+}

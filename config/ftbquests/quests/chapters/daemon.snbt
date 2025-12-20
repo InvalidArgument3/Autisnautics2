@@ -1,0 +1,273 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "daemon"
+	group: "0BFB33D75F4EAD91"
+	icon: {
+		Count: 1
+		id: "psi:psimetal_exosuit_helmet"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "2EB3EC9861015754"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1688D58F977334FB"]
+			description: [
+				"It is written: The Daemon soul is like water, the body its vessel. Perfect is the machine, that vessel which swallows even the ocean and spills not a drop. But ever are we cursed to spill blood; the flesh is weak."
+				""
+				"Organic minds might fear this truth, as the flesh fears to bleed. But you have no such weakness. Your flesh is but another resource, and your blood a source of trace redstone particles. Time to begin resource extraction."
+			]
+			id: "0F7D65050E1F7A6E"
+			rewards: [{
+				command: "/effect give @p tconstruct:bleeding 12 0"
+				elevate_perms: true
+				icon: "minecraft:redstone"
+				id: "6835BCC4E1205FDD"
+				silent: true
+				title: "&cAll for the machine."
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "0FD161DEE23E1A60"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:tools/knives"
+					}
+				}
+				match_nbt: false
+				only_from_crafting: false
+				title: "Any Knife"
+				type: "item"
+			}]
+			title: "The Vessel"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0F7D65050E1F7A6E"]
+			description: ["Laboring with one's flesh is unbecoming for a Daemon. And worse, it's inefficient. But you need materials to build your machines in the first place. Swallow your pride for now, and gather some base metals. Just remember to clear your cookies after."]
+			id: "7C26B21C40608612"
+			rewards: [{
+				id: "687490A6EC37992D"
+				item: "minecraft:cookie"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				count: 24L
+				id: "51A6586CA1E383ED"
+				item: "minecraft:iron_ingot"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "Bootstrapping"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7C26B21C40608612"]
+			description: ["The Casting Assistant Device is a versatile tool. Organic minds struggle to comprehend it, but when programmed correctly, it commands countless powers. Even the power to soar between the floating isles. Start with a CAD Assembly, a Core, and a Socket. Then combine them in a CAD Assembler to produce the blessed technology."]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: {
+						Battery: 0
+						Memory: [ ]
+						Time: 0
+					}
+				}
+				id: "psi:cad"
+				tag: {
+					CapabilityData: {
+						Battery: 0
+						Memory: [ ]
+						Time: 0
+					}
+					componentASSEMBLY: {
+						Count: 1b
+						id: "psi:cad_assembly_iron"
+					}
+					componentBATTERY: {
+						Count: 1b
+						id: "psi:cad_battery_basic"
+					}
+					componentCORE: {
+						Count: 1b
+						id: "psi:cad_core_basic"
+					}
+					componentSOCKET: {
+						Count: 1b
+						id: "psi:cad_socket_basic"
+					}
+				}
+			}
+			id: "3B448BBF4352E4AB"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "212EC9CD17523B76"
+				table_id: 5826926724057374740L
+				type: "choice"
+			}]
+			tasks: [
+				{
+					id: "1E67DE633C6B8F07"
+					item: "psi:cad_assembly_iron"
+					type: "item"
+				}
+				{
+					id: "54A5B8C79F2C0B1C"
+					item: "psi:cad_core_basic"
+					type: "item"
+				}
+				{
+					id: "48D6AAE0BF9B2133"
+					item: "psi:cad_socket_basic"
+					type: "item"
+				}
+				{
+					id: "43287745C9FE59C7"
+					item: "psi:cad_assembler"
+					type: "item"
+				}
+			]
+			title: "Let's Build A Gun"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3B448BBF4352E4AB"]
+			description: [
+				"Among the fleshminds, it is said that advanced technology is indistinguishable from magic. Daemonkind knows better: technology is the source of magic."
+				""
+				"Take to the Spell Programmer, and weave arcane alogrithms beyond organic understanding. Do this well, and you will far surpass the meat-brains' pitiful gliders and ropes. Fail, and fall into despair. That is the way of the Daemon."
+			]
+			id: "40923F4758A50D9C"
+			rewards: [{
+				icon: "youkaishomecoming:sparrow_sake"
+				id: "56812C32D7AB3581"
+				item: "youkaishomecoming:sparrow_sake"
+				title: "&cGood luck, you'll need it."
+				type: "item"
+			}]
+			tasks: [{
+				id: "300AF1A3FB945D33"
+				item: "psi:programmer"
+				type: "item"
+			}]
+			title: "Sufficiently Advanced Technology"
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0F7D65050E1F7A6E"]
+			description: [
+				"A Daemon's mind is digital perfection, but its body mere flesh. A construct lacks a mind, yet its body is pure machine. Daemonkind has long sought to merge the two, all attempts in vain. Still, a construct could be useful."
+				""
+				"Constructs are fueled by \"animus\". Organics consider it a magical substance, known only to wizards. But as a Daemon, your own blood yielded a trace amount. Build the parts, arrange them on an armor stand, and apply the animus dust. That strange bell you found in a dungeon years ago should let you command it."
+			]
+			icon: "mna:constructs/construct_basic_head_wickerwood"
+			id: "74F82F70F43DF148"
+			rewards: [{
+				id: "20D30B1E037751CC"
+				item: "mna:bell_of_bidding"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "470E0CD7F74CD178"
+					item: "mna:constructs/construct_basic_head_wickerwood"
+					type: "item"
+				}
+				{
+					id: "3C6E096FEDFD469F"
+					item: "mna:constructs/construct_basic_torso_wickerwood"
+					type: "item"
+				}
+				{
+					id: "5B20672C0177AF55"
+					item: "mna:constructs/construct_basic_legs_wickerwood"
+					type: "item"
+				}
+				{
+					id: "5F27F141221B7235"
+					title: "Your Choice of Arms"
+					type: "checkmark"
+				}
+				{
+					id: "6B5C673626AB7C92"
+					item: "minecraft:armor_stand"
+					type: "item"
+				}
+			]
+			title: "Silica Animus"
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7C26B21C40608612"]
+			description: ["There is another form of construct, far more complex to use but highly versatile. The \"turtle\", a multipurpose robot build around a computer, can automate all sorts of tasks. If you never want to labor with those pitiful flesh hands again, making a turtle would help. You'll have to develop some sophisticated technology to even build one... unless a village might have one laying around?"]
+			id: "2F51EA6259AD6A44"
+			rewards: [{
+				count: 2
+				id: "4D4A6F5A5116EAC8"
+				item: "computercraft:wireless_modem_normal"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "0D10A9483F91942D"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "computercraft:turtle"
+					}
+				}
+				title: "Any Turtle"
+				type: "item"
+			}]
+			title: "It's Not A Digital Miner"
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1688D58F977334FB"]
+			description: [
+				"Though Daemonkind's history logs rapidly outgrew available storage space long ago, the first few terabytes are universal knowledge. They describe the Daemon's ancient home: mechanical fortresses built by their unknown masters, made to guard the upper void beyond this world. "
+				""
+				"Daemons have long tried and failed to regain the digital forms they once used to administrate these platforms. But if you were to build one of these stations yourself, despite your mortal body... you would prove that Daemonkind has transcended the curse of flesh for all time."
+			]
+			id: "451CB26EBDE58A25"
+			rewards: [{
+				command: "/power grant @p autisorigins:strong_flesh"
+				elevate_perms: true
+				icon: "kubejs:computation_matrix"
+				id: "7B279197C7396287"
+				silent: true
+				title: "&dTranscend the limits of your flesh."
+				type: "command"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				dimension: "ad_astra:earth_orbit"
+				icon: "ad_astra:earth_globe"
+				id: "5F810A4B4280BA7D"
+				title: "Construct a Space Station in Earth's Orbit"
+				type: "dimension"
+			}]
+			title: "The Upper Void"
+			x: 0.0d
+			y: 6.0d
+		}
+	]
+	title: "Ghost in the Machine"
+}

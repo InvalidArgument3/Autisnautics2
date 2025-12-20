@@ -1,0 +1,602 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "blobbian"
+	group: "0BFB33D75F4EAD91"
+	icon: "minecraft:slime_block"
+	id: "3B9012879CADD3FC"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["4EAB29CE8895395E"]
+			description: [
+				"A long time ago the blobis lived in the dark place. blobos was bored cus its too crowded and pointy and theres no up and down. then the dirt got bored too and went way up. blobbi learned about up and became sky bolb B))"
+				""
+				"i also heard theres something called down that really hurts, but it doesn hurt blobbers. But blobbims still need stuff to go up. theres lots of up stuff but im gonna make a stick :D"
+			]
+			icon: "tconstruct:sky_slime_spawn_egg"
+			id: "50766CC48FB21D85"
+			rewards: [{
+				id: "4A3D3ECB64559393"
+				item: "create:experience_nugget"
+				type: "item"
+			}]
+			tasks: [{
+				id: "353BC6649BA6F008"
+				item: "minecraft:stick"
+				type: "item"
+			}]
+			title: "sky blobbin B)"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4EAB29CE8895395E"]
+			description: ["Blobbis dont have a brain so i dont member any experienices. But if blobbers eat stuffs thats got experimences in it then i can save em for later. like the bottle one tahts blue flavor for some reason or the square nuggies :DDD"]
+			icon: "create:experience_nugget"
+			id: "11862F961F13287D"
+			rewards: [{
+				count: 4
+				id: "5B0C511067048077"
+				item: "alexscaves:dinosaur_nugget"
+				random_bonus: 4
+				type: "item"
+			}]
+			tasks: [{
+				id: "3D6016E23D774677"
+				points: false
+				type: "xp"
+				value: 1L
+			}]
+			title: "mmm nuggies"
+			x: -2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["11862F961F13287D"]
+			description: ["Aparently theres a rock that can remmber experiences. Thatd be even better then having a brain cus a rock is cooler and i can show off to bolbis frends and stuff."]
+			id: "7A99056A697C4CEC"
+			rewards: [{
+				id: "1C837626FC2028A5"
+				item: "create_sa:heap_of_experience"
+				random_bonus: 3
+				type: "item"
+			}]
+			tasks: [{
+				id: "7E4CE81D5B3FDEFF"
+				item: "thermal:xp_crystal"
+				type: "item"
+			}]
+			title: "the Smart rock"
+			x: -3.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["50766CC48FB21D85"]
+			description: ["i like the ccrunchy ones better :DD if were gonna eat vegtibles im gonna at least have some crunchys too. blobbins need a crunch brake some times."]
+			id: "240206E4C3855006"
+			rewards: [{
+				count: 3
+				id: "2CEC43105492B0D8"
+				item: "tconstruct:sky_slime_dirt"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 3L
+				id: "706138A036ECB00A"
+				item: { Count: 3, id: "minecraft:gravel" }
+				type: "item"
+			}]
+			title: "Crunchy snack"
+			x: 2.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["50766CC48FB21D85"]
+			description: ["its a nice stick and all but it doesnt wanna help bolbi go up. i probly gotta grow up some more and get stronnger to make a better stick. even if its not that tasty i bet eating stick flavered vegtibles is gonna help."]
+			icon: "minecraft:oak_sapling"
+			id: "13C43EFB6ED15325"
+			rewards: [{
+				id: "31A8E87272F65E18"
+				item: "tconstruct:sky_slime_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "2AFC82CBDDF880E7"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:saplings"
+					}
+				}
+				title: "Any Sapling"
+				type: "item"
+			}]
+			title: "stick Vegtables"
+			x: 0.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["50766CC48FB21D85"]
+			description: ["the first stick is a conmplete debacle. i forgot the up stick is a different stick actualy. Everyons gonna laugh at bolbis  if we dont get rid of the evidince. theres only one way........"]
+			icon_scale: 2.0d
+			id: "3147E9D7F547137E"
+			rewards: [{
+				id: "50A14BA483463CA8"
+				item: "delightful:cooked_marshmallow_stick"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "6E593C7DE3DCAC6F"
+				item: "minecraft:blast_furnace"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "BLAST em"
+			x: 2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["50766CC48FB21D85"]
+			description: ["Theres some weird not blobbys that that live on slimey islands. they dont talk but they taste breddy gud. if I find the blue raspberry flavor thatd be way better than vegtables."]
+			id: "0B61F5DF33350C0A"
+			rewards: [{
+				id: "50190BD673F82762"
+				item: "minecraft:experience_bottle"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.1d
+			tasks: [{
+				id: "0874E1FD6B69A719"
+				structure: "tconstruct:sky_slime_island"
+				title: "found a blue rasberry flavor slime isladn :DD"
+				type: "structure"
+			}]
+			title: "the other blobb."
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4EAB29CE8895395E"]
+			description: ["Even though I barfed em up and there all slimey now, after eatign those vegtables i feel a lot more smarter.  its time to settle down and become civilized bolbbin. Theres this new thing called angriculture and were gonna do it RIGHT NOW."]
+			hide_dependency_lines: true
+			icon_scale: 2.0d
+			id: "47DB705903F26597"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7D94ACD6C8A0D82E"
+				table_id: 3660795082677614806L
+				type: "choice"
+			}]
+			tasks: [{
+				count: 2L
+				id: "38B27678B1B47426"
+				item: "tconstruct:skyroot_log"
+				type: "item"
+			}]
+			title: "its a tree ;)))"
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"2809AE02EA018BFA"
+				"4EAB29CE8895395E"
+			]
+			hide_dependency_lines: true
+			hide_details_until_startable: true
+			hide_lock_icon: true
+			hide_text_until_complete: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: true
+			icon: "tconstruct:sky_slime_leaves"
+			icon_scale: 2.0d
+			id: "32CB540B4C01720A"
+			shape: "none"
+			title: "its a tree :)"
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3147E9D7F547137E"]
+			description: ["the slimey dirt isnt that tasty but thats probly cuz it's still dirt. we gotta BLAST the dirt so its not dirt anymore. then itll be better to eat. Except dont eat it. Im not gonna eat it. its for the new stick."]
+			id: "4986F69A73BB122E"
+			rewards: [{
+				id: "653368009BCE3B7B"
+				item: "create:experience_nugget"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				count: 2L
+				id: "53E5F9A58DB53F81"
+				item: "tconstruct:sky_slime_crystal"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "Extra crunnchy"
+			x: 6.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3147E9D7F547137E"]
+			description: ["i think to make the up stick blobbis needs rose metal. that sounids unreasonmably expensive and frankly bolbi isnt made of monney. Im just gonna make my own. if blobb already rose this far then metal can rose too."]
+			icon: "createdeco:decal_up"
+			id: "01C36D2B3E49D379"
+			rewards: [{
+				auto: "enabled"
+				command: "/give @p tconstruct:rose_gold_ingot 1"
+				elevate_perms: true
+				icon: "tconstruct:rose_gold_ingot"
+				id: "0CB8AD529AB751A0"
+				silent: true
+				title: "The ingot rose :^)"
+				type: "command"
+			}]
+			shape: "diamond"
+			size: 1.1d
+			tasks: [
+				{
+					consume_items: true
+					id: "1474C861F59A094F"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "c:ingots"
+						}
+					}
+					title: "get a ingot"
+					type: "item"
+				}
+				{
+					dimension: "minecraft:overworld"
+					id: "0F798AC85175B193"
+					ignore_dimension: false
+					position: [I;
+						-1000000
+						300
+						-1000000
+					]
+					size: [I;
+						2000000
+						400
+						2000000
+					]
+					title: "go up really high"
+					type: "location"
+				}
+			]
+			title: "Rise of the bllob"
+			x: 5.5d
+			y: -8.8d
+		}
+		{
+			dependencies: [
+				"01C36D2B3E49D379"
+				"47DB705903F26597"
+				"4986F69A73BB122E"
+			]
+			description: [
+				"&oThe Blobbian is unique among organic life-forms, exhibiting no genetic variation between individuals... the only confirmed species is Blobbius Caelus, the Sky Blobbian..."
+				"&o...lacking any sort of nervous system, all analysis shows no physical activity resembling thought. Yet Blobbius Caelus readily communicates, forms plans, and even makes specialized tools to navigate its environment..."
+				"&o...have argued an extraphysical location for thought processing, or that Blobbius is part of a larger organism...&r"
+				""
+				"&8&o- Encyclopedia Daemonica&r"
+			]
+			icon: {
+				Count: 1
+				id: "tconstruct:sky_staff"
+				tag: {
+					Damage: 0
+					tic_broken: 0b
+					tic_modifiers: [{
+						level: 1
+						name: "tconstruct:overslime_friend"
+					}]
+					tic_persistent: { }
+					tic_stats: {
+						"tconstruct:block_amount": 15.0f
+						"tconstruct:draw_speed": 1.25f
+						"tconstruct:durability": 500.0f
+						"tconstruct:use_item_speed": 0.4f
+						"tconstruct:velocity": 0.8f
+					}
+					tic_volatile_data: {
+						abilities: 2
+						upgrades: 5
+					}
+				}
+			}
+			id: "034B6B71E610D8E1"
+			require_sequential_tasks: true
+			rewards: [{
+				auto: "enabled"
+				command: "/tconstruct modifiers @p add tconstruct:flinging 1"
+				elevate_perms: true
+				icon: "mna:greater_mote_ender"
+				id: "05822729A6948B0B"
+				silent: true
+				title: "&bAn unknown force reshapes the Skyslime Staff..."
+				type: "command"
+			}]
+			tasks: [
+				{
+					consume_items: false
+					id: "2E3B993B55DC92A5"
+					item: {
+						Count: 1
+						id: "tconstruct:sky_staff"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+							tic_modifiers: [{
+								level: 1
+								name: "tconstruct:overslime_friend"
+							}]
+							tic_persistent: { }
+							tic_stats: {
+								"tconstruct:block_amount": 15.0f
+								"tconstruct:draw_speed": 1.25f
+								"tconstruct:durability": 500.0f
+								"tconstruct:use_item_speed": 0.4f
+								"tconstruct:velocity": 0.8f
+							}
+							tic_volatile_data: {
+								abilities: 2
+								upgrades: 5
+							}
+						}
+					}
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					id: "001545FF84357A11"
+					title: "i gota hold the staff and press this or IT WONT WORK!!!!"
+					type: "checkmark"
+				}
+			]
+			title: "Blobbius Caelus"
+			x: 9.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"4EAB29CE8895395E"
+				"2809AE02EA018BFA"
+			]
+			hide_dependency_lines: true
+			hide_details_until_startable: true
+			hide_lock_icon: true
+			hide_text_until_complete: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: true
+			icon: "mna:greater_mote_fire"
+			icon_scale: 1.5d
+			id: "5BDF2960FBF3C35D"
+			shape: "none"
+			title: "fwoosh"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"4EAB29CE8895395E"
+				"2809AE02EA018BFA"
+			]
+			hide_dependency_lines: true
+			hide_details_until_startable: true
+			hide_lock_icon: true
+			hide_text_until_complete: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: true
+			icon: "mna:greater_mote_fire"
+			icon_scale: 1.5d
+			id: "6F0E3626FD191407"
+			shape: "none"
+			title: "fwooosh"
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"2809AE02EA018BFA"
+				"4EAB29CE8895395E"
+			]
+			hide_dependency_lines: true
+			hide_details_until_startable: true
+			hide_lock_icon: true
+			hide_text_until_complete: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: true
+			icon: "tconstruct:sky_slime_leaves"
+			icon_scale: 2.0d
+			id: "637418CF907F19B0"
+			shape: "none"
+			title: "its a tree :)"
+			x: 5.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"2809AE02EA018BFA"
+				"4EAB29CE8895395E"
+			]
+			hide_dependency_lines: true
+			hide_details_until_startable: true
+			hide_lock_icon: true
+			hide_text_until_complete: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: true
+			icon: "tconstruct:sky_slime_leaves"
+			icon_scale: 2.0d
+			id: "22CE9949793981A6"
+			shape: "none"
+			title: "its a tree :)"
+			x: 5.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"2809AE02EA018BFA"
+				"4EAB29CE8895395E"
+			]
+			hide_dependency_lines: true
+			hide_details_until_startable: true
+			hide_lock_icon: true
+			hide_text_until_complete: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: true
+			icon: "tconstruct:sky_slime_leaves"
+			icon_scale: 2.0d
+			id: "435BE0485FB92245"
+			shape: "none"
+			title: "its a tree :)"
+			x: 6.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"2809AE02EA018BFA"
+				"4EAB29CE8895395E"
+			]
+			hide_dependency_lines: true
+			hide_details_until_startable: true
+			hide_lock_icon: true
+			hide_text_until_complete: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: true
+			icon: "tconstruct:sky_slime_leaves"
+			icon_scale: 2.0d
+			id: "2727DB837CE5B37E"
+			shape: "none"
+			title: "its a tree :)"
+			x: 6.0d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"2809AE02EA018BFA"
+				"4EAB29CE8895395E"
+			]
+			hide_dependency_lines: true
+			hide_details_until_startable: true
+			hide_lock_icon: true
+			hide_text_until_complete: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: true
+			icon: "tconstruct:sky_slime_leaves"
+			icon_scale: 2.0d
+			id: "40C30DFD4DDBEE6C"
+			shape: "none"
+			title: "its a tree :)"
+			x: 7.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"2809AE02EA018BFA"
+				"4EAB29CE8895395E"
+			]
+			hide_dependency_lines: true
+			hide_details_until_startable: true
+			hide_lock_icon: true
+			hide_text_until_complete: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: true
+			icon: "tconstruct:sky_slime_leaves"
+			icon_scale: 2.0d
+			id: "30C8408E8F663FA2"
+			shape: "none"
+			title: "its a tree :)"
+			x: 7.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"2809AE02EA018BFA"
+				"4EAB29CE8895395E"
+				"13C43EFB6ED15325"
+				"0B61F5DF33350C0A"
+			]
+			hide_dependency_lines: false
+			hide_details_until_startable: true
+			hide_lock_icon: true
+			hide_text_until_complete: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: true
+			icon: "tconstruct:skyroot_log"
+			icon_scale: 2.0d
+			id: "5004B1CBC8BA874D"
+			shape: "none"
+			title: "its a tree :)"
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"2809AE02EA018BFA"
+				"4EAB29CE8895395E"
+				"240206E4C3855006"
+				"0B61F5DF33350C0A"
+			]
+			hide_dependency_lines: false
+			hide_details_until_startable: true
+			hide_lock_icon: true
+			hide_text_until_complete: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: true
+			icon: "tconstruct:sky_slime_dirt"
+			icon_scale: 2.0d
+			id: "5F6999F8DAEC2A03"
+			shape: "none"
+			title: "its dirt :)"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4EAB29CE8895395E"]
+			description: ["i heard theres these weird eyeball thingies scattered all over the world. and if i catch 'em all and put them in the weird blinky jars i win a free trip to somewhere blobbins never been before! its gonna be the best souvenir collection ever!!!"]
+			icon: {
+				Count: 1
+				id: "endrem:magical_eye"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "3ADD69413C0798FE"
+			rewards: [{
+				auto: "disabled"
+				exclude_from_claim_all: true
+				icon: "kubejs:dye_entangled_singularity"
+				id: "03991F0675E0FE1F"
+				tags: ["enderslimereward"]
+				title: "&4Gain a new power from friends who admire your collection."
+				type: "custom"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				dimension: "minecraft:the_end"
+				icon: "minecraft:end_portal_frame"
+				id: "4AE661E33C20229D"
+				title: "get all the eyeballs and visit the new place :)"
+				type: "dimension"
+			}]
+			title: "Blobbo's big Adventure"
+			x: 0.0d
+			y: 3.5d
+		}
+	]
+	title: "blobbiy quest"
+}

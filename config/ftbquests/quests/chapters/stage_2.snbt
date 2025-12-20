@@ -1,0 +1,1491 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "stage_2"
+	group: "331B6409EF6A7840"
+	icon: "kubejs:brass_machine"
+	id: "3CEC7BECE6B40994"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["28C41C062843C2CA"]
+			description: [
+				"{cabin.quest.727B43FD95C4A512.description1}"
+				""
+				"{cabin.quest.727B43FD95C4A512.description2}"
+			]
+			hide_until_deps_complete: true
+			icon: "kubejs:kinetic_mechanism"
+			id: "727B43FD95C4A512"
+			rewards: [{
+				id: "05FBDFB7D5A9B322"
+				item: "create:builders_tea"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "2B249158FB9D453B"
+				type: "checkmark"
+			}]
+			title: "{cabin.quest.727B43FD95C4A512.title}"
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["727B43FD95C4A512"]
+			description: [
+				"{cabin.quest.0AF5F19F5D9FB5C9.description1}"
+				""
+				"{cabin.quest.0AF5F19F5D9FB5C9.description2}"
+			]
+			hide_dependency_lines: true
+			id: "0AF5F19F5D9FB5C9"
+			shape: "circle"
+			tasks: [{
+				id: "4F4219EDA9C5F9F7"
+				item: "minecraft:sand"
+				type: "item"
+			}]
+			title: "{cabin.quest.0AF5F19F5D9FB5C9.title}"
+			x: -5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"0AF5F19F5D9FB5C9"
+				"2FFFE1C5366930BB"
+			]
+			dependency_requirement: "one_completed"
+			description: ["{cabin.quest.345B94F6D17605CD.description1}"]
+			id: "345B94F6D17605CD"
+			shape: "circle"
+			subtitle: "{cabin.quest.345B94F6D17605CD.subtitle}"
+			tasks: [{
+				id: "2E6AD53DE407260C"
+				item: "kubejs:certus_crystal_seed"
+				type: "item"
+			}]
+			title: "{cabin.quest.345B94F6D17605CD.title}"
+			x: -6.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["345B94F6D17605CD"]
+			description: ["{cabin.quest.34A1D176C78FB64E.description1}"]
+			icon: "kubejs:tiny_certus_crystal"
+			id: "34A1D176C78FB64E"
+			shape: "circle"
+			subtitle: "{cabin.quest.34A1D176C78FB64E.subtitle}"
+			tasks: [{
+				id: "28DDF51DB85DCF7D"
+				type: "checkmark"
+			}]
+			title: "{cabin.quest.34A1D176C78FB64E.title}"
+			x: -5.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["34A1D176C78FB64E"]
+			description: ["{cabin.quest.1642A27606A34984.description1}"]
+			icon: "kubejs:small_certus_crystal"
+			id: "1642A27606A34984"
+			shape: "circle"
+			subtitle: "{cabin.quest.1642A27606A34984.subtitle}"
+			tasks: [{
+				id: "30E8BB6958ED4A44"
+				type: "checkmark"
+			}]
+			title: "{cabin.quest.1642A27606A34984.title}"
+			x: -4.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["1642A27606A34984"]
+			description: ["{cabin.quest.1861E583C9DAA0BA.description1}"]
+			icon: "ae2:certus_quartz_crystal"
+			id: "1861E583C9DAA0BA"
+			subtitle: "{cabin.quest.1861E583C9DAA0BA.subtitle}"
+			tasks: [
+				{
+					id: "68D808533C34AB5C"
+					item: "ae2:certus_quartz_crystal"
+					type: "item"
+				}
+				{
+					id: "5143762A67B81B7E"
+					title: "{cabin.task.0842082756DA73FE}"
+					type: "checkmark"
+				}
+			]
+			title: "{cabin.quest.1861E583C9DAA0BA.title}"
+			x: -2.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["727B43FD95C4A512"]
+			description: ["{cabin.quest.2FFFE1C5366930BB.description1}"]
+			hide_dependency_lines: true
+			icon: "minecraft:water_bucket"
+			id: "2FFFE1C5366930BB"
+			tasks: [
+				{
+					id: "1A9DB3A538856229"
+					item: "minecraft:water_bucket"
+					type: "item"
+				}
+				{
+					id: "2DC358D8174FC867"
+					title: "{cabin.task.0842082756DA73FE}"
+					type: "checkmark"
+				}
+			]
+			title: "{cabin.quest.2FFFE1C5366930BB.title}"
+			x: -3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["727B43FD95C4A512"]
+			description: [
+				"{cabin.quest.4F95D5136E944ADB.description1}"
+				""
+				"{cabin.quest.4F95D5136E944ADB.description2}"
+			]
+			hide_dependency_lines: true
+			icon: "ae2:sky_dust"
+			id: "4F95D5136E944ADB"
+			subtitle: "{cabin.quest.4F95D5136E944ADB.subtitle}"
+			tasks: [
+				{
+					id: "69C6513B25BB6ABA"
+					item: "ae2:sky_dust"
+					type: "item"
+				}
+				{
+					id: "3C8D449468C6DD27"
+					title: "{cabin.task.0842082756DA73FE}"
+					type: "checkmark"
+				}
+			]
+			title: "{cabin.quest.4F95D5136E944ADB.title}"
+			x: -1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"2FFFE1C5366930BB"
+				"4F95D5136E944ADB"
+			]
+			description: ["{cabin.quest.1256352748B93449.description1}"]
+			icon: "tconstruct:molten_obsidian_bucket"
+			id: "1256352748B93449"
+			subtitle: "{cabin.quest.1256352748B93449.subtitle}"
+			tasks: [
+				{
+					id: "36E36D584FCBC358"
+					item: "kubejs:volatile_sky_solution_bucket"
+					type: "item"
+				}
+				{
+					id: "1CB43671DBA7EBB6"
+					title: "{cabin.task.0842082756DA73FE}"
+					type: "checkmark"
+				}
+			]
+			title: "{cabin.quest.1256352748B93449.title}"
+			x: -1.0d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"1256352748B93449"
+				"24FFFE0FC9EAEF8D"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"{cabin.quest.619E34A7DE48B991.description1}"
+				""
+				"{cabin.quest.619E34A7DE48B991.description2}"
+			]
+			icon: "thermal:redstone_bucket"
+			id: "619E34A7DE48B991"
+			subtitle: "{cabin.quest.619E34A7DE48B991.subtitle}"
+			tasks: [
+				{
+					id: "5F47790124641B2D"
+					item: "thermal:redstone_bucket"
+					type: "item"
+				}
+				{
+					id: "4B98217B670ECA57"
+					title: "{cabin.task.0842082756DA73FE}"
+					type: "checkmark"
+				}
+			]
+			title: "{cabin.quest.619E34A7DE48B991.title}"
+			x: -0.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["53735DC4231AB566"]
+			description: ["{cabin.quest.2167272204B6627B.description1}"]
+			icon: {
+				Count: 1
+				id: "tconstruct:copper_can"
+				tag: {
+					fluid: "tconstruct:molten_iron"
+				}
+			}
+			id: "2167272204B6627B"
+			subtitle: "{cabin.quest.2167272204B6627B.subtitle}"
+			tasks: [{
+				id: "75C982848F2CEA85"
+				title: "{cabin.task.0842082756DA73FE}"
+				type: "checkmark"
+			}]
+			title: "{cabin.quest.2167272204B6627B.title}"
+			x: 1.0d
+			y: 9.5d
+		}
+		{
+			dependencies: [
+				"2167272204B6627B"
+				"06B061C0EE94BC90"
+			]
+			description: ["{cabin.quest.5351AF6CA73CB8E0.description1}"]
+			icon: "create:electron_tube"
+			id: "5351AF6CA73CB8E0"
+			subtitle: "{cabin.quest.5351AF6CA73CB8E0.subtitle}"
+			tasks: [
+				{
+					id: "163B1579092E6BD3"
+					item: "create:electron_tube"
+					type: "item"
+				}
+				{
+					id: "1D7C84803766FD04"
+					title: "{cabin.task.0842082756DA73FE}"
+					type: "checkmark"
+				}
+			]
+			title: "{cabin.quest.5351AF6CA73CB8E0.title}"
+			x: -0.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["1256352748B93449"]
+			description: [
+				"{cabin.quest.24FFFE0FC9EAEF8D.description1}"
+				""
+				"{cabin.quest.24FFFE0FC9EAEF8D.description2}"
+			]
+			hide_dependency_lines: true
+			icon: "ae2:charged_certus_quartz_crystal"
+			id: "24FFFE0FC9EAEF8D"
+			subtitle: "{cabin.quest.24FFFE0FC9EAEF8D.subtitle}"
+			tasks: [
+				{
+					id: "23DAE14596F025DF"
+					item: "ae2:charged_certus_quartz_crystal"
+					type: "item"
+				}
+				{
+					id: "56F78EAD35D1046E"
+					title: "{cabin.task.0842082756DA73FE}"
+					type: "checkmark"
+				}
+			]
+			title: "{cabin.quest.24FFFE0FC9EAEF8D.title}"
+			x: 1.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["727B43FD95C4A512"]
+			description: [
+				"{cabin.quest.0E46C1FCE5AEB1DF.description1}"
+				""
+				"{cabin.quest.0E46C1FCE5AEB1DF.description2}"
+			]
+			hide_dependency_lines: true
+			icon: "minecraft:cobblestone"
+			id: "0E46C1FCE5AEB1DF"
+			subtitle: "{cabin.quest.0E46C1FCE5AEB1DF.subtitle}"
+			tasks: [
+				{
+					id: "7E68B8C4958FB0B5"
+					item: "minecraft:cobblestone"
+					type: "item"
+				}
+				{
+					id: "5E676D2CC5975AEA"
+					title: "{cabin.task.0842082756DA73FE}"
+					type: "checkmark"
+				}
+			]
+			title: "{cabin.quest.0E46C1FCE5AEB1DF.title}"
+			x: 3.5d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"5351AF6CA73CB8E0"
+				"6D8BB2D6A75ABB16"
+			]
+			description: ["{cabin.quest.19715EBCBBA1B4AD.description1}"]
+			icon: "create:precision_mechanism"
+			id: "19715EBCBBA1B4AD"
+			subtitle: "{cabin.quest.19715EBCBBA1B4AD.subtitle}"
+			tasks: [
+				{
+					id: "4DF52040884AB28D"
+					item: "create:precision_mechanism"
+					type: "item"
+				}
+				{
+					id: "002032AE65148DBD"
+					title: "{cabin.task.0842082756DA73FE}"
+					type: "checkmark"
+				}
+			]
+			title: "{cabin.quest.19715EBCBBA1B4AD.title}"
+			x: -1.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["19715EBCBBA1B4AD"]
+			description: [
+				"{cabin.quest.7FC4D1E69377271D.description1}"
+				""
+				"{cabin.quest.7FC4D1E69377271D.description2}"
+			]
+			id: "7FC4D1E69377271D"
+			rewards: [
+				{
+					count: 16
+					id: "54E81DC78E539FDD"
+					item: "create:precision_mechanism"
+					type: "item"
+				}
+				{
+					id: "7A797A069B28AE89"
+					item: "ae2:certus_quartz_crystal"
+					random_bonus: 4
+					type: "item"
+				}
+				{
+					id: "11BF1DF6EF76569B"
+					item: "create:brass_ingot"
+					random_bonus: 4
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "4C32A887DA89A75C"
+				item: "kubejs:brass_machine"
+				type: "item"
+			}]
+			title: "{cabin.quest.7FC4D1E69377271D.title}"
+			x: -1.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["0E46C1FCE5AEB1DF"]
+			description: ["{cabin.quest.1139F2E4E6FCFE29.description1}"]
+			icon: "minecraft:gravel"
+			id: "1139F2E4E6FCFE29"
+			subtitle: "{cabin.quest.1139F2E4E6FCFE29.subtitle}"
+			tasks: [
+				{
+					id: "517441AE19EF30E2"
+					item: "minecraft:gravel"
+					type: "item"
+				}
+				{
+					id: "63F3877902E01590"
+					title: "{cabin.task.0842082756DA73FE}"
+					type: "checkmark"
+				}
+			]
+			title: "{cabin.quest.1139F2E4E6FCFE29.title}"
+			x: 4.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["1139F2E4E6FCFE29"]
+			description: ["{cabin.quest.53735DC4231AB566.description1}"]
+			icon: "minecraft:iron_nugget"
+			id: "53735DC4231AB566"
+			subtitle: "{cabin.quest.53735DC4231AB566.subtitle}"
+			tasks: [
+				{
+					id: "591D709D1E4EE97A"
+					item: "minecraft:iron_nugget"
+					type: "item"
+				}
+				{
+					id: "64B405696E96FFCD"
+					title: "{cabin.task.0842082756DA73FE}"
+					type: "checkmark"
+				}
+			]
+			title: "{cabin.quest.53735DC4231AB566.title}"
+			x: 2.5d
+			y: 10.0d
+		}
+		{
+			dependencies: [
+				"1861E583C9DAA0BA"
+				"619E34A7DE48B991"
+			]
+			description: [
+				"{cabin.quest.06B061C0EE94BC90.description1}"
+				"{cabin.quest.06B061C0EE94BC90.description2}"
+			]
+			icon: "create:polished_rose_quartz"
+			id: "06B061C0EE94BC90"
+			subtitle: "{cabin.quest.06B061C0EE94BC90.subtitle}"
+			tasks: [
+				{
+					id: "0AD0021818A0BB33"
+					item: "create:polished_rose_quartz"
+					type: "item"
+				}
+				{
+					id: "0F6DB8FCC5C16A94"
+					title: "{cabin.task.0842082756DA73FE}"
+					type: "checkmark"
+				}
+			]
+			title: "{cabin.quest.06B061C0EE94BC90.title}"
+			x: -1.0d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"239C64263B91350D"
+				"1D9D65FBD06DD481"
+			]
+			description: [
+				"{cabin.quest.3C50B4556375178E.description1}"
+				""
+				"{cabin.quest.3C50B4556375178E.description2}"
+				"{cabin.quest.3C50B4556375178E.description3}"
+			]
+			id: "3C50B4556375178E"
+			shape: "circle"
+			subtitle: "{cabin.quest.3C50B4556375178E.subtitle}"
+			tasks: [{
+				id: "24070D354D67A3DF"
+				item: "kubejs:infernal_mechanism"
+				type: "item"
+			}]
+			title: "{cabin.quest.3C50B4556375178E.title}"
+			x: -4.0d
+			y: 19.0d
+		}
+		{
+			dependencies: [
+				"19715EBCBBA1B4AD"
+				"21753CBB528EAADF"
+			]
+			description: [
+				""
+				"{cabin.quest.1D9D65FBD06DD481.description1}"
+				""
+				"{cabin.quest.1D9D65FBD06DD481.description2}"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: "minecraft:lava_bucket"
+			id: "1D9D65FBD06DD481"
+			subtitle: "{cabin.quest.1D9D65FBD06DD481.subtitle}"
+			tasks: [
+				{
+					id: "4A9BF979E823D4CB"
+					item: "minecraft:lava_bucket"
+					type: "item"
+				}
+				{
+					id: "73BF4F3B488FBC83"
+					title: "{cabin.task.0842082756DA73FE}"
+					type: "checkmark"
+				}
+			]
+			title: "{cabin.quest.1D9D65FBD06DD481.title}"
+			x: -5.5d
+			y: 17.5d
+		}
+		{
+			dependencies: [
+				"223BB57AD0239511"
+				"7E59B7DC239E621E"
+				"5DCF9C8212AA3BE3"
+			]
+			description: ["{cabin.quest.239C64263B91350D.description1}"]
+			hide_until_deps_visible: true
+			icon: "tconstruct:liquid_soul_bucket"
+			id: "239C64263B91350D"
+			subtitle: "{cabin.quest.239C64263B91350D.subtitle}"
+			tasks: [
+				{
+					id: "7BBC2AAED0A77FDC"
+					item: "tconstruct:liquid_soul_bucket"
+					type: "item"
+				}
+				{
+					id: "21C241D2335C67E4"
+					title: "{cabin.task.0842082756DA73FE}"
+					type: "checkmark"
+				}
+			]
+			title: "{cabin.quest.239C64263B91350D.title}"
+			x: -4.0d
+			y: 17.0d
+		}
+		{
+			dependencies: [
+				"19715EBCBBA1B4AD"
+				"21753CBB528EAADF"
+			]
+			description: [
+				"{cabin.quest.223BB57AD0239511.description1}"
+				""
+				"{cabin.quest.223BB57AD0239511.description2}"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: "minecraft:twisting_vines"
+			id: "223BB57AD0239511"
+			subtitle: "{cabin.quest.223BB57AD0239511.subtitle}"
+			tasks: [
+				{
+					id: "70EA8B8349BC13D1"
+					item: "minecraft:twisting_vines"
+					type: "item"
+				}
+				{
+					id: "6F7A49C7C377ABF1"
+					title: "{cabin.task.0842082756DA73FE}"
+					type: "checkmark"
+				}
+			]
+			title: "{cabin.quest.223BB57AD0239511.title}"
+			x: -6.0d
+			y: 15.0d
+		}
+		{
+			dependencies: [
+				"19715EBCBBA1B4AD"
+				"21753CBB528EAADF"
+			]
+			description: [
+				"{cabin.quest.7E59B7DC239E621E.description1}"
+				""
+				"{cabin.quest.7E59B7DC239E621E.description2}"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: "minecraft:weeping_vines"
+			id: "7E59B7DC239E621E"
+			subtitle: "{cabin.quest.7E59B7DC239E621E.subtitle}"
+			tasks: [
+				{
+					id: "57EC8E4703FADF5E"
+					item: "minecraft:weeping_vines"
+					type: "item"
+				}
+				{
+					id: "6149AB838FC42C17"
+					title: "{cabin.task.0842082756DA73FE}"
+					type: "checkmark"
+				}
+			]
+			title: "{cabin.quest.7E59B7DC239E621E.title}"
+			x: -2.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["5351AF6CA73CB8E0"]
+			description: [
+				"{cabin.quest.6D8BB2D6A75ABB16.description1}"
+				"{cabin.quest.6D8BB2D6A75ABB16.description2}"
+			]
+			hide_dependency_lines: true
+			id: "6D8BB2D6A75ABB16"
+			shape: "circle"
+			tasks: [{
+				id: "7DF53EF0CF55B5D7"
+				item: {
+					Count: 1
+					id: "projectred_core:screwdriver"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "{cabin.quest.6D8BB2D6A75ABB16.title}"
+			x: -2.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["3C50B4556375178E"]
+			description: ["{cabin.quest.047FD4E54147D8F7.description1}"]
+			id: "047FD4E54147D8F7"
+			rewards: [
+				{
+					count: 16
+					id: "5868F4AF0FBE0295"
+					item: "kubejs:infernal_mechanism"
+					type: "item"
+				}
+				{
+					id: "02A669ED33AA71DC"
+					item: "minecraft:blaze_powder"
+					random_bonus: 4
+					type: "item"
+				}
+				{
+					id: "2BAEB1D62B8D3701"
+					item: "minecraft:gold_ingot"
+					random_bonus: 4
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "5D828A5601F86224"
+				item: "kubejs:zinc_machine"
+				type: "item"
+			}]
+			title: "{cabin.quest.047FD4E54147D8F7.title}"
+			x: -4.0d
+			y: 21.0d
+		}
+		{
+			dependencies: ["727B43FD95C4A512"]
+			description: [
+				"{cabin.quest.174E3A810535CAAC.description1}"
+				""
+				"{cabin.quest.174E3A810535CAAC.description2}"
+				""
+				"{cabin.quest.174E3A810535CAAC.description3}"
+				""
+				"{cabin.quest.174E3A810535CAAC.description4}"
+			]
+			hide_dependency_lines: false
+			icon: "create:brass_ingot"
+			id: "174E3A810535CAAC"
+			shape: "circle"
+			tasks: [{
+				id: "4418A795B9FB076D"
+				type: "checkmark"
+			}]
+			title: "{cabin.quest.174E3A810535CAAC.title}"
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"19715EBCBBA1B4AD"
+				"21753CBB528EAADF"
+				"6EDA86E4BE0F096B"
+			]
+			description: ["For the first time in the progression, a Blaze Burner may be required. Obtain them by using Empty Blaze Burners on Blazes or their Spawners."]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "5DCF9C8212AA3BE3"
+			min_required_dependencies: 2
+			shape: "circle"
+			tasks: [{
+				id: "3BBAFB33D9E2BB24"
+				item: "create:blaze_burner"
+				type: "item"
+			}]
+			title: "{cabin.quest.5DCF9C8212AA3BE3.title}"
+			x: -1.0d
+			y: 17.0d
+		}
+		{
+			dependencies: [
+				"19715EBCBBA1B4AD"
+				"6EDA86E4BE0F096B"
+			]
+			description: ["{cabin.quest.6C029983EE2035A5.description1}"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: "minecraft:nether_wart"
+			id: "6C029983EE2035A5"
+			subtitle: "{cabin.quest.6C029983EE2035A5.subtitle}"
+			tasks: [
+				{
+					id: "521A61FF9969B19A"
+					item: "minecraft:nether_wart"
+					type: "item"
+				}
+				{
+					id: "703432E68A27988C"
+					title: "{cabin.task.0842082756DA73FE}"
+					type: "checkmark"
+				}
+			]
+			title: "{cabin.quest.6C029983EE2035A5.title}"
+			x: 6.0d
+			y: 15.0d
+		}
+		{
+			dependencies: [
+				"6C029983EE2035A5"
+				"4B891E9ED8DE6BB2"
+			]
+			description: ["{cabin.quest.2131996D22A87667.description1}"]
+			icon: "minecraft:brewing_stand"
+			id: "2131996D22A87667"
+			subtitle: "{cabin.quest.2131996D22A87667.subtitle}"
+			tasks: [
+				{
+					id: "62442CDD0E1A7A52"
+					item: {
+						Count: 1
+						id: "minecraft:potion"
+						tag: {
+							Potion: "kubejs:haste"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0BD3CEE8D36CA74E"
+					title: "{cabin.task.0842082756DA73FE}"
+					type: "checkmark"
+				}
+			]
+			title: "{cabin.quest.2131996D22A87667.title}"
+			x: 8.0d
+			y: 15.5d
+		}
+		{
+			dependencies: [
+				"19715EBCBBA1B4AD"
+				"6EDA86E4BE0F096B"
+			]
+			description: ["{cabin.quest.4B891E9ED8DE6BB2.description1}"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: "minecraft:glow_berries"
+			id: "4B891E9ED8DE6BB2"
+			subtitle: "{cabin.quest.4B891E9ED8DE6BB2.subtitle}"
+			tasks: [
+				{
+					id: "2B6EEE26029DDB2A"
+					item: "minecraft:glow_berries"
+					type: "item"
+				}
+				{
+					id: "006A282CB1F28528"
+					title: "{cabin.task.0842082756DA73FE}"
+					type: "checkmark"
+				}
+			]
+			title: "{cabin.quest.4B891E9ED8DE6BB2.title}"
+			x: 10.0d
+			y: 15.0d
+		}
+		{
+			dependencies: [
+				"1A06FA866B74E75B"
+				"2131996D22A87667"
+			]
+			description: [
+				"{cabin.quest.44540B11F341AE09.description1}"
+				""
+				"{cabin.quest.3C50B4556375178E.description2}"
+				"{cabin.quest.3C50B4556375178E.description3}"
+			]
+			id: "44540B11F341AE09"
+			subtitle: "{cabin.quest.44540B11F341AE09.subtitle}"
+			tasks: [{
+				id: "11E3919F63C8BAF9"
+				item: "kubejs:logistic_mechanism"
+				type: "item"
+			}]
+			title: "{cabin.quest.44540B11F341AE09.title}"
+			x: 8.0d
+			y: 17.0d
+		}
+		{
+			dependencies: [
+				"19715EBCBBA1B4AD"
+				"6EDA86E4BE0F096B"
+			]
+			description: ["{cabin.quest.1A06FA866B74E75B.description1}"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: "kubejs:liquid_pulp_bucket"
+			id: "1A06FA866B74E75B"
+			subtitle: "{cabin.quest.1A06FA866B74E75B.subtitle}"
+			tasks: [
+				{
+					id: "46D9FB5D9254BA03"
+					item: "kubejs:liquid_pulp_bucket"
+					type: "item"
+				}
+				{
+					id: "0F467B1E08CD7D16"
+					title: "{cabin.task.0842082756DA73FE}"
+					type: "checkmark"
+				}
+			]
+			title: "{cabin.quest.1A06FA866B74E75B.title}"
+			x: 9.0d
+			y: 16.5d
+		}
+		{
+			dependencies: ["44540B11F341AE09"]
+			description: ["{cabin.quest.7BE0F4512FE4936D.description1}"]
+			id: "7BE0F4512FE4936D"
+			rewards: [
+				{
+					count: 16
+					id: "55A28F3C8BB4A98E"
+					item: "kubejs:logistic_mechanism"
+					type: "item"
+				}
+				{
+					id: "5A1B0759D8BAEFD3"
+					item: "create:cardboard"
+					random_bonus: 4
+					type: "item"
+				}
+				{
+					id: "1D4653A11D5E2BD0"
+					item: "minecraft:glow_berries"
+					random_bonus: 4
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "467FDE7905DFECE9"
+				item: "kubejs:lead_machine"
+				type: "item"
+			}]
+			title: "{cabin.quest.7BE0F4512FE4936D.title}"
+			x: 8.0d
+			y: 19.0d
+		}
+		{
+			dependencies: [
+				"19715EBCBBA1B4AD"
+				"6EDA86E4BE0F096B"
+			]
+			description: [
+				"To enter the Atomic age, you'll need Radaway, a synthetic fluid that dulls the effects of deadly radiation."
+				""
+				"Though there are alternative ways to farm the Glowing Mushrooms needed to make Radaway, one option is to manufacture them: brew Potions of Glowing and apply them to Brown Mushrooms. "
+				""
+				"But first you'll need to head into the Nether and grab some Nether Wart, for Awkward Potions."
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: "minecraft:nether_wart"
+			id: "4FFA0F65FA89D867"
+			subtitle: "Contraption 19-1"
+			tasks: [
+				{
+					id: "3AB4E06BD8DB2874"
+					item: "minecraft:nether_wart"
+					type: "item"
+				}
+				{
+					id: "0408B3CFBA95E2D6"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			title: "Glow in the Dark I"
+			x: -0.5d
+			y: 15.0d
+		}
+		{
+			dependencies: ["15978ED5A6E3DFFE"]
+			description: ["Excellent! Lead Machines are built to operate under extreme radiation, so they're an essential foundation for Nuclearcraft machines. The power of the atom is in the palm of your hand..."]
+			id: "3B930AA32F92246B"
+			rewards: [
+				{
+					count: 16
+					id: "3C029AFF20C882D8"
+					item: "kubejs:logistic_mechanism"
+					type: "item"
+				}
+				{
+					id: "00D2BA3BAF6B81A7"
+					item: "nuclearcraft:radaway"
+					random_bonus: 4
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "2402D45212D4CD6A"
+				item: "kubejs:lead_machine"
+				type: "item"
+			}]
+			title: "{cabin.quest.7BE0F4512FE4936D.title}"
+			x: 2.0d
+			y: 21.0d
+		}
+		{
+			dependencies: [
+				"68A8C2CB135ECA87"
+				"319D13EA51472303"
+				"5943F8F91AA79D59"
+			]
+			description: [
+				"Start with a Precision Mechanism. Cast it a new base with Molten Steel, delicately apply Molten Uranium, pour Molten Lead for shielding, and infuse the whole thing with Radaway. Welcome to the Atomic age."
+				""
+				"{cabin.quest.3C50B4556375178E.description2}"
+				"{cabin.quest.3C50B4556375178E.description3}"
+			]
+			id: "15978ED5A6E3DFFE"
+			shape: "circle"
+			subtitle: "{cabin.quest.44540B11F341AE09.subtitle}"
+			tasks: [{
+				id: "16BCC957A6178A32"
+				item: "kubejs:logistic_mechanism"
+				type: "item"
+			}]
+			title: "Uranium Enrichment"
+			x: 2.0d
+			y: 19.0d
+		}
+		{
+			dependencies: [
+				"4FFA0F65FA89D867"
+				"10E93BEB78219368"
+			]
+			description: [
+				"Glow Lichen + Awkward Potion = Potion of Glowing."
+				""
+				"Don't forget potions can be mass-brewed as fluids, by heated mixing in a Basin. You'll need a Blaze Burner for that option."
+			]
+			icon: "minecraft:brewing_stand"
+			id: "15368864A6946A93"
+			subtitle: "Contraption 19-3"
+			tasks: [
+				{
+					id: "1FBF559810708A05"
+					item: {
+						Count: 1
+						id: "minecraft:potion"
+						tag: {
+							Potion: "alexscaves:glowing"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6EE69ADFC26E5948"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			title: "Bright Brew"
+			x: 0.5d
+			y: 16.0d
+		}
+		{
+			dependencies: [
+				"19715EBCBBA1B4AD"
+				"6EDA86E4BE0F096B"
+			]
+			description: [
+				"The good news: Glow Lichen is easily found growing on the bottom of floating islands, harvested with shears."
+				""
+				"The bad news: Glow Lichen doesn't spread on its own. To farm it automatically, you'll have to fertilize it somehow."
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: "minecraft:glow_lichen"
+			id: "10E93BEB78219368"
+			subtitle: "Contraption 19-2"
+			tasks: [
+				{
+					id: "1B1BBF1FA5A20B4C"
+					item: "minecraft:glow_lichen"
+					type: "item"
+				}
+				{
+					id: "38ACBCB650804809"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			title: "Glow in the Dark II"
+			x: 1.5d
+			y: 15.0d
+		}
+		{
+			dependencies: [
+				"19715EBCBBA1B4AD"
+				"6EDA86E4BE0F096B"
+			]
+			description: ["There are countless ways to farm mushrooms, but only the brown ones can absorb Potion of Glowing to become the Glowing Mushrooms we need."]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: "minecraft:brown_mushroom"
+			id: "74D22D54CA80E7FD"
+			subtitle: "Contraption 19-4"
+			tasks: [
+				{
+					id: "7D941711FE9786C9"
+					item: "minecraft:brown_mushroom"
+					type: "item"
+				}
+				{
+					id: "2FA5130D892A7C3B"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			title: "mmm, musroom"
+			x: 2.5d
+			y: 16.0d
+		}
+		{
+			dependencies: [
+				"02E41EDC1899468D"
+				"2F1B9FE2E9C2FFEC"
+				"5DCF9C8212AA3BE3"
+				"6EDA86E4BE0F096B"
+			]
+			description: [
+				"Mixing Glowing Mushrooms into Milk at high temperatures boils away unwanted byproducts and leaves behind Radaway, a wondrous chemical that clears deadly radiation with only moderate side effects.*"
+				""
+				"You might wish to reserve some Radaway for personal consumption later, just in case..."
+			]
+			hide_until_deps_visible: true
+			icon: "nuclearcraft:radaway_bucket"
+			id: "319D13EA51472303"
+			subtitle: "Contraption 19-7"
+			tasks: [
+				{
+					id: "79B213EBA35838B4"
+					item: "nuclearcraft:radaway_bucket"
+					type: "item"
+				}
+				{
+					id: "64713708298099CA"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			title: "Rads, Away"
+			x: 2.0d
+			y: 18.0d
+		}
+		{
+			dependencies: [
+				"19715EBCBBA1B4AD"
+				"6EDA86E4BE0F096B"
+			]
+			description: [
+				"Like some other rare minerals, this world seems to lack natural reserves of Uranium. They're thought to have been depleted long long ago, in a time so ancient even the Daemons' logs don't speak of it."
+				""
+				"However, there may still be &ounnatural&r deposits, lying deep in irradiated caverns buried by eons. If such a bounty really does exist, it would be more than enough to supply the Molten Uranium you need..."
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "5943F8F91AA79D59"
+			tasks: [{
+				id: "5BE7FCD9CA40366E"
+				item: "alexscaves:uranium"
+				type: "item"
+			}]
+			title: "Lost Technology"
+			x: 3.5d
+			y: 18.5d
+		}
+		{
+			dependencies: [
+				"19715EBCBBA1B4AD"
+				"6EDA86E4BE0F096B"
+			]
+			description: [
+				"Atomic Mechanisms are so heavy-duty they need a base casted from Molten Steel. It's possible to fully automate Steel production, but not strictly necessary."
+				""
+				"If you don't have Steel production already, you can make it with a Blast Furnace from The Factory Must Grow or Immersive Engineering, or IE's Arc Furnace. Once you develop Lead Machines, you'll also have access to Nuclearcraft's Alloy Smelter."
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: "tconstruct:molten_steel_bucket"
+			id: "68A8C2CB135ECA87"
+			subtitle: "Contraption 20-1"
+			tasks: [
+				{
+					id: "5708394524C3F225"
+					item: "tconstruct:molten_steel_bucket"
+					type: "item"
+				}
+				{
+					id: "5A26A34DF149B618"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			title: "A Source of Steel"
+			x: 0.5d
+			y: 18.5d
+		}
+		{
+			dependencies: [
+				"74D22D54CA80E7FD"
+				"15368864A6946A93"
+			]
+			description: ["Glowing Mushrooms are an essential ingredient for Radaway. Whether you used the potion method or something else, as long as you've got a steady supply, you're good."]
+			icon: "nuclearcraft:glowing_mushroom"
+			id: "02E41EDC1899468D"
+			subtitle: "Contraption 19-5"
+			tasks: [
+				{
+					id: "2E047220154B72B7"
+					item: "nuclearcraft:glowing_mushroom"
+					type: "item"
+				}
+				{
+					id: "283ADD7E81BB311C"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			title: "Rad-Scrubbing Fungi"
+			x: 1.5d
+			y: 17.0d
+		}
+		{
+			dependencies: [
+				"6EDA86E4BE0F096B"
+				"19715EBCBBA1B4AD"
+			]
+			description: [
+				"The effect-clearing properties of Milk are necessary to clear your bones of deadly radiation. It's also nutritious and delicious."
+				""
+				"Automatic Milk production isn't that hard. You should be able to solve this."
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: "minecraft:milk_bucket"
+			id: "2F1B9FE2E9C2FFEC"
+			subtitle: "Contraption 19-6"
+			tasks: [
+				{
+					id: "54FEF7F786C3D743"
+					item: "minecraft:milk_bucket"
+					type: "item"
+				}
+				{
+					id: "31F55AFB8BC96E4D"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			title: "Milk: It's Legal"
+			x: 3.5d
+			y: 17.0d
+		}
+		{
+			dependencies: ["3B930AA32F92246B"]
+			description: [
+				"Although some Uranium yet persists in this world in ancient waste dump sites, several other elements critical to nuclear technology, like Boron and Magnesium, have been truly depleted."
+				""
+				"However, analysis suggests these ores must have existed in the past."
+				""
+				"If the past is the only place to find them..."
+			]
+			hide_until_deps_complete: true
+			id: "6EE9AA6D2A8FE0AD"
+			shape: "circle"
+			tasks: [{
+				id: "64DA726B37D98050"
+				item: "supplementaries:globe_sepia"
+				type: "item"
+			}]
+			title: "Epilogue: Rewriting History"
+			x: 2.0d
+			y: 25.5d
+		}
+		{
+			dependencies: ["6EE9AA6D2A8FE0AD"]
+			description: [
+				"The history of this world is shrouded in mystery, but two things are certain. An ancient cataclysm tore the land from the sea; and long before that, the critical elements for nuclear technology were already used up."
+				""
+				"But what if history followed a different path? What if there were a parallel world, where nobody was around to consume those precious resources... because their world had already ended?"
+			]
+			id: "7A3C54CE8AD783D4"
+			rewards: [{
+				id: "4B3FB9BB344E408F"
+				item: "nuclearcraft:geiger_counter"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				dimension: "nuclearcraft:wasteland"
+				icon: "alexscaves:nuclear_bomb"
+				id: "78A8586BA98B22EF"
+				title: "&cBring an end to the world you've created, and witness what comes after."
+				type: "dimension"
+			}]
+			title: "The End of the World"
+			x: 2.0d
+			y: 28.0d
+		}
+		{
+			dependencies: [
+				"2809AE02EA018BFA"
+				"6EE9AA6D2A8FE0AD"
+			]
+			hide_dependency_lines: true
+			hide_details_until_startable: true
+			hide_lock_icon: true
+			hide_text_until_complete: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: true
+			icon: "alexscaves:uranium_rod"
+			icon_scale: 2.0d
+			id: "6199E449AF2BADBA"
+			shape: "none"
+			size: 0.67d
+			title: "Uranium Rod"
+			x: 3.0149999999999997d
+			y: 26.130000000000003d
+		}
+		{
+			dependencies: [
+				"2809AE02EA018BFA"
+				"6EE9AA6D2A8FE0AD"
+			]
+			hide_dependency_lines: true
+			hide_details_until_startable: true
+			hide_lock_icon: true
+			hide_text_until_complete: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: true
+			icon: "kubejs:lead_casing"
+			icon_scale: 2.0d
+			id: "46BF1AE437F27403"
+			shape: "none"
+			size: 0.67d
+			title: "Lead Casing"
+			x: 3.0149999999999997d
+			y: 26.8d
+		}
+		{
+			dependencies: [
+				"2809AE02EA018BFA"
+				"6EE9AA6D2A8FE0AD"
+			]
+			hide_dependency_lines: true
+			hide_details_until_startable: true
+			hide_lock_icon: true
+			hide_text_until_complete: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: true
+			icon: "kubejs:lead_casing"
+			icon_scale: 2.0d
+			id: "0AD8C8E5491278E1"
+			shape: "none"
+			size: 0.67d
+			title: "Lead Casing"
+			x: 2.0100000000000002d
+			y: 26.8d
+		}
+		{
+			dependencies: [
+				"2809AE02EA018BFA"
+				"6EE9AA6D2A8FE0AD"
+			]
+			hide_dependency_lines: true
+			hide_details_until_startable: true
+			hide_lock_icon: true
+			hide_text_until_complete: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: true
+			icon: "kubejs:lead_casing"
+			icon_scale: 2.0d
+			id: "5A6926E64EEE7729"
+			shape: "none"
+			size: 0.67d
+			title: "Lead Casing"
+			x: 1.0050000000000001d
+			y: 26.8d
+		}
+		{
+			dependencies: [
+				"2809AE02EA018BFA"
+				"6EE9AA6D2A8FE0AD"
+			]
+			hide_dependency_lines: true
+			hide_details_until_startable: true
+			hide_lock_icon: true
+			hide_text_until_complete: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: true
+			icon: "kubejs:lead_casing"
+			icon_scale: 2.0d
+			id: "17AA221C7B7E6734"
+			shape: "none"
+			size: 0.67d
+			title: "Lead Casing"
+			x: 1.0050000000000001d
+			y: 29.145000000000003d
+		}
+		{
+			dependencies: [
+				"2809AE02EA018BFA"
+				"6EE9AA6D2A8FE0AD"
+			]
+			hide_dependency_lines: true
+			hide_details_until_startable: true
+			hide_lock_icon: true
+			hide_text_until_complete: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: true
+			icon: "kubejs:lead_casing"
+			icon_scale: 2.0d
+			id: "7021A2BD8775DC07"
+			shape: "none"
+			size: 0.67d
+			title: "Lead Casing"
+			x: 3.015d
+			y: 29.145000000000003d
+		}
+		{
+			dependencies: [
+				"2809AE02EA018BFA"
+				"6EE9AA6D2A8FE0AD"
+			]
+			hide_dependency_lines: true
+			hide_details_until_startable: true
+			hide_lock_icon: true
+			hide_text_until_complete: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: true
+			icon: "kubejs:lead_casing"
+			icon_scale: 2.0d
+			id: "08367CEDF13CB65C"
+			shape: "none"
+			size: 0.67d
+			title: "Lead Casing"
+			x: 2.0100000000000002d
+			y: 29.145000000000003d
+		}
+		{
+			dependencies: [
+				"2809AE02EA018BFA"
+				"6EE9AA6D2A8FE0AD"
+			]
+			hide_dependency_lines: true
+			hide_details_until_startable: true
+			hide_lock_icon: true
+			hide_text_until_complete: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: true
+			icon: "kubejs:lead_casing"
+			icon_scale: 2.0d
+			id: "4815DA7B77DD7175"
+			shape: "none"
+			size: 0.67d
+			title: "Lead Casing"
+			x: 3.0149999999999997d
+			y: 27.67d
+		}
+		{
+			dependencies: [
+				"2809AE02EA018BFA"
+				"6EE9AA6D2A8FE0AD"
+			]
+			hide_dependency_lines: true
+			hide_details_until_startable: true
+			hide_lock_icon: true
+			hide_text_until_complete: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: true
+			icon: "kubejs:lead_casing"
+			icon_scale: 2.0d
+			id: "2C196D41B3B087C6"
+			shape: "none"
+			size: 0.67d
+			title: "Lead Casing"
+			x: 1.0050000000000001d
+			y: 27.67d
+		}
+		{
+			dependencies: [
+				"2809AE02EA018BFA"
+				"6EE9AA6D2A8FE0AD"
+			]
+			hide_dependency_lines: true
+			hide_details_until_startable: true
+			hide_lock_icon: true
+			hide_text_until_complete: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: true
+			icon: "alexscaves:uranium_rod"
+			icon_scale: 2.0d
+			id: "31DA3A80C6E23004"
+			shape: "none"
+			size: 0.67d
+			title: "Uranium Rod"
+			x: 1.0050000000000001d
+			y: 26.130000000000003d
+		}
+		{
+			dependencies: [
+				"2809AE02EA018BFA"
+				"6EE9AA6D2A8FE0AD"
+			]
+			hide_dependency_lines: true
+			hide_details_until_startable: true
+			hide_lock_icon: true
+			hide_text_until_complete: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: true
+			icon: "alexscaves:uranium_rod"
+			icon_scale: 2.0d
+			id: "0504DC3275C4F49D"
+			shape: "none"
+			size: 0.67d
+			title: "Uranium Rod"
+			x: 1.0050000000000001d
+			y: 28.5d
+		}
+		{
+			dependencies: [
+				"2809AE02EA018BFA"
+				"6EE9AA6D2A8FE0AD"
+			]
+			hide_dependency_lines: true
+			hide_details_until_startable: true
+			hide_lock_icon: true
+			hide_text_until_complete: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: true
+			icon: "alexscaves:uranium_rod"
+			icon_scale: 2.0d
+			id: "7C31A0611CC62360"
+			shape: "none"
+			size: 0.67d
+			title: "Uranium Rod"
+			x: 3.0d
+			y: 28.5d
+		}
+	]
+	title: "{cabin.chapter.3CEC7BECE6B40994.title}"
+}

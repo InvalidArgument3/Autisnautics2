@@ -1,0 +1,26 @@
+{
+	id: "50DD66FBAFABA014"
+	loot_size: 1
+	order_index: 1
+	rewards: [
+		{ item: "psi:cad_colorizer_white" }
+		{ item: "psi:cad_colorizer_orange" }
+		{ item: "psi:cad_colorizer_magenta" }
+		{ item: "psi:cad_colorizer_light_blue" }
+		{ item: "psi:cad_colorizer_yellow" }
+		{ item: "psi:cad_colorizer_lime" }
+		{ item: "psi:cad_colorizer_pink" }
+		{ item: "psi:cad_colorizer_gray" }
+		{ item: "psi:cad_colorizer_light_gray" }
+		{ item: "psi:cad_colorizer_cyan" }
+		{ item: "psi:cad_colorizer_purple" }
+		{ item: "psi:cad_colorizer_blue" }
+		{ item: "psi:cad_colorizer_brown" }
+		{ item: "psi:cad_colorizer_green" }
+		{ item: "psi:cad_colorizer_red" }
+		{ item: "psi:cad_colorizer_black" }
+		{ item: "psi:cad_colorizer_rainbow" }
+		{ item: "psi:cad_colorizer_psi" }
+	]
+	title: "intro_daemon_colorizers"
+}

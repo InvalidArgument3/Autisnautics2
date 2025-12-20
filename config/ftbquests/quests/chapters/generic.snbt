@@ -1,0 +1,748 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "generic"
+	group: "0BFB33D75F4EAD91"
+	icon: "immersive_aircraft:airship"
+	id: "0F40BB44472F412C"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["5866040E9BF5CB9F"]
+			description: ["wooda"]
+			hide_until_deps_complete: true
+			icon: "minecraft:oak_log"
+			id: "6F56109274CDF42A"
+			rewards: [
+				{
+					id: "2A4D003D84F67E96"
+					item: "minecraft:feather"
+					type: "item"
+				}
+				{
+					id: "5FD5C988BFF58610"
+					item: "minecraft:egg"
+					type: "item"
+				}
+			]
+			tasks: [{
+				consume_items: false
+				count: 16L
+				id: "620B88139898C10E"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				title: "16x Any Log"
+				type: "item"
+			}]
+			title: "Chop Vood"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6F56109274CDF42A"]
+			id: "37B8421D272A16D0"
+			rewards: [{
+				count: 2
+				id: "3D12BFE450257807"
+				item: "minecraft:string"
+				type: "item"
+			}]
+			tasks: [{
+				count: 12L
+				id: "076CDD83F590BFAC"
+				item: { Count: 12, id: "minecraft:paper" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6F56109274CDF42A"]
+			icon: "minecraft:leather"
+			id: "7CD3B748BA478401"
+			optional: true
+			rewards: [{
+				count: 15
+				id: "70D657FBB8458D46"
+				item: "minecraft:leather"
+				type: "item"
+			}]
+			tasks: [{
+				count: 5L
+				id: "24AB9E21404E337F"
+				item: { Count: 5, id: "minecraft:rotten_flesh" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["37B8421D272A16D0"]
+			id: "5C5D315DFC50FAA3"
+			tasks: [{
+				id: "24DAA51849523CA4"
+				item: {
+					Count: 1
+					id: "vc_gliders:paraglider_wood"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"5866040E9BF5CB9F"
+				"1373138538AB296A"
+			]
+			id: "60C9D11076C4A724"
+			rewards: [{
+				id: "2C007326D0D9A9A0"
+				item: "delightful:deluxe_cheeseburger"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "5E57E9DF862B49B1"
+				item: "immersive_aircraft:gyrodyne"
+				type: "item"
+			}]
+			title: "Flying Boat"
+			x: 0.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"5866040E9BF5CB9F"
+				"1373138538AB296A"
+			]
+			id: "3B86BE3E3211A392"
+			rewards: [{
+				count: 16
+				id: "72C04C46F078DA9B"
+				item: "minecraft:coal"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "562C6AFEF41AA413"
+				item: "create_sa:andesite_jetpack_chestplate"
+				type: "item"
+			}]
+			title: "A Balanced Jetpack?"
+			x: 1.0d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"5866040E9BF5CB9F"
+				"1373138538AB296A"
+			]
+			icon: {
+				Count: 1
+				id: "supplementaries:slingshot"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "252015A3FD4F1528"
+			rewards: [{
+				count: 3
+				id: "30CB8688C9B20FCA"
+				item: {
+					Count: 1
+					id: "tconstruct:modifier_crystal"
+					tag: {
+						modifier: "tconstruct:power"
+					}
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "45555A61BE676E6B"
+					item: "tconstruct:earth_slime_crystal"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "770F04105CD38857"
+					item: { Count: 2, id: "tconstruct:earth_congealed_slime" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "71C1E659C7AC35CD"
+					item: { Count: 2, id: "minecraft:string" }
+					type: "item"
+				}
+			]
+			title: "Flinging is the New Sling"
+			x: -1.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["5866040E9BF5CB9F"]
+			id: "5ED66681BF2A689D"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				dimension: "ad_astra:moon"
+				icon: "ad_astra:moon_globe"
+				id: "373616DA69A9A172"
+				type: "dimension"
+			}]
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"5866040E9BF5CB9F"
+				"1373138538AB296A"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: {
+						Battery: 0
+						Memory: [ ]
+						Time: 0
+					}
+				}
+				id: "psi:cad"
+				tag: {
+					CapabilityData: {
+						Battery: 0
+						Memory: [ ]
+						Time: 0
+					}
+					componentASSEMBLY: {
+						Count: 1b
+						id: "psi:cad_assembly_iron"
+					}
+				}
+			}
+			id: "155B2476219F8F57"
+			rewards: [{
+				count: 16
+				id: "610FBBE600ACB3FD"
+				item: "psi:psidust"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "2131A0110803B11A"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								Battery: 0
+								Memory: [ ]
+								Time: 0
+							}
+						}
+						id: "psi:cad"
+						tag: {
+							componentASSEMBLY: {
+								Count: 1b
+								id: "psi:cad_assembly_iron"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4024980862C3648B"
+					item: "psi:programmer"
+					type: "item"
+				}
+			]
+			title: "Learn to Code"
+			x: 1.5d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"5866040E9BF5CB9F"
+				"1373138538AB296A"
+			]
+			icon: {
+				Count: 1
+				id: "adhooks:spear_launcher"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "00565042E29AD1B1"
+			rewards: [{
+				id: "26F931AC4A4107AE"
+				item: {
+					Count: 1
+					id: "minecraft:enchanted_book"
+					tag: {
+						StoredEnchantments: [{
+							id: "minecraft:unbreaking"
+							lvl: 1s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "20D8DDCC401AA0DD"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "adhooks:spear_launcher"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "adhooks:web_launcher"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				title: "Spear Hook Launcher OR Web Hook Launcher"
+				type: "item"
+			}]
+			title: "Hook Launchers"
+			x: -1.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["07A744D2AF509711"]
+			id: "6F4B1FC2E7182883"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1A76186A79D69FF4"
+				table_id: 797638143605971652L
+				title: "Choose One Free Profession Card"
+				type: "choice"
+			}]
+			tasks: [{
+				id: "4943249C86299A52"
+				item: "thermal:machine_press"
+				type: "item"
+			}]
+			title: "Khajiit Has Wares"
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["07A744D2AF509711"]
+			icon: "minecraft:sugar"
+			id: "794DF747BF925C4B"
+			rewards: [{
+				count: 2
+				id: "50BE14FD88C2E7C3"
+				item: "minecraft:sugar"
+				type: "item"
+			}]
+			shape: "circle"
+			tasks: [{
+				consume_items: true
+				id: "5395BDAF022148E8"
+				item: "thermal:silver_coin"
+				type: "item"
+			}]
+			title: "Sugar Dealer"
+			x: -2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0ED0EB18E3E3C99C"]
+			icon: "minecraft:skeleton_skull"
+			id: "0A295CF925D97618"
+			rewards: [{
+				id: "4801E16FD954063B"
+				item: {
+					Count: 1
+					id: "tconstruct:sledge_hammer"
+					tag: {
+						Damage: 0
+						tic_broken: 0b
+						tic_materials: [
+							"tconstruct:silver"
+							"tconstruct:silver"
+							"tconstruct:silver"
+							"tconstruct:silver"
+						]
+						tic_modifiers: [
+							{
+								level: 1
+								name: "tconstruct:fiery"
+							}
+							{
+								level: 6
+								name: "tconstruct:smite"
+							}
+						]
+						tic_multipliers: {
+							"tconstruct:attack_damage": 1.35f
+							"tconstruct:durability": 4.0f
+							"tconstruct:mining_speed": 0.4f
+						}
+						tic_persistent: { }
+						tic_stats: {
+							"tconstruct:attack_damage": 7.0875f
+							"tconstruct:attack_speed": 0.82500005f
+							"tconstruct:durability": 1080.0f
+							"tconstruct:harvest_tier": "minecraft:iron"
+							"tconstruct:mining_speed": 2.31f
+						}
+						tic_upgrades: [{
+							level: 1
+							name: "tconstruct:fiery"
+						}]
+						tic_volatile_data: {
+							abilities: 1
+							upgrades: 2
+						}
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					entity: "minecraft:skeleton"
+					id: "665D7876C081EDA7"
+					type: "kill"
+					value: 30L
+				}
+				{
+					entity: "minecraft:zombie"
+					id: "0DCEBE1177C87257"
+					type: "kill"
+					value: 30L
+				}
+				{
+					entity: "scguns:redcoat"
+					id: "7976910DA3F29FAA"
+					type: "kill"
+					value: 5L
+				}
+				{
+					entity: "scguns:hive"
+					id: "4A63665717E1148D"
+					type: "kill"
+					value: 5L
+				}
+				{
+					entity: "mna:hulking_zombie"
+					id: "5252F3F01FE5E75E"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Purge the Undead"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["0ED0EB18E3E3C99C"]
+			icon: "minecraft:egg"
+			id: "3A24852885341D52"
+			rewards: [{
+				id: "4749B6825B859225"
+				item: "minecraft:egg"
+				random_bonus: 11
+				type: "item"
+			}]
+			shape: "circle"
+			tasks: [{
+				consume_items: true
+				id: "4ABDB667D9C32513"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "minecraft:beds"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "comforts:sleeping_bags"
+								}
+							}
+						]
+					}
+				}
+				title: "Any Bed or Sleeping Bag"
+				type: "item"
+			}]
+			title: "Quick Nap"
+			x: 2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3AD0072806C85E8A"]
+			id: "503719738ECF7E47"
+			rewards: [{
+				id: "23ED3A644AC1B763"
+				item: {
+					Count: 1
+					id: "magistuarmory:crown_decoration"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				entity: "touhou_little_maid:fairy"
+				id: "523056C667A20E3D"
+				type: "kill"
+				value: 100L
+			}]
+			title: "Mass Bullying"
+			x: 1.5d
+			y: -2.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["3AD0072806C85E8A"]
+			id: "232166AEE943A162"
+			rewards: [{
+				count: 16
+				id: "2D07631B4DF8B7A0"
+				item: "minecraft:clay_ball"
+				type: "item"
+			}]
+			shape: "circle"
+			tasks: [{
+				consume_items: true
+				id: "0966545656AD93C1"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:decorated_pot_sherds"
+					}
+				}
+				title: "Any Pottery Sherd"
+				type: "item"
+			}]
+			title: "Let's Recycle!"
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1E1BA732F69158CB"]
+			id: "14FA93A81C14879D"
+			rewards: [{
+				id: "0DC5CB439FBDCA95"
+				item: "artifacts:aqua_dashers"
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					id: "57581C0B4C15F11F"
+					item: "thermal:ruby"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "37D529AD9E7A26FE"
+					item: "thermal:sapphire"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "6C0F0012F836A07C"
+					item: "minecraft:amethyst_shard"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "16225BDE30981D9A"
+					item: "thermal:sulfur"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "7F334DC9B3E3137A"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "187A6307E81BF5F8"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "0344AB9960C6F188"
+					item: "ae2:certus_quartz_crystal"
+					type: "item"
+				}
+			]
+			title: "Chaos Emeralds"
+			x: -1.5d
+			y: -2.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["1E1BA732F69158CB"]
+			id: "1B4D4D92C05B9A16"
+			rewards: [{
+				id: "51B1881FAD8877AF"
+				item: "minecraft:totem_of_undying"
+				type: "item"
+			}]
+			shape: "circle"
+			tasks: [{
+				consume_items: true
+				count: 100L
+				id: "638845FD9CAD46A4"
+				item: {
+					Count: 100
+					id: "tinkersjewelry:plain_ring"
+					tag: {
+						Material: "tconstruct:gold"
+					}
+				}
+				type: "item"
+			}]
+			title: "1-Up"
+			x: -1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5866040E9BF5CB9F"]
+			icon: "minecraft:compass"
+			id: "1373138538AB296A"
+			shape: "octagon"
+			size: 1.5d
+			tasks: [{
+				id: "1C7E4FFBCE0590D4"
+				title: "[Check Em]"
+				type: "checkmark"
+			}]
+			title: "More Early-Game Mobility"
+			x: 0.0d
+			y: 5.25d
+		}
+		{
+			can_repeat: true
+			dependencies: ["4B8D31141A3D2965"]
+			icon: "minecraft:glass_bottle"
+			id: "1CC536F2D05E8189"
+			rewards: [{
+				id: "62E5BF14CDF728C6"
+				item: "minecraft:glass_bottle"
+				type: "item"
+			}]
+			shape: "circle"
+			tasks: [{
+				id: "41AF308A3E8B73DD"
+				title: "It's Free!"
+				type: "checkmark"
+			}]
+			title: "Infinite Vials"
+			x: -2.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4B8D31141A3D2965"]
+			icon: {
+				Count: 1
+				id: "enigmaticlegacy:ultimate_potion"
+				tag: {
+					EnigmaticPotion: "ultimate_night_vision"
+				}
+			}
+			id: "40D663C4D421DBAA"
+			rewards: [{
+				id: "185DF38BD50FD5B3"
+				table_id: 754462574602948556L
+				title: "MYSTERY POTION"
+				type: "random"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "54F4AB1B3076A5F0"
+				item: "minecraft:clock"
+				type: "item"
+			}]
+			title: "Brew Potion"
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["2FE4393E7DADB6B0"]
+			icon: "nuclearcraft:salt"
+			id: "1401C9EEAD31C31E"
+			rewards: [{
+				id: "141FDD2B834C3754"
+				item: "nuclearcraft:salt"
+				type: "item"
+			}]
+			shape: "circle"
+			tasks: [{
+				id: "7D70234CCBBAA616"
+				title: "[Approach a Nearby Janitor]"
+				type: "checkmark"
+			}]
+			title: "You Snail!"
+			x: 2.5d
+			y: 3.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["2FE4393E7DADB6B0"]
+			id: "58CD5739BCB8A790"
+			rewards: [{
+				command: "/kubejs custom_command ether_mutate"
+				icon: "botania:corporea_spark_master"
+				id: "09132FD26A341866"
+				title: "&dExposure to Etherium might aggravate your ether disease symptoms..."
+				type: "command"
+			}]
+			shape: "circle"
+			tasks: [{
+				consume_items: true
+				id: "472D195C9400446A"
+				item: "enigmaticlegacy:etherium_block"
+				type: "item"
+			}]
+			title: "Ether Metal"
+			x: 2.5d
+			y: 2.5d
+		}
+	]
+	title: "FLAOT.jpg"
+}

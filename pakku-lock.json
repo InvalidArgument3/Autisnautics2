@@ -1410,25 +1410,24 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "BetterCompatibilityChecker-3.0.1-build.58+mc1.20.jar",
+                    "file_name": "BetterCompatibilityChecker-forge-4.0.8+mc1.20.1.jar",
                     "mc_versions": [
-                        "1.20.1",
-                        "1.20"
+                        "1.20.1"
                     ],
                     "loaders": [
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/4573/949/BetterCompatibilityChecker-3.0.1-build.58+mc1.20.jar",
-                    "id": "4573949",
+                    "url": "https://edge.forgecdn.net/files/4688/940/BetterCompatibilityChecker-forge-4.0.8+mc1.20.1.jar",
+                    "id": "4688940",
                     "parent_id": "551894",
                     "hashes": {
-                        "sha1": "5c63ec18176fdf072c3b8d0fb7e8445ed73b9b86",
-                        "md5": "195b63f326cda129e255c7ca475d0635"
+                        "sha1": "c5407cfd0b38d8db6d6f1c0088397f4c5616c7ae",
+                        "md5": "6cda211453a4423157b1a7927b050cff"
                     },
                     "required_dependencies": [],
-                    "size": 21072,
-                    "date_published": "2023-06-08T15:01:20.420Z"
+                    "size": 26540,
+                    "date_published": "2023-08-08T16:32:58.147Z"
                 }
             ]
         },
@@ -7130,39 +7129,39 @@
             ]
         },
         {
-            "pakku_id": "npamuRLOhig6M4R2",
+            "pakku_id": "6iO9zDq7SJz1UL0S",
             "type": "MOD",
-            "side": "CLIENT",
             "slug": {
-                "modrinth": "in-game-account-switcher"
+                "curseforge": "in-game-account-switcher"
             },
             "name": {
-                "modrinth": "In-Game Account Switcher"
+                "curseforge": "In-Game Account Switcher"
             },
             "id": {
-                "modrinth": "cudtvDnd"
+                "curseforge": "232676"
             },
             "files": [
                 {
-                    "type": "modrinth",
-                    "file_name": "IAS-Forge-1.20.1-9.0.4.jar",
+                    "type": "curseforge",
+                    "file_name": "IAS-Forge-1.20.1-9.0.0.jar",
                     "mc_versions": [
-                        "1.20.1"
+                        "1.20.1",
+                        "1.20"
                     ],
                     "loaders": [
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/cudtvDnd/versions/DCMEYBKC/IAS-Forge-1.20.1-9.0.4.jar",
-                    "id": "DCMEYBKC",
-                    "parent_id": "cudtvDnd",
+                    "url": "https://edge.forgecdn.net/files/5457/30/IAS-Forge-1.20.1-9.0.0.jar",
+                    "id": "5457030",
+                    "parent_id": "232676",
                     "hashes": {
-                        "sha512": "63748239e933ea583e86dc38452dc42bd7b19ac4f57264dc045ac76a63eadc255540b70bd2f17b7204b4d50953fa061ee7d54b98b056be795c512e1c04c82de1",
-                        "sha1": "4abacb7399e8110eb1e217d06a8a45dac3b273e6"
+                        "sha1": "e28ee7039a28bc008e55316bd490ebf42e9d2d17",
+                        "md5": "d83b9e8b614e5d9204268c7eaf25231e"
                     },
                     "required_dependencies": [],
-                    "size": 311982,
-                    "date_published": "2025-07-01T11:35:30.801456Z"
+                    "size": 312332,
+                    "date_published": "2024-06-22T04:14:39.780Z"
                 }
             ]
         },
@@ -12673,19 +12672,19 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "spawnanimations-v1.11.2-mc1.17-1.21.10-mod.jar",
+                    "file_name": "spawnanimations-v1.11.3-mc1.17-1.21.11-mod.jar",
                     "mc_versions": [
-                        "1.20.2",
-                        "1.20.5",
                         "1.20.2-Snapshot",
                         "1.20.5-Snapshot",
-                        "1.20.3-Snapshot",
-                        "1.20.3",
+                        "1.20.2",
+                        "1.20.5",
                         "1.20.1",
                         "1.20",
                         "1.20.6",
+                        "1.20-Snapshot",
                         "1.20.4",
-                        "1.20-Snapshot"
+                        "1.20.3-Snapshot",
+                        "1.20.3"
                     ],
                     "loaders": [
                         "fabric",
@@ -12693,16 +12692,16 @@
                         "quilt"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7091/829/spawnanimations-v1.11.2-mc1.17-1.21.10-mod.jar",
-                    "id": "7091829",
+                    "url": "https://edge.forgecdn.net/files/7312/477/spawnanimations-v1.11.3-mc1.17-1.21.11-mod.jar",
+                    "id": "7312477",
                     "parent_id": "1223719",
                     "hashes": {
-                        "sha1": "d7b36bdbcc52743023043fc1dafb5aee0e4a43ba",
-                        "md5": "522b10d8b1901f3b16c0cc753a39a185"
+                        "sha1": "d8d38a01b2e46db2dfd393a946bb02a31edbcd7c",
+                        "md5": "f6fe4eb6f90b0af9ccf64ca6ee3b3f1d"
                     },
                     "required_dependencies": [],
-                    "size": 220435,
-                    "date_published": "2025-10-10T19:07:10.390Z"
+                    "size": 223524,
+                    "date_published": "2025-12-09T17:50:44.940Z"
                 }
             ]
         },
@@ -13897,7 +13896,7 @@
             ]
         },
         {
-            "pakku_id": "rhur0pkRREO4luVZ",
+            "pakku_id": "Trj13sZiq3cwmrow",
             "type": "MOD",
             "side": "SERVER",
             "slug": {
@@ -13909,19 +13908,20 @@
             "id": {
                 "modrinth": "V1UmcEMX"
             },
+            "update_strategy": "NONE",
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "vlib-1.20.1-0.1.0+forge.jar",
+                    "file_name": "vlib-1.20.1-0.0.15-alpha+forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
                         "forge"
                     ],
-                    "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/V1UmcEMX/versions/FdBRUxjd/vlib-1.20.1-0.1.0+forge.jar",
-                    "id": "FdBRUxjd",
+                    "release_type": "alpha",
+                    "url": "https://cdn.modrinth.com/data/V1UmcEMX/versions/eSVmXLVX/vlib-1.20.1-0.0.15-alpha%2Bforge.jar",
+                    "id": "eSVmXLVX",
                     "parent_id": "V1UmcEMX",
                     "hashes": {
                         "sha512": "785fdc3de39506c43bb764a0f15a357af40c92188480fd45f519c3bd98993563157403bfdf46ebeb36b414356a13b6af63c82d1ca54683ea538e373b47198f78",
@@ -14808,25 +14808,24 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "YeetusExperimentus-Forge-2.3.0-build.4+mc1.20.1.jar",
+                    "file_name": "YeetusExperimentus-Forge-2.3.1-build.6+mc1.20.1.jar",
                     "mc_versions": [
-                        "1.20.1",
-                        "1.20"
+                        "1.20.1"
                     ],
                     "loaders": [
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/4589/804/YeetusExperimentus-Forge-2.3.0-build.4+mc1.20.1.jar",
-                    "id": "4589804",
+                    "url": "https://edge.forgecdn.net/files/4680/832/YeetusExperimentus-Forge-2.3.1-build.6+mc1.20.1.jar",
+                    "id": "4680832",
                     "parent_id": "635427",
                     "hashes": {
-                        "sha1": "d40beae393ec07da5faf925cea380e31a7f08d39",
-                        "md5": "63cfccf6155fa9e83c451fca78aff079"
+                        "sha1": "6efdaf5d213f779e51aa84631a5f06a306351e75",
+                        "md5": "b6a02a72cc15d1b1228c4b1ecf7fa3ee"
                     },
                     "required_dependencies": [],
                     "size": 568278,
-                    "date_published": "2023-06-15T16:55:27.407Z"
+                    "date_published": "2023-08-03T18:04:25.470Z"
                 }
             ]
         },

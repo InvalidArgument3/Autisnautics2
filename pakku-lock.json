@@ -7130,30 +7130,39 @@
             ]
         },
         {
-            "pakku_id": "V1obHCZRwbUHAIsP",
+            "pakku_id": "npamuRLOhig6M4R2",
             "type": "MOD",
+            "side": "CLIENT",
             "slug": {
-                "github": "The-Fireplace-Minecraft-Mods/In-Game-Account-Switcher"
+                "modrinth": "in-game-account-switcher"
             },
             "name": {
-                "github": "In-Game-Account-Switcher"
+                "modrinth": "In-Game Account Switcher"
             },
             "id": {
-                "github": "67976798"
+                "modrinth": "cudtvDnd"
             },
             "files": [
                 {
-                    "type": "github",
-                    "file_name": "IAS-9.0.6-alpha.2+1.21.11-neoforge.jar",
-                    "release_type": "alpha",
-                    "url": "https://github.com/The-Fireplace-Minecraft-Mods/In-Game-Account-Switcher/releases/download/v9.0.6-alpha.2/IAS-9.0.6-alpha.2+1.21.11-neoforge.jar",
-                    "id": "329692011",
-                    "parent_id": "67976798",
+                    "type": "modrinth",
+                    "file_name": "IAS-Forge-1.20.1-9.0.4.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/cudtvDnd/versions/DCMEYBKC/IAS-Forge-1.20.1-9.0.4.jar",
+                    "id": "DCMEYBKC",
+                    "parent_id": "cudtvDnd",
                     "hashes": {
-                        "sha256": "5cfefd98bf7bad61d79b0c751319f09c2c9464bbbbfe4bc02e60694a485077c7"
+                        "sha512": "63748239e933ea583e86dc38452dc42bd7b19ac4f57264dc045ac76a63eadc255540b70bd2f17b7204b4d50953fa061ee7d54b98b056be795c512e1c04c82de1",
+                        "sha1": "4abacb7399e8110eb1e217d06a8a45dac3b273e6"
                     },
-                    "size": 319763,
-                    "date_published": "2025-12-17T06:32:42Z"
+                    "required_dependencies": [],
+                    "size": 311982,
+                    "date_published": "2025-07-01T11:35:30.801456Z"
                 }
             ]
         },
@@ -10779,7 +10788,7 @@
             ]
         },
         {
-            "pakku_id": "Bvq4kn5uNPTD4owb",
+            "pakku_id": "ASeo41DICgokkt2b",
             "type": "MOD",
             "slug": {
                 "curseforge": "project-red-core"
@@ -10798,28 +10807,28 @@
                         "1.20.1"
                     ],
                     "loaders": [
-                        "neoforge",
-                        "forge"
+                        "forge",
+                        "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6332/76/ProjectRed-1.20.1-4.21.0-core.jar",
-                    "id": "6332076",
+                    "url": "https://edge.forgecdn.net/files/6868/143/ProjectRed-1.20.1-4.21.0-core.jar",
+                    "id": "6868143",
                     "parent_id": "228702",
                     "hashes": {
-                        "sha1": "2820c03addb16a3a51f2879b942f76911423bf3a",
-                        "md5": "92ff17504c80bf1688d2cc128531f98b"
+                        "sha1": "3c7a62527958c199fb30a08b37f1a634dfb6a715",
+                        "md5": "3ad04d9bea9bdd9252352bab1bdb71a2"
                     },
                     "required_dependencies": [
                         "242818",
                         "258426"
                     ],
                     "size": 806997,
-                    "date_published": "2025-03-22T16:58:28.720Z"
+                    "date_published": "2025-08-09T16:57:24.970Z"
                 }
             ]
         },
         {
-            "pakku_id": "xz9XJxklWgm4nw3U",
+            "pakku_id": "ejUPD7CroePg0Sb5",
             "type": "MOD",
             "slug": {
                 "curseforge": "project-red-expansion"
@@ -10838,29 +10847,29 @@
                         "1.20.1"
                     ],
                     "loaders": [
-                        "neoforge",
-                        "forge"
+                        "forge",
+                        "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6332/77/ProjectRed-1.20.1-4.21.0-expansion.jar",
-                    "id": "6332077",
+                    "url": "https://edge.forgecdn.net/files/6868/144/ProjectRed-1.20.1-4.21.0-expansion.jar",
+                    "id": "6868144",
                     "parent_id": "229048",
                     "hashes": {
-                        "sha1": "9a4f8f637e3dfd41fa993747e6d21a864957199d",
-                        "md5": "6c819d5d6327bdb1428c94d0303164ec"
+                        "sha1": "8dba04d7e727fd58d83b9361fa4c2e12a767dc57",
+                        "md5": "b60ffc70e848609250f3f0de15461702"
                     },
                     "required_dependencies": [
-                        "242818",
                         "228702",
+                        "242818",
                         "258426"
                     ],
                     "size": 1118821,
-                    "date_published": "2025-03-22T16:58:30.037Z"
+                    "date_published": "2025-08-09T16:57:25.903Z"
                 }
             ]
         },
         {
-            "pakku_id": "g5nd6l2ueStKGZmz",
+            "pakku_id": "3nIecs4HymnZnSqu",
             "type": "MOD",
             "slug": {
                 "curseforge": "project-red-exploration"
@@ -10879,29 +10888,29 @@
                         "1.20.1"
                     ],
                     "loaders": [
-                        "neoforge",
-                        "forge"
+                        "forge",
+                        "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6332/78/ProjectRed-1.20.1-4.21.0-exploration.jar",
-                    "id": "6332078",
+                    "url": "https://edge.forgecdn.net/files/6868/145/ProjectRed-1.20.1-4.21.0-exploration.jar",
+                    "id": "6868145",
                     "parent_id": "229049",
                     "hashes": {
-                        "sha1": "891dd7c00ae8223fca3e869b0aea643b8ea65c12",
-                        "md5": "0a5dc13489596bc3bdbb14f5a3393f66"
+                        "sha1": "8973852066055991cc72a154673ae7c19aaad7b5",
+                        "md5": "5da18a5ef81dea165e3002ba4521ef3d"
                     },
                     "required_dependencies": [
                         "228702",
-                        "258426",
-                        "242818"
+                        "242818",
+                        "258426"
                     ],
                     "size": 500601,
-                    "date_published": "2025-03-22T16:58:31.293Z"
+                    "date_published": "2025-08-09T16:57:26.653Z"
                 }
             ]
         },
         {
-            "pakku_id": "avilyw2GgL0nM4rX",
+            "pakku_id": "O6bGbBQL9eLh5BCy",
             "type": "MOD",
             "slug": {
                 "curseforge": "project-red-fabrication"
@@ -10920,31 +10929,31 @@
                         "1.20.1"
                     ],
                     "loaders": [
-                        "neoforge",
-                        "forge"
+                        "forge",
+                        "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6332/79/ProjectRed-1.20.1-4.21.0-fabrication.jar",
-                    "id": "6332079",
+                    "url": "https://edge.forgecdn.net/files/6868/146/ProjectRed-1.20.1-4.21.0-fabrication.jar",
+                    "id": "6868146",
                     "parent_id": "230111",
                     "hashes": {
-                        "sha1": "cf6eecd75ea61708fabc52cda2de5e0e68f3009c",
-                        "md5": "9d9f5c1d44f4286003e7324c79fd2fc8"
+                        "sha1": "24c0f8a2fb6abab7fba4cc9dd893b770c6b26a83",
+                        "md5": "d35d114a803351a7a054641613326c4b"
                     },
                     "required_dependencies": [
-                        "478939",
                         "258426",
-                        "229045",
                         "242818",
+                        "478939",
+                        "229045",
                         "228702"
                     ],
                     "size": 764281,
-                    "date_published": "2025-03-22T16:58:32.767Z"
+                    "date_published": "2025-08-09T16:57:27.407Z"
                 }
             ]
         },
         {
-            "pakku_id": "zrTz1mzmLEhtCgnK",
+            "pakku_id": "E4cJBeB3VPQjrfav",
             "type": "MOD",
             "slug": {
                 "curseforge": "project-red-illumination"
@@ -10963,29 +10972,29 @@
                         "1.20.1"
                     ],
                     "loaders": [
-                        "neoforge",
-                        "forge"
+                        "forge",
+                        "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6332/83/ProjectRed-1.20.1-4.21.0-illumination.jar",
-                    "id": "6332083",
+                    "url": "https://edge.forgecdn.net/files/6868/147/ProjectRed-1.20.1-4.21.0-illumination.jar",
+                    "id": "6868147",
                     "parent_id": "229046",
                     "hashes": {
-                        "sha1": "6d1ca25b3f52ca42329854e078303fa976f74a68",
-                        "md5": "8ef4152b451d9b0635a3dfa4864c52e9"
+                        "sha1": "a1818c65f001d2dd7bfb16fab3c8c94c9abb0fbb",
+                        "md5": "b44a24357f01137c1db59c5c05b974c9"
                     },
                     "required_dependencies": [
-                        "258426",
+                        "242818",
                         "228702",
-                        "242818"
+                        "258426"
                     ],
                     "size": 771005,
-                    "date_published": "2025-03-22T16:58:34.090Z"
+                    "date_published": "2025-08-09T16:57:28.137Z"
                 }
             ]
         },
         {
-            "pakku_id": "7HhMOMPJhCfYHAY6",
+            "pakku_id": "kIsB88HVgkk5ybn7",
             "type": "MOD",
             "slug": {
                 "curseforge": "project-red-integration"
@@ -11004,29 +11013,29 @@
                         "1.20.1"
                     ],
                     "loaders": [
-                        "neoforge",
-                        "forge"
+                        "forge",
+                        "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6332/86/ProjectRed-1.20.1-4.21.0-integration.jar",
-                    "id": "6332086",
+                    "url": "https://edge.forgecdn.net/files/6868/148/ProjectRed-1.20.1-4.21.0-integration.jar",
+                    "id": "6868148",
                     "parent_id": "229045",
                     "hashes": {
-                        "sha1": "c8f4be2822c87c200e21db571b5b0c7d63eac145",
-                        "md5": "90f97703c722d0423a637de231154335"
+                        "sha1": "1b36e0dd14c852c76e8b719ecdf269f65dd5fc5d",
+                        "md5": "29ea203471f019c2d269e6145a244f61"
                     },
                     "required_dependencies": [
                         "228702",
-                        "242818",
-                        "258426"
+                        "258426",
+                        "242818"
                     ],
                     "size": 3539788,
-                    "date_published": "2025-03-22T16:58:35.097Z"
+                    "date_published": "2025-08-09T16:57:28.917Z"
                 }
             ]
         },
         {
-            "pakku_id": "sGZ8Oy4eOLtZAvNl",
+            "pakku_id": "fiDkCmXtfuUdaTQV",
             "type": "MOD",
             "slug": {
                 "curseforge": "project-red-transmission"
@@ -11045,24 +11054,24 @@
                         "1.20.1"
                     ],
                     "loaders": [
-                        "neoforge",
-                        "forge"
+                        "forge",
+                        "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6332/88/ProjectRed-1.20.1-4.21.0-transmission.jar",
-                    "id": "6332088",
+                    "url": "https://edge.forgecdn.net/files/6868/149/ProjectRed-1.20.1-4.21.0-transmission.jar",
+                    "id": "6868149",
                     "parent_id": "478939",
                     "hashes": {
-                        "sha1": "d7645694b8b8f4adc62449c89661cfe5bb400531",
-                        "md5": "98ff2ac3873eaab361ed85bff59ae1d4"
+                        "sha1": "df540136f2ddb27c046ff71a1058716152f3065f",
+                        "md5": "f4d60027f53e5a7362cd1e56b8f41d08"
                     },
                     "required_dependencies": [
+                        "242818",
                         "228702",
-                        "258426",
-                        "242818"
+                        "258426"
                     ],
                     "size": 461444,
-                    "date_published": "2025-03-22T16:58:36.323Z"
+                    "date_published": "2025-08-09T16:57:29.777Z"
                 }
             ]
         },
@@ -12650,7 +12659,7 @@
             ]
         },
         {
-            "pakku_id": "FeIPLcRqjg9hKmzq",
+            "pakku_id": "wKtoFsxMZ86cdI0m",
             "type": "MOD",
             "slug": {
                 "curseforge": "spawn-animations-mod"
@@ -12664,19 +12673,19 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "spawnanimations-v1.11.3-mc1.17-1.21.11-mod.jar",
+                    "file_name": "spawnanimations-v1.11.2-mc1.17-1.21.10-mod.jar",
                     "mc_versions": [
-                        "1.20.2-Snapshot",
-                        "1.20.5-Snapshot",
                         "1.20.2",
                         "1.20.5",
+                        "1.20.2-Snapshot",
+                        "1.20.5-Snapshot",
+                        "1.20.3-Snapshot",
+                        "1.20.3",
                         "1.20.1",
                         "1.20",
                         "1.20.6",
-                        "1.20-Snapshot",
                         "1.20.4",
-                        "1.20.3-Snapshot",
-                        "1.20.3"
+                        "1.20-Snapshot"
                     ],
                     "loaders": [
                         "fabric",
@@ -12684,16 +12693,16 @@
                         "quilt"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7312/477/spawnanimations-v1.11.3-mc1.17-1.21.11-mod.jar",
-                    "id": "7312477",
+                    "url": "https://edge.forgecdn.net/files/7091/829/spawnanimations-v1.11.2-mc1.17-1.21.10-mod.jar",
+                    "id": "7091829",
                     "parent_id": "1223719",
                     "hashes": {
-                        "sha1": "d8d38a01b2e46db2dfd393a946bb02a31edbcd7c",
-                        "md5": "f6fe4eb6f90b0af9ccf64ca6ee3b3f1d"
+                        "sha1": "d7b36bdbcc52743023043fc1dafb5aee0e4a43ba",
+                        "md5": "522b10d8b1901f3b16c0cc753a39a185"
                     },
                     "required_dependencies": [],
-                    "size": 223524,
-                    "date_published": "2025-12-09T17:50:44.940Z"
+                    "size": 220435,
+                    "date_published": "2025-10-10T19:07:10.390Z"
                 }
             ]
         },
@@ -13888,7 +13897,7 @@
             ]
         },
         {
-            "pakku_id": "lndCsINtcVYwCFRM",
+            "pakku_id": "rhur0pkRREO4luVZ",
             "type": "MOD",
             "side": "SERVER",
             "slug": {

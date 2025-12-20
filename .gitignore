@@ -12,6 +12,8 @@ downloads/
 modernfix/
 fancymenu_data/
 ESM/
+data/
+servers.dat
 
 icon.png
 options.txt
@@ -98,3 +100,13 @@ $RECYCLE.BIN/
 .DS_Store
 .AppleDouble
 .LSOverride
+
+# Mixin
+.mixin.out/*
+
+# IAS
+_IAS*
+
+
+# Touhou Little Maid HOLY SHIT WHY ARE THERE SO MANY FILES
+tlm_custom_pack/*

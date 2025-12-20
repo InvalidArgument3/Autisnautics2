@@ -1,9 +1,9 @@
 {
-    "name": "PanPack Template",
+    "name": "Autisnautics 2",
     "version": "DEV",
     "release_type": "release",
-    "description": "A template pack",
-    "author": "Pansmith",
+    "description": "an abstract kind of version control hell",
+    "author": "Invalid, Regaccio",
     "overrides": [
         "config",
         "defaultconfigs",

@@ -602,44 +602,6 @@
             ]
         },
         {
-            "pakku_id": "h2l5n6ZkVqdqQhmb",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "amendments"
-            },
-            "name": {
-                "curseforge": "Amendments"
-            },
-            "id": {
-                "curseforge": "896746"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "amendments-1.20-2.2.3.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7240/735/amendments-1.20-2.2.3.jar",
-                    "id": "7240735",
-                    "parent_id": "896746",
-                    "hashes": {
-                        "sha1": "70f46de146e959d6abb4346a0ac7dfb04475d239",
-                        "md5": "b1013e74d5c4ef229d93bf571968a1f0"
-                    },
-                    "required_dependencies": [
-                        "499980"
-                    ],
-                    "size": 1294274,
-                    "date_published": "2025-11-20T00:19:51.297Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "j6C7lbHfUc0OdYLe",
             "type": "MOD",
             "slug": {
@@ -2125,43 +2087,6 @@
             ]
         },
         {
-            "pakku_id": "U4fP6hH8sVBWLfC0",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "chisels-bits"
-            },
-            "name": {
-                "curseforge": "Chisels & Bits - For Forge"
-            },
-            "id": {
-                "curseforge": "231095"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "chisels-and-bits-forge-1.4.148.jar",
-                    "mc_versions": [
-                        "1.20.1",
-                        "1.20"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5203/366/chisels-and-bits-forge-1.4.148.jar",
-                    "id": "5203366",
-                    "parent_id": "231095",
-                    "hashes": {
-                        "sha1": "bff153dc16b26a0d4f0e8ccc27b2e0fc2dc89355",
-                        "md5": "dab773ee65efd8f1f79505e7cadd825a"
-                    },
-                    "required_dependencies": [],
-                    "size": 2105922,
-                    "date_published": "2024-03-22T18:46:20.373Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "FXnmz8eaZwe6vWBo",
             "type": "MOD",
             "slug": {
@@ -2387,50 +2312,6 @@
                     ],
                     "size": 137930,
                     "date_published": "2025-09-30T07:22:41.783Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "C5u00JCoK5jdHSXA",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "clockwork-atlas"
-            },
-            "name": {
-                "curseforge": "Clockwork: Atlas"
-            },
-            "id": {
-                "curseforge": "1189859"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "cwatlas-1.0.jar",
-                    "mc_versions": [
-                        "1.20.2",
-                        "1.20.5",
-                        "1.20.2-Snapshot",
-                        "1.20.5-Snapshot",
-                        "1.20.3-Snapshot",
-                        "1.20.3",
-                        "1.20.1",
-                        "1.20.6",
-                        "1.20.4"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6153/586/cwatlas-1.0.jar",
-                    "id": "6153586",
-                    "parent_id": "1189859",
-                    "hashes": {
-                        "sha1": "ecb922e1221f354457a17c75a6ae93d80103dd71",
-                        "md5": "e4f57280cef562c5cc379f72b88a56a9"
-                    },
-                    "required_dependencies": [],
-                    "size": 7193,
-                    "date_published": "2025-02-03T14:12:31.320Z"
                 }
             ]
         },
@@ -4338,7 +4219,7 @@
             ]
         },
         {
-            "pakku_id": "HLp6cpO7IYlbwq2k",
+            "pakku_id": "g3yJHRzGdFnGIIiL",
             "type": "MOD",
             "slug": {
                 "curseforge": "delightful"
@@ -4352,7 +4233,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Delightful-1.20.1-3.7.6.jar",
+                    "file_name": "Delightful-1.20.1-3.7.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -4361,18 +4242,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6988/183/Delightful-1.20.1-3.7.6.jar",
-                    "id": "6988183",
+                    "url": "https://edge.forgecdn.net/files/6168/851/Delightful-1.20.1-3.7.jar",
+                    "id": "6168851",
                     "parent_id": "637529",
                     "hashes": {
-                        "sha1": "e474f9de02552d2361f15e1422316950b1172bf8",
-                        "md5": "30243d4d9541c6cce0d4efbd8e2ed997"
+                        "sha1": "e36ebdaa9c069a829e1ba393a713382efd2b094f",
+                        "md5": "99430cee473b0540d9a97de353aaf300"
                     },
                     "required_dependencies": [
                         "398521"
                     ],
-                    "size": 1514819,
-                    "date_published": "2025-09-12T02:48:02.287Z"
+                    "size": 1110714,
+                    "date_published": "2025-02-07T20:58:09.733Z"
                 }
             ]
         },
@@ -4562,42 +4443,6 @@
                     "required_dependencies": [],
                     "size": 625488,
                     "date_published": "2024-05-08T08:34:02.753Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "fgZ7VrS4IUYWk3hn",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "drive-by-wire"
-            },
-            "name": {
-                "curseforge": "Drive-By-Wire"
-            },
-            "id": {
-                "curseforge": "1192722"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "drivebywire-1.20.1-0.0.10.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "alpha",
-                    "url": "https://edge.forgecdn.net/files/6224/8/drivebywire-1.20.1-0.0.10.jar",
-                    "id": "6224008",
-                    "parent_id": "1192722",
-                    "hashes": {
-                        "sha1": "e86b7d2fe1fbf83543f3520e72d986dc9fc0bfc7",
-                        "md5": "3f69855b3a5141228b0958f7d6a8ebe7"
-                    },
-                    "required_dependencies": [],
-                    "size": 271393,
-                    "date_published": "2025-02-23T03:15:54.723Z"
                 }
             ]
         },
@@ -6642,45 +6487,6 @@
             ]
         },
         {
-            "pakku_id": "XxoZne9WSbFjZCNM",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "youkais-homecoming"
-            },
-            "name": {
-                "curseforge": "Gensokyo Delight ~ Youkai's Homecoming"
-            },
-            "id": {
-                "curseforge": "957437"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "youkaishomecoming-2.6.1.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6955/538/youkaishomecoming-2.6.1.jar",
-                    "id": "6955538",
-                    "parent_id": "957437",
-                    "hashes": {
-                        "sha1": "2b548c9cf6049c8bb26851aefdbefc60661d2462",
-                        "md5": "6e699fd31cfb2926f7ff479384b094af"
-                    },
-                    "required_dependencies": [
-                        "398521"
-                    ],
-                    "size": 6044519,
-                    "date_published": "2025-09-02T11:08:24.230Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "kc8bGjXt9UDNFrU3",
             "type": "MOD",
             "slug": {
@@ -8397,6 +8203,45 @@
                     "required_dependencies": [],
                     "size": 476347,
                     "date_published": "2025-07-07T23:21:45.877Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "xRbg3alxdsFjBbcF",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "littletiles"
+            },
+            "name": {
+                "curseforge": "LittleTiles"
+            },
+            "id": {
+                "curseforge": "257818"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "LittleTiles_BETA_v1.6.0-pre161_mc1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/6610/285/LittleTiles_BETA_v1.6.0-pre161_mc1.20.1.jar",
+                    "id": "6610285",
+                    "parent_id": "257818",
+                    "hashes": {
+                        "sha1": "858d2de167f660c491632ed9727292b418ca804a",
+                        "md5": "6a2fc00a147499e23669ece1034b808a"
+                    },
+                    "required_dependencies": [
+                        "257814"
+                    ],
+                    "size": 2623590,
+                    "date_published": "2025-06-03T09:47:11.937Z"
                 }
             ]
         },
@@ -13923,10 +13768,6 @@
                     "url": "https://cdn.modrinth.com/data/V1UmcEMX/versions/eSVmXLVX/vlib-1.20.1-0.0.15-alpha%2Bforge.jar",
                     "id": "eSVmXLVX",
                     "parent_id": "V1UmcEMX",
-                    "hashes": {
-                        "sha512": "785fdc3de39506c43bb764a0f15a357af40c92188480fd45f519c3bd98993563157403bfdf46ebeb36b414356a13b6af63c82d1ca54683ea538e373b47198f78",
-                        "sha1": "11e5c8a4f4038e978ec5c0485954c9844ab6709d"
-                    },
                     "required_dependencies": [
                         "V5ujR2yw"
                     ],
@@ -13977,45 +13818,6 @@
                     ],
                     "size": 6849797,
                     "date_published": "2025-07-04T14:36:58.997Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "OujHKw7b4TjKY6lK",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "create-clockwork"
-            },
-            "name": {
-                "curseforge": "VS: Clockwork"
-            },
-            "id": {
-                "curseforge": "807792"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "clockwork-1.20.1-0.1.16-forge-b3b22e39fe.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/5580/456/clockwork-1.20.1-0.1.16-forge-b3b22e39fe.jar",
-                    "id": "5580456",
-                    "parent_id": "807792",
-                    "hashes": {
-                        "sha1": "8005a91686ddd2197668d2a5fa41d7f7247273de",
-                        "md5": "cc52ebfe03509678566aa5bc1a95ff35"
-                    },
-                    "required_dependencies": [
-                        "258371",
-                        "419699"
-                    ],
-                    "size": 3205758,
-                    "date_published": "2024-07-30T12:37:38.107Z"
                 }
             ]
         },

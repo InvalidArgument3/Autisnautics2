@@ -78,6 +78,17 @@
 	GlobalMaidSoundFrequency = 100
 	#This is a global config that applies to all maids: Whether or not to display chat bubbles
 	GlobalMaidShowChatBubble = true
+	#Enable maid random emoji/kaomoji feature
+	EnableEmoji = true
+	#The check rate (in ticks) for maid to display random emoji/kaomoji
+	#Range: 20 ~ 24000
+	EmojiCheckRate = 1200
+	#The weight for image emoji to be selected
+	#Range: 0 ~ 100
+	ImageEmojiWeight = 10
+	#The weight for kaomoji emoji to be selected
+	#Range: 0 ~ 100
+	KaomojiEmojiWeight = 10
 
 [chair]
 	#Chair can switch models freely

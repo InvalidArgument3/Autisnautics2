@@ -13,3 +13,11 @@
 	#The model type of the material.
 	modelType = "metallic"
 
+[theurgy]
+	#The alchemical sulfur tier of this material.
+	tier = "common"
+
+[create]
+	#The default byproduct material to output in Create's crushing.
+	byproduct = "minecraft:cobblestone"
+

@@ -4,84 +4,16 @@
 
 	[types.cut_block_type]
 
-		[types.cut_block_type.youkaishomecoming]
-			sikkui = true
-			cross_framed_sikkui = true
-
-		[types.cut_block_type.tconstruct]
-			nahuatl = true
-			blazewood = true
-			greenheart_planks = true
-			skyroot_planks = true
-			bloodshroom_planks = true
-			enderbark_planks = true
-			seared_stone = true
-			seared_cobble = true
-			seared_paver = true
-			seared_bricks = true
-			scorched_bricks = true
-			scorched_road = true
-
-		[types.cut_block_type.createdeco]
-			short_red_brick = true
-			tiled_red_brick = true
-			long_red_brick = true
-			corner_red_brick = true
-			cracked_red_brick = true
-			mossy_red_brick = true
-			dean_brick = true
-			short_dean_brick = true
-			tiled_dean_brick = true
-			long_dean_brick = true
-			corner_dean_brick = true
-			cracked_dean_brick = true
-			mossy_dean_brick = true
-			scarlet_brick = true
-			short_scarlet_brick = true
-			tiled_scarlet_brick = true
-			long_scarlet_brick = true
-			corner_scarlet_brick = true
-			cracked_scarlet_brick = true
-			mossy_scarlet_brick = true
-			pearl_brick = true
-			short_pearl_brick = true
-			tiled_pearl_brick = true
-			long_pearl_brick = true
-			corner_pearl_brick = true
-			cracked_pearl_brick = true
-			mossy_pearl_brick = true
-			umber_brick = true
-			short_umber_brick = true
-			tiled_umber_brick = true
-			long_umber_brick = true
-			corner_umber_brick = true
-			cracked_umber_brick = true
-			mossy_umber_brick = true
-			verdant_brick = true
-			short_verdant_brick = true
-			tiled_verdant_brick = true
-			long_verdant_brick = true
-			corner_verdant_brick = true
-			cracked_verdant_brick = true
-			mossy_verdant_brick = true
-			dusk_brick = true
-			short_dusk_brick = true
-			tiled_dusk_brick = true
-			long_dusk_brick = true
-			corner_dusk_brick = true
-			cracked_dusk_brick = true
-			mossy_dusk_brick = true
-			blue_brick = true
-			short_blue_brick = true
-			tiled_blue_brick = true
-			long_blue_brick = true
-			corner_blue_brick = true
-			cracked_blue_brick = true
-			mossy_blue_brick = true
-
 		[types.cut_block_type.scguns]
 			phosphorite_brick = true
 			asgharian_brick = true
+			cut_diamond_steel = true
+			diamond_steel_tiles = true
+			cut_anthralite = true
+			anthralite_tiles = true
+			cut_treated_iron = true
+			cut_treated_brass = true
+			treated_brass_tiles = true
 
 		[types.cut_block_type.immersiveengineering]
 			sheetmetal_copper = true
@@ -279,36 +211,6 @@
 		[types.cut_block_type.hexcasting]
 			edified = true
 
-		[types.cut_block_type.tfmg]
-			hardened_planks = true
-			factory_floor = true
-			black_concrete = true
-			white_concrete = true
-			blue_concrete = true
-			light_blue_concrete = true
-			red_concrete = true
-			green_concrete = true
-			lime_concrete = true
-			pink_concrete = true
-			magenta_concrete = true
-			yellow_concrete = true
-			gray_concrete = true
-			light_gray_concrete = true
-			brown_concrete = true
-			cyan_concrete = true
-			purple_concrete = true
-			orange_concrete = true
-			concrete = true
-			rebar_concrete = true
-			cut_bauxite = true
-			polished_cut_bauxite = true
-			cut_bauxite_brick = true
-			small_bauxite_brick = true
-			cut_galena = true
-			polished_cut_galena = true
-			cut_galena_brick = true
-			small_galena_brick = true
-
 		[types.cut_block_type.quark]
 			ancient_planks = true
 			azalea_planks = true
@@ -483,10 +385,6 @@
 			gingerbread_brick = true
 			frosted_gingerbread_brick = true
 
-		[types.cut_block_type.delightful]
-			glow_jam_cookie_tile = true
-			source_berry_cookie_tile = true
-
 		[types.cut_block_type.supplementaries]
 			fine_wood = true
 			lapis_bricks = true
@@ -546,10 +444,6 @@
 			metamorphic_mesa_cobblestone = true
 			metamorphic_mesa_bricks = true
 
-		[types.cut_block_type.vanillabackport]
-			pale_oak = true
-			resin_brick = true
-
 		[types.cut_block_type.rats]
 			marbled_cheese = true
 			marbled_cheese_brick = true
@@ -559,10 +453,6 @@
 
 		[types.cut_block_type.thermal]
 			rubberwood = true
-
-		[types.cut_block_type.kubejs]
-			trial_cut_copper = true
-			trial_oxidized_cut_copper = true
 
 		[types.cut_block_type.ae2]
 			sky_stone_brick = true
@@ -667,17 +557,133 @@
 			nebulite = true
 			polished_nebulite = true
 
-	[types.cake]
+		[types.cut_block_type.dungeonnowloading]
+			coiling_stone_pillar = true
+			stone_tile = true
+			azuro_oak_plank = true
 
-		[types.cake.youkaishomecoming]
-			red_velvet_cake = true
+		[types.cut_block_type.tconstruct]
+			nahuatl = true
+			blazewood = true
+			greenheart_planks = true
+			skyroot_planks = true
+			bloodshroom_planks = true
+			enderbark_planks = true
+			seared_stone = true
+			seared_cobble = true
+			seared_paver = true
+			seared_bricks = true
+			scorched_bricks = true
+			scorched_road = true
 
-		[types.cake.createaddition]
-			chocolate_cake = true
-			honey_cake = true
+		[types.cut_block_type.kubejs]
+			trial_cut_copper = true
+			trial_oxidized_cut_copper = true
 
-		[types.cake.farmersrespite]
-			coffee_cake = true
+		[types.cut_block_type.createdeco]
+			scarlet_brick = true
+			short_scarlet_brick = true
+			tiled_scarlet_brick = true
+			long_scarlet_brick = true
+			corner_scarlet_brick = true
+			cracked_scarlet_brick = true
+			mossy_scarlet_brick = true
+			short_red_brick = true
+			tiled_red_brick = true
+			long_red_brick = true
+			corner_red_brick = true
+			cracked_red_brick = true
+			mossy_red_brick = true
+			blue_brick = true
+			short_blue_brick = true
+			tiled_blue_brick = true
+			long_blue_brick = true
+			corner_blue_brick = true
+			cracked_blue_brick = true
+			mossy_blue_brick = true
+			umber_brick = true
+			short_umber_brick = true
+			tiled_umber_brick = true
+			long_umber_brick = true
+			corner_umber_brick = true
+			cracked_umber_brick = true
+			mossy_umber_brick = true
+			verdant_brick = true
+			short_verdant_brick = true
+			tiled_verdant_brick = true
+			long_verdant_brick = true
+			corner_verdant_brick = true
+			cracked_verdant_brick = true
+			mossy_verdant_brick = true
+			dusk_brick = true
+			short_dusk_brick = true
+			tiled_dusk_brick = true
+			long_dusk_brick = true
+			corner_dusk_brick = true
+			cracked_dusk_brick = true
+			mossy_dusk_brick = true
+			pearl_brick = true
+			short_pearl_brick = true
+			tiled_pearl_brick = true
+			long_pearl_brick = true
+			corner_pearl_brick = true
+			cracked_pearl_brick = true
+			mossy_pearl_brick = true
+			dean_brick = true
+			short_dean_brick = true
+			tiled_dean_brick = true
+			long_dean_brick = true
+			corner_dean_brick = true
+			cracked_dean_brick = true
+			mossy_dean_brick = true
+
+		[types.cut_block_type.tfmg]
+			slag_bricks = true
+			factory_floor = true
+			hardened_planks = true
+			concrete = true
+			rebar_concrete = true
+			white_concrete = true
+			blue_concrete = true
+			light_blue_concrete = true
+			red_concrete = true
+			green_concrete = true
+			lime_concrete = true
+			pink_concrete = true
+			magenta_concrete = true
+			yellow_concrete = true
+			gray_concrete = true
+			light_gray_concrete = true
+			brown_concrete = true
+			cyan_concrete = true
+			purple_concrete = true
+			orange_concrete = true
+			black_concrete = true
+			white_rebar_concrete = true
+			blue_rebar_concrete = true
+			light_blue_rebar_concrete = true
+			red_rebar_concrete = true
+			green_rebar_concrete = true
+			lime_rebar_concrete = true
+			pink_rebar_concrete = true
+			magenta_rebar_concrete = true
+			yellow_rebar_concrete = true
+			gray_rebar_concrete = true
+			light_gray_rebar_concrete = true
+			brown_rebar_concrete = true
+			cyan_rebar_concrete = true
+			purple_rebar_concrete = true
+			orange_rebar_concrete = true
+			black_rebar_concrete = true
+			asphalt = true
+			cut_bauxite = true
+			polished_cut_bauxite = true
+			cut_bauxite_brick = true
+			small_bauxite_brick = true
+			cut_galena = true
+			polished_cut_galena = true
+			cut_galena_brick = true
+			small_galena_brick = true
 
 	[types.wood_type]
 
@@ -685,12 +691,6 @@
 			azalea = true
 			ancient = true
 			blossom = true
-
-		[types.wood_type.tconstruct]
-			greenheart = true
-			skyroot = true
-			bloodshroom = true
-			enderbark = true
 
 		[types.wood_type.hexcasting]
 			edified = true
@@ -728,9 +728,6 @@
 			livingwood = true
 			dreamwood = true
 
-		[types.wood_type.vanillabackport]
-			pale_oak = true
-
 		[types.wood_type.rats]
 			pirat = true
 
@@ -745,12 +742,19 @@
 		[types.wood_type.architects_palette]
 			twisted = true
 
-	[types.leaves_type]
+		[types.wood_type.dungeonnowloading]
+			azuro_oak = true
 
-		[types.leaves_type.tconstruct]
-			earth_slime = true
-			sky_slime = true
-			ender_slime = true
+		[types.wood_type.minecraft]
+			pale_oak = true
+
+		[types.wood_type.tconstruct]
+			greenheart = true
+			skyroot = true
+			bloodshroom = true
+			enderbark = true
+
+	[types.leaves_type]
 
 		[types.leaves_type.hexcasting]
 			amethyst_edified = true
@@ -801,9 +805,6 @@
 		[types.leaves_type.alexscaves]
 			ancient = true
 
-		[types.leaves_type.vanillabackport]
-			pale_oak = true
-
 		[types.leaves_type.rats]
 			pirat = true
 
@@ -815,6 +816,17 @@
 
 		[types.leaves_type.architects_palette]
 			twisted = true
+
+		[types.leaves_type.dungeonnowloading]
+			azuro = true
+
+		[types.leaves_type.minecraft]
+			pale_oak = true
+
+		[types.leaves_type.tconstruct]
+			earth_slime = true
+			sky_slime = true
+			ender_slime = true
 
 #Disables specific entries
 [entries]
@@ -864,6 +876,16 @@
 			1 = true
 			4 = true
 			2 = true
+
+		[entries.wood_type.storagedelight]
+			small_drawers = true
+			single_door_cabinet = true
+			cabinet_with_glass_doors = true
+			drawer = true
+			bookshelf_with_door = true
+			glass_cabinet = true
+			drawer_with_door = true
+			drawer_with_books = true
 
 	[entries.leaves_type]
 

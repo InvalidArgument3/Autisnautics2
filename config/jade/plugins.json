@@ -56,6 +56,16 @@
     "show_tree_block_counts": true,
     "show_num_chops_remaining": true
   },
+  "jadeaddons.create": {
+    "filter": true,
+    "backtank_capacity": true,
+    "goggles.requires_goggles": true,
+    "goggles": false,
+    "blaze_burner": true,
+    "exact_block": true,
+    "goggles.detailed": false,
+    "placard": true
+  },
   "immersiveengineering": {
     "multiblock_icon": true
   },
@@ -95,6 +105,9 @@
   "jadeaddons": {
     "equipment_requirement": ""
   },
+  "jadeaddons.lootr": {
+    "info": true
+  },
   "touhou_little_maid": {
     "maid": true,
     "shrine_lamp": true
@@ -112,17 +125,6 @@
   },
   "supplementaries": {
     "hat_stand": true
-  },
-  "create": {
-    "filter": true,
-    "backtank_capacity": true,
-    "goggles.requires_goggles": true,
-    "goggles": false,
-    "blaze_burner": true,
-    "exact_block": true,
-    "crafting_blueprint": true,
-    "goggles.detailed": false,
-    "placard": true
   },
   "waystones": {
     "waystone": true

@@ -1,7 +1,6 @@
 {
     "name": "Autisnautics 2",
     "version": "DEV",
-    "release_type": "release",
     "description": "an abstract kind of version control hell",
     "author": "Invalid, Regaccio",
     "overrides": [

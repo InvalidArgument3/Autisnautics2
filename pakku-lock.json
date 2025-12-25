@@ -1277,6 +1277,7 @@
         {
             "pakku_id": "pC9OTgUzX0SnmrkX",
             "type": "MOD",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "better-clouds"
             },
@@ -10065,6 +10066,7 @@
         {
             "pakku_id": "WlJHFJJV6BcJJImg",
             "type": "MOD",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "particle-rain"
             },
@@ -11981,6 +11983,7 @@
         {
             "pakku_id": "d7ed8dipljez9SRA",
             "type": "MOD",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "screenshot-viewer"
             },
@@ -12129,6 +12132,7 @@
         {
             "pakku_id": "lD1QpYLMeub9binG",
             "type": "MOD",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "shut-up-gl-error"
             },

@@ -2696,42 +2696,6 @@
             ]
         },
         {
-            "pakku_id": "zOPY6RtGG1s2utKw",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "concurrent-chunk-management-engine-1-20-1"
-            },
-            "name": {
-                "curseforge": "Concurrent Chunk Management Engine OLDER VERSION!"
-            },
-            "id": {
-                "curseforge": "1366864"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "c2meF-0.2.0+alpha.12-all.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7116/688/c2meF-0.2.0+alpha.12-all.jar",
-                    "id": "7116688",
-                    "parent_id": "1366864",
-                    "hashes": {
-                        "sha1": "ad44f615a4b15afd1d6a4d907ccab1c3855451a1",
-                        "md5": "3f785cd9fafe9b3b9415c4a981307b79"
-                    },
-                    "required_dependencies": [],
-                    "size": 1839442,
-                    "date_published": "2025-10-17T10:50:25.893Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "iYqDbyWoC9WzVa67",
             "type": "MOD",
             "slug": {

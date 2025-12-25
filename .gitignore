@@ -21,6 +21,7 @@ rhino.local.properties
 usercache.json
 usernamecache.json
 emi.json
+servers.dat_old
 
 # Pakku
 build/

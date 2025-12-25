@@ -2696,42 +2696,6 @@
             ]
         },
         {
-            "pakku_id": "J7oFqAXY9IqLtbIz",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "c2me"
-            },
-            "name": {
-                "curseforge": "Concurrent Chunk Management Engine"
-            },
-            "id": {
-                "curseforge": "533097"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "c2me-fabric-mc1.20.1-0.2.0+alpha.11.16.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "fabric"
-                    ],
-                    "release_type": "alpha",
-                    "url": "https://edge.forgecdn.net/files/6181/291/c2me-fabric-mc1.20.1-0.2.0+alpha.11.16.jar",
-                    "id": "6181291",
-                    "parent_id": "533097",
-                    "hashes": {
-                        "sha1": "94d96b5fffd9e98bd8448dcdd9e27f60511b1d29",
-                        "md5": "92a6600d0f05c7e70d92d459b3b9eba8"
-                    },
-                    "required_dependencies": [],
-                    "size": 1426500,
-                    "date_published": "2025-02-11T10:06:33.747Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "iYqDbyWoC9WzVa67",
             "type": "MOD",
             "slug": {
@@ -9981,50 +9945,6 @@
             ]
         },
         {
-            "pakku_id": "SAq3hhOPTlsl2jVc",
-            "type": "MOD",
-            "side": "SERVER",
-            "slug": {
-                "modrinth": "offlineauth"
-            },
-            "name": {
-                "modrinth": "OfflineAuth"
-            },
-            "id": {
-                "modrinth": "DQxq3OlC"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "offlineauth-1.0.3.jar",
-                    "mc_versions": [
-                        "1.20.1",
-                        "1.20.2",
-                        "1.20.3",
-                        "1.20.4",
-                        "1.20.5",
-                        "1.20.6"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/DQxq3OlC/versions/eCq3jJ8h/offlineauth-1.0.3.jar",
-                    "id": "eCq3jJ8h",
-                    "parent_id": "DQxq3OlC",
-                    "hashes": {
-                        "sha512": "1ec3fb4f6ae886bfbffbd04b560ba1b51af20fc35342dbc9f94babef6afd64aa8bd85dae313411f414b631aa61047a48c76de235bb971fe44c9229e0a678ff1a",
-                        "sha1": "c357ee6604a997852a4a63ac54d191cc59d4e7eb"
-                    },
-                    "required_dependencies": [
-                        "fMgRLYNA"
-                    ],
-                    "size": 23855,
-                    "date_published": "2025-10-31T17:55:58.743494Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "GeeXNZeklHvCC3uq",
             "type": "MOD",
             "slug": {
@@ -11905,77 +11825,39 @@
             ]
         },
         {
-            "pakku_id": "JLVxozvaNneeQ5f1",
+            "pakku_id": "w4MbEczOJJqrnhQe",
             "type": "MOD",
-            "side": "BOTH",
+            "side": "SERVER",
             "slug": {
-                "modrinth": "sqlite-jdbc"
+                "modrinth": "sauth"
             },
             "name": {
-                "modrinth": "SQLite JDBC"
+                "modrinth": "SAuth"
             },
             "id": {
-                "modrinth": "GAUIVqEJ"
+                "modrinth": "tyAKpqKg"
             },
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "sqlite-jdbc-3.41.2.1+20230506-all.jar",
+                    "file_name": "SAuth-2.0.0.jar",
                     "mc_versions": [
-                        "1.12",
-                        "1.12.1",
-                        "1.12.2",
-                        "1.13",
-                        "1.13.1",
-                        "1.13.2",
-                        "1.14",
-                        "1.14.1",
-                        "1.14.2",
-                        "1.14.3",
-                        "1.14.4",
-                        "1.15",
-                        "1.15.1",
-                        "1.15.2",
-                        "1.16",
-                        "1.16.1",
-                        "1.16.2",
-                        "1.16.3",
-                        "1.16.4",
-                        "1.16.5",
-                        "1.17",
-                        "1.17.1",
-                        "1.18",
-                        "1.18.1",
-                        "1.18.2",
-                        "1.19",
-                        "1.19.1",
-                        "1.19.2",
-                        "1.19.3",
-                        "1.19.4",
-                        "1.20",
-                        "1.20.1",
-                        "1.20.2",
-                        "1.20.3",
-                        "1.20.4"
+                        "1.20.1"
                     ],
                     "loaders": [
-                        "fabric",
-                        "forge",
-                        "paper",
-                        "quilt",
-                        "spigot"
+                        "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/GAUIVqEJ/versions/7foxfVOx/sqlite-jdbc-3.41.2.1+20230506-all.jar",
-                    "id": "7foxfVOx",
-                    "parent_id": "GAUIVqEJ",
+                    "url": "https://cdn.modrinth.com/data/tyAKpqKg/versions/p5bijuHC/SAuth-2.0.0.jar",
+                    "id": "p5bijuHC",
+                    "parent_id": "tyAKpqKg",
                     "hashes": {
-                        "sha512": "59f4c34803f14bde873aeca85a67b3ae5b3a871f1edfc18ed43eb79f8a0ef333547d1ce9c336660b9eff987d45a48ffb1d67599b4130517936c7678f2871eadd",
-                        "sha1": "1ad5bc55cf1f2dcf4a5667de3c7f54c837d77645"
+                        "sha512": "dd6de085f02f7dd59a350eb8e12764bb93825fd29180626c309faa9c5715ade9bba6ff0e9fedd458e40f4e52012e32000fa0cc315c3ef33ab5ce73ab7d0afb13",
+                        "sha1": "808ef626c414933f14ec9288e3d7cda4ad7c8599"
                     },
                     "required_dependencies": [],
-                    "size": 12855867,
-                    "date_published": "2023-05-06T21:54:41.035558Z"
+                    "size": 9192,
+                    "date_published": "2025-10-05T11:49:18.419608Z"
                 }
             ]
         },
@@ -13973,52 +13855,6 @@
                     ],
                     "size": 117791,
                     "date_published": "2025-03-18T15:01:26.440Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "7AkgoPCx2b6NFIXE",
-            "pakku_links": [
-                "JLVxozvaNneeQ5f1"
-            ],
-            "type": "MOD",
-            "side": "BOTH",
-            "slug": {
-                "modrinth": "trueuuid"
-            },
-            "name": {
-                "modrinth": "TrueUUID"
-            },
-            "id": {
-                "modrinth": "fMgRLYNA"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "trueuuid-1.0.5.jar",
-                    "mc_versions": [
-                        "1.20.1",
-                        "1.20.2",
-                        "1.20.3",
-                        "1.20.4",
-                        "1.20.5"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/fMgRLYNA/versions/3knLKYDi/trueuuid-1.0.5.jar",
-                    "id": "3knLKYDi",
-                    "parent_id": "fMgRLYNA",
-                    "hashes": {
-                        "sha512": "ba3fb91d659fefd67f6850024b346e483d2d637d6060c34bb4b6bd92352a2c0840c207f3a9ab598f44e77dcb79f1f887f6e7f74b8cd66ed22f7f94a006356aab",
-                        "sha1": "d16e761cb4686a3f599d28bbdd5c52e4571b351d"
-                    },
-                    "required_dependencies": [
-                        "GAUIVqEJ"
-                    ],
-                    "size": 51833,
-                    "date_published": "2025-10-19T17:04:35.725843Z"
                 }
             ]
         },

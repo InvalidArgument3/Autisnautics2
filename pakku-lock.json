@@ -1856,6 +1856,46 @@
             ]
         },
         {
+            "pakku_id": "O6dQwOEUOjLOhxr3",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "cc-vs"
+            },
+            "name": {
+                "curseforge": "CC: VS"
+            },
+            "id": {
+                "curseforge": "958065"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "cc_vs-1.20.1-forge-0.6.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7377/430/cc_vs-1.20.1-forge-0.6.0.jar",
+                    "id": "7377430",
+                    "parent_id": "958065",
+                    "hashes": {
+                        "sha1": "338cb514d7f2daec6c9c976ecf055ea2fae279eb",
+                        "md5": "9e1edfc0af96a6fba0f472cc3f096714"
+                    },
+                    "required_dependencies": [
+                        "351264",
+                        "258371",
+                        "282001"
+                    ],
+                    "size": 582646,
+                    "date_published": "2025-12-25T15:09:01.360Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "jS1lq0ppy1T71kRT",
             "type": "MOD",
             "slug": {
@@ -4446,6 +4486,45 @@
             ]
         },
         {
+            "pakku_id": "ytnEJfRr9UfU2Tuu",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "drive-by-wire"
+            },
+            "name": {
+                "curseforge": "Drive-By-Wire"
+            },
+            "id": {
+                "curseforge": "1192722"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "drivebywire-1.20.1-0.1.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7377/590/drivebywire-1.20.1-0.1.0.jar",
+                    "id": "7377590",
+                    "parent_id": "1192722",
+                    "hashes": {
+                        "sha1": "4a47229a5ba20249763afad9714a21c354795446",
+                        "md5": "85f0f266303a93ea26365f03af82e26e"
+                    },
+                    "required_dependencies": [
+                        "258371",
+                        "328085"
+                    ],
+                    "size": 275713,
+                    "date_published": "2025-12-25T16:10:43.623Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "OsVrAQvVb5pqgf49",
             "type": "MOD",
             "slug": {
@@ -5130,6 +5209,44 @@
                     ],
                     "size": 2669261,
                     "date_published": "2025-10-10T13:20:10.830Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "j403CmrD9vVjNhro",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "eureka-ships"
+            },
+            "name": {
+                "curseforge": "Eureka! Ships! for Valkyrien Skies (Forge/Fabric)"
+            },
+            "id": {
+                "curseforge": "654384"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "eureka-1201-1.5.2-beta.3.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/7273/495/eureka-1201-1.5.2-beta.3.jar",
+                    "id": "7273495",
+                    "parent_id": "654384",
+                    "hashes": {
+                        "sha1": "0c9c1da0b7d7d9f6d31e24c41bdef8a3167f1e15",
+                        "md5": "42daa9e5c1d1554665beec7bf980cafe"
+                    },
+                    "required_dependencies": [
+                        "258371"
+                    ],
+                    "size": 506464,
+                    "date_published": "2025-11-29T06:03:03.590Z"
                 }
             ]
         },
@@ -7962,6 +8079,46 @@
                     ],
                     "size": 25754,
                     "date_published": "2024-01-02T22:06:44.130Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "ApfpR4BfS5Ku74Ib",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "kubevs"
+            },
+            "name": {
+                "curseforge": "KubeVS"
+            },
+            "id": {
+                "curseforge": "915793"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "kubevs-1.20.1-forge-1.2.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7377/526/kubevs-1.20.1-forge-1.2.0.jar",
+                    "id": "7377526",
+                    "parent_id": "915793",
+                    "hashes": {
+                        "sha1": "e1aeb062fda044f4393ffcce520fe081467ebae0",
+                        "md5": "b0e340ff77eafbc726cbe73ab1aa2e93"
+                    },
+                    "required_dependencies": [
+                        "238086",
+                        "258371",
+                        "351264"
+                    ],
+                    "size": 545272,
+                    "date_published": "2025-12-25T15:45:11.247Z"
                 }
             ]
         },
@@ -11710,7 +11867,7 @@
             ]
         },
         {
-            "pakku_id": "WjdDAW0WjTxTO1Do",
+            "pakku_id": "AjAOk8MUDS9Z5irs",
             "type": "MOD",
             "side": "CLIENT",
             "slug": {
@@ -12937,6 +13094,84 @@
             ]
         },
         {
+            "pakku_id": "4JGUOrzp8N0uGaB8",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "tis-create"
+            },
+            "name": {
+                "curseforge": "TIS-Create"
+            },
+            "id": {
+                "curseforge": "831102"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "tiscreate-1.20.1-1.1.3.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5663/266/tiscreate-1.20.1-1.1.3.jar",
+                    "id": "5663266",
+                    "parent_id": "831102",
+                    "hashes": {
+                        "sha1": "f3416c7535e439adab186b2ff7c2b1cdbc14d7f6",
+                        "md5": "c5e7b75131d523b9588ba4818c52f2a9"
+                    },
+                    "required_dependencies": [],
+                    "size": 61991,
+                    "date_published": "2024-08-25T20:04:00.650Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "7e1rG03HEekLIQgs",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "tis-vs"
+            },
+            "name": {
+                "curseforge": "TIS-VS"
+            },
+            "id": {
+                "curseforge": "1128816"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "tisvs-1.20.1-forge-0.3.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7377/494/tisvs-1.20.1-forge-0.3.0.jar",
+                    "id": "7377494",
+                    "parent_id": "1128816",
+                    "hashes": {
+                        "sha1": "b0be0c1a13d6b48e21707334512313b107c276c3",
+                        "md5": "f011f3fcdb4f427e81e46ad6adb6277c"
+                    },
+                    "required_dependencies": [
+                        "419699",
+                        "238603",
+                        "258371",
+                        "351264"
+                    ],
+                    "size": 601409,
+                    "date_published": "2025-12-25T15:34:46.230Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "riCUhlUQ8QaW62Bh",
             "type": "MOD",
             "slug": {
@@ -13706,7 +13941,7 @@
             ]
         },
         {
-            "pakku_id": "6Mz0iSLP1P6LQXMw",
+            "pakku_id": "45fmO8MqilgTOVeI",
             "type": "MOD",
             "slug": {
                 "curseforge": "trackwork"
@@ -13720,27 +13955,27 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "trackwork-1.20.1-1.1.2c6.jar",
+                    "file_name": "trackwork-1.20.1-1.2.0.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
                         "forge"
                     ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/7232/94/trackwork-1.20.1-1.1.2c6.jar",
-                    "id": "7232094",
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7377/565/trackwork-1.20.1-1.2.0.jar",
+                    "id": "7377565",
                     "parent_id": "1057662",
                     "hashes": {
-                        "sha1": "3f2c0fcb29f2378e27b342670947ced17d9330c0",
-                        "md5": "8f57d38189007eeda44d95c4cdcc0d49"
+                        "sha1": "c7abfcd0a4860c24c8e758db03dc908494347475",
+                        "md5": "759053b50c1b1d2826cf3506d8904a16"
                     },
                     "required_dependencies": [
                         "328085",
                         "258371"
                     ],
-                    "size": 488891,
-                    "date_published": "2025-11-17T10:53:57.450Z"
+                    "size": 532199,
+                    "date_published": "2025-12-25T16:00:35.163Z"
                 }
             ]
         },
@@ -13816,87 +14051,6 @@
                     "required_dependencies": [],
                     "size": 294383,
                     "date_published": "2024-06-15T16:47:58.370Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "Trj13sZiq3cwmrow",
-            "type": "MOD",
-            "side": "SERVER",
-            "slug": {
-                "modrinth": "vlib"
-            },
-            "name": {
-                "modrinth": "VLib"
-            },
-            "id": {
-                "modrinth": "V1UmcEMX"
-            },
-            "update_strategy": "NONE",
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "vlib-1.20.1-0.0.15-alpha+forge.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "alpha",
-                    "url": "https://cdn.modrinth.com/data/V1UmcEMX/versions/eSVmXLVX/vlib-1.20.1-0.0.15-alpha%2Bforge.jar",
-                    "id": "eSVmXLVX",
-                    "parent_id": "V1UmcEMX",
-                    "required_dependencies": [
-                        "V5ujR2yw"
-                    ],
-                    "size": 628898,
-                    "date_published": "2025-11-22T00:44:45.259607Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "NKYHLUfjvIJDdya5",
-            "pakku_links": [
-                "Y7V4mgAKstpRff2k",
-                "9g9EMWMEfSBHOZyp"
-            ],
-            "type": "MOD",
-            "slug": {
-                "curseforge": "vmod"
-            },
-            "name": {
-                "curseforge": "VMod"
-            },
-            "id": {
-                "curseforge": "990517"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "VMod-Forge-1.20.1-1.6.0.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6729/716/VMod-Forge-1.20.1-1.6.0.jar",
-                    "id": "6729716",
-                    "parent_id": "990517",
-                    "hashes": {
-                        "sha1": "f3007ccc8e75cbd1f6a96a8da02085b01efd3cb7",
-                        "md5": "b577f2026dc3e5cda17ef372133adaf7"
-                    },
-                    "required_dependencies": [
-                        "258371",
-                        "308769",
-                        "351264",
-                        "419699"
-                    ],
-                    "size": 6849797,
-                    "date_published": "2025-07-04T14:36:58.997Z"
                 }
             ]
         },
@@ -13977,7 +14131,7 @@
             ]
         },
         {
-            "pakku_id": "RSBnVrQRifqDUkhd",
+            "pakku_id": "QBVJYKtkqEVgFBnu",
             "type": "MOD",
             "slug": {
                 "curseforge": "valkyrien-sails"
@@ -13991,106 +14145,27 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "vs_sails-1.20.1-0.2.3-forge.jar",
+                    "file_name": "vs_sails-1.20.1-0.2.4-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
-                        "forge",
-                        "neoforge"
+                        "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/7252/245/vs_sails-1.20.1-0.2.3-forge.jar",
-                    "id": "7252245",
+                    "url": "https://edge.forgecdn.net/files/7378/21/vs_sails-1.20.1-0.2.4-forge.jar",
+                    "id": "7378021",
                     "parent_id": "1278593",
                     "hashes": {
-                        "sha1": "26435916a3710ff17732ea96aa61cd1aa066e6af",
-                        "md5": "0262456c733eb924d72a7b876502bccf"
+                        "sha1": "f70d1c1b6701ce9fc397e15c6cd3419c5ac8c45c",
+                        "md5": "6f16a503dea7bcc31b9303f4b21287bd"
                     },
                     "required_dependencies": [
-                        "258371",
-                        "1265893"
-                    ],
-                    "size": 904109,
-                    "date_published": "2025-11-23T06:13:08.437Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "rcwvUWKhKVHfPDVY",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "valkyrien-skies"
-            },
-            "name": {
-                "curseforge": "Valkyrien Skies (Forge/Fabric)"
-            },
-            "id": {
-                "curseforge": "258371"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "valkyrienskies-120-2.3.0-beta.12.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/7230/770/valkyrienskies-120-2.3.0-beta.12.jar",
-                    "id": "7230770",
-                    "parent_id": "258371",
-                    "hashes": {
-                        "sha1": "b36e89e86361f95d2e529d703155f231f26f210d",
-                        "md5": "348ecf423577104a8305f3be45d9849f"
-                    },
-                    "required_dependencies": [
-                        "351264"
-                    ],
-                    "size": 14008550,
-                    "date_published": "2025-11-16T22:42:57.510Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "9Neozv5cDgPwAiTL",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "valkyrien-skies-tournament"
-            },
-            "name": {
-                "curseforge": "Valkyrien Skies: Tournament"
-            },
-            "id": {
-                "curseforge": "1126459"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "tournament-1.20.1-forge-1.1.0_beta-5.3+af35b3821f.jar",
-                    "mc_versions": [
-                        "1.20.1",
-                        "1.20"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/5836/554/tournament-1.20.1-forge-1.1.0_beta-5.3+af35b3821f.jar",
-                    "id": "5836554",
-                    "parent_id": "1126459",
-                    "hashes": {
-                        "sha1": "29e7518684c1ef7c2a573a0c57a5e942c6e2c725",
-                        "md5": "2c9e437b5026c263b05183e57b68cf08"
-                    },
-                    "required_dependencies": [
+                        "1265893",
                         "258371"
                     ],
-                    "size": 726709,
-                    "date_published": "2024-10-23T08:32:39.537Z"
+                    "size": 907549,
+                    "date_published": "2025-12-25T18:37:49.513Z"
                 }
             ]
         },
@@ -15017,44 +15092,6 @@
                     "required_dependencies": [],
                     "size": 3114590,
                     "date_published": "2023-09-05T08:02:20.050Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "l5QTGjJCDvHeMDlU",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "vstuff"
-            },
-            "name": {
-                "curseforge": "vstuff"
-            },
-            "id": {
-                "curseforge": "1319439"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "vstuff-0.2.3-fix2+d0c39e90bb.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7340/922/vstuff-0.2.3-fix2+d0c39e90bb.jar",
-                    "id": "7340922",
-                    "parent_id": "1319439",
-                    "hashes": {
-                        "sha1": "a766f1a96f99cb782a45e061997f1f04d81dc49b",
-                        "md5": "2bb38796e28173b2155b89e6ece1707e"
-                    },
-                    "required_dependencies": [
-                        "258371"
-                    ],
-                    "size": 364643,
-                    "date_published": "2025-12-16T17:10:49.587Z"
                 }
             ]
         },

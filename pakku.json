@@ -50,9 +50,6 @@
         "probejs": {
             "side": "CLIENT",
             "export": false
-        },
-        "vlib": {
-            "update_strategy": "NONE"
         }
     }
 }

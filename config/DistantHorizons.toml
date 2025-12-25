@@ -19,12 +19,12 @@ _version = 3
 			[client.advanced.graphics.quality]
 				#
 				# The radius of the mod's render distance. (measured in chunks)
-				lodChunkRenderDistanceRadius = 128
+				lodChunkRenderDistanceRadius = 256
 				#
 				# This indicates how quickly LODs decrease in quality the further away they are. 
 				# Higher settings will render higher quality fake chunks farther away, 
 				# but will increase memory and GPU usage.
-				horizontalQuality = "LOW"
+				horizontalQuality = "MEDIUM"
 				#
 				# What is the maximum detail LODs should be drawn at? 
 				# Higher settings will increase memory and GPU usage. 
@@ -45,14 +45,14 @@ _version = 3
 				# 
 				# Lowest Quality: HEIGHT_MAP
 				# Highest Quality: EXTREME
-				verticalQuality = "LOW"
+				verticalQuality = "MEDIUM"
 				#
 				# How should LOD transparency be handled. 
 				# 
 				# COMPLETE: LODs will render transparent. 
 				# FAKE: LODs will be opaque, but shaded to match the blocks underneath. 
 				# DISABLED: LODs will be opaque.
-				transparency = "DISABLED"
+				transparency = "COMPLETE"
 				#
 				# What blocks shouldn't be rendered as LODs? 
 				# 
@@ -95,7 +95,11 @@ _version = 3
 				# NONE: Fastest, there will be a pronounced border between DH and MC rendering. 
 				# SINGLE_PASS: Fades after MC's transparent pass, opaque blocks underwater won't be faded. 
 				# DOUBLE_PASS: Slowest, fades after both MC's opaque and transparent passes, provides the smoothest transition.
-				vanillaFadeMode = "SINGLE_PASS"
+				vanillaFadeMode = "DOUBLE_PASS"
+				#
+				# Should DH fade out before reaching the far clip plane? 
+				# This is helpful to prevent DH clouds from cutting off in the distance.
+				dhFadeFarClipPlane = true
 				#
 				# How bright LOD colors are. 
 				# 
@@ -111,10 +115,6 @@ _version = 3
 				# 2 = very saturated
 				saturationMultiplier = "1.0"
 				#
-				# Should DH fade out before reaching the far clip plane? 
-				# This is helpful to prevent DH clouds from cutting off in the distance.
-				dhFadeFarClipPlane = true
-				#
 				# This is the same as vanilla Biome Blending settings for Lod area. 
 				#     Note that anything other than '0' will greatly effect Lod building time. 
 				# 
@@ -126,7 +126,7 @@ _version = 3
 			[client.advanced.graphics.ssao]
 				#
 				# Enable Screen Space Ambient Occlusion
-				enableSsao = false
+				enableSsao = true
 				#
 				# Determines how many points in space are sampled for the occlusion test. 
 				# Higher numbers will improve quality and reduce banding, but will increase GPU load.
@@ -386,12 +386,6 @@ _version = 3
 				# will be set to 0 (disabled).
 				earthCurveRatio = 0
 				#
-				# For internal testing:
-				# Skips loading adjacent LODs to significantly reduce load times (~5x)
-				# but causes lighting on LOD borders to appear as full-bright
-				# and other graphical bugs.
-				onlyLoadCenterLods = false
-				#
 				# A comma separated list of dimension resource locations where DH won't render. 
 				# 
 				# Example: "minecraft:the_nether,minecraft:the_end"
@@ -414,7 +408,7 @@ _version = 3
 		[client.advanced.autoUpdater]
 			#
 			# Automatically check for updates on game launch?
-			enableAutoUpdater = false
+			enableAutoUpdater = true
 			#
 			# Should Distant Horizons silently, automatically download and install new versions? 
 			# This setting is force disabled on dedicated servers for stability reasons.
@@ -523,10 +517,6 @@ _version = 3
 				#            as it may break Minecraft's renderer when an exception is thrown.
 				glErrorHandlingMode = "IGNORE"
 				#
-				# Massively reduces FPS. 
-				# Should only be used if mysterious EXCEPTION_ACCESS_VIOLATION crashes are happening in DH's rendering code for troubleshooting.
-				validateBufferIdsBeforeRendering = false
-				#
 				# 
 				glUploadMode = "AUTO"
 
@@ -598,7 +588,7 @@ _version = 3
 		# but may cause server/simulation lag. 
 		# Note: unlike other modes this option DOES save generated chunks to 
 		# Minecraft's region files.
-		distantGeneratorMode = "INTERNAL_SERVER"
+		distantGeneratorMode = "FEATURES"
 		#
 		# How should distant generator progress be displayed? 
 		# 
@@ -647,30 +637,6 @@ _version = 3
 		# blocks have been changed.
 		disableUnchangedChunkCheck = false
 		#
-		# What algorithm should be used to compress new LOD data? 
-		# This setting will only affect new or updated LOD data, 
-		# any data already generated when this setting is changed will be
-		# unaffected until it needs to be re-written to the database.
-		# 
-		# UNCOMPRESSED 
-		# Should only be used for testing, is worse in every way vs [LZ4].
-		# Expected Compression Ratio: 1.0
-		# Estimated average DTO read speed: 3.25 milliseconds
-		# Estimated average DTO write speed: 5.99 milliseconds
-		# 
-		# LZ4 
-		# A good option if you're CPU limited and have plenty of hard drive space.
-		# Expected Compression Ratio: 0.26
-		# Estimated average DTO read speed: 1.85 ms
-		# Estimated average DTO write speed: 9.46 ms
-		# 
-		# LZMA2 
-		# Slow but very good compression.
-		# Expected Compression Ratio: 0.2
-		# Estimated average DTO read speed: 13.29 ms
-		# Estimated average DTO write speed: 70.95 ms
-		dataCompression = "LZMA2"
-		#
 		# How should block data be compressed when creating LOD data? 
 		# This setting will only affect new or updated LOD data, 
 		# any data already generated when this setting is changed will be
@@ -686,37 +652,6 @@ _version = 3
 		# Hidden blocks (IE ores) are ignored.  
 		# Expected Compression Ratio: 0.7
 		worldCompression = "VISUALLY_EQUAL"
-		#
-		# True: Recalculate chunk height maps before chunks can be used by DH.
-		#       This can fix problems with worlds created by World Painter or 
-		#       other external tools where the heightmap format may be incorrect. 
-		# False: Assume any height maps handled by Minecraft are correct. 
-		# 
-		# Fastest: False
-		# Most Compatible: True
-		recalculateChunkHeightmaps = false
-		#
-		# If true LOD generation for pre-existing chunks will attempt to pull the lighting data 
-		# saved in Minecraft's Region files. 
-		# If false DH will pull in chunks without lighting and re-light them. 
-		#  
-		# Setting this to true will result in faster LOD generation 
-		# for already generated worlds, but is broken by most lighting mods. 
-		#  
-		# Set this to false if LODs are black.
-		pullLightingForPregeneratedChunks = false
-		#
-		# When DH pulls in pre-existing chunks it will attempt to 
-		# run any missing world generation steps; for example: 
-		# if a chunk has the status SURFACE, DH will skip BIOMES 
-		# and SURFACE, but will run FEATURES. 
-		#  
-		# However if for some reason the chunks are malformed 
-		# or there's some other issue that causes the status 
-		# to be incorrect that can either cause world gen 
-		# lock-ups and/or crashes. 
-		# If either of those happen try setting this to True.
-		assumePreExistingChunksAreFinished = false
 
 		[common.lodBuilding.experimental]
 			#
@@ -735,7 +670,7 @@ _version = 3
 	[common.multiThreading]
 		#
 		# How many threads should be used by Distant Horizons?
-		numberOfThreads = 4
+		numberOfThreads = 16
 		#
 		# A value between 1.0 and 0.0 that represents the percentage 
 		# of time each thread can run before going idle. 
@@ -752,30 +687,6 @@ _version = 3
 		threadPriority = 5
 
 	[common.logging]
-		#
-		# If enabled, the mod will log information about the world generation process. 
-		# This can be useful for debugging.
-		logWorldGenEvent = "LOG_ERROR_TO_CHAT_AND_INFO_TO_FILE"
-		#
-		# If enabled, the mod will log performance about the world generation process. 
-		# This can be useful for debugging.
-		logWorldGenPerformance = "LOG_ERROR_TO_CHAT_AND_INFO_TO_FILE"
-		#
-		# If enabled, the mod will log information about the world generation process. 
-		# This can be useful for debugging.
-		logWorldGenLoadEvent = "LOG_ERROR_TO_CHAT_AND_INFO_TO_FILE"
-		#
-		# If enabled, the mod will log information about the renderer buffer process. 
-		# This can be useful for debugging.
-		logRendererBufferEvent = "LOG_ERROR_TO_CHAT_AND_INFO_TO_FILE"
-		#
-		# If enabled, the mod will log information about the renderer OpenGL process. 
-		# This can be useful for debugging.
-		logRendererGLEvent = "LOG_ERROR_TO_CHAT_AND_INFO_TO_FILE"
-		#
-		# If enabled, the mod will log information about network operations. 
-		# This can be useful for debugging.
-		logNetworkEvent = "LOG_ERROR_TO_CHAT_AND_INFO_TO_FILE"
 		#
 		# 
 		globalFileMaxLevel = "INFO"
@@ -832,13 +743,13 @@ _version = 3
 			# queued for updating.
 			showUpdateQueueOverloadedChatWarning = false
 			#
-			# If enabled, a chat message will be displayed when a potentially problematic 
-			# mod is installed alongside DH.
-			showModCompatibilityWarningsOnStartup = false
-			#
 			# If enabled, a chat message will be displayed when DH has too many chunks 
 			# queued for updating.
 			showSlowWorldGenSettingWarnings = true
+			#
+			# If enabled, a chat message will be displayed when a potentially problematic 
+			# mod is installed alongside DH.
+			showModCompatibilityWarningsOnStartup = true
 			#
 			# If enabled, a message will be logged if the garbage 
 			# collector Java is currently using is known 
@@ -851,6 +762,17 @@ _version = 3
 	# Disable this if you use alternative ways to send level keys.
 	sendLevelKeys = true
 	#
+	# DO NOT CHANGE UNLESS YOU KNOW WHAT YOU'RE DOING.
+	# Autogenerated ID used to prevent multiple independent servers from accidentally
+	# writing over each other's LODs when the same serverKey is set on both.
+	serverId = -424863616
+	#
+	# Custom server key used which can be used to always reuse the same LOD data folder,
+	# for cases when the server doesn't have a static IP for some reason.
+	# If this value is empty, the client itself decides which folder name to use.
+	# Requires rejoining the server to apply after changing.
+	serverKey = ""
+	#
 	# Prefix of the level keys sent to the clients.
 	# If the mod is running behind a proxy, each backend should use a unique value.
 	# If this value is empty, level key will be based on the server's seed hash.
@@ -862,16 +784,6 @@ _version = 3
 	#
 	# Defines the distance allowed to generate around the player.
 	maxGenerationRequestDistance = 4096
-	#
-	# Defines the X-coordinate of the central point for generation boundaries, in blocks.
-	generationBoundsX = 0
-	#
-	# Defines the Z-coordinate of the central point for generation boundaries, in blocks.
-	generationBoundsZ = 0
-	#
-	# Defines the radius around the central point within which generation is allowed, in blocks. 
-	# If this value is set to 0, generation bounds are disabled.
-	generationBoundsRadius = 0
 	#
 	# If true, clients will receive real-time LOD updates for chunks outside the client's render distance.
 	enableRealTimeUpdates = true
@@ -890,26 +802,6 @@ _version = 3
 	# Should be the same or larger than maxGenerationRequestDistance in most cases.
 	maxSyncOnLoadRequestDistance = 4096
 	#
-	# Maximum speed for uploading LODs to the clients, in KB/s.
-	# Value of 0 disables the limit.
-	maxDataTransferSpeed = 500
-	#
-	# Enables adaptive transfer speed based on client performance.
-	# If true, DH will automatically adjust transfer rate to minimize connection lag.
-	# If false, transfer speed will remain fixed.
-	enableAdaptiveTransferSpeed = false
-	#
-	# DO NOT CHANGE UNLESS YOU KNOW WHAT YOU'RE DOING.
-	# Autogenerated ID used to prevent multiple independent servers from accidentally
-	# writing over each other's LODs when the same serverKey is set on both.
-	serverId = 1408277544
-	#
-	# Custom server key used which can be used to always reuse the same LOD data folder,
-	# for cases when the server doesn't have a static IP for some reason.
-	# If this value is empty, the client itself decides which folder name to use.
-	# Requires rejoining the server to apply after changing.
-	serverKey = ""
-	#
 	# Maximum per-player speed for uploading LODs to the clients, in KB/s.
 	# Value of 0 disables the limit.
 	playerBandwidthLimit = 500
@@ -917,6 +809,11 @@ _version = 3
 	# Maximum global speed for uploading LODs to the clients, in KB/s.
 	# Value of 0 disables the limit.
 	globalBandwidthLimit = 0
+	#
+	# Enables adaptive transfer speed based on client performance.
+	# If true, DH will automatically adjust transfer rate to minimize connection lag.
+	# If false, transfer speed will remain fixed.
+	enableAdaptiveTransferSpeed = false
 
 	[server.experimental]
 		#

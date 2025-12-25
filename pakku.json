@@ -50,6 +50,33 @@
         "probejs": {
             "side": "CLIENT",
             "export": false
+        },
+        "species": {
+            "redistributable": true
+        },
+        "entityculling": {
+            "redistributable": true
+        },
+        "skin-layers-3d": {
+            "redistributable": true
+        },
+        "servercore": {
+            "redistributable": true
+        },
+        "not-enough-animations": {
+            "redistributable": true
+        },
+        "more-overlays-updated": {
+            "redistributable": true
+        },
+        "kappa-shader-by-rre36": {
+            "redistributable": true
+        },
+        "bad-wither-no-cookie-reloaded": {
+            "redistributable": true
+        },
+        "fastback": {
+            "redistributable": true
         }
     }
 }

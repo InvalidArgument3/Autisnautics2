@@ -1,5 +1,5 @@
 {
-    "target": "curseforge",
+    "target": "modrinth",
     "mc_versions": [
         "1.20.1"
     ],
@@ -1065,7 +1065,6 @@
             "id": {
                 "curseforge": "261251"
             },
-            "redistributable": false,
             "files": [
                 {
                     "type": "curseforge",
@@ -2139,7 +2138,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "chloride-FORGE-mc1.20.1-v1.7.4.jar",
+                    "file_name": "chloride-FORGE-mc1.20.1-v1.7.5.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -2147,18 +2146,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7321/314/chloride-FORGE-mc1.20.1-v1.7.4.jar",
-                    "id": "7321314",
+                    "url": "https://edge.forgecdn.net/files/7378/10/chloride-FORGE-mc1.20.1-v1.7.5.jar",
+                    "id": "7378010",
                     "parent_id": "931925",
                     "hashes": {
-                        "sha1": "2774b44a6249e317f970b19cc90e0333b3cfa05c",
-                        "md5": "9c489f62c01b19e63af39438711c9be1"
+                        "sha1": "b5f658b9328cda4b03080fa0164cf26be23a3e75",
+                        "md5": "871f2041941d801f7708a9123b9c41b8"
                     },
                     "required_dependencies": [
                         "908741"
                     ],
-                    "size": 956079,
-                    "date_published": "2025-12-11T17:30:00.927Z"
+                    "size": 956080,
+                    "date_published": "2025-12-25T18:33:28.790Z"
                 }
             ]
         },
@@ -3734,43 +3733,6 @@
             ]
         },
         {
-            "pakku_id": "9g921x2068AL1rq8",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "create-propulsion"
-            },
-            "name": {
-                "curseforge": "Create: Propulsion"
-            },
-            "id": {
-                "curseforge": "1253819"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "createpropulsion-0.2.2a.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge",
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7184/331/createpropulsion-0.2.2a.jar",
-                    "id": "7184331",
-                    "parent_id": "1253819",
-                    "hashes": {
-                        "sha1": "fa2abf1d9ab6d9a37c14110bfd519d7d2a280298",
-                        "md5": "bd44ea5d5013f7f08600a22ed276cd37"
-                    },
-                    "required_dependencies": [],
-                    "size": 616523,
-                    "date_published": "2025-11-04T04:11:50.433Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "rMGXfNyf25lYFAft",
             "type": "MOD",
             "slug": {
@@ -5144,7 +5106,6 @@
             "id": {
                 "curseforge": "448233"
             },
-            "redistributable": false,
             "files": [
                 {
                     "type": "curseforge",
@@ -5209,44 +5170,6 @@
                     ],
                     "size": 2669261,
                     "date_published": "2025-10-10T13:20:10.830Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "j403CmrD9vVjNhro",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "eureka-ships"
-            },
-            "name": {
-                "curseforge": "Eureka! Ships! for Valkyrien Skies (Forge/Fabric)"
-            },
-            "id": {
-                "curseforge": "654384"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "eureka-1201-1.5.2-beta.3.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/7273/495/eureka-1201-1.5.2-beta.3.jar",
-                    "id": "7273495",
-                    "parent_id": "654384",
-                    "hashes": {
-                        "sha1": "0c9c1da0b7d7d9f6d31e24c41bdef8a3167f1e15",
-                        "md5": "42daa9e5c1d1554665beec7bf980cafe"
-                    },
-                    "required_dependencies": [
-                        "258371"
-                    ],
-                    "size": 506464,
-                    "date_published": "2025-11-29T06:03:03.590Z"
                 }
             ]
         },
@@ -6009,7 +5932,6 @@
             "id": {
                 "curseforge": "667417"
             },
-            "redistributable": false,
             "files": [
                 {
                     "type": "curseforge",
@@ -7625,7 +7547,6 @@
             "id": {
                 "curseforge": "322270"
             },
-            "redistributable": false,
             "files": [
                 {
                     "type": "curseforge",
@@ -9391,7 +9312,6 @@
             "id": {
                 "curseforge": "391382"
             },
-            "redistributable": false,
             "files": [
                 {
                     "type": "curseforge",
@@ -9765,7 +9685,6 @@
             "id": {
                 "curseforge": "433760"
             },
-            "redistributable": false,
             "files": [
                 {
                     "type": "curseforge",
@@ -12141,7 +12060,6 @@
             "id": {
                 "curseforge": "550579"
             },
-            "redistributable": false,
             "files": [
                 {
                     "type": "curseforge",
@@ -12203,6 +12121,43 @@
                     ],
                     "size": 122014,
                     "date_published": "2025-07-09T13:03:51.383Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "fc4W7Xi3rASh4JwB",
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "modrinth": "simple-vs"
+            },
+            "name": {
+                "modrinth": "Simple VS"
+            },
+            "id": {
+                "modrinth": "x7cmASIY"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "simplevs-1.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "fabric"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/x7cmASIY/versions/FsmKalFS/simplevs-1.1.jar",
+                    "id": "FsmKalFS",
+                    "parent_id": "x7cmASIY",
+                    "hashes": {
+                        "sha512": "407a16d40b720b297320f02012fb39b3de48cf770a30903c89fde96b15464a15c3cd0453fbb2800a307f4ae2fc9e330379cd7c4b2f39333da4b30e47dee46d75",
+                        "sha1": "e3f73894f4e5651a97bdb99f7c44d85e29b3013d"
+                    },
+                    "required_dependencies": [],
+                    "size": 160213,
+                    "date_published": "2025-11-23T07:35:21.763687Z"
                 }
             ]
         },
@@ -12409,7 +12364,6 @@
             "id": {
                 "curseforge": "521480"
             },
-            "redistributable": false,
             "files": [
                 {
                     "type": "curseforge",
@@ -12799,7 +12753,6 @@
             "id": {
                 "curseforge": "857737"
             },
-            "redistributable": false,
             "files": [
                 {
                     "type": "curseforge",
@@ -14055,6 +14008,48 @@
             ]
         },
         {
+            "pakku_id": "9Gpzy7I8wPUDzYP8",
+            "pakku_links": [
+                "QTNpQq5a5wiUvRsn"
+            ],
+            "type": "MOD",
+            "side": "SERVER",
+            "slug": {
+                "modrinth": "vlib"
+            },
+            "name": {
+                "modrinth": "VLib"
+            },
+            "id": {
+                "modrinth": "V1UmcEMX"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "vlib-1.20.1-0.1.1+forge.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://cdn.modrinth.com/data/V1UmcEMX/versions/lEFffQqd/vlib-1.20.1-0.1.1+forge.jar",
+                    "id": "lEFffQqd",
+                    "parent_id": "V1UmcEMX",
+                    "hashes": {
+                        "sha512": "7ecbbd2bbad4cfd20a7c72f688761fd287b653256223a09a217bf0c0d351f29f90108ebd3f85e449edcf294257e302f3085da907ff734b203ca45c23e5bc70ff",
+                        "sha1": "aa63880ecb00681ebb04fad35f2e29c71b5b8088"
+                    },
+                    "required_dependencies": [
+                        "V5ujR2yw"
+                    ],
+                    "size": 624138,
+                    "date_published": "2025-12-25T22:24:23.449257Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "0quS6AdtJkXygPTI",
             "type": "MOD",
             "slug": {
@@ -14089,44 +14084,6 @@
                     ],
                     "size": 165528,
                     "date_published": "2024-12-17T12:33:50.960Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "CC0ZO0PllDbhW4j0",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "valkyrien-relogs"
-            },
-            "name": {
-                "curseforge": "Valkyrien Relogs"
-            },
-            "id": {
-                "curseforge": "1011712"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "valkyrienrelogs-0.3.0-forge.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5819/594/valkyrienrelogs-0.3.0-forge.jar",
-                    "id": "5819594",
-                    "parent_id": "1011712",
-                    "hashes": {
-                        "sha1": "e70f35486245736d1a346a5895bf05e561dffb0a",
-                        "md5": "2ead4cffe76fd8973f2a7eb8be624685"
-                    },
-                    "required_dependencies": [
-                        "258371"
-                    ],
-                    "size": 14637,
-                    "date_published": "2024-10-17T15:16:36.147Z"
                 }
             ]
         },
@@ -14166,6 +14123,48 @@
                     ],
                     "size": 907549,
                     "date_published": "2025-12-25T18:37:49.513Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "QTNpQq5a5wiUvRsn",
+            "pakku_links": [
+                "aIPO9oClGWzPdGVQ"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "modrinth": "valkyrien-skies"
+            },
+            "name": {
+                "modrinth": "Valkyrien Skies"
+            },
+            "id": {
+                "modrinth": "V5ujR2yw"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "valkyrienskies-120-2.4.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/V5ujR2yw/versions/D6PbSHUA/valkyrienskies-120-2.4.0.jar",
+                    "id": "D6PbSHUA",
+                    "parent_id": "V5ujR2yw",
+                    "hashes": {
+                        "sha512": "fc04612c08236ab4a4b8162cb03aaae1d94e5a153a4e6d72346b0a404b5663a7f28a7220f87af911a4e4f00afa4522b239218c091962f858612807fd70d86e24",
+                        "sha1": "2d5abca3d552c3d88f5400fce6b83581d4e70b9c"
+                    },
+                    "required_dependencies": [
+                        "ordsPcFz"
+                    ],
+                    "size": 24052599,
+                    "date_published": "2025-12-25T15:09:05.940081Z"
                 }
             ]
         },

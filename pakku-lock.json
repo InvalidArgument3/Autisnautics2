@@ -1239,7 +1239,7 @@
             ]
         },
         {
-            "pakku_id": "Cbh38TeTfGGEgraX",
+            "pakku_id": "i747JCFYETdP4cW7",
             "type": "MOD",
             "slug": {
                 "curseforge": "better-advancements"
@@ -1258,7 +1258,7 @@
                         "1.20.1"
                     ],
                     "loaders": [
-                        "forge"
+                        "neoforge"
                     ],
                     "release_type": "alpha",
                     "url": "https://edge.forgecdn.net/files/6010/302/BetterAdvancements-NeoForge-1.20.1-0.4.2.25.jar",
@@ -8314,7 +8314,7 @@
             ]
         },
         {
-            "pakku_id": "FGNP1qjzwq1hYwa7",
+            "pakku_id": "tVk6ITgtmOmnRFAC",
             "type": "MOD",
             "slug": {
                 "curseforge": "lmft"
@@ -8330,22 +8330,25 @@
                     "type": "curseforge",
                     "file_name": "lmft-1.0.4+1.20.1-forge.jar",
                     "mc_versions": [
-                        "1.20.1"
+                        "1.20.2",
+                        "1.20.1",
+                        "1.20"
                     ],
                     "loaders": [
+                        "neoforge",
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5046/568/lmft-1.0.4+1.20.1-forge.jar",
-                    "id": "5046568",
+                    "url": "https://edge.forgecdn.net/files/4892/299/lmft-1.0.4+1.20.1-forge.jar",
+                    "id": "4892299",
                     "parent_id": "656346",
                     "hashes": {
-                        "sha1": "3c0dc40afb617ca2b5b2bbb4f7e831bd75009753",
-                        "md5": "b6d51e0c06ff39802685d41f899a3428"
+                        "sha1": "e44a12eb51813b16faaab89b8073ec63c746c1b0",
+                        "md5": "b6fef15e42caec14db87f5aa498233e8"
                     },
                     "required_dependencies": [],
-                    "size": 178327,
-                    "date_published": "2024-01-20T02:59:01.397Z"
+                    "size": 178625,
+                    "date_published": "2023-11-23T00:33:22.407Z"
                 }
             ]
         },
@@ -14286,7 +14289,7 @@
             ]
         },
         {
-            "pakku_id": "RV3eAGugVRb4UuNB",
+            "pakku_id": "dRDSfKFeg1Nxh9lQ",
             "type": "MOD",
             "side": "CLIENT",
             "slug": {
@@ -14314,8 +14317,15 @@
                     "url": "https://edge.forgecdn.net/files/7281/929/watermedia-2.1.37.jar",
                     "id": "7281929",
                     "parent_id": "869524",
-                    "required_dependencies": [],
-                    "size": 1107369
+                    "hashes": {
+                        "sha1": "4a91d20d9a3aa8d66e01f7962d77c974ad538f4f",
+                        "md5": "4a09ad3ea22ad258802605b8aa929bbd"
+                    },
+                    "required_dependencies": [
+                        "1395870"
+                    ],
+                    "size": 37046674,
+                    "date_published": "2025-12-01T12:46:11.617Z"
                 }
             ]
         },

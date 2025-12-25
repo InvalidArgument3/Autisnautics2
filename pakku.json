@@ -4,6 +4,7 @@
     "description": "an abstract kind of version control hell",
     "author": "Invalid, Regaccio",
     "overrides": [
+        "icon.png",
         "config",
         "defaultconfigs",
         "kubejs",

@@ -37,8 +37,8 @@ build/
 .env
 
 # VSCode
-!/.vscode/*.code-workspace
 /.vscode/*
+!/.vscode/*.code-workspace
 
 # ProbeJS
 /kubejs/probe/

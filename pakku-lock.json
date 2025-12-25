@@ -135,10 +135,7 @@
             ]
         },
         {
-            "pakku_id": "XwpRHsjkWgANei2D",
-            "pakku_links": [
-                "y8tlwypL3WvZFeMX"
-            ],
+            "pakku_id": "uBetVwZK267JnpEN",
             "type": "MOD",
             "slug": {
                 "curseforge": "advanced-peripherals"
@@ -157,8 +154,8 @@
                         "1.20.1"
                     ],
                     "loaders": [
-                        "neoforge",
-                        "forge"
+                        "forge",
+                        "neoforge"
                     ],
                     "release_type": "release",
                     "url": "https://edge.forgecdn.net/files/7083/73/AdvancedPeripherals-1.20.1-0.7.46r.jar",
@@ -5285,7 +5282,7 @@
             ]
         },
         {
-            "pakku_id": "HnD003CjSBBuxrRK",
+            "pakku_id": "X20X2Tt5qGADtuXe",
             "type": "MOD",
             "slug": {
                 "curseforge": "explorify"
@@ -5303,16 +5300,16 @@
                     "mc_versions": [
                         "1.20.2",
                         "1.20.5",
-                        "1.20.3",
                         "1.20.1",
                         "1.20",
                         "1.20.6",
-                        "1.20.4"
+                        "1.20.4",
+                        "1.20.3"
                     ],
                     "loaders": [
                         "fabric",
-                        "neoforge",
                         "forge",
+                        "neoforge",
                         "quilt"
                     ],
                     "release_type": "release",
@@ -9947,6 +9944,50 @@
             ]
         },
         {
+            "pakku_id": "SAq3hhOPTlsl2jVc",
+            "type": "MOD",
+            "side": "SERVER",
+            "slug": {
+                "modrinth": "offlineauth"
+            },
+            "name": {
+                "modrinth": "OfflineAuth"
+            },
+            "id": {
+                "modrinth": "DQxq3OlC"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "offlineauth-1.0.3.jar",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20.2",
+                        "1.20.3",
+                        "1.20.4",
+                        "1.20.5",
+                        "1.20.6"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/DQxq3OlC/versions/eCq3jJ8h/offlineauth-1.0.3.jar",
+                    "id": "eCq3jJ8h",
+                    "parent_id": "DQxq3OlC",
+                    "hashes": {
+                        "sha512": "1ec3fb4f6ae886bfbffbd04b560ba1b51af20fc35342dbc9f94babef6afd64aa8bd85dae313411f414b631aa61047a48c76de235bb971fe44c9229e0a678ff1a",
+                        "sha1": "c357ee6604a997852a4a63ac54d191cc59d4e7eb"
+                    },
+                    "required_dependencies": [
+                        "fMgRLYNA"
+                    ],
+                    "size": 23855,
+                    "date_published": "2025-10-31T17:55:58.743494Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "GeeXNZeklHvCC3uq",
             "type": "MOD",
             "slug": {
@@ -11712,6 +11753,47 @@
             ]
         },
         {
+            "pakku_id": "ula6xUrHFa9esohl",
+            "type": "MOD",
+            "side": "CLIENT",
+            "slug": {
+                "modrinth": "restore-chat-links"
+            },
+            "name": {
+                "modrinth": "Restore Chat Links"
+            },
+            "id": {
+                "modrinth": "QSFEqmU6"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "RestoreChatLinks-0.2.5+1.19.3.jar",
+                    "mc_versions": [
+                        "1.19.3",
+                        "1.19.4",
+                        "1.20",
+                        "1.20.1",
+                        "1.20.2"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/QSFEqmU6/versions/CFHEgIRr/RestoreChatLinks-0.2.5+1.19.3.jar",
+                    "id": "CFHEgIRr",
+                    "parent_id": "QSFEqmU6",
+                    "hashes": {
+                        "sha512": "de53c09cf23d62c2dc237bae1842f153643801030c289e145ba1e091b6020a8349cfa5ef2f7ff7c06075f5ac275ec176b094af8fdaa3c87878fca8f66ecbc466",
+                        "sha1": "8f7e9870ee3b1c72d9330574bd0435a23ad75f8b"
+                    },
+                    "required_dependencies": [],
+                    "size": 34714,
+                    "date_published": "2024-10-08T17:58:04.180885Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "LqCJeL1SEdwQcmB4",
             "type": "MOD",
             "slug": {
@@ -11781,6 +11863,81 @@
                     "required_dependencies": [],
                     "size": 78625,
                     "date_published": "2025-12-04T04:33:50.273Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "JLVxozvaNneeQ5f1",
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "modrinth": "sqlite-jdbc"
+            },
+            "name": {
+                "modrinth": "SQLite JDBC"
+            },
+            "id": {
+                "modrinth": "GAUIVqEJ"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "sqlite-jdbc-3.41.2.1+20230506-all.jar",
+                    "mc_versions": [
+                        "1.12",
+                        "1.12.1",
+                        "1.12.2",
+                        "1.13",
+                        "1.13.1",
+                        "1.13.2",
+                        "1.14",
+                        "1.14.1",
+                        "1.14.2",
+                        "1.14.3",
+                        "1.14.4",
+                        "1.15",
+                        "1.15.1",
+                        "1.15.2",
+                        "1.16",
+                        "1.16.1",
+                        "1.16.2",
+                        "1.16.3",
+                        "1.16.4",
+                        "1.16.5",
+                        "1.17",
+                        "1.17.1",
+                        "1.18",
+                        "1.18.1",
+                        "1.18.2",
+                        "1.19",
+                        "1.19.1",
+                        "1.19.2",
+                        "1.19.3",
+                        "1.19.4",
+                        "1.20",
+                        "1.20.1",
+                        "1.20.2",
+                        "1.20.3",
+                        "1.20.4"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "forge",
+                        "paper",
+                        "quilt",
+                        "spigot"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/GAUIVqEJ/versions/7foxfVOx/sqlite-jdbc-3.41.2.1+20230506-all.jar",
+                    "id": "7foxfVOx",
+                    "parent_id": "GAUIVqEJ",
+                    "hashes": {
+                        "sha512": "59f4c34803f14bde873aeca85a67b3ae5b3a871f1edfc18ed43eb79f8a0ef333547d1ce9c336660b9eff987d45a48ffb1d67599b4130517936c7678f2871eadd",
+                        "sha1": "1ad5bc55cf1f2dcf4a5667de3c7f54c837d77645"
+                    },
+                    "required_dependencies": [],
+                    "size": 12855867,
+                    "date_published": "2023-05-06T21:54:41.035558Z"
                 }
             ]
         },
@@ -12119,6 +12276,45 @@
                     ],
                     "size": 15202091,
                     "date_published": "2024-08-18T05:32:26.090Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "ucGSxrJk7JEY8HVc",
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "modrinth": "connector"
+            },
+            "name": {
+                "modrinth": "Sinytra Connector"
+            },
+            "id": {
+                "modrinth": "u58R1TMW"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "Connector-1.0.0-beta.47+1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://cdn.modrinth.com/data/u58R1TMW/versions/XoBmts8o/Connector-1.0.0-beta.47+1.20.1.jar",
+                    "id": "XoBmts8o",
+                    "parent_id": "u58R1TMW",
+                    "hashes": {
+                        "sha512": "55cc9ef219c67c684b81e6f55b397e0fb287b82b4ec37b2bb046846dc5aa582c4d794e0421702ae34e4e856574daac96b2a152abb7c95295ca8a86b67932082a",
+                        "sha1": "ae50255ad8f3eb44951ee4ab1749f4b2cfa1dbe8"
+                    },
+                    "required_dependencies": [
+                        "Aqlf1Shp"
+                    ],
+                    "size": 5043924,
+                    "date_published": "2025-11-20T09:51:49.898545Z"
                 }
             ]
         },
@@ -13239,7 +13435,7 @@
             ]
         },
         {
-            "pakku_id": "AD3P1Yt1Uj3IrhBG",
+            "pakku_id": "wz2vKXaWdxO8rDDu",
             "type": "MOD",
             "slug": {
                 "curseforge": "tinkers-construct"
@@ -13258,8 +13454,8 @@
                         "1.20.1"
                     ],
                     "loaders": [
-                        "neoforge",
-                        "forge"
+                        "forge",
+                        "neoforge"
                     ],
                     "release_type": "release",
                     "url": "https://edge.forgecdn.net/files/6777/68/TConstruct-1.20.1-3.10.2.92.jar",
@@ -13357,7 +13553,7 @@
             ]
         },
         {
-            "pakku_id": "fG1d2UfHSKFV12Kb",
+            "pakku_id": "XK3412bvGLocEJs5",
             "type": "MOD",
             "slug": {
                 "curseforge": "tinkers-things-json"
@@ -13376,8 +13572,8 @@
                         "1.20.1"
                     ],
                     "loaders": [
-                        "neoforge",
-                        "forge"
+                        "forge",
+                        "neoforge"
                     ],
                     "release_type": "release",
                     "url": "https://edge.forgecdn.net/files/6603/376/Tinker-Things-1.20.1-1.3.2.jar",
@@ -13388,8 +13584,8 @@
                         "md5": "0f94cc630327367fe3c1bacc4a2f68ec"
                     },
                     "required_dependencies": [
-                        "74072",
-                        "541617"
+                        "541617",
+                        "74072"
                     ],
                     "size": 1595407,
                     "date_published": "2025-06-01T00:48:25.120Z"
@@ -13737,6 +13933,52 @@
                     ],
                     "size": 117791,
                     "date_published": "2025-03-18T15:01:26.440Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "7AkgoPCx2b6NFIXE",
+            "pakku_links": [
+                "JLVxozvaNneeQ5f1"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "modrinth": "trueuuid"
+            },
+            "name": {
+                "modrinth": "TrueUUID"
+            },
+            "id": {
+                "modrinth": "fMgRLYNA"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "trueuuid-1.0.5.jar",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20.2",
+                        "1.20.3",
+                        "1.20.4",
+                        "1.20.5"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/fMgRLYNA/versions/3knLKYDi/trueuuid-1.0.5.jar",
+                    "id": "3knLKYDi",
+                    "parent_id": "fMgRLYNA",
+                    "hashes": {
+                        "sha512": "ba3fb91d659fefd67f6850024b346e483d2d637d6060c34bb4b6bd92352a2c0840c207f3a9ab598f44e77dcb79f1f887f6e7f74b8cd66ed22f7f94a006356aab",
+                        "sha1": "d16e761cb4686a3f599d28bbdd5c52e4571b351d"
+                    },
+                    "required_dependencies": [
+                        "GAUIVqEJ"
+                    ],
+                    "size": 51833,
+                    "date_published": "2025-10-19T17:04:35.725843Z"
                 }
             ]
         },

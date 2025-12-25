@@ -685,6 +685,10 @@
 			cut_treated_brass = true
 			treated_brass_tiles = true
 
+		[types.cut_block_type.delightful]
+			glow_jam_cookie_tile = true
+			source_berry_cookie_tile = true
+
 	[types.wood_type]
 
 		[types.wood_type.quark]

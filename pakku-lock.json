@@ -2696,6 +2696,42 @@
             ]
         },
         {
+            "pakku_id": "zOPY6RtGG1s2utKw",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "concurrent-chunk-management-engine-1-20-1"
+            },
+            "name": {
+                "curseforge": "Concurrent Chunk Management Engine OLDER VERSION!"
+            },
+            "id": {
+                "curseforge": "1366864"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "c2meF-0.2.0+alpha.12-all.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7116/688/c2meF-0.2.0+alpha.12-all.jar",
+                    "id": "7116688",
+                    "parent_id": "1366864",
+                    "hashes": {
+                        "sha1": "ad44f615a4b15afd1d6a4d907ccab1c3855451a1",
+                        "md5": "3f785cd9fafe9b3b9415c4a981307b79"
+                    },
+                    "required_dependencies": [],
+                    "size": 1839442,
+                    "date_published": "2025-10-17T10:50:25.893Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "iYqDbyWoC9WzVa67",
             "type": "MOD",
             "slug": {
@@ -5686,6 +5722,42 @@
                     ],
                     "size": 129725,
                     "date_published": "2025-04-09T10:47:38.837Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "emiS2uNNjDqFqIdM",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "fabric-api"
+            },
+            "name": {
+                "curseforge": "Fabric API"
+            },
+            "id": {
+                "curseforge": "306612"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "fabric-api-0.92.6+1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "fabric"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6601/119/fabric-api-0.92.6+1.20.1.jar",
+                    "id": "6601119",
+                    "parent_id": "306612",
+                    "hashes": {
+                        "sha1": "3ec0a88b64f252257df6287e9a1d47ed96331e5d",
+                        "md5": "3483560775f416a4c759535b898165a5"
+                    },
+                    "required_dependencies": [],
+                    "size": 2107873,
+                    "date_published": "2025-05-31T13:33:47.903Z"
                 }
             ]
         },
@@ -11825,43 +11897,6 @@
             ]
         },
         {
-            "pakku_id": "w4MbEczOJJqrnhQe",
-            "type": "MOD",
-            "side": "SERVER",
-            "slug": {
-                "modrinth": "sauth"
-            },
-            "name": {
-                "modrinth": "SAuth"
-            },
-            "id": {
-                "modrinth": "tyAKpqKg"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "SAuth-2.0.0.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/tyAKpqKg/versions/p5bijuHC/SAuth-2.0.0.jar",
-                    "id": "p5bijuHC",
-                    "parent_id": "tyAKpqKg",
-                    "hashes": {
-                        "sha512": "dd6de085f02f7dd59a350eb8e12764bb93825fd29180626c309faa9c5715ade9bba6ff0e9fedd458e40f4e52012e32000fa0cc315c3ef33ab5ce73ab7d0afb13",
-                        "sha1": "808ef626c414933f14ec9288e3d7cda4ad7c8599"
-                    },
-                    "required_dependencies": [],
-                    "size": 9192,
-                    "date_published": "2025-10-05T11:49:18.419608Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "rSqeeLYYz3fFjGMo",
             "type": "MOD",
             "slug": {
@@ -12202,7 +12237,7 @@
             ]
         },
         {
-            "pakku_id": "ucGSxrJk7JEY8HVc",
+            "pakku_id": "rCnUXUUJGZ1mbt6Q",
             "type": "MOD",
             "side": "BOTH",
             "slug": {
@@ -12312,43 +12347,6 @@
                     "required_dependencies": [],
                     "size": 2156619,
                     "date_published": "2025-12-11T22:46:50.977Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "7W7nVvKfX7ToyaA7",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "skinrestorer"
-            },
-            "name": {
-                "curseforge": "Skin Restorer"
-            },
-            "id": {
-                "curseforge": "443823"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "skinrestorer-2.4.3+1.20-forge.jar",
-                    "mc_versions": [
-                        "1.20.1",
-                        "1.20"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6897/52/skinrestorer-2.4.3+1.20-forge.jar",
-                    "id": "6897052",
-                    "parent_id": "443823",
-                    "hashes": {
-                        "sha1": "c2b161dd0bee1b5ceef7c2b2f8b415517eb4125f",
-                        "md5": "77455bad956d8fe33b83933303c14d6d"
-                    },
-                    "required_dependencies": [],
-                    "size": 188270,
-                    "date_published": "2025-08-17T16:33:42.920Z"
                 }
             ]
         },

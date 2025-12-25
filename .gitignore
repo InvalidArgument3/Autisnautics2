@@ -83,8 +83,7 @@ config/darkmodeeverywhereshaders*
 config/ichunutil/themes/
 config/gtceu.yaml
 config/crash_assistant/
-config/offlineauth/*
-!config/offlineauth/config.json
+config/serverreg/users.json
 config/dnl/
 config/world_preview/
 config/forge

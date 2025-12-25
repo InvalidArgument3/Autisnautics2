@@ -19,8 +19,8 @@ version = 3
 #  Available variables: is_windows, is_j9vm, is_client, cpus, mem_gb
 # 
 defaultGlobalExecutorParallelismExpression = "default"
-# (Default: 6) Configures the parallelism of global executor
-globalExecutorParallelism = 2
+# (Default: 3) Configures the parallelism of global executor
+globalExecutorParallelism = "default"
 
 [generalOptimizations]
 	# (Default: 100000) The task interval of mid-tick chunk tasks in nanoseconds (-1 to disable)  
@@ -70,14 +70,14 @@ globalExecutorParallelism = 2
 	# It is generally not recommended to disable this settings unless you know what you are doing  
 	# 
 	# 
-	enforceSafeWorldRandomAccess = false
+	enforceSafeWorldRandomAccess = "default"
 
 [threadedWorldGen]
-	# (Default: false) Whether to enable this feature
+	# (Default: true) Whether to enable this feature
 	enabled = "default"
 	# (Default: true) Whether to allow feature generation (world decorations like trees, ores and etc.) run in parallel
 	# (may cause incompatibility with other mods)
-	allowThreadedFeatures = false
+	allowThreadedFeatures = "default"
 	# (Default: true) Whether to allow reducing lock radius 
 	# (may cause incompatibility with other mods)
 	reduceLockRadius = "default"
@@ -122,7 +122,7 @@ globalExecutorParallelism = 2
 [noTickViewDistance]
 	# (Default: true) Whether to enable no-tick view distance
 	enabled = "default"
-	# (Default: 3) No-tick view distance max concurrent chunk loads 
+	# (Default: 4) No-tick view distance max concurrent chunk loads 
 	#  Lower this for a better latency and higher this for a faster loading
 	maxConcurrentChunkLoads = "default"
 	# (Default: true) Whether to use compatibility mode to send chunks 
@@ -137,7 +137,7 @@ globalExecutorParallelism = 2
 	[clientSideConfig.modifyMaxVDConfig]
 		# (Default: true) Whether to modify maximum view distance
 		enabled = "default"
-		# (Default: 78) Max render distance allowed in game options
+		# (Default: 53) Max render distance allowed in game options
 		maxViewDistance = "default"
 
 [vanillaWorldGenOptimizations]

@@ -1819,7 +1819,7 @@
             ]
         },
         {
-            "pakku_id": "7xscQYVcX1WE8RiG",
+            "pakku_id": "DnmxDEkaQMzuFgw1",
             "type": "MOD",
             "side": "BOTH",
             "slug": {
@@ -4404,6 +4404,44 @@
                     ],
                     "size": 36827,
                     "date_published": "2024-06-26T21:33:02.217Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "Eawf7RlqTFLCLXXs",
+            "type": "MOD",
+            "side": "SERVER",
+            "slug": {
+                "curseforge": "distant-horizons"
+            },
+            "name": {
+                "curseforge": "Distant Horizons: A Level of Detail mod"
+            },
+            "id": {
+                "curseforge": "508933"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "DistantHorizons-2.4.5-b-1.20.1-fabric-forge.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/7375/280/DistantHorizons-2.4.5-b-1.20.1-fabric-forge.jar",
+                    "id": "7375280",
+                    "parent_id": "508933",
+                    "hashes": {
+                        "sha1": "ce3814dd5971edda4d04c3a42ef0df5c6cf8e10d",
+                        "md5": "9d238e4b055990d7e202d9d24f410a5e"
+                    },
+                    "required_dependencies": [],
+                    "size": 25378978,
+                    "date_published": "2025-12-25T04:32:50.463Z"
                 }
             ]
         },
@@ -11710,7 +11748,7 @@
             ]
         },
         {
-            "pakku_id": "ula6xUrHFa9esohl",
+            "pakku_id": "WjdDAW0WjTxTO1Do",
             "type": "MOD",
             "side": "CLIENT",
             "slug": {
@@ -12164,7 +12202,7 @@
             ]
         },
         {
-            "pakku_id": "rCnUXUUJGZ1mbt6Q",
+            "pakku_id": "G0U1KEgg9Vus3br9",
             "type": "MOD",
             "side": "BOTH",
             "slug": {

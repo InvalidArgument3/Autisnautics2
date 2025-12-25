@@ -115,3 +115,7 @@ _IAS*
 
 # Touhou Little Maid HOLY SHIT WHY ARE THERE SO MANY FILES
 tlm_custom_pack/*
+
+
+# connector shit
+.connector/*

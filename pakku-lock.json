@@ -4408,44 +4408,6 @@
             ]
         },
         {
-            "pakku_id": "Eawf7RlqTFLCLXXs",
-            "type": "MOD",
-            "side": "SERVER",
-            "slug": {
-                "curseforge": "distant-horizons"
-            },
-            "name": {
-                "curseforge": "Distant Horizons: A Level of Detail mod"
-            },
-            "id": {
-                "curseforge": "508933"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "DistantHorizons-2.4.5-b-1.20.1-fabric-forge.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "fabric",
-                        "forge"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/7375/280/DistantHorizons-2.4.5-b-1.20.1-fabric-forge.jar",
-                    "id": "7375280",
-                    "parent_id": "508933",
-                    "hashes": {
-                        "sha1": "ce3814dd5971edda4d04c3a42ef0df5c6cf8e10d",
-                        "md5": "9d238e4b055990d7e202d9d24f410a5e"
-                    },
-                    "required_dependencies": [],
-                    "size": 25378978,
-                    "date_published": "2025-12-25T04:32:50.463Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "Ms3QK0ch5GhHzQu1",
             "type": "MOD",
             "slug": {

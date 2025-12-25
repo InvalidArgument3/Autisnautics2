@@ -53,30 +53,6 @@
         },
         "vlib": {
             "update_strategy": "NONE"
-        },
-        "distant-horizons": {
-            "side": "SERVER"
-        },
-        "bad-wither-no-cookie-reloaded": {
-            "redistributable": true
-        },
-        "entityculling": {
-            "redistributable": true
-        },
-        "more-overlays-updated": {
-            "redistributable": true
-        },
-        "not-enough-animations": {
-            "redistributable": true
-        },
-        "servercore": {
-            "redistributable": true
-        },
-        "skin-layers-3d": {
-            "redistributable": true
-        },
-        "species": {
-            "redistributable": true
         }
     }
 }

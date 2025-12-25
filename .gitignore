@@ -82,7 +82,8 @@ config/darkmodeeverywhereshaders*
 config/ichunutil/themes/
 config/gtceu.yaml
 config/crash_assistant/
-config/offlineauth/
+config/offlineauth/*
+!config/offlineauth/config.json
 config/dnl/
 config/world_preview/
 config/forge
@@ -119,3 +120,6 @@ tlm_custom_pack/*
 
 # connector shit
 .connector/*
+
+# DH
+Distant_Horizons_server_data/*

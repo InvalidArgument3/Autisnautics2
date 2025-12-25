@@ -2696,6 +2696,42 @@
             ]
         },
         {
+            "pakku_id": "J7oFqAXY9IqLtbIz",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "c2me"
+            },
+            "name": {
+                "curseforge": "Concurrent Chunk Management Engine"
+            },
+            "id": {
+                "curseforge": "533097"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "c2me-fabric-mc1.20.1-0.2.0+alpha.11.16.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "fabric"
+                    ],
+                    "release_type": "alpha",
+                    "url": "https://edge.forgecdn.net/files/6181/291/c2me-fabric-mc1.20.1-0.2.0+alpha.11.16.jar",
+                    "id": "6181291",
+                    "parent_id": "533097",
+                    "hashes": {
+                        "sha1": "94d96b5fffd9e98bd8448dcdd9e27f60511b1d29",
+                        "md5": "92a6600d0f05c7e70d92d459b3b9eba8"
+                    },
+                    "required_dependencies": [],
+                    "size": 1426500,
+                    "date_published": "2025-02-11T10:06:33.747Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "iYqDbyWoC9WzVa67",
             "type": "MOD",
             "slug": {

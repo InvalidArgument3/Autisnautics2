@@ -3501,44 +3501,6 @@
             ]
         },
         {
-            "pakku_id": "S4Ov2tVYvmQPkLD7",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "create-stuff-additions"
-            },
-            "name": {
-                "curseforge": "Create Stuff 'N Additions"
-            },
-            "id": {
-                "curseforge": "466792"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "create-stuff-additions1.20.1_v2.1.0.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/6412/397/create-stuff-additions1.20.1_v2.1.0.jar",
-                    "id": "6412397",
-                    "parent_id": "466792",
-                    "hashes": {
-                        "sha1": "02c8a8b61370c28e153e1d2bc9bd0db7a8193854",
-                        "md5": "22bb230d91a12d68d5948c62566c9ad9"
-                    },
-                    "required_dependencies": [
-                        "328085"
-                    ],
-                    "size": 1347694,
-                    "date_published": "2025-04-11T21:25:48.290Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "srHjlRZVLqIGKRvG",
             "type": "MOD",
             "slug": {
@@ -12125,43 +12087,6 @@
             ]
         },
         {
-            "pakku_id": "fc4W7Xi3rASh4JwB",
-            "type": "MOD",
-            "side": "BOTH",
-            "slug": {
-                "modrinth": "simple-vs"
-            },
-            "name": {
-                "modrinth": "Simple VS"
-            },
-            "id": {
-                "modrinth": "x7cmASIY"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "simplevs-1.1.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "fabric"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/x7cmASIY/versions/FsmKalFS/simplevs-1.1.jar",
-                    "id": "FsmKalFS",
-                    "parent_id": "x7cmASIY",
-                    "hashes": {
-                        "sha512": "407a16d40b720b297320f02012fb39b3de48cf770a30903c89fde96b15464a15c3cd0453fbb2800a307f4ae2fc9e330379cd7c4b2f39333da4b30e47dee46d75",
-                        "sha1": "e3f73894f4e5651a97bdb99f7c44d85e29b3013d"
-                    },
-                    "required_dependencies": [],
-                    "size": 160213,
-                    "date_published": "2025-11-23T07:35:21.763687Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "ypa9dv2gTIcHl67E",
             "type": "MOD",
             "slug": {
@@ -14046,44 +13971,6 @@
                     ],
                     "size": 624138,
                     "date_published": "2025-12-25T22:24:23.449257Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "0quS6AdtJkXygPTI",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "vs-ship-handler"
-            },
-            "name": {
-                "curseforge": "VS: Ship Handler"
-            },
-            "id": {
-                "curseforge": "1138912"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "shiphandler-1.20.1-1.1.2.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5998/529/shiphandler-1.20.1-1.1.2.jar",
-                    "id": "5998529",
-                    "parent_id": "1138912",
-                    "hashes": {
-                        "sha1": "806b97c083b624ed1ac22c1e094c47dbe7bc26b8",
-                        "md5": "1741a8f2efc196ac679459ed7c641de1"
-                    },
-                    "required_dependencies": [
-                        "258371"
-                    ],
-                    "size": 165528,
-                    "date_published": "2024-12-17T12:33:50.960Z"
                 }
             ]
         },

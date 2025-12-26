@@ -123,3 +123,6 @@ tlm_custom_pack/*
 
 # DH
 Distant_Horizons_server_data/*
+
+# LOGS
+*.log

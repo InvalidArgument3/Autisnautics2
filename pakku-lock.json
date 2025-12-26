@@ -5928,7 +5928,7 @@
         {
             "pakku_id": "2W5AlPTExErvqywY",
             "type": "MOD",
-            "side": "CLIENT",
+            "side": "BOTH",
             "slug": {
                 "curseforge": "creativecore",
                 "modrinth": "creativecore"
@@ -10079,7 +10079,7 @@
         {
             "pakku_id": "skkpHskh8OJtUThR",
             "type": "MOD",
-            "side": "CLIENT",
+            "side": "BOTH",
             "slug": {
                 "curseforge": "geckolib",
                 "modrinth": "geckolib"
@@ -10916,7 +10916,7 @@
         {
             "pakku_id": "6cxcPKPxBdvRwHF2",
             "type": "MOD",
-            "side": "CLIENT",
+            "side": "BOTH",
             "slug": {
                 "curseforge": "inline",
                 "modrinth": "inline"
@@ -18347,7 +18347,7 @@
         {
             "pakku_id": "gk6VSxUyWVI45bN7",
             "type": "MOD",
-            "side": "CLIENT",
+            "side": "BOTH",
             "slug": {
                 "curseforge": "radiant-gear",
                 "modrinth": "radiant-gear"
@@ -24414,7 +24414,7 @@
         {
             "pakku_id": "Ud7XQMGGTbhwT2fv",
             "type": "MOD",
-            "side": "CLIENT",
+            "side": "BOTH",
             "slug": {
                 "curseforge": "scorched-guns",
                 "modrinth": "scorched-guns-2"

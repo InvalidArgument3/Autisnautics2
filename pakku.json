@@ -83,6 +83,15 @@
         },
         "geckolib": {
             "side": "BOTH"
+        },
+        "creativecore": {
+            "side": "BOTH"
+        },
+        "radiantgear": {
+            "side": "BOTH"
+        },
+        "inline": {
+            "side": "BOTH"
         }
     }
 }

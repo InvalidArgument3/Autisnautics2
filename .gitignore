@@ -126,3 +126,6 @@ Distant_Horizons_server_data/*
 
 # LOGS
 *.log
+
+# fancymainmenu
+!config/fancymenu/options.txt

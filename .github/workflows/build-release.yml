@@ -1,10 +1,7 @@
 name: Build Project
 run-name: "Project Build #${{ github.run_number }}"
 on:
-  push:
-    branches:
-      - dev
-      - main
+  workflow_dispatch:
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
@@ -16,7 +13,7 @@ jobs:
   info:
     name: Project Info
     runs-on: ubuntu-latest
-    if: ${{  github.repository_owner == 'ThePansmith' }}  # Change this! (This is to prevent forks from running the workflow and failing due to not having access to secrets.)
+    if: ${{  github.repository_owner == 'InvalidArgument3' }}  # Change this! (This is to prevent forks from running the workflow and failing due to not having access to secrets.)
     outputs:
       project_version: ${{ steps.check.outputs.project_version }}
       project_name: ${{ steps.check.outputs.project_name }}
@@ -646,7 +643,7 @@ jobs:
         uses: hugoalh/send-discord-webhook-ghaction@v7.0.5
         with:
           key: ${{ secrets.discord-webhook  }}
-          username: "Panpack" # Change this!
+          username: "Autisnautics2" # Change this!
           avatar_url: "https://media.forgecdn.net/avatars/thumbnails/798/822/64/64/638160732420962168.png" # Change this! (and the below curseforge url)
           content_links_no_embed: .+
           content: |

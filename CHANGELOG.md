@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.4]
+### Changes
+- set more side overrides 
+
 ## [0.0.3]
 ### Changes
 - comment out curseforge upload workflow stuff

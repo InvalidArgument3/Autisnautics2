@@ -92,6 +92,9 @@
         },
         "inline": {
             "side": "BOTH"
+        },
+        "scorched-guns-2": {
+            "side": "BOTH"
         }
     }
 }

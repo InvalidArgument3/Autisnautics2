@@ -689,6 +689,9 @@
 			glow_jam_cookie_tile = true
 			source_berry_cookie_tile = true
 
+		[types.cut_block_type.vs_clockwork]
+			smooth_wanderlite = true
+
 	[types.wood_type]
 
 		[types.wood_type.quark]

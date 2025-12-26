@@ -9,6 +9,10 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
+permissions:
+  contents: write
+  pull-requests: write
+
 env:
   DEV_ENVIRONMENT: ${{ github.ref_name != 'main' }} # Change this! (if "main" isn't your master branch! and anywhere else branch names are referenced if so)
 

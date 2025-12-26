@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.6]
+### Changes
+- fix fancymenu options.txt not being tracked
+
 ## [0.0.5]
 ### Changes
 - set more side overrides 2

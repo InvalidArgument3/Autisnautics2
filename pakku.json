@@ -80,6 +80,9 @@
         },
         "watermedia-yt-plugin": {
             "side": "CLIENT"
+        },
+        "geckolib": {
+            "side": "BOTH"
         }
     }
 }

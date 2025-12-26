@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.5]
+### Changes
+- set more side overrides 2
+
 ## [0.0.4]
 ### Changes
 - set more side overrides 

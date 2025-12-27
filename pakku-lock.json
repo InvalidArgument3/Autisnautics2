@@ -15374,6 +15374,84 @@
             ]
         },
         {
+            "pakku_id": "gPuBECXlkQIy8OlO",
+            "type": "MOD",
+            "side": "CLIENT",
+            "slug": {
+                "curseforge": "my-server-is-compatible",
+                "modrinth": "my-server-is-compatible"
+            },
+            "name": {
+                "curseforge": "My Server Is Compatible",
+                "modrinth": "My Server Is Compatible"
+            },
+            "id": {
+                "curseforge": "492574",
+                "modrinth": "13qq15Cg"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "MyServerIsCompatible-1.20-1.0.jar",
+                    "mc_versions": [
+                        "1.20.2",
+                        "1.20.5",
+                        "1.20.2-Snapshot",
+                        "1.20.5-Snapshot",
+                        "1.20.3-Snapshot",
+                        "1.20.3",
+                        "1.20.1",
+                        "1.20",
+                        "1.20.6",
+                        "1.20.4",
+                        "1.20-Snapshot"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/4580/511/MyServerIsCompatible-1.20-1.0.jar",
+                    "id": "4580511",
+                    "parent_id": "492574",
+                    "hashes": {
+                        "sha1": "a53abcabc6c3531667049be249b3fb165aad5468",
+                        "md5": "61d6f7c70030cbdacbbb0053cf120b79"
+                    },
+                    "required_dependencies": [],
+                    "size": 3482,
+                    "date_published": "2023-06-11T15:33:04.850Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "MyServerIsCompatible-1.20-1.0.jar",
+                    "mc_versions": [
+                        "1.20",
+                        "1.20.1",
+                        "1.20.2",
+                        "1.20.3",
+                        "1.20.4",
+                        "1.20.5",
+                        "1.20.6"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/13qq15Cg/versions/7jEatFH8/MyServerIsCompatible-1.20-1.0.jar",
+                    "id": "7jEatFH8",
+                    "parent_id": "13qq15Cg",
+                    "hashes": {
+                        "sha512": "fb87751a60e48579d6f9bb117d459c6dc157c87fe71c8e2bc088ba859ff2725112b5330d4c3d4c1ab2d29073a0c2668edcd6b6f547a9666b284b022616bf99cf",
+                        "sha1": "a53abcabc6c3531667049be249b3fb165aad5468"
+                    },
+                    "required_dependencies": [],
+                    "size": 3482,
+                    "date_published": "2023-06-12T15:13:10.541989Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "NWbfYPMdSghOWdCv",
             "type": "MOD",
             "side": "BOTH",

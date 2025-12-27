@@ -36,7 +36,8 @@
             "side": "CLIENT"
         },
         "watermedia": {
-            "side": "CLIENT"
+            "side": "CLIENT",
+            "update_strategy": "NONE"
         },
         "embeddium": {
             "side": "CLIENT"

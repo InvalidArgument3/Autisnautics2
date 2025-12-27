@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.10]
+### Changes
+- server icon resize?
+
 ## [0.0.9]
 ### Changes
 - rm bcc

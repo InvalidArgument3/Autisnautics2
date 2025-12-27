@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.0.7]
+### Changes
+- add oc2r config
+- add extra_gauges config
+- add forgeendertech config
+
 ## [0.0.6]
 ### Changes
 - fix fancymenu options.txt not being tracked

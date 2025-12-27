@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.0.8]
+### Changes
+- rm krypton
+- rm better mob combat
+
 ## [0.0.7]
 ### Changes
 - add oc2r config

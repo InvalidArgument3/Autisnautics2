@@ -2156,78 +2156,6 @@
             ]
         },
         {
-            "pakku_id": "8uEYl5qgAqCSM6ML",
-            "type": "MOD",
-            "side": "BOTH",
-            "slug": {
-                "curseforge": "better-mob-combat",
-                "modrinth": "better-mob-combat"
-            },
-            "name": {
-                "curseforge": "Better Mob Combat",
-                "modrinth": "Better Mob Combat"
-            },
-            "id": {
-                "curseforge": "1058798",
-                "modrinth": "KU8N7kPc"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "bettermobcombat-forge-1.20.1-1.3.0-all.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge",
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/KU8N7kPc/versions/XPX9NrkF/bettermobcombat-forge-1.20.1-1.3.0-all.jar",
-                    "id": "XPX9NrkF",
-                    "parent_id": "KU8N7kPc",
-                    "hashes": {
-                        "sha512": "0a01bd9fdd2ea0660abe37198c6aba15010641cf1485fc7034be67de5830313720ec58d5dd748659dfe829767405670b928ac4967fb245bee2c68a78aa235a24",
-                        "sha1": "fee499a8c76c5dfced84b01bfbd6323d7c0e8159"
-                    },
-                    "required_dependencies": [
-                        "zkK9lPaS",
-                        "9s6osm5g",
-                        "5sy6g3kz"
-                    ],
-                    "size": 280262,
-                    "date_published": "2025-01-26T04:28:15.588641Z"
-                },
-                {
-                    "type": "curseforge",
-                    "file_name": "bettermobcombat-forge-1.20.1-1.3.0-all.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6125/563/bettermobcombat-forge-1.20.1-1.3.0-all.jar",
-                    "id": "6125563",
-                    "parent_id": "1058798",
-                    "hashes": {
-                        "sha1": "fee499a8c76c5dfced84b01bfbd6323d7c0e8159",
-                        "md5": "c5cddf8d57adb9b22e4ebe077c8be7d9"
-                    },
-                    "required_dependencies": [
-                        "348521",
-                        "639842",
-                        "1058791",
-                        "658587"
-                    ],
-                    "size": 280262,
-                    "date_published": "2025-01-26T04:15:45.270Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "YQZ81Foyw8h0CTAo",
             "type": "MOD",
             "side": "CLIENT",
@@ -12103,43 +12031,6 @@
                     "required_dependencies": [],
                     "size": 7442998,
                     "date_published": "2025-12-03T19:47:08.457Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "i14UosFzb386gDQq",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "krypton-reforged"
-            },
-            "name": {
-                "curseforge": "Krypton Reforged"
-            },
-            "id": {
-                "curseforge": "549394"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "KryptonReforged-0.2.3.jar",
-                    "mc_versions": [
-                        "1.20.1",
-                        "1.20"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/4606/534/KryptonReforged-0.2.3.jar",
-                    "id": "4606534",
-                    "parent_id": "549394",
-                    "hashes": {
-                        "sha1": "92690482dad46a8c9cf28e4b6b26e49f4dc67095",
-                        "md5": "5b6b46d86a9a3858c766182a4cb9c3f1"
-                    },
-                    "required_dependencies": [],
-                    "size": 206758,
-                    "date_published": "2023-06-24T02:52:47.757Z"
                 }
             ]
         },

@@ -521,6 +521,47 @@ jobs:
             ${{ needs.info.outputs.diff }}
             ```
 
+      - name: Delete 4th oldest release to keep only 3
+        uses: actions/github-script@v8.0.0
+        continue-on-error: true
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const { data: releases } = await github.rest.repos.listReleases({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              per_page: 100
+            });
+            
+            // Sort by creation date (newest first)
+            const sortedReleases = releases.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+            
+            // If we have 4 or more releases, delete the 4th one (keeping the 3 newest)
+            if (sortedReleases.length >= 4) {
+              const releaseToDelete = sortedReleases[3];
+              console.log(`Deleting release: ${releaseToDelete.name} (${releaseToDelete.tag_name})`);
+              
+              await github.rest.repos.deleteRelease({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                release_id: releaseToDelete.id
+              });
+              
+              // Also delete the tag
+              try {
+                await github.rest.git.deleteRef({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  ref: `tags/${releaseToDelete.tag_name}`
+                });
+                console.log(`Deleted tag: ${releaseToDelete.tag_name}`);
+              } catch (error) {
+                console.log(`Could not delete tag: ${error.message}`);
+              }
+            } else {
+              console.log(`Only ${sortedReleases.length} releases found, no need to delete.`);
+            }
+
       - name: Create release
         id: release
         uses: softprops/action-gh-release@v2.3.3
@@ -535,7 +576,8 @@ jobs:
             ${{ needs.info.outputs.project_file_name }}-curseforge.zip
             ${{ needs.info.outputs.project_file_name }}-modrinth.mrpack
             ${{ needs.info.outputs.project_file_name }}-serverpack.zip
-          prerelease: ${{ needs.info.outputs.release_type != 'release' }}
+          prerelease: false
+          make_latest: true
           generate_release_notes: true
           token: ${{ secrets.GITHUB_TOKEN }}
 

@@ -5658,6 +5658,47 @@
             ]
         },
         {
+            "pakku_id": "bHnHJVTTx7prwEcz",
+            "pakku_links": [
+                "6MJf6KGhCAEF1t9w"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "create-extra-gauges"
+            },
+            "name": {
+                "curseforge": "Create: Extra Gauges"
+            },
+            "id": {
+                "curseforge": "1263228"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "extra_gauges-2.0.7.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7058/464/extra_gauges-2.0.7.jar",
+                    "id": "7058464",
+                    "parent_id": "1263228",
+                    "hashes": {
+                        "sha1": "6f3331cc877bfaf15bb58723ff3129fc3207d296",
+                        "md5": "ffdf36ce4202c6136f90986e65e1b76e"
+                    },
+                    "required_dependencies": [
+                        "328085"
+                    ],
+                    "size": 1029438,
+                    "date_published": "2025-10-02T16:45:50.227Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "YkfoE3fGp7MxQdVH",
             "type": "MOD",
             "side": "BOTH",
@@ -5919,6 +5960,82 @@
                     "required_dependencies": [],
                     "size": 298502,
                     "date_published": "2025-03-01T19:49:02.910Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "yb2ahW95AOMI3DxD",
+            "pakku_links": [
+                "bHnHJVTTx7prwEcz",
+                "QTNpQq5a5wiUvRsn",
+                "6MJf6KGhCAEF1t9w"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "valkyrien-logistics",
+                "modrinth": "valkyrien-logistics"
+            },
+            "name": {
+                "curseforge": "Create: Valkyrien Logistics",
+                "modrinth": "Create: Valkyrien Logistics"
+            },
+            "id": {
+                "curseforge": "1380349",
+                "modrinth": "fHLjVVl4"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "valkyrien_logistics-1.20.1-forge-1.1.2.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7379/97/valkyrien_logistics-1.20.1-forge-1.1.2.jar",
+                    "id": "7379097",
+                    "parent_id": "1380349",
+                    "hashes": {
+                        "sha1": "dfa03ab68682606872a7d8dee9acbf83e50e801e",
+                        "md5": "8db18094d53b8c1bafecee5aa42b04bf"
+                    },
+                    "required_dependencies": [
+                        "1263228",
+                        "258371",
+                        "328085"
+                    ],
+                    "size": 1216629,
+                    "date_published": "2025-12-26T02:43:15.990Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "valkyrien_logistics-1.20.1-forge-1.1.2.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/fHLjVVl4/versions/3JDG62oG/valkyrien_logistics-1.20.1-forge-1.1.2.jar",
+                    "id": "3JDG62oG",
+                    "parent_id": "fHLjVVl4",
+                    "hashes": {
+                        "sha512": "3f172c7eb2ffafb32ac0299df7691f878adb4df73ebf68cbae956eea3ac28b4a68f88a19cf5075c796ae077c44af8a6dbb91e82aee9a2be6dbc8c09d8cbe8171",
+                        "sha1": "dfa03ab68682606872a7d8dee9acbf83e50e801e"
+                    },
+                    "required_dependencies": [
+                        "LNytGWDc",
+                        "V5ujR2yw",
+                        "6YJgomwt"
+                    ],
+                    "size": 1216629,
+                    "date_published": "2025-12-26T02:43:14.653372Z"
                 }
             ]
         },
@@ -16069,6 +16186,91 @@
             ]
         },
         {
+            "pakku_id": "TEMZCGXkwDV82qG0",
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "modrinth": "oc2r-addon-core"
+            },
+            "name": {
+                "modrinth": "OC2R: Addon Core"
+            },
+            "id": {
+                "modrinth": "QvTXtGc8"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "oc2rcore-1.20.1-forge-1.0.3-all.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/QvTXtGc8/versions/AE8Ng9xB/oc2rcore-1.20.1-forge-1.0.3-all.jar",
+                    "id": "AE8Ng9xB",
+                    "parent_id": "QvTXtGc8",
+                    "hashes": {
+                        "sha512": "31549a6b9081b70edee64c7715c01fa1819fcde9cdbe30d0e32d7006b36394d66eb18af3fc6016de0fba009cc11f3c97035d0769c3b54dbc08cca05d10d93918",
+                        "sha1": "852363ca15ef99979964f06962f801dc4cd8980e"
+                    },
+                    "required_dependencies": [],
+                    "size": 141285,
+                    "date_published": "2025-09-05T00:33:41.615289Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "eztCyb4oVHHAqnC6",
+            "pakku_links": [
+                "TEMZCGXkwDV82qG0",
+                "xYtSHgvtEduVq6c8",
+                "wLvY1KRrkwZf7PxV",
+                "QTNpQq5a5wiUvRsn"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "modrinth": "oc2r-valkyrien-skies"
+            },
+            "name": {
+                "modrinth": "OC2R: Valkyrien Skies"
+            },
+            "id": {
+                "modrinth": "5MHRLc0P"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "oc2rvs-1.20.1-forge-0.8.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/5MHRLc0P/versions/ZlSi8RIp/oc2rvs-1.20.1-forge-0.8.0.jar",
+                    "id": "ZlSi8RIp",
+                    "parent_id": "5MHRLc0P",
+                    "hashes": {
+                        "sha512": "e332c007183dde420f0a06eb8c0153fca478fdc7fbe8e58f982fcd2f87a525f9f3850bf0fb7d9d8e5a7db1474a5d812305ac774f8620001899f6444d485342c0",
+                        "sha1": "6fff64deb4f5cf713981c220e5bf7554d4df1dde"
+                    },
+                    "required_dependencies": [
+                        "QvTXtGc8",
+                        "nPQ9xkPg",
+                        "F1gm4RsH",
+                        "V5ujR2yw"
+                    ],
+                    "size": 16794,
+                    "date_published": "2025-09-11T13:18:39.131051Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "p9PWtxkEcr7R0SiZ",
             "type": "MOD",
             "side": "BOTH",
@@ -16329,6 +16531,77 @@
             ]
         },
         {
+            "pakku_id": "wLvY1KRrkwZf7PxV",
+            "pakku_links": [
+                "xYtSHgvtEduVq6c8",
+                "oPgQQ3pmcHN11pMc"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "oc2r",
+                "modrinth": "oc2r"
+            },
+            "name": {
+                "curseforge": "OpenComputers II: Reimagined",
+                "modrinth": "OpenComputers 2: Reimagined"
+            },
+            "id": {
+                "curseforge": "1037738",
+                "modrinth": "F1gm4RsH"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "oc2r-1.20.1-forge-2.2.11-all.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7374/712/oc2r-1.20.1-forge-2.2.11-all.jar",
+                    "id": "7374712",
+                    "parent_id": "1037738",
+                    "hashes": {
+                        "sha1": "6a9c546e1fd407c7b0b14fd7f41999c6eed93b4b",
+                        "md5": "073d3f8623cb737486422dea0e7e58e2"
+                    },
+                    "required_dependencies": [
+                        "502485",
+                        "689467"
+                    ],
+                    "size": 26763432,
+                    "date_published": "2025-12-24T23:49:42.197Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "oc2r-1.20.1-forge-2.2.11-all.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/F1gm4RsH/versions/9LQ6ePKn/oc2r-1.20.1-forge-2.2.11-all.jar",
+                    "id": "9LQ6ePKn",
+                    "parent_id": "F1gm4RsH",
+                    "hashes": {
+                        "sha512": "6af224119f20805502894fcc17ad007fd98ca78081e200ff000f1ceac7a78eafb1f1dd8956bfe73d999050c583289482e0fbcb801227522fda363b4adc33b80a",
+                        "sha1": "6a9c546e1fd407c7b0b14fd7f41999c6eed93b4b"
+                    },
+                    "required_dependencies": [
+                        "nPQ9xkPg",
+                        "c7m1mi73"
+                    ],
+                    "size": 26763432,
+                    "date_published": "2025-12-24T23:49:51.417610Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "ea6uY3c7EnYn1S3o",
             "type": "MOD",
             "side": "BOTH",
@@ -16453,6 +16726,89 @@
                     "required_dependencies": [],
                     "size": 283568,
                     "date_published": "2024-09-02T17:16:38.997Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "oPgQQ3pmcHN11pMc",
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "packet-fixer",
+                "modrinth": "packet-fixer"
+            },
+            "name": {
+                "curseforge": "Packet Fixer",
+                "modrinth": "Packet Fixer"
+            },
+            "id": {
+                "curseforge": "689467",
+                "modrinth": "c7m1mi73"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "packetfixer-3.3.1-1.18-1.20.4-merged.jar",
+                    "mc_versions": [
+                        "1.20.2",
+                        "1.20.1",
+                        "1.20",
+                        "1.20.4",
+                        "1.20.3"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "forge",
+                        "neoforge",
+                        "quilt"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7221/527/packetfixer-3.3.1-1.18-1.20.4-merged.jar",
+                    "id": "7221527",
+                    "parent_id": "689467",
+                    "hashes": {
+                        "sha1": "0bef29023c8cadb2934d78a8b0066b49d4460974",
+                        "md5": "da8492dc74813d847ba128c23253c376"
+                    },
+                    "required_dependencies": [],
+                    "size": 188673,
+                    "date_published": "2025-11-14T17:30:18.777Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "packetfixer-3.3.1-1.18-1.20.4-merged.jar",
+                    "mc_versions": [
+                        "1.18",
+                        "1.18.1",
+                        "1.18.2",
+                        "1.19",
+                        "1.19.1",
+                        "1.19.2",
+                        "1.19.3",
+                        "1.19.4",
+                        "1.20",
+                        "1.20.1",
+                        "1.20.2",
+                        "1.20.3",
+                        "1.20.4"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "forge",
+                        "neoforge",
+                        "quilt"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/c7m1mi73/versions/96y8nmkX/packetfixer-3.3.1-1.18-1.20.4-merged.jar",
+                    "id": "96y8nmkX",
+                    "parent_id": "c7m1mi73",
+                    "hashes": {
+                        "sha512": "e098addf143dafa9e516ad07cb0ddaa489035e19c306e6f78b0afef6f776ce27d2386f2ede1879bb477e420ca8a00831f099f1a92a508e3085a45fbb87103405",
+                        "sha1": "0bef29023c8cadb2934d78a8b0066b49d4460974"
+                    },
+                    "required_dependencies": [],
+                    "size": 188673,
+                    "date_published": "2025-11-14T17:34:13.517155Z"
                 }
             ]
         },

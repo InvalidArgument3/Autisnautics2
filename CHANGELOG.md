@@ -1,5 +1,7 @@
 # Changelog
-
+## [0.0.12]
+### Changes
+- paxi datapack cleanup
 
 ## [0.0.11]
 ### Changes

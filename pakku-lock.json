@@ -848,6 +848,74 @@
             ]
         },
         {
+            "pakku_id": "h9KOo7NxPS5FVokk",
+            "pakku_links": [
+                "6bqx6uKn6LYmJcd8"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "amendments",
+                "modrinth": "amendments"
+            },
+            "name": {
+                "curseforge": "Amendments",
+                "modrinth": "Amendments"
+            },
+            "id": {
+                "curseforge": "896746",
+                "modrinth": "6iTJugQR"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "amendments-1.20-2.2.3.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7240/735/amendments-1.20-2.2.3.jar",
+                    "id": "7240735",
+                    "parent_id": "896746",
+                    "hashes": {
+                        "sha1": "70f46de146e959d6abb4346a0ac7dfb04475d239",
+                        "md5": "b1013e74d5c4ef229d93bf571968a1f0"
+                    },
+                    "required_dependencies": [
+                        "499980"
+                    ],
+                    "size": 1294274,
+                    "date_published": "2025-11-20T00:19:51.297Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "amendments-1.20-2.2.3.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/6iTJugQR/versions/1J6dresa/amendments-1.20-2.2.3.jar",
+                    "id": "1J6dresa",
+                    "parent_id": "6iTJugQR",
+                    "hashes": {
+                        "sha512": "ba76e2215082acd24d41d27b2599c4d523d04ca5e62c1a1706531502abf941a385dd8c4668d32e105ffa4da825e25c8b5e886bdabc49d6e177b5d1e605788909",
+                        "sha1": "70f46de146e959d6abb4346a0ac7dfb04475d239"
+                    },
+                    "required_dependencies": [
+                        "twkfQtEc"
+                    ],
+                    "size": 1294274,
+                    "date_published": "2025-11-20T00:19:56.548481Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "j6C7lbHfUc0OdYLe",
             "type": "MOD",
             "slug": {

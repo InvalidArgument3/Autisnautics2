@@ -5,7 +5,7 @@ mods/
 logs/
 crash-reports/
 backups/
-resourcepacks/
+/resourcepacks/
 server-resource-packs/
 screenshots/
 downloads/

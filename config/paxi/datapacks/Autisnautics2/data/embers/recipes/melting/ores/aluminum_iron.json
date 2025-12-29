@@ -1,0 +1,28 @@
+{
+  "type": "embers:melting",
+  "bonus": {
+    "amount": 30,
+    "fluid": "tconstruct:molten_iron"
+  },
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "forge:ores/aluminum"
+          }
+        }
+      ]
+    }
+  ],
+  "input": {
+    "tag": "forge:ores/aluminum"
+  },
+  "output": {
+    "amount": 180,
+    "fluid": "tconstruct:molten_aluminum"
+  }
+}

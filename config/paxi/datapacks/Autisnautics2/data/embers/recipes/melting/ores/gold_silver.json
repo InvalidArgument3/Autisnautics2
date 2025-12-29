@@ -1,0 +1,28 @@
+{
+  "type": "embers:melting",
+  "bonus": {
+    "amount": 30,
+    "fluid": "tconstruct:molten_silver"
+  },
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "forge:ores/gold"
+          }
+        }
+      ]
+    }
+  ],
+  "input": {
+    "tag": "forge:ores/gold"
+  },
+  "output": {
+    "amount": 180,
+    "fluid": "tconstruct:molten_gold"
+  }
+}

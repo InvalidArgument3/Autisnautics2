@@ -13566,7 +13566,7 @@
             ]
         },
         {
-            "pakku_id": "TVEnNva31qSMHww4",
+            "pakku_id": "aCcOGzbhvNraXpQB",
             "type": "MOD",
             "side": "SERVER",
             "slug": {
@@ -13587,22 +13587,23 @@
                     "file_name": "lmft-1.0.4+1.20.1-forge.jar",
                     "mc_versions": [
                         "1.20",
-                        "1.20.1"
+                        "1.20.1",
+                        "1.20.2"
                     ],
                     "loaders": [
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/67kVxsaO/versions/XJdD8eB6/lmft-1.0.4+1.20.1-forge.jar",
-                    "id": "XJdD8eB6",
+                    "url": "https://cdn.modrinth.com/data/67kVxsaO/versions/wtPd74Rj/lmft-1.0.4+1.20.1-forge.jar",
+                    "id": "wtPd74Rj",
                     "parent_id": "67kVxsaO",
                     "hashes": {
-                        "sha512": "41c4fb7874692b457cee5205911fccce305adb43c0dd237486926e856d15500996be551cfee1ad9aefaaed0a72422e7677c26980ac08313b4198438264c2a4bd",
-                        "sha1": "3c0dc40afb617ca2b5b2bbb4f7e831bd75009753"
+                        "sha512": "2a4c44f3b27280255bc1b7d0fea5ca01ea7957650afa869dd323eea4de45145b531b0fa85bb7892d23d65ee863013638d8d17362af60304611e7c123d620d41b",
+                        "sha1": "e44a12eb51813b16faaab89b8073ec63c746c1b0"
                     },
                     "required_dependencies": [],
-                    "size": 178327,
-                    "date_published": "2024-01-20T03:00:07.592511Z"
+                    "size": 178625,
+                    "date_published": "2023-11-20T23:35:32.786902Z"
                 },
                 {
                     "type": "curseforge",
@@ -23327,29 +23328,6 @@
                     ],
                     "size": 24971634,
                     "date_published": "2025-12-29T03:04:55.646781Z"
-                },
-                {
-                    "type": "curseforge",
-                    "file_name": "valkyrienskies-120-2.4.1.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7386/160/valkyrienskies-120-2.4.1.jar",
-                    "id": "7386160",
-                    "parent_id": "258371",
-                    "hashes": {
-                        "sha1": "06d63f48ac78c06109022096ddf09fc7a9f5527c",
-                        "md5": "628721d75de996fe47af57bd1c4b7812"
-                    },
-                    "required_dependencies": [
-                        "351264"
-                    ],
-                    "size": 24936555,
-                    "date_published": "2025-12-27T22:25:16.440Z"
                 }
             ]
         },

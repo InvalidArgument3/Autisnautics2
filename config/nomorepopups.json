@@ -1,0 +1,9 @@
+{
+  "disableAdvancementsMessages": false,
+  "disableAdvancementToasts": true,
+  "disableExperimentalWarning": true,
+  "disableMultiplayerWarning": true,
+  "disableRecipeToasts": true,
+  "disableResourcePackWarnings": true,
+  "disableTutorialToasts": true
+}

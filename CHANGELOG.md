@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.15]
+### Changes
+- fix datapacks
+
 ## [0.0.14]
 ### Changes
 - vs fucking please

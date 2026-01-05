@@ -3,7 +3,7 @@
 equatorial_distance = 60000.0
 #Set to true if you want the biomes' distribution pattern to loop until world border after the very cold regions
 looping_world = false
-#0: DEFAULT, 1: SIMPLIFIED, 2: LINEAR, 3:ECCENTRIC. You can see examples on the official modrinth page: https://modrinth.com/mod/natural-temperature/gallery
+#0: DEFAULT, 1: SIMPLIFIED, 2: LINEAR, 3: CUSTOM CIRCULAR, 4: CIRCULAR. You can see examples on the official modrinth page: https://modrinth.com/mod/natural-temperature/gallery
 #Range: 0 ~ 3
 generation_mode = 2
 #Positive values will move the equator to the north, if you want the equator to be at 0 set this value the same as your equatorial_distance
@@ -27,4 +27,16 @@ global_temperature_modifier_percentage = 0.0
 global_temperature_mitigation_percentage = 0.0
 #This will add a wider transition band between the desert and the jungle in the default mode, this is useful if some modded biomes are not spawning
 extra_bands = false
+#This is a multiplier that will magnify the waving of the climatic bands, the proportion of the wave will stay the same, but it will change the scale of the wave
+#Range: -6.0E12 ~ 6.0E12
+wave_magnification = 2.0
+#Range: -1.0 ~ 8.0
+temperature_zone_1 = 0.0
+#Range: -1.0 ~ 8.0
+temperature_zone_2 = 8.0
+#Range: -1.0 ~ 8.0
+temperature_zone_3 = 1.0
+#(Range -1.0 , 1.0 ) These parameters are used to customize some of the modes, 1.0 are very hot zones, -1.0 are very cold zone. 8.0 will randomize the zone
+#Range: -1.0 ~ 8.0
+temperature_zone_4 = -1.0
 

@@ -3325,46 +3325,6 @@
             ]
         },
         {
-            "pakku_id": "EnHkWuLl2Rk2khvf",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "chunk-sending-forge-fabric"
-            },
-            "name": {
-                "curseforge": "Chunk Sending[Forge/Fabric]"
-            },
-            "id": {
-                "curseforge": "831663"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "chunksending-1.20.1-2.8.jar",
-                    "mc_versions": [
-                        "1.20.1",
-                        "1.20"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/4894/789/chunksending-1.20.1-2.8.jar",
-                    "id": "4894789",
-                    "parent_id": "831663",
-                    "hashes": {
-                        "sha1": "befdcf1c0177c8dd97d68ebb3c5c5581065caefe",
-                        "md5": "550fcf675d0039e7da8336e001db3732"
-                    },
-                    "required_dependencies": [
-                        "326652"
-                    ],
-                    "size": 11734,
-                    "date_published": "2023-11-23T20:23:20.963Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "GBQp5bZJ9yP20oxB",
             "type": "MOD",
             "side": "BOTH",
@@ -14605,45 +14565,6 @@
                     "required_dependencies": [],
                     "size": 37178,
                     "date_published": "2024-02-15T10:46:05.407Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "X3F9d2X2uSt4RwAV",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "memory-settings"
-            },
-            "name": {
-                "curseforge": "Memory Settings[Neo/Forge/Fabric]"
-            },
-            "id": {
-                "curseforge": "526901"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "memorysettings-1.20.1-5.9.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6120/515/memorysettings-1.20.1-5.9.jar",
-                    "id": "6120515",
-                    "parent_id": "526901",
-                    "hashes": {
-                        "sha1": "022884114477302ed0304db5b857295f6951ae8b",
-                        "md5": "b89db707f6c506ccf4deaf2267e960c3"
-                    },
-                    "required_dependencies": [
-                        "326652"
-                    ],
-                    "size": 23538,
-                    "date_published": "2025-01-24T17:54:20.440Z"
                 }
             ]
         },

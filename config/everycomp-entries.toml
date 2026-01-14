@@ -374,13 +374,6 @@
 			gingerbread_brick = true
 			frosted_gingerbread_brick = true
 
-		[types.cut_block_type.supplementaries]
-			fine_wood = true
-			lapis_bricks = true
-			ash_bricks = true
-			stone_tile = true
-			blackstone_tile = true
-
 		[types.cut_block_type.botania]
 			livingrock = true
 			polished_livingrock = true
@@ -565,10 +558,6 @@
 			scorched_bricks = true
 			scorched_road = true
 
-		[types.cut_block_type.kubejs]
-			trial_cut_copper = true
-			trial_oxidized_cut_copper = true
-
 		[types.cut_block_type.createdeco]
 			scarlet_brick = true
 			short_scarlet_brick = true
@@ -691,6 +680,17 @@
 
 		[types.cut_block_type.vs_clockwork]
 			smooth_wanderlite = true
+
+		[types.cut_block_type.kubejs]
+			trial_cut_copper = true
+			trial_oxidized_cut_copper = true
+
+		[types.cut_block_type.supplementaries]
+			fine_wood = true
+			lapis_bricks = true
+			ash_bricks = true
+			stone_tile = true
+			blackstone_tile = true
 
 	[types.wood_type]
 

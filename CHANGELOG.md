@@ -1,5 +1,10 @@
 # Changelog
 
+
+## [0.0.19]
+### Changes
+- crash fix
+
 ## [0.0.18]
 ### Changes
 - some updates

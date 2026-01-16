@@ -868,31 +868,8 @@
             },
             "files": [
                 {
-                    "type": "curseforge",
-                    "file_name": "amendments-1.20-2.2.3.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7240/735/amendments-1.20-2.2.3.jar",
-                    "id": "7240735",
-                    "parent_id": "896746",
-                    "hashes": {
-                        "sha1": "70f46de146e959d6abb4346a0ac7dfb04475d239",
-                        "md5": "b1013e74d5c4ef229d93bf571968a1f0"
-                    },
-                    "required_dependencies": [
-                        "499980"
-                    ],
-                    "size": 1294274,
-                    "date_published": "2025-11-20T00:19:51.297Z"
-                },
-                {
                     "type": "modrinth",
-                    "file_name": "amendments-1.20-2.2.3.jar",
+                    "file_name": "amendments-1.20-2.2.4.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -900,18 +877,41 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/6iTJugQR/versions/1J6dresa/amendments-1.20-2.2.3.jar",
-                    "id": "1J6dresa",
+                    "url": "https://cdn.modrinth.com/data/6iTJugQR/versions/hXdIFgoI/amendments-1.20-2.2.4.jar",
+                    "id": "hXdIFgoI",
                     "parent_id": "6iTJugQR",
                     "hashes": {
-                        "sha512": "ba76e2215082acd24d41d27b2599c4d523d04ca5e62c1a1706531502abf941a385dd8c4668d32e105ffa4da825e25c8b5e886bdabc49d6e177b5d1e605788909",
-                        "sha1": "70f46de146e959d6abb4346a0ac7dfb04475d239"
+                        "sha512": "ab60ab590a2786f39f51f6999be13d716817d2fc8d4498b053a5a8c326b537d9c4f21107fccecf8f9d88e6b34ab96ceef8515e33cbea5c6b748d97bea867a153",
+                        "sha1": "d2930f001773bbcc02ffde2ab191656dae7d78e0"
                     },
                     "required_dependencies": [
                         "twkfQtEc"
                     ],
-                    "size": 1294274,
-                    "date_published": "2025-11-20T00:19:56.548481Z"
+                    "size": 1301013,
+                    "date_published": "2026-01-14T22:11:36.009677Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "amendments-1.20-2.2.4.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7460/888/amendments-1.20-2.2.4.jar",
+                    "id": "7460888",
+                    "parent_id": "896746",
+                    "hashes": {
+                        "sha1": "d2930f001773bbcc02ffde2ab191656dae7d78e0",
+                        "md5": "1ba04237f40bec0026ce9f2696095163"
+                    },
+                    "required_dependencies": [
+                        "499980"
+                    ],
+                    "size": 1301013,
+                    "date_published": "2026-01-14T22:11:30.673Z"
                 }
             ]
         },
@@ -9873,7 +9873,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "fusion-1.2.11c-forge-mc1.20.1.jar",
+                    "file_name": "fusion-1.2.12-forge-mc1.20.1.jar",
                     "mc_versions": [
                         "1.20",
                         "1.20.1"
@@ -9883,20 +9883,20 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/p19vrgc2/versions/G1mAiK1w/fusion-1.2.11c-forge-mc1.20.1.jar",
-                    "id": "G1mAiK1w",
+                    "url": "https://cdn.modrinth.com/data/p19vrgc2/versions/WciYYUw3/fusion-1.2.12-forge-mc1.20.1.jar",
+                    "id": "WciYYUw3",
                     "parent_id": "p19vrgc2",
                     "hashes": {
-                        "sha512": "2f8e6550fb1fdd551de239208b17bba9453952d5803514b1e143fb5751e1b8487d03bf38285960927ddb3e4e88437cdf1211182a463f587dd5810f1d7514265f",
-                        "sha1": "f665d7798eee078084585238ec53b745d0093c76"
+                        "sha512": "78929b3573472f49820f7e4309745e41e9b5c4cc2720bc6a4e9eccb8d33402938ba98742bf36cab906fd3ed861d50582fc592eb777719ecae36123b1c8ea53e9",
+                        "sha1": "524a757015b677ce0c16923c81310859333a3371"
                     },
                     "required_dependencies": [],
-                    "size": 544820,
-                    "date_published": "2025-12-20T18:03:37.335271Z"
+                    "size": 544611,
+                    "date_published": "2026-01-15T18:06:00.037044Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "fusion-1.2.11c-forge-mc1.20.1.jar",
+                    "file_name": "fusion-1.2.12-forge-mc1.20.1.jar",
                     "mc_versions": [
                         "1.20.1",
                         "1.20"
@@ -9906,16 +9906,16 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7358/298/fusion-1.2.11c-forge-mc1.20.1.jar",
-                    "id": "7358298",
+                    "url": "https://edge.forgecdn.net/files/7464/539/fusion-1.2.12-forge-mc1.20.1.jar",
+                    "id": "7464539",
                     "parent_id": "854949",
                     "hashes": {
-                        "sha1": "f665d7798eee078084585238ec53b745d0093c76",
-                        "md5": "69af8ff2e7e4505865d52f36bcd8eab3"
+                        "sha1": "524a757015b677ce0c16923c81310859333a3371",
+                        "md5": "0ea8b72144cf5a1e6ad62f9d715ecf6d"
                     },
                     "required_dependencies": [],
-                    "size": 544820,
-                    "date_published": "2025-12-20T18:03:37.040Z"
+                    "size": 544611,
+                    "date_published": "2026-01-15T18:05:59.217Z"
                 }
             ]
         },
@@ -23178,7 +23178,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "valkyrienskies-120-2.4.7.jar",
+                    "file_name": "valkyrienskies-120-2.4.8.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -23186,18 +23186,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/V5ujR2yw/versions/3n0y4ZR3/valkyrienskies-120-2.4.7.jar",
-                    "id": "3n0y4ZR3",
+                    "url": "https://cdn.modrinth.com/data/V5ujR2yw/versions/k94WJFZD/valkyrienskies-120-2.4.8.1.jar",
+                    "id": "k94WJFZD",
                     "parent_id": "V5ujR2yw",
                     "hashes": {
-                        "sha512": "6e77cafe37c1741317d34cd14fe4c225269588284602e031f43550bb56eac5ecfe310df52f69b5720607dbe39d0f903e5b8872d0b5bbb3d9536704a995aef2f0",
-                        "sha1": "4b612bd80f782cc0c070c59aa2a47ec7bea03792"
+                        "sha512": "7af66a0877a3c2f09cf24ed811a972b57eb7b172c96b4fbceba620378723f8ef130b411fe349177e9c81fed69072d2e3fc9cfbc477014a6d9d88c634e821ebba",
+                        "sha1": "c482f6b126db0afd61a8c8ad78c69ea06328883d"
                     },
                     "required_dependencies": [
                         "ordsPcFz"
                     ],
-                    "size": 24104378,
-                    "date_published": "2026-01-12T01:51:56.262277Z"
+                    "size": 24136667,
+                    "date_published": "2026-01-14T22:09:50.561664Z"
                 }
             ]
         },

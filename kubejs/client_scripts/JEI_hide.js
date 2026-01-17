@@ -4,7 +4,7 @@ JEIEvents.hideItems(event => {
     //Cleanup
     event.hide('enderio:broken_spawner')
     event.hide('chiselsandbits:block_bit')
-    event.hide(/ae2:facade/)
+    event.hide('ae2:facade')
 })
 
 JEIEvents.addItems(event => {

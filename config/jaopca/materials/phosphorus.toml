@@ -12,6 +12,8 @@
 	hasEffect = false
 	#The model type of the material.
 	modelType = "dust"
+	#The color of this material.
+	color = 0x736859
 
 [theurgy]
 	#The alchemical sulfur tier of this material.

@@ -3260,6 +3260,49 @@
             ]
         },
         {
+            "pakku_id": "oT3Gz3hQkBRq9IB1",
+            "pakku_links": [
+                "MnDI13DJDLCY2hdg",
+                "ewPiIHmglVpc4VPO"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "chisel-modern"
+            },
+            "name": {
+                "curseforge": "Chisel Modern"
+            },
+            "id": {
+                "curseforge": "1392308"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "chisel-1.20.1-Forge-1.3.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7451/892/chisel-1.20.1-Forge-1.3.1.jar",
+                    "id": "7451892",
+                    "parent_id": "1392308",
+                    "hashes": {
+                        "sha1": "41734456a26c5c063e1641fa2be9d4f09394d462",
+                        "md5": "b78ff48c5d68860747aba9de9431e62c"
+                    },
+                    "required_dependencies": [
+                        "267602",
+                        "1264423"
+                    ],
+                    "size": 11842662,
+                    "date_published": "2026-01-12T20:56:19.423Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "1DiVt8E9RiTMa0Ai",
             "type": "MOD",
             "side": "CLIENT",
@@ -4260,6 +4303,43 @@
                     "required_dependencies": [],
                     "size": 418929,
                     "date_published": "2024-03-14T03:01:07.233Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "MnDI13DJDLCY2hdg",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "ctm"
+            },
+            "name": {
+                "curseforge": "ConnectedTexturesMod"
+            },
+            "id": {
+                "curseforge": "267602"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "CTM-1.20.1-1.1.10.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5983/309/CTM-1.20.1-1.1.10.jar",
+                    "id": "5983309",
+                    "parent_id": "267602",
+                    "hashes": {
+                        "sha1": "5381b3092d99c8f16f9fe36b3b680dee63db33a9",
+                        "md5": "573b6524784b3c56bfb47d8552ce4835"
+                    },
+                    "required_dependencies": [],
+                    "size": 243895,
+                    "date_published": "2024-12-11T19:50:00.423Z"
                 }
             ]
         },
@@ -8869,77 +8949,6 @@
                     "required_dependencies": [],
                     "size": 2107873,
                     "date_published": "2025-05-31T13:33:47.903Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "I4Zlza8NVNLS9yUt",
-            "type": "MOD",
-            "side": "BOTH",
-            "slug": {
-                "curseforge": "factory-blocks",
-                "modrinth": "factory-blocks"
-            },
-            "name": {
-                "curseforge": "Factory Blocks [Forge/Fabric/NeoForge]",
-                "modrinth": "Factory Blocks"
-            },
-            "id": {
-                "curseforge": "640001",
-                "modrinth": "ht0eTMEs"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "factory_blocks-forge-1.4.0+mc1.20.1.jar",
-                    "mc_versions": [
-                        "1.20",
-                        "1.20.1",
-                        "1.20.2"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/ht0eTMEs/versions/R3EQLbo9/factory_blocks-forge-1.4.0+mc1.20.1.jar",
-                    "id": "R3EQLbo9",
-                    "parent_id": "ht0eTMEs",
-                    "hashes": {
-                        "sha512": "6bf6c91a21c751c908ac6fe1179cf36906ebaf2fbfaea6b9a49356f1a5f7d27c5e5034b1dd216ea5e0e1edfe8bd4e0deb623fbb5961d6e38600ffb1646f8a8de",
-                        "sha1": "1d5b4e5694a141952be0460dd85c286ea31d0d5e"
-                    },
-                    "required_dependencies": [
-                        "lhGA9TYQ",
-                        "4KWv7wbN"
-                    ],
-                    "size": 808664,
-                    "date_published": "2025-03-05T17:09:14.234566Z"
-                },
-                {
-                    "type": "curseforge",
-                    "file_name": "factory_blocks-forge-1.4.0+mc1.20.1.jar",
-                    "mc_versions": [
-                        "1.20.2",
-                        "1.20.1",
-                        "1.20"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6267/781/factory_blocks-forge-1.4.0+mc1.20.1.jar",
-                    "id": "6267781",
-                    "parent_id": "640001",
-                    "hashes": {
-                        "sha1": "1d5b4e5694a141952be0460dd85c286ea31d0d5e",
-                        "md5": "6bf27e66218002293633096f706ea07e"
-                    },
-                    "required_dependencies": [
-                        "551763",
-                        "419699"
-                    ],
-                    "size": 808664,
-                    "date_published": "2025-03-05T17:09:11.747Z"
                 }
             ]
         },

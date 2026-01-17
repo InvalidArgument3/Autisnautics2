@@ -1,26 +1,26 @@
-//Wasteland portal
+// Wasteland portal
 let frameBlock = "kubejs:lead_casing"
 let rodBlock = "alexscaves:uranium_rod"
 
-//checking for interdimensional anomalies
+// checking for interdimensional anomalies
 let isValidForWastelandPortal = (e, block) => {
     if (
-        (e.getLevel().dimension == "minecraft:overworld" || e.getLevel().dimension == "nuclearcraft:wasteland")  //overworld or wasteland only
-        && Math.abs(block.getX()) < 1000000                                                           //block not in the shipyard
-        && Math.abs(e.getEntity().getX()) < 1000000                                                   //just in case
+        (e.getLevel().dimension == "minecraft:overworld" || e.getLevel().dimension == "nuclearcraft:wasteland")  // overworld or wasteland only
+        && Math.abs(block.getX()) < 1000000                                                           // block not in the shipyard
+        && Math.abs(e.getEntity().getX()) < 1000000                                                   // just in case
     ) { return true }
     return false
 }
 
 
-//building
+// building
 BlockEvents.placed(event => {
     let placedBlock = event.getBlock()
     if (placedBlock.getId() == "supplementaries:globe_sepia") {
         let nuclearBomb = placedBlock.getDown()
         let frameCount = 0
         let rodCount = 0
-        
+
         if (nuclearBomb.getId() == "alexscaves:nuclear_bomb") {
             let donutBlocks = [nuclearBomb.getNorth(), nuclearBomb.getSouth(), nuclearBomb.getEast(), nuclearBomb.getWest(), nuclearBomb.getNorth().getEast(), nuclearBomb.getNorth().getWest(), nuclearBomb.getSouth().getEast(), nuclearBomb.getSouth().getWest()]
             donutBlocks.forEach(b => {
@@ -29,7 +29,7 @@ BlockEvents.placed(event => {
                 }
             })
         }
-        
+
         if (frameCount == 8) {
             let rodBlocks = [placedBlock.getNorth().getWest(), placedBlock.getNorth().getEast(), placedBlock.getSouth().getWest(), placedBlock.getSouth().getEast()]
             rodBlocks.forEach(b => {
@@ -38,7 +38,7 @@ BlockEvents.placed(event => {
                 }
             })
         }
-        
+
         if (rodCount == 4 && event.getEntity()) {
             let worldEnder = event.getEntity()
             let server = event.getLevel().getServer()
@@ -67,7 +67,7 @@ BlockEvents.placed(event => {
     }
 })
 
-//breaking
+// breaking
 BlockEvents.broken(event => {
     let brokenBlock = event.getBlock()
     if (brokenBlock.getId() == frameBlock) {

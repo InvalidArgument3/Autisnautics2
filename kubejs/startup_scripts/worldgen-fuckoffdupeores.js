@@ -1,4 +1,4 @@
-// look here, or maybe use another mod to handle biome ores like Geosys https://wiki.latvian.dev/books/kubejs-legacy/page/worldgen-events 
+// look here, or maybe use another mod to handle biome ores like Geosys https://wiki.latvian.dev/books/kubejs-legacy/page/worldgen-events
 /*
 WorldgenEvents.remove(autisnautics => {
   autisnautics.removeOres(props => {

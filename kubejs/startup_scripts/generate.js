@@ -105,7 +105,7 @@ StartupEvents.registry("item", event => {
     event.create("invar_compound","create:sequenced_assembly").texture("cabin:item/invar_compound").displayName("Unprocessed Invar Ingot")
     event.create("dye_entangled_singularity").texture("cabin:item/dye_entangled_singularity").unstackable().displayName("Chromatic Singularity")
 
-    //event.create("strainer_filter").texture("waterstrainer:items/strainer_survivalist").displayName("Strainer Filter").maxDamage(384)
+    // event.create("strainer_filter").texture("waterstrainer:items/strainer_survivalist").displayName("Strainer Filter").maxDamage(384)
     event.create("chromatic_resonator").texture("cabin:item/chromatic_resonator").displayName("Chromatic Resonator").maxDamage(512)
     event.create("flash_drive").texture("cabin:item/boot_medium").displayName("Flash Drive").maxDamage(512)
 
@@ -189,7 +189,7 @@ StartupEvents.registry("block", event => {
             .renderType("translucent")
             .displayName(name)
             .hardness(0)
-            //.material("COLOR_ORANGE") // Set a material (affects the sounds and some properties)
+            // .material("COLOR_ORANGE") // Set a material (affects the sounds and some properties)
             .mapColor("COLOR_ORANGE")
             .soundType("glass")
             .waterlogged()
@@ -210,8 +210,8 @@ StartupEvents.registry("block", event => {
             .model(model)
             .displayName(name)
             .renderType("cutout")
-            //.material("glass")
-            .mapColor("NONE")//same as glass
+            // .material("glass")
+            .mapColor("NONE")// same as glass
             .waterlogged()
         block.item(e => e
             .color(0, c1)
@@ -344,8 +344,8 @@ StartupEvents.registry("fluid", event => {
     event.create("crude_oil").displayName("Crude Oil").stillTexture("thermal:block/fluids/crude_oil_still").flowingTexture("thermal:block/fluids/crude_oil_flow").bucketColor(0x222118)
     event.create("volatile_sky_solution").displayName("Volatile Sky Solution").stillTexture("tconstruct:fluid/molten/compat_alloy/refined_obsidian/still").flowingTexture("tconstruct:fluid/molten/compat_alloy/refined_obsidian/flowing").color(0x8feebf).bucketColor(0x1A1123)
     event.create("chromatic_waste").displayName("Chromatic Waste").stillTexture("tconstruct:fluid/molten/compat_alloy/enderium/still").flowingTexture("tconstruct:fluid/molten/compat_alloy/enderium/flowing").color(0x0B3E36)
-    //A2: molten anthralite
-	event.create("molten_anthralite").displayName("Molten Anthralite").stillTexture("tconstruct:fluid/molten/compat_alloy/pewter/still").flowingTexture("tconstruct:fluid/molten/compat_alloy/pewter/still").color(0xb4a498)
+    // A2: molten anthralite
+    event.create("molten_anthralite").displayName("Molten Anthralite").stillTexture("tconstruct:fluid/molten/compat_alloy/pewter/still").flowingTexture("tconstruct:fluid/molten/compat_alloy/pewter/still").color(0xb4a498)
 //	event.create('liquid_smoke').displayName(`Liquid Smoke`).stillTexture('advancedrocketry:blocks/fluid/oxygen_still').flowingTexture('advancedrocketry:blocks/fluid/oxygen_flow').bucketColor(0xEBEBEB)
 })
 

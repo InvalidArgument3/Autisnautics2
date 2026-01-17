@@ -20,8 +20,8 @@ ServerEvents.recipes(event => {
             { "item": "minecraft:piston" },
             { "item": "thermal:blitz_powder" },
             { "item": "thermal:blitz_powder" }
-            //{ "item": "trials:wind_charge" },
-            //{ "item": "trials:wind_charge" }
+            // { "item": "trials:wind_charge" },
+            // { "item": "trials:wind_charge" }
         ],
         "result": "tconstruct:double_jump",
         "slots": {

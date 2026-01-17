@@ -18,8 +18,8 @@ const Level = Java.loadClass("net.minecraft.world.level.Level") // For some reas
 
 const colours = ["white", "orange", "magenta", "light_blue", "lime", "pink", "purple", "light_gray", "gray", "cyan", "brown", "green", "blue", "red", "black", "yellow"]
 const native_metals = ["iron", "zinc", "lead", "copper", "nickel", "gold",
-//A2: more metals
-"tin", "aluminum", "boron", "calorite", "cobalt", "desh", "lithium", "magnesium", "ostrum", "platinum", "silver", "thorium", "anthralite", "uranium"]
+// A2: more metals
+    "tin", "aluminum", "boron", "calorite", "cobalt", "desh", "lithium", "magnesium", "ostrum", "platinum", "silver", "thorium", "anthralite", "uranium"]
 
 const wood_types = ["minecraft:oak", "minecraft:spruce", "minecraft:birch", "minecraft:jungle", "minecraft:acacia", "minecraft:dark_oak", "minecraft:mangrove", "minecraft:cherry", "minecraft:crimson", "minecraft:warped"]
 
@@ -54,10 +54,10 @@ const donutCraft = (event, output, center, ring) => {
 // event is the second parameter so that machineItem doesn't look like it's the output item
 const createMachine = (machineItem, event, outputIngredient, inputIngredient) => {
     console.log(`createMachine called with: machineItem=${machineItem}, outputIngredient=${outputIngredient}, inputIngredient=${inputIngredient}`)
-    
+
     machineItem = Ingredient.of(machineItem)
     outputIngredient = Item.of(outputIngredient)
-    
+
     console.log(`After conversion: machineItem=${machineItem}, outputIngredient=${outputIngredient}, outputIngredient.isEmpty()=${outputIngredient.isEmpty()}`)
 
     event.remove({ output: outputIngredient })
@@ -86,12 +86,12 @@ const createMachine = (machineItem, event, outputIngredient, inputIngredient) =>
     else {
         console.log(`About to call stonecutting with: output=${outputIngredient}, input=${machineItem}`)
         console.log(`outputIngredient.isEmpty(): ${outputIngredient.isEmpty()}`)
-        
+
         if (outputIngredient.isEmpty()) {
             console.log(`ERROR: outputIngredient is empty, skipping stonecutting recipe`)
             return
         }
-        
+
         event.stonecutting(outputIngredient, machineItem)
     }
 }
@@ -417,8 +417,8 @@ const addOregenOverworld = function(event, featureName, blockName, heightType, h
     blockName = blockName.split(":")
     let blockNamespace = blockName[0]
     let blockIdentifier = blockName[1]
-    
-    //A2: shorthand for <1 vein per chunk
+
+    // A2: shorthand for <1 vein per chunk
     let rarityFilter = 1
     if( veinCount < 1 ) {
         rarityFilter = Math.max(1, Math.floor(1 / veinCount))
@@ -454,41 +454,41 @@ const addOregenOverworld = function(event, featureName, blockName, heightType, h
 
     if (rarityFilter == 1) {
         event.addJson(`${namespace}:worldgen/placed_feature/${identifier}`, {
-        "feature": `${namespace}:${identifier}`,
-        "placement": [
-            {"type": "minecraft:count", "count": veinCount},
-            {"type": "minecraft:in_square"},
-            {
-                "type": "minecraft:height_range",
-                "height": {
-                    "type": heightType,
-                    "min_inclusive": minInclusive,
-                    "max_inclusive": maxInclusive
-                }
-            },
-            {"type": "minecraft:biome"}
-        ]
+            "feature": `${namespace}:${identifier}`,
+            "placement": [
+                {"type": "minecraft:count", "count": veinCount},
+                {"type": "minecraft:in_square"},
+                {
+                    "type": "minecraft:height_range",
+                    "height": {
+                        "type": heightType,
+                        "min_inclusive": minInclusive,
+                        "max_inclusive": maxInclusive
+                    }
+                },
+                {"type": "minecraft:biome"}
+            ]
         })
     }
     else {
         event.addJson(`${namespace}:worldgen/placed_feature/${identifier}`, {
-        "feature": `${namespace}:${identifier}`,
-        "placement": [
-            {"type": "minecraft:rarity_filter", "chance": rarityFilter},
-            {"type": "minecraft:in_square"},
-            {
-                "type": "minecraft:height_range",
-                "height": {
-                    "type": heightType,
-                    "min_inclusive": minInclusive,
-                    "max_inclusive": maxInclusive
-                }
-            },
-            {"type": "minecraft:biome"}
-        ]
+            "feature": `${namespace}:${identifier}`,
+            "placement": [
+                {"type": "minecraft:rarity_filter", "chance": rarityFilter},
+                {"type": "minecraft:in_square"},
+                {
+                    "type": "minecraft:height_range",
+                    "height": {
+                        "type": heightType,
+                        "min_inclusive": minInclusive,
+                        "max_inclusive": maxInclusive
+                    }
+                },
+                {"type": "minecraft:biome"}
+            ]
         })
     }
-    
+
 
     event.addJson(`${namespace}:forge/biome_modifier/${identifier}`, {
         "type": "forge:add_features",
@@ -508,9 +508,9 @@ const getPreferredItemFromTag = (tag) => {
     /* Tried using mantle for this and it didn't work on first launch unfortunately */
     // return Item.of(ItemOutput.fromTag(TagKey.create(Registry.ITEM_REGISTRY, tag), 1).get()).getId();
     /* Create a copy of the mantle preferred mods list */
-    //const preferredMods = ["minecraft", "create", "alloyed", "createdeco", "createaddition", "createbigcannons", "create_dd", "thermal", "tconstruct", "tmechworks"];
-	//A2: copied list from unify.json
-	const preferredMods = ["minecraft", "kubejs", "create", "createdeco", "createaddition", "thermal", "tfmg", "tconstruct", "immersiveengineering", "ae2", "createaddition", "botania", "ad_astra", "scguns", "nuclearcraft", "embers"]
+    // const preferredMods = ["minecraft", "create", "alloyed", "createdeco", "createaddition", "createbigcannons", "create_dd", "thermal", "tconstruct", "tmechworks"];
+    // A2: copied list from unify.json
+    const preferredMods = ["minecraft", "kubejs", "create", "createdeco", "createaddition", "thermal", "tfmg", "tconstruct", "immersiveengineering", "ae2", "createaddition", "botania", "ad_astra", "scguns", "nuclearcraft", "embers"]
     const tagItems = Ingredient.of("#" + tag).itemIds;
     console.log(`Tag ${tag} contains items: ${tagItems}`)
     for (let i = 0;i < preferredMods.length;++i) { let modId = preferredMods[i];

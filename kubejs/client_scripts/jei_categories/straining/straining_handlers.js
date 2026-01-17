@@ -1,5 +1,5 @@
 //
-//if (!global.jeiCategories.straining) global.jeiCategories.straining = {
+// if (!global.jeiCategories.straining) global.jeiCategories.straining = {
 //    recipeType: null,
 //    resources: {
 //        jeiArrow: null
@@ -11,27 +11,27 @@
 //        tooltips: undefined
 //    },
 //    loadResources: undefined
-//};
+// };
 //
-//**
+//* *
 // * @param {Internal.IGuiHelper} guiHelper
 // */
-//global.jeiCategories.straining.loadResources = function(guiHelper) {
+// global.jeiCategories.straining.loadResources = function(guiHelper) {
 //    global.jeiCategories.straining.resources.jeiArrow = guiHelper.createAnimatedDrawable(
 //        guiHelper.getRecipeArrowFilled(),
 //        60,
 //        JEIIDrawableAnimated.StartDirection.LEFT,
 //        false
 //    );
-//}
+// }
 //
 //
-//**
+//* *
 // * @param {Internal.IJeiHelpers} jeiHelpers
 // * @param {any} recipe
 // * @returns
 // */
-//global.jeiCategories.straining.handlers.verifyRecipe = function (jeiHelpers, recipe) {
+// global.jeiCategories.straining.handlers.verifyRecipe = function (jeiHelpers, recipe) {
 //    // IMPORTANT: Always return true or false. If you do not, it could crash the game or cause JEI to not work properly.
 //    if (!recipe) return false;
 //    if (!recipe.data) return false;
@@ -39,15 +39,15 @@
 //    if (!recipe.data.output) return false;
 //
 //    return true;
-//}
+// }
 //
-//**
+//* *
 // * @param {Internal.IJeiHelpers} jeiHelpers
 // * @param {Internal.IRecipeLayoutBuilder} builder
 // * @param {any} recipe
 // * @param {Internal.IFocusGroup} focuses
 // */
-//global.jeiCategories.straining.handlers.setRecipe = function (jeiHelpers, builder, recipe, focuses) {
+// global.jeiCategories.straining.handlers.setRecipe = function (jeiHelpers, builder, recipe, focuses) {
 //    let guiHelper = jeiHelpers.getGuiHelper()
 //    let inputItem = recipe.data.input;
 //    let outputItems = recipe.data.output;
@@ -79,9 +79,9 @@
 //            });
 //        }
 //    }
-//}
+// }
 //
-//**
+//* *
 // * @param {Internal.IJeiHelpers} jeiHelpers
 // * @param {any} recipe
 // * @param {Internal.IRecipeSlotsView} recipeSlotsView
@@ -89,13 +89,13 @@
 // * @param {number} mouseX
 // * @param {number} mouseY
 // */
-//global.jeiCategories.straining.handlers.draw = function (jeiHelpers, recipe, recipeSlotsView, guiGraphics, mouseX, mouseY) {
+// global.jeiCategories.straining.handlers.draw = function (jeiHelpers, recipe, recipeSlotsView, guiGraphics, mouseX, mouseY) {
 //    let guiHelper = jeiHelpers.getGuiHelper();
 //    guiHelper.getRecipeArrow().draw(guiGraphics, 34, 6);
 //    global.jeiCategories.straining.resources.jeiArrow.draw(guiGraphics, 34, 6);
-//}
+// }
 //
-//**
+//* *
 // * @param {Internal.IJeiHelpers} jeiHelpers
 // * @param {any} recipe
 // * @param {Internal.IRecipeSlotsView} recipeSlotsView
@@ -103,6 +103,6 @@
 // * @param {number} mouseY
 // * @returns {[Internal.Component]}
 // */
-//global.jeiCategories.straining.handlers.tooltips = function(jeiHelpers, recipe, recipeSlotsView, mouseX, mouseY) {
+// global.jeiCategories.straining.handlers.tooltips = function(jeiHelpers, recipe, recipeSlotsView, mouseX, mouseY) {
 //    return [];
-//}
+// }

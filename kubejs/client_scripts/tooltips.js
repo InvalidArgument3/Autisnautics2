@@ -9,7 +9,7 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add("supplementaries:ash", Text.translatable("item.supplementaries.ash.tooltip"));
     tooltip.add("functionalstorage:storage_controller", Text.translatable("item.functionalstorage.controller.tooltip"));
     tooltip.add("functionalstorage:controller_extension", Text.translatable("item.functionalstorage.controller_extension.tooltip"));
-    
+
     let wastelandOres = ["uranium","boron","thorium","magnesium","platinum"]
     wastelandOres.forEach(e => tooltip.add("nuclearcraft:" + e + "_ore", Text.red("This world's natural " + e + " reserves were depleted long ago.")));
     wastelandOres.forEach(e => tooltip.add("nuclearcraft:" + e + "_deepslate_ore", Text.red("This world's natural " + e + " reserves were depleted long ago.")));
@@ -54,16 +54,16 @@ ItemEvents.tooltip(tooltip => {
         tooltip.add(`kubejs:failed_alchemy_${i}`, Text.translatable("item.kubejs.failed_alchemy.tooltip"));
     }
 
-    const pureore = ["minecraft:raw_iron", "minecraft:raw_copper", "minecraft:raw_gold", "thermal:raw_lead", "thermal:raw_nickel", "create:raw_zinc", 
-	//A2: more pure ores
-	"alexscaves:uranium", 
-	"ad_astra:raw_desh", "ad_astra:raw_ostrum", "ad_astra:raw_calorite", 
-	"nuclearcraft:boron_chunk", "nuclearcraft:magnesium_chunk", "nuclearcraft:thorium_chunk",
-	"tconstruct:raw_cobalt",
-	"immersiveengineering:raw_bauxite",
-	"tfmg:raw_lithium",
-	"scguns:raw_anthralite",
-	"thermal:raw_silver", "thermal:raw_tin"];
+    const pureore = ["minecraft:raw_iron", "minecraft:raw_copper", "minecraft:raw_gold", "thermal:raw_lead", "thermal:raw_nickel", "create:raw_zinc",
+        // A2: more pure ores
+        "alexscaves:uranium",
+        "ad_astra:raw_desh", "ad_astra:raw_ostrum", "ad_astra:raw_calorite",
+        "nuclearcraft:boron_chunk", "nuclearcraft:magnesium_chunk", "nuclearcraft:thorium_chunk",
+        "tconstruct:raw_cobalt",
+        "immersiveengineering:raw_bauxite",
+        "tfmg:raw_lithium",
+        "scguns:raw_anthralite",
+        "thermal:raw_silver", "thermal:raw_tin"];
     pureore.forEach(pureore => {
         tooltip.add(pureore, Text.translatable("item.kubejs.pureore.tooltip"));
     });

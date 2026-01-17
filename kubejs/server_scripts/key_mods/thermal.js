@@ -209,7 +209,7 @@ ServerEvents.recipes(event => {
     event.recipes.thermal.chiller("minecraft:slime_ball", [Fluid.of("tconstruct:earth_slime", 250), "thermal:chiller_ball_cast"]).id("kubejs:chiller/slime_ball");
     event.recipes.thermal.chiller("tconstruct:sky_slime_ball", [Fluid.of("tconstruct:sky_slime", 250), "thermal:chiller_ball_cast"]).id("kubejs:chiller/sky_slime_ball");
     event.recipes.thermal.chiller("tconstruct:ender_slime_ball", [Fluid.of("tconstruct:ender_slime", 250), "thermal:chiller_ball_cast"]).id("kubejs:chiller/ender_slime_ball");
-    //event.recipes.thermal.chiller("tconstruct:blood_slime_ball", [Fluid.of("tconstruct:blood", 250), "thermal:chiller_ball_cast"]).id("kubejs:chiller/blood_slime_ball");
+    // event.recipes.thermal.chiller("tconstruct:blood_slime_ball", [Fluid.of("tconstruct:blood", 250), "thermal:chiller_ball_cast"]).id("kubejs:chiller/blood_slime_ball");
 })
 
 

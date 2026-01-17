@@ -4,15 +4,15 @@ if (Platform.isLoaded("createaddition")) {
 
         event.hide("kubejs:incomplete_large_connector")
         event.hide("kubejs:incomplete_connector")
-        
-        
+
+
         event.hide("thermal:diamond_dust")
         event.hide("thermal:electrum_ingot")
         event.hide("thermal:electrum_nugget")
         event.hide("thermal:electrum_plate")
-        
+
     })
-    
+
     ClientEvents.highPriorityAssets(event=>{
         event.add("forge:models/tag/item/dusts/diamond",
             {

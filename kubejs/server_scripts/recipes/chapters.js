@@ -30,7 +30,7 @@ ServerEvents.recipes(event => {
             slab = wood + "_planks_slab"
             event.recipes.create.cutting(Item.of(slab, 2), planks).processingTime(150).id(`kubejs:cutting/${wood.split(":")[1]}_slab`)
         }
-        else {//A2: Mods don't get auto-generated slab cutting recipes at all, actually
+        else {// A2: Mods don't get auto-generated slab cutting recipes at all, actually
             event.recipes.create.cutting(Item.of(slab, 2), planks).processingTime(150).id(`kubejs:cutting/${wood.split(":")[1]}_slab`)
         }
     }
@@ -129,7 +129,7 @@ ServerEvents.recipes(event => {
     andesiteMachine(event, Item.of("create:portable_storage_interface", 2))
     andesiteMachine(event, Item.of("create:encased_fan", 1), "create:propeller")
     andesiteMachine(event, Item.of("create:mechanical_press", 1), "minecraft:iron_block")
-    //andesiteMachine(event, Item.of("mbd2:strainer", 1), "minecraft:iron_bars")
+    // andesiteMachine(event, Item.of("mbd2:strainer", 1), "minecraft:iron_bars")
     andesiteMachine(event, Item.of("create:mechanical_mixer", 1), "create:whisk")
     andesiteMachine(event, Item.of("create:mechanical_drill", 1), "thermal:drill_head")
     andesiteMachine(event, Item.of("create:mechanical_saw", 1), "thermal:saw_blade")
@@ -378,8 +378,8 @@ ServerEvents.recipes(event => {
         ]
     })
     // Rose Quartz
-    //event.shapeless("create:rose_quartz", [["minecraft:quartz", "ae2:certus_quartz_crystal", "ae2:charged_certus_quartz_crystal"], "minecraft:redstone", "minecraft:redstone", "minecraft:redstone", "minecraft:redstone"])
-    //A2: no reason for this to exist, replaced
+    // event.shapeless("create:rose_quartz", [["minecraft:quartz", "ae2:certus_quartz_crystal", "ae2:charged_certus_quartz_crystal"], "minecraft:redstone", "minecraft:redstone", "minecraft:redstone", "minecraft:redstone"])
+    // A2: no reason for this to exist, replaced
     // Polished Rose Quartz
     event.custom({
         "type": "create:mixing",
@@ -439,8 +439,8 @@ ServerEvents.recipes(event => {
 
     // - - - - - Chapter 2A - - - - -
     // Vine Transmutation
-    //donutCraft(event, "minecraft:weeping_vines", "occultism:spirit_attuned_gem", "minecraft:twisting_vines")
-    //donutCraft(event, "minecraft:twisting_vines", "occultism:spirit_attuned_gem", "minecraft:weeping_vines")
+    // donutCraft(event, "minecraft:weeping_vines", "occultism:spirit_attuned_gem", "minecraft:twisting_vines")
+    // donutCraft(event, "minecraft:twisting_vines", "occultism:spirit_attuned_gem", "minecraft:weeping_vines")
     // Liquid soul sand
     event.remove({ id: "tconstruct:smeltery/melting/soul/sand" })
     event.recipes.create.mixing(Fluid.of("tconstruct:liquid_soul", 500), ["minecraft:twisting_vines", "minecraft:weeping_vines"]).heated()
@@ -520,9 +520,9 @@ ServerEvents.recipes(event => {
     // Logistic Mechanisms
     // TODO: make the line for this, uses above as a placeholder
 
-    
+
     // Liquid Pulp
-    //A2: removed
+    // A2: removed
     /*
     event.custom({
         "type": "create:mixing",
@@ -537,7 +537,7 @@ ServerEvents.recipes(event => {
     })
     */
 
-    //A2: replaced, see _A2_recipes.js
+    // A2: replaced, see _A2_recipes.js
     /*
     event.custom({
         "type": "create:sequenced_assembly",
@@ -594,7 +594,7 @@ ServerEvents.recipes(event => {
 
     donutCraft(event, "kubejs:lead_machine", "kubejs:lead_casing", "kubejs:logistic_mechanism")
 
-    /*A2: remove nu-create recipes
+    /* A2: remove nu-create recipes
     leadMachine(event, Item.of("create:package_frogport", 1), "#forge:slimeballs")
     leadMachine(event, Item.of("create:packager", 1), "create:cardboard_block")
     leadMachine(event, Item.of("create:repackager", 1), "create:bound_cardboard_block")
@@ -610,9 +610,9 @@ ServerEvents.recipes(event => {
     let fern1 = "kubejs:ender_slimy_fern_leaf"
     let fern2 = "kubejs:sky_slimy_fern_leaf"
     let fern3 = "kubejs:earth_slimy_fern_leaf"
-    //event.shapeless(fern1, ["occultism:spirit_attuned_gem", fern2, fern2, fern2, fern2, fern3, fern3, fern3, fern3])
-    //event.shapeless(fern2, ["occultism:spirit_attuned_gem", fern3, fern3, fern3, fern3, fern1, fern1, fern1, fern1])
-    //event.shapeless(fern3, ["occultism:spirit_attuned_gem", fern2, fern2, fern2, fern2, fern1, fern1, fern1, fern1])
+    // event.shapeless(fern1, ["occultism:spirit_attuned_gem", fern2, fern2, fern2, fern2, fern3, fern3, fern3, fern3])
+    // event.shapeless(fern2, ["occultism:spirit_attuned_gem", fern3, fern3, fern3, fern3, fern1, fern1, fern1, fern1])
+    // event.shapeless(fern3, ["occultism:spirit_attuned_gem", fern2, fern2, fern2, fern2, fern1, fern1, fern1, fern1])
     // Fern Cutting
     let chop = (type, output) => {
         let fern = `tconstruct:${type}_slime_fern`
@@ -713,7 +713,7 @@ ServerEvents.recipes(event => {
     invarMachine(event, Item.of("thermal:dynamo_compression", 1), "thermal:rf_coil")
     invarMachine(event, Item.of("kubejs:pipe_module_tier_2", 4))
     // Disenchantment Upgrade
-    //createMachine("thermal:dynamo_compression", event, Item.of("thermal:dynamo_disenchantment", 1), "occultism:spirit_attuned_gem")
+    // createMachine("thermal:dynamo_compression", event, Item.of("thermal:dynamo_disenchantment", 1), "occultism:spirit_attuned_gem")
     // Default thermal machine recipes are kept in.
     // Check older versions of the script to see commented out code for thermal machine crafting recipes
 
@@ -775,12 +775,12 @@ ServerEvents.recipes(event => {
     event.remove({ id: "thermal:machines/pyrolyzer/pyrolyzer_logs" })
     event.recipes.thermal.pyrolyzer([Item.of("minecraft:charcoal", 2), Fluid.of("immersiveengineering:creosote", 50)], "#minecraft:logs", 0.15, 1000)
     // Coal Coke
-	event.recipes.thermal.pyrolyzer(["thermal:coal_coke", Fluid.of("immersiveengineering:creosote", 50)], "minecraft:charcoal", 0.15, 2000)
-	
+    event.recipes.thermal.pyrolyzer(["thermal:coal_coke", Fluid.of("immersiveengineering:creosote", 50)], "minecraft:charcoal", 0.15, 2000)
+
     // Coke Chunk
     event.custom({
         "type": "create:sequenced_assembly",
-        "ingredient": { "tag": "forge:coal_coke" },//A2: just in case
+        "ingredient": { "tag": "forge:coal_coke" },// A2: just in case
         "loops": 2,
         "results": [{ "item": "kubejs:coke_chunk" }],
         "sequence": [

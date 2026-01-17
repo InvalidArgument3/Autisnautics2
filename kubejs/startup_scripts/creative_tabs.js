@@ -23,6 +23,6 @@ StartupEvents.modifyCreativeTab("minecraft:ingredients", event => {
 
 
 StartupEvents.modifyCreativeTab('minecraft:functional_blocks', event => {
-    //necessary because of dumb supplementaries config behavior
-	event.addAfter('supplementaries:globe', 'supplementaries:globe_sepia')
+    // necessary because of dumb supplementaries config behavior
+    event.addAfter('supplementaries:globe', 'supplementaries:globe_sepia')
 })

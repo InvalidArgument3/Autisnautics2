@@ -13,7 +13,7 @@ ServerEvents.recipes(event => {
             ]
         })
     }
-    
+
     illusion("minecraft:copper_block");
     illusion("minecraft:cut_copper");
     illusion("minecraft:cut_copper_stairs");

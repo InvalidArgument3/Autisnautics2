@@ -19,7 +19,7 @@ Ponder.tags((event) => {
 Ponder.registry((event) => {
     event.create("kubejs:alchemical_laser")
         .scene("alchemy_setup", "The Alchemical Laser", "cabin:laser_alchemy", (scene, util) => {
-            //scene = new CreateSceneBuilder(scene)
+            // scene = new CreateSceneBuilder(scene)
 
             scene.configureBasePlate(0, 0, 5);
             scene.showBasePlate();

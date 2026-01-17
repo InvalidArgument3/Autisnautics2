@@ -5,7 +5,7 @@ if (Platform.isLoaded("createaddition")) {
         brassMachine(event, Item.of("createaddition:portable_energy_interface", 2))
         brassMachine(event, Item.of("createaddition:tesla_coil", 1), "createaddition:copper_spool")
         brassMachine(event, Item.of("createaddition:modular_accumulator", 1), "thermal:energy_cell_frame")
-        
+
         /*
         event.replaceOutput({}, "#forge:nuggets/electrum", "createaddition:electrum_nugget")
         event.replaceOutput({}, "#forge:ingots/electrum", "createaddition:electrum_ingot")
@@ -13,7 +13,7 @@ if (Platform.isLoaded("createaddition")) {
         event.replaceOutput({}, "#forge:storage_blocks/electrum", "createaddition:electrum_block")
         event.replaceOutput({}, "#forge:dusts/diamond", "createaddition:diamond_grit")
         */
-    
+
         // event.replaceOutput({ id: "kubejs:machines/smelter/electrum_ingot" }, "thermal:electrum_ingot", "createaddition:electrum_ingot")
 
         // Duplicate Electrum Recipes
@@ -23,8 +23,8 @@ if (Platform.isLoaded("createaddition")) {
         event.remove({ id: "createaddition:crafting/electrum_block" })
 
         // Motor & Alternator
-        //invarMachine(event, Item.of("createaddition:electric_motor", 1), "createaddition:tesla_coil")
-        //enderiumMachine(event, Item.of("createaddition:alternator", 1), "createaddition:electric_motor")
+        // invarMachine(event, Item.of("createaddition:electric_motor", 1), "createaddition:tesla_coil")
+        // enderiumMachine(event, Item.of("createaddition:alternator", 1), "createaddition:electric_motor")
 
         // Remove capacitors
         event.remove({ output: "createaddition:capacitor" })

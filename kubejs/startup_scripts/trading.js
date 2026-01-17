@@ -509,7 +509,7 @@ StartupEvents.registry("item", event => {
         simple("Frozen Core", "1x reliquary:frozen_core", 48, S, 0x008DC2, 0x7571FB)
         simple("Nebulous Heart", "1x reliquary:nebulous_heart", 1, G, 0x6200A0, 0xE500C3)
         simple("Guardian Spike", "1x reliquary:guardian_spike", 1, G, 0x7F4215, 0xE29964)
-        //simple("Breeze Rod", "1x trials:breeze_rod", 24, S, 0x44557B, 0x96899E)
+        // simple("Breeze Rod", "1x trials:breeze_rod", 24, S, 0x44557B, 0x96899E)
         simple("Blaze Cake", "1x create:blaze_cake", 16, S, 0x834141, 0xFCE083)
         next_group()
 

@@ -13,7 +13,7 @@
 	#The model type of the material.
 	modelType = "dust"
 	#The color of this material.
-	color = 0x736859
+	color = 7563353
 
 [theurgy]
 	#The alchemical sulfur tier of this material.

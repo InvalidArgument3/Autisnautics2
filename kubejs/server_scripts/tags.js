@@ -315,7 +315,7 @@ ServerEvents.tags("block", event => {
     event.add("create:wrench_pickup", "thermal:fluid_duct")
     event.add("create:wrench_pickup", "thermal:fluid_duct_windowed")
 
-    /*// Supplementaries blocks added to wrench pickup - possible source of world load crash
+    /* // Supplementaries blocks added to wrench pickup - possible source of world load crash
     event.add("create:wrench_pickup", "supplementaries:cog_block")
     event.add("create:wrench_pickup", "supplementaries:relayer")
     event.add("create:wrench_pickup", "supplementaries:spring_launcher")

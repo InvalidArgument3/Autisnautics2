@@ -548,7 +548,7 @@ ServerEvents.recipes(event => {
         Item.of("thermal:lead_dust", 1).withChance(.05),
         Item.of("create:crushed_raw_lead", 1).withChance(.01),
         Item.of("thermal:raw_lead", 1).withChance(.001)],// concentrated
-        "alexscaves:galena").processingTime(500)
+    "alexscaves:galena").processingTime(500)
 
     // alexscaves scrap metal gacha
     event.recipes.create.crushing([
@@ -582,7 +582,7 @@ ServerEvents.recipes(event => {
 
         Item.of("tconstruct:debris_nugget", 1).withChance(.000001)
     ],
-        "alexscaves:scrap_metal").processingTime(1)
+    "alexscaves:scrap_metal").processingTime(1)
 
     // synthesize alexscaves neodymium using nuclearcraft neodymium dust which is otherwise useless
     event.custom({

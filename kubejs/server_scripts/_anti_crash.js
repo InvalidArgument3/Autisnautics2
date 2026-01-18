@@ -9,7 +9,7 @@ const LevelReader = Java.loadClass("net.minecraft.world.level.LevelReader")
 //     let data = newStack.nbt
 //     data.tagHooked = false
 //     newStack.setNbt(data)
-// 
+//
 //     event.player.drop(newStack, true, true)
 //     whisk.setCount(0)
 //     event.player.tell(Text.red(`Your Grapplin Whisk is repulsed by the ship's Gellar Field and falls out of your hand.`))

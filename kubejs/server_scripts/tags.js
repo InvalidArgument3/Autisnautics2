@@ -72,8 +72,8 @@ ServerEvents.tags("item", event => {
     // Create Deco laser lamps
     let decoLampColours = ["yellow", "red", "green", "blue"]
     let decoLampMaterials = ["andesite", "brass", "iron", "copper", "industrial_iron", "zinc"]
-    for (let i = 0;i < decoLampColours.length;++i) {
-        for (let j = 0;j < decoLampMaterials.length;++j) {
+    for (let i = 0; i < decoLampColours.length; ++i) {
+        for (let j = 0; j < decoLampMaterials.length; ++j) {
             let lamp = `createdeco:${decoLampColours[i]}_${decoLampMaterials[j]}_lamp`
             event.add("kubejs:alchemical_laser_lamps", lamp)
             event.add(`kubejs:alchemical_laser_lamps/${decoLampColours[i]}`, lamp)
@@ -81,7 +81,7 @@ ServerEvents.tags("item", event => {
     }
 
     // Ad Astra laser lamps
-    for (let i = 0;i < colours.length;++i) {
+    for (let i = 0; i < colours.length; ++i) {
         let lamp = `ad_astra:${colours[i]}_industrial_lamp`;
         event.add("kubejs:alchemical_laser_lamps", lamp)
         event.add(`kubejs:alchemical_laser_lamps/${colours[i]}`, lamp)
@@ -263,6 +263,10 @@ ServerEvents.tags("item", event => {
     event.add("forge:storage_blocks/sulfur", "scguns:sulfur_block")
     event.add("forge:storage_blocks/treated_iron", "scguns:treated_iron_block")
     event.add("forge:storage_blocks", "scguns:treated_iron_block")
+
+    // Plastic and Milk (moved from fluid block)
+    event.add("forge:ingots/plastic", "nuclearcraft:bioplastic")
+    event.get("kubejs:milk").add("minecraft:milk")
 })
 
 ServerEvents.tags("block", event => {
@@ -270,8 +274,8 @@ ServerEvents.tags("block", event => {
     // Create Deco laser lamps
     let decoLampColours = ["yellow", "red", "green", "blue"]
     let decoLampMaterials = ["andesite", "brass", "iron", "copper", "industrial_iron", "zinc"]
-    for (let i = 0;i < decoLampColours.length;++i) {
-        for (let j = 0;j < decoLampMaterials.length;++j) {
+    for (let i = 0; i < decoLampColours.length; ++i) {
+        for (let j = 0; j < decoLampMaterials.length; ++j) {
             let lamp = `createdeco:${decoLampColours[i]}_${decoLampMaterials[j]}_lamp`
             event.add("kubejs:alchemical_laser_lamps", lamp)
             event.add(`kubejs:alchemical_laser_lamps/${decoLampColours[i]}`, lamp)
@@ -279,7 +283,7 @@ ServerEvents.tags("block", event => {
     }
 
     // Ad Astra laser lamps
-    for (let i = 0;i < colours.length;++i) {
+    for (let i = 0; i < colours.length; ++i) {
         let lamp = `ad_astra:${colours[i]}_industrial_lamp`;
         event.add("kubejs:alchemical_laser_lamps", lamp)
         event.add(`kubejs:alchemical_laser_lamps/${colours[i]}`, lamp)
@@ -311,6 +315,7 @@ ServerEvents.tags("block", event => {
     event.add("create:wrench_pickup", "thermal:fluid_duct")
     event.add("create:wrench_pickup", "thermal:fluid_duct_windowed")
 
+    /*// Supplementaries blocks added to wrench pickup - possible source of world load crash
     event.add("create:wrench_pickup", "supplementaries:cog_block")
     event.add("create:wrench_pickup", "supplementaries:relayer")
     event.add("create:wrench_pickup", "supplementaries:spring_launcher")
@@ -325,15 +330,16 @@ ServerEvents.tags("block", event => {
     event.add("create:wrench_pickup", "supplementaries:crank")
     event.add("create:wrench_pickup", "supplementaries:wind_vane")
     event.add("create:wrench_pickup", "supplementaries:faucet")
+    */
 
     event.add("create:wrench_pickup", "#kubejs:alchemical_laser_lamps")
 
-    event.add("create:wrench_pickup", "cb_multipart:multipart")
+    // event.add("create:wrench_pickup", "cb_multipart:multipart")
 
     // Add tags to copper grates to allow fans to process through them
     event.get("create:fan_transparent")
-        .add(/trials:copper_grate*/)
-        .add(/trials:waxed_copper_grate*/)
+        .add(/trials:copper_grate.*/)
+        .add(/trials:waxed_copper_grate.*/)
         .add(/kubejs:trial_copper_grate*/)
 
         .add("everythingcopper:copper_grate")
@@ -362,19 +368,17 @@ ServerEvents.tags("block_entity_type", event => {
         .add("quark:variant_trapped_chest")
         .add(/^everycomp:q.*_chest$/)
         .add("farmersdelight:cabinet")
-        .add("ae2:sky_chest")
+        .add("ae2:sky_stone_chest")
 })
 
 ServerEvents.tags("fluid", event => {
     // seed oils are not a substitute for water, please seek medical attention
-    event.remove("minecraft:water","createaddition:seed_oil")
-    event.remove("minecraft:water","createaddition:flowing_seed_oil")
-    event.remove("minecraft:water","createaddition:bioethanol")
-    event.remove("minecraft:water","createaddition:flowing_bioethanol")
+    event.remove("minecraft:water", "createaddition:seed_oil")
+    event.remove("minecraft:water", "createaddition:flowing_seed_oil")
+    event.remove("minecraft:water", "createaddition:bioethanol")
+    event.remove("minecraft:water", "createaddition:flowing_bioethanol")
 
-    event.add("forge:ingots/plastic","nuclearcraft:bioplastic")
-    event.add("kubejs:milk","minecraft:milk")// nuclearcraft recipe meme
-    event.add("kubejs:liquid_plastic","tfmg:liquid_plastic")// ^
+    event.add("kubejs:liquid_plastic", "tfmg:liquid_plastic")
 
     // kubejs molten anthralite
     event.add("forge:molten_anthralite", "kubejs:molten_anthralite")

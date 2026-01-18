@@ -36,7 +36,7 @@
 	#This can make the yhc moka task enabled or not.
 	YhcMokaTaskEnabled = true
 	#This can make the yhc tea kettle task enabled or not.
-	YhcTeaKettleTaskEnabled = true
+	YhcTeaKettleTaskEnabled = false
 	#This can make the yhc tea kettle task enabled or not.
 	YhcDryingRackTaskEnabled = true
 	#This can make the yhc fermentation tank task enabled or not.

@@ -96,6 +96,9 @@
         },
         "scorched-guns-2": {
             "side": "BOTH"
+        },
+        "squaremap": {
+            "side": "SERVER"
         }
     }
 }

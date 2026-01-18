@@ -42,6 +42,9 @@
 		#Allows to adjust your weight advantage/disadvantage over the hooked entity
 		#Range: 0.0 ~ 1000.0
 		shooterWeightFactor = 20.0
+		#Durability of the launcher
+		#Range: 0 ~ 65535
+		durability = 300
 
 	[Pudge.Rope]
 		#Maximal rope length
@@ -100,6 +103,9 @@
 		#Allows to adjust your weight advantage/disadvantage over the hooked entity
 		#Range: 0.0 ~ 1000.0
 		shooterWeightFactor = 4.0
+		#Durability of the launcher
+		#Range: 0 ~ 65535
+		durability = 180
 
 	[Spear.Rope]
 		#Maximal rope length
@@ -158,6 +164,9 @@
 		#Allows to adjust your weight advantage/disadvantage over the hooked entity
 		#Range: 0.0 ~ 1000.0
 		shooterWeightFactor = 0.5
+		#Durability of the launcher
+		#Range: 0 ~ 65535
+		durability = 240
 
 	[Web.Rope]
 		#Maximal rope length

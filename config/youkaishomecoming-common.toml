@@ -20,9 +20,6 @@
 	youkaifiedProlongation = 6000
 
 [food_effect]
-	#Smoothing Healing Factor
-	#Range: 1.0 ~ 100.0
-	smoothingHealingFactor = 1.5
 	#Tea Healing Interval
 	#Range: 0 ~ 10000
 	teaHealingPeriod = 60
@@ -41,6 +38,9 @@
 	#Fairy Healing Factor
 	#Range: 1.0 ~ 100.0
 	fairyHealingFactor = 2.0
+	#Breathing Healing Factor
+	#Range: 1.0 ~ 100.0
+	breathingHealingFactor = 1.5
 
 [suwako_hat]
 	#Number of raiders with different types frogs need to eat in front of villager to drop Suwako hat
@@ -94,6 +94,34 @@
 	#Enable danmaku damage invulnerability frame against non-player non-youkai mobs.
 	#It's always enabled against player and youkais
 	invulFrameForDanmaku = true
+	#Max resource obtainable from danmaku battle
+	#Range: 4 ~ 20
+	danmakuMaxResource = 10
+	#Max Power player can obtain from grazing
+	#Range: 1 ~ 20
+	danmakuMaxPower = 4
+	#Danmaku damage each level of power increase
+	#Range: 0.0 ~ 1.0
+	danmakuPowerBonus = 0.25
+	#Multiplier for grazing
+	#Range: 0.0 ~ 10.0
+	grazeEffectiveness = 1.0
+	#Danmaku invulnerability and disabled time when you take a hit
+	#Range: 10 ~ 100
+	missInvulTime = 60
+	#Danmaku invulnerability and disabled time when you use a bomb
+	#Range: 10 ~ 100
+	bombInvulTime = 30
+	#Maximum loss of power when you take a hit
+	#Range: 0.0 ~ 10.0
+	maxPowerLossOnMiss = 1.0
+	#Initial life and bomb when you initiate a danmaku battle
+	#Also is the amount of bomb you get when you lose a life
+	#Range: 0 ~ 10
+	initialResource = 2
+	#Initial power when you initiate a danmaku battle
+	#Range: 0 ~ 10
+	initialPower = 1
 
 [rumia]
 	#If Rumia would spawn naturally around her nest if the first one goes too far. Does not affect structure spawn
@@ -123,6 +151,8 @@
 	reimuExtraDamageCoolDown = true
 	#Enable non-danmaku damage reduction on Reimu
 	reimuDamageReduction = true
+	#If Reimu can be teleported to other dimension
+	canReimuTeleportToOtherDimension = false
 
 [cirno]
 	#Toggle for Cirno natural spawns
@@ -130,8 +160,6 @@
 	#Chance for fairy ice crystal to drop
 	#Range: 0.0 ~ 1.0
 	cirnoFairyDrop = 0.03
-	#Cirno spawns naturally only when there are youkaifying/ed player nearby
-	cirnoSpawnCheckEffect = true
 	#Fairies will actively attack players with youkaifying/ed effects
 	fairyAttackYoukaified = true
 	#Chance for fairies to summon other fairies when killed by non-danmaku damage
@@ -148,4 +176,17 @@
 	#Homing Spell: Max number of bullet allowed per item cost
 	#Range: 1 ~ 1024
 	homingSpellDanmakuPerItemCost = 8
+
+[touhou_little_maid]
+	#Replace Fairies from Touhou Little Maid with a neutral fairy
+	smallFairyReplacement = true
+	#Chance for small fairies to summon other fairies when killed by non-danmaku damage
+	#Range: 0.0 ~ 1.0
+	smallFairySummonReinforcement = 0.25
+	#Chance for small fairies to summon stronger fairies when they are set to summon reinforcements
+	#Range: 0.0 ~ 1.0
+	smallFairySummonStrongFairy = 0.1
+	#Small Fairy spellcard strength
+	#Range: 0 ~ 4
+	smallFairyStrength = 2
 

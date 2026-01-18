@@ -692,6 +692,10 @@
 			stone_tile = true
 			blackstone_tile = true
 
+		[types.cut_block_type.youkaishomecoming]
+			sikkui = true
+			cross_framed_sikkui = true
+
 	[types.wood_type]
 
 		[types.wood_type.quark]
@@ -844,6 +848,9 @@
 			chocolate_cake = true
 			honey_cake = true
 
+		[types.cake.youkaishomecoming]
+			red_velvet_cake = true
+
 #Disables specific entries
 [entries]
 
@@ -902,6 +909,11 @@
 			glass_cabinet = true
 			drawer_with_door = true
 			drawer_with_books = true
+
+		[entries.wood_type.youkaishomecoming]
+			dining_chair = true
+			dining_table = true
+			handrail = true
 
 	[entries.leaves_type]
 

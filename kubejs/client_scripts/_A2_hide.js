@@ -3,14 +3,14 @@ const hiddenEmbersMetals = ["iron", "zinc", "lead", "copper", "nickel", "gold", 
 
 JEIEvents.hideItems(event => {
     // redundant create_sa fueling tanks
-    event.hide("create_sa:small_fueling_tank")
-    event.hide("create_sa:large_fueling_tank")
+    // event.hide("create_sa:small_fueling_tank")
+    // event.hide("create_sa:large_fueling_tank")
     // we've made this redundant
     event.hide("immersive_aircraft:boiler")
     // these too
-    event.hide("create_sa:heat_engine")
-    event.hide("create_sa:steam_engine")
-    event.hide("create_sa:hydraulic_engine")
+    // event.hide("create_sa:heat_engine")
+    // event.hide("create_sa:steam_engine")
+    // event.hide("create_sa:hydraulic_engine")
     // replaced with polished equivalent
     event.hide("create:rose_quartz")
     // tfmg meme stones
@@ -30,7 +30,7 @@ JEIEvents.hideItems(event => {
     event.hide("createdeco:netherite_sheet")
     // fluid unification (buckets)
     event.hide(/embers:molten_(?!dawnstone).*/)
-    hiddenNCMetals.forEach(metal => {event.hide("nuclearcraft:" + metal + "_bucket")})
+    hiddenNCMetals.forEach(metal => { event.hide("nuclearcraft:" + metal + "_bucket") })
     event.hide("createbigcannons:molten_steel_bucket")
     event.hide("createbigcannons:molten_bronze_bucket")
     event.hide("tfmg:molten_steel_bucket")
@@ -57,8 +57,8 @@ JEIEvents.hideFluids(event => {
     event.hide("nuclearcraft:ethanol")
     event.hide("nuclearcraft:redstone_ethanol")
     // metal fluid unification
-    hiddenEmbersMetals.forEach(metal => {event.hide("embers:molten_" + metal)})
-    hiddenNCMetals.forEach(metal => {event.hide("nuclearcraft:" + metal)})
+    hiddenEmbersMetals.forEach(metal => { event.hide("embers:molten_" + metal) })
+    hiddenNCMetals.forEach(metal => { event.hide("nuclearcraft:" + metal) })
     event.hide("createbigcannons:molten_steel")
     event.hide("createbigcannons:molten_bronze")
     event.hide("tfmg:molten_steel")

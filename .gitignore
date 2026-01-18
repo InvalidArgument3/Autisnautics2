@@ -132,3 +132,7 @@ Distant_Horizons_server_data/*
 
 # SHUT THE FUCK UP FORGEENDERTECH
 config/forgeendertech/*
+
+# Squaremap
+squaremap/*
+!squaremap/config.yml

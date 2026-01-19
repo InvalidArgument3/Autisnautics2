@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.0.20]
+### Changes
+- alots of updates
 
 ## [0.0.19]
 ### Changes

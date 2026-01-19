@@ -5877,6 +5877,81 @@
             ]
         },
         {
+            "pakku_id": "ARQrwZlURFIOtNuE",
+            "pakku_links": [
+                "6MJf6KGhCAEF1t9w"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "modrinth": "hypertube",
+                "curseforge": "hypertubes"
+            },
+            "name": {
+                "modrinth": "Create: Hypertubes",
+                "curseforge": "Create: Hypertubes"
+            },
+            "id": {
+                "modrinth": "ATDdrG1y",
+                "curseforge": "1281336"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "create_hypertube-0.3.0-FORGE.jar",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20.2",
+                        "1.20.3",
+                        "1.20.4",
+                        "1.20.5",
+                        "1.20.6"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://cdn.modrinth.com/data/ATDdrG1y/versions/pX1oNdBc/create_hypertube-0.3.0-FORGE.jar",
+                    "id": "pX1oNdBc",
+                    "parent_id": "ATDdrG1y",
+                    "hashes": {
+                        "sha512": "4ffaff34cdd31c6ff11364809992cb4f15e1e00fd3d87a5be6a9006e95ad9c4636ffbe6845ee2d59b55d20e9896bedb1e5ada699202e9b71a90195833161a140",
+                        "sha1": "476ae93802024b766badb15e538e0cf65a2e3fbd"
+                    },
+                    "required_dependencies": [
+                        "LNytGWDc"
+                    ],
+                    "size": 390634,
+                    "date_published": "2025-11-21T17:40:28.963108Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "create_hypertube-0.3.0-FORGE.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/7246/344/create_hypertube-0.3.0-FORGE.jar",
+                    "id": "7246344",
+                    "parent_id": "1281336",
+                    "hashes": {
+                        "sha1": "476ae93802024b766badb15e538e0cf65a2e3fbd",
+                        "md5": "7cab909e9c8de12b8c97518ca0042c1b"
+                    },
+                    "required_dependencies": [
+                        "328085"
+                    ],
+                    "size": 390634,
+                    "date_published": "2025-11-21T17:32:38.960Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "YkfoE3fGp7MxQdVH",
             "type": "MOD",
             "side": "BOTH",
@@ -23413,6 +23488,43 @@
                     ],
                     "size": 624138,
                     "date_published": "2025-12-25T22:30:12.490Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "zrMMkAl8fakay2KD",
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "modrinth": "vmod"
+            },
+            "name": {
+                "modrinth": "VMod"
+            },
+            "id": {
+                "modrinth": "qS1ot7R2"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "VMod-Forge-1.20.1-1.9.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/qS1ot7R2/versions/RlsWa2L4/VMod-Forge-1.20.1-1.9.0.jar",
+                    "id": "RlsWa2L4",
+                    "parent_id": "qS1ot7R2",
+                    "hashes": {
+                        "sha512": "996b89f027917beb7918eb734f2e28b4fdcb0d3d87a5ccbd62f198d534f8faf4ee8cbcd8d1d6292a5806b4f0b7d10a7ea567b1ecf6e9ed00ca9ec5da999f0f3b",
+                        "sha1": "7bed7678675cbdfad672b60d84c2f2fa30c40a82"
+                    },
+                    "required_dependencies": [],
+                    "size": 32594152,
+                    "date_published": "2025-12-25T17:44:50.380304Z"
                 }
             ]
         },

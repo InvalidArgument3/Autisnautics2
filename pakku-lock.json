@@ -23529,6 +23529,67 @@
             ]
         },
         {
+            "pakku_id": "0BsK6taBQTOTiuaF",
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "vs-hose-connectors",
+                "modrinth": "vs-hose-connectors"
+            },
+            "name": {
+                "curseforge": "VS Hose Connectors",
+                "modrinth": "VS Hose Connectors"
+            },
+            "id": {
+                "curseforge": "1426984",
+                "modrinth": "YaZEkFmd"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "vsHoseConnector-0.0.7-1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7482/838/vsHoseConnector-0.0.7-1.20.1.jar",
+                    "id": "7482838",
+                    "parent_id": "1426984",
+                    "hashes": {
+                        "sha1": "8a678ceab0ce7d7422a68669f8b5c5b91a5301be",
+                        "md5": "cc45f8921d7a777724ddb956a8d1497f"
+                    },
+                    "required_dependencies": [],
+                    "size": 718034,
+                    "date_published": "2026-01-18T17:30:06.973Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "vsHoseConnector-0.0.7-1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/YaZEkFmd/versions/MY8sdBJh/vsHoseConnector-0.0.7-1.20.1.jar",
+                    "id": "MY8sdBJh",
+                    "parent_id": "YaZEkFmd",
+                    "hashes": {
+                        "sha512": "103b01b62eed0f95dea85288138c83394dcb8abdc1890a591607eaaa8a51cd08f6caba15643740cb10c34713e2287dff479f9585470b14becc8de2d9896b03b5",
+                        "sha1": "8a678ceab0ce7d7422a68669f8b5c5b91a5301be"
+                    },
+                    "required_dependencies": [],
+                    "size": 718034,
+                    "date_published": "2026-01-18T17:32:56.872879Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "jfWrQYF0fSCiUsmN",
             "pakku_links": [
                 "YN72U5Jjaz75QDro"

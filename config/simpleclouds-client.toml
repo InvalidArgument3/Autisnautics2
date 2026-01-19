@@ -61,10 +61,10 @@ showVivecraftNotice = true
 	shadedClouds = true
 	#Specifies if transparent cubes should be generated for supported cloud types. May cause performance drops.
 	#Default: true
-	transparency = false
+	transparency = true
 	#Specifies if a purely visual 2D atmospheric cloud layer should render.
 	#Default: true
-	atmosphericClouds = false
+	atmosphericClouds = true
 
 #Seed
 [seed]
@@ -89,7 +89,7 @@ showVivecraftNotice = true
 	#Specifies the quality of the level of detail. A lower setting makes clouds lower quality faster.
 	#Default: HIGH
 	#Allowed Values: LOW, MEDIUM, HIGH
-	levelOfDetail = "LOW"
+	levelOfDetail = "HIGH"
 	#Culls cloud chunks not visible to the player. Generally should not be disabled, but can fix visual issues when looking around fast with higher frames per mesh generation values.
 	#Default: true
 	frustumCulling = true
@@ -106,11 +106,11 @@ showVivecraftNotice = true
 		#How the amount of frames used to generate the entire mesh is calculated. Static will use the 'Frames To Generate Mesh' option. Dynamic will calculate it automatically depending on your FPS. Target FPS will target a certain perceived framerate for mesh generation.
 		#Default: TARGET_FPS
 		#Allowed Values: STATIC, DYNAMIC, TARGET_FPS
-		generationInterval = "DYNAMIC"
+		generationInterval = "TARGET_FPS"
 		#Specifies how many frames it should take to generate the entire cloud mesh. Higher values will improve performance at the cost of stuttery cloud movement.
 		#Default: 5
 		#Range: 1 ~ 32
-		framesToGenerateMesh = 20
+		framesToGenerateMesh = 5
 		#Used to set the target FPS with the 'Target FPS' option in 'Generation Interval'.
 		#Default: 30
 		#Range: 1 ~ 1000

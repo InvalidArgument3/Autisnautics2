@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.21]
+### Changes
+- rm chloride
+- simpleclouds
+- immersive paintings
+- yo hooks
+
 ## [0.0.20]
 ### Changes
 - alots of updates

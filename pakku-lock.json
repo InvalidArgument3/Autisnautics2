@@ -2024,73 +2024,6 @@
             ]
         },
         {
-            "pakku_id": "PgnXOCSEXvxaQjoF",
-            "type": "MOD",
-            "side": "CLIENT",
-            "slug": {
-                "curseforge": "better-clouds",
-                "modrinth": "better-clouds"
-            },
-            "name": {
-                "curseforge": "Better Clouds",
-                "modrinth": "Better Clouds"
-            },
-            "id": {
-                "curseforge": "1285973",
-                "modrinth": "5srFLIaK"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "better-clouds-1.3.37-beta+1.20.1-forge.rev.e63efe2.jar",
-                    "mc_versions": [
-                        "1.20",
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/5srFLIaK/versions/hQgUzZa4/better-clouds-1.3.37-beta+1.20.1-forge.rev.e63efe2.jar",
-                    "id": "hQgUzZa4",
-                    "parent_id": "5srFLIaK",
-                    "hashes": {
-                        "sha512": "aa1984ceeb12b777dcb844c4cff604d7fbb2a50454f9f74cee5a438304aed8b55e0dd37edc4ad7540ab548f2afa6209dbb077e49b03e384c290ebe2b2b5edc63",
-                        "sha1": "5970c3134b95963c467c2dd76664ff02224140b6"
-                    },
-                    "required_dependencies": [
-                        "1eAoo2KR"
-                    ],
-                    "size": 969149,
-                    "date_published": "2025-10-06T19:41:57.709815Z"
-                },
-                {
-                    "type": "curseforge",
-                    "file_name": "better-clouds-1.3.37-beta+1.20.1-forge.rev.e63efe2.jar",
-                    "mc_versions": [
-                        "1.20.1",
-                        "1.20"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/7074/847/better-clouds-1.3.37-beta+1.20.1-forge.rev.e63efe2.jar",
-                    "id": "7074847",
-                    "parent_id": "1285973",
-                    "hashes": {
-                        "sha1": "5970c3134b95963c467c2dd76664ff02224140b6",
-                        "md5": "d3e86ac9307524cf4cff33e794f7195d"
-                    },
-                    "required_dependencies": [
-                        "667299"
-                    ],
-                    "size": 969149,
-                    "date_published": "2025-10-06T19:41:52.697Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "Nrf4K0ZahivxJQCo",
             "type": "MOD",
             "side": "BOTH",
@@ -2280,6 +2213,76 @@
                     "required_dependencies": [],
                     "size": 15889,
                     "date_published": "2023-06-18T02:10:24.983Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "YsWRnovQks8CwtuJ",
+            "pakku_links": [
+                "Xj0e2DdaAoUuTDv7"
+            ],
+            "type": "MOD",
+            "side": "CLIENT",
+            "slug": {
+                "curseforge": "betterf3",
+                "modrinth": "betterf3"
+            },
+            "name": {
+                "curseforge": "BetterF3",
+                "modrinth": "BetterF3"
+            },
+            "id": {
+                "curseforge": "401648",
+                "modrinth": "8shC1gFX"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "BetterF3-7.0.2-Forge-1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/4863/626/BetterF3-7.0.2-Forge-1.20.1.jar",
+                    "id": "4863626",
+                    "parent_id": "401648",
+                    "hashes": {
+                        "sha1": "b65cba59e87dc6c6d1aa9c47f09b9996b4e5075d",
+                        "md5": "7411ae023390cf6b148f05a6b685279f"
+                    },
+                    "required_dependencies": [
+                        "348521"
+                    ],
+                    "size": 468517,
+                    "date_published": "2023-11-13T04:17:09.867Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "BetterF3-7.0.2-Forge-1.20.1.jar",
+                    "mc_versions": [
+                        "1.20",
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/8shC1gFX/versions/xo6HmgWj/BetterF3-7.0.2-Forge-1.20.1.jar",
+                    "id": "xo6HmgWj",
+                    "parent_id": "8shC1gFX",
+                    "hashes": {
+                        "sha512": "e88ce04d601a5953de909edaabb49dad9eea2c3a9ccccb1247fd041554b30794d4d4c315be065c90b1017cbd798199e644fe8d905125f4c431ddb8eaf170dd15",
+                        "sha1": "b65cba59e87dc6c6d1aa9c47f09b9996b4e5075d"
+                    },
+                    "required_dependencies": [
+                        "9s6osm5g"
+                    ],
+                    "size": 468517,
+                    "date_published": "2023-11-13T04:17:25.937180Z"
                 }
             ]
         },
@@ -3299,71 +3302,6 @@
                     ],
                     "size": 11842662,
                     "date_published": "2026-01-12T20:56:19.423Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "1DiVt8E9RiTMa0Ai",
-            "type": "MOD",
-            "side": "CLIENT",
-            "slug": {
-                "curseforge": "chloride",
-                "modrinth": "chloride"
-            },
-            "name": {
-                "curseforge": "Chloride (Embeddium++/Sodium++)",
-                "modrinth": "Chloride (Embeddium++/Sodium++)"
-            },
-            "id": {
-                "curseforge": "931925",
-                "modrinth": "yD9qW65f"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "chloride-FORGE-mc1.20.1-v1.7.5.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/yD9qW65f/versions/sKb384Nw/chloride-FORGE-mc1.20.1-v1.7.5.jar",
-                    "id": "sKb384Nw",
-                    "parent_id": "yD9qW65f",
-                    "hashes": {
-                        "sha512": "c32608136e247055d26fd45bd1a86e6d424a22bc380b0fc5ea55c3322966ac033dca75679069bfe8e6b0322d5f3a676e5f2243f31f4d6ea0e1b846f1cf8d0732",
-                        "sha1": "b5f658b9328cda4b03080fa0164cf26be23a3e75"
-                    },
-                    "required_dependencies": [
-                        "sk9rgfiA"
-                    ],
-                    "size": 956080,
-                    "date_published": "2025-12-25T18:33:29.406820Z"
-                },
-                {
-                    "type": "curseforge",
-                    "file_name": "chloride-FORGE-mc1.20.1-v1.7.5.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7378/10/chloride-FORGE-mc1.20.1-v1.7.5.jar",
-                    "id": "7378010",
-                    "parent_id": "931925",
-                    "hashes": {
-                        "sha1": "b5f658b9328cda4b03080fa0164cf26be23a3e75",
-                        "md5": "871f2041941d801f7708a9123b9c41b8"
-                    },
-                    "required_dependencies": [
-                        "908741"
-                    ],
-                    "size": 956080,
-                    "date_published": "2025-12-25T18:33:28.790Z"
                 }
             ]
         },
@@ -6017,6 +5955,76 @@
             ]
         },
         {
+            "pakku_id": "SiGRD2p23vdQTchl",
+            "pakku_links": [
+                "6MJf6KGhCAEF1t9w"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "numismatics",
+                "modrinth": "numismatics"
+            },
+            "name": {
+                "curseforge": "Create: Numismatics",
+                "modrinth": "Create: Numismatics"
+            },
+            "id": {
+                "curseforge": "889722",
+                "modrinth": "Jdbbtt0i"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "CreateNumismatics-1.0.15+forge-mc1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6264/591/CreateNumismatics-1.0.15+forge-mc1.20.1.jar",
+                    "id": "6264591",
+                    "parent_id": "889722",
+                    "hashes": {
+                        "sha1": "f49daf6ea32cd7b15816dafff5cf8fe291c89218",
+                        "md5": "4943d40efd8e79c800f495b572ad4282"
+                    },
+                    "required_dependencies": [
+                        "328085"
+                    ],
+                    "size": 885623,
+                    "date_published": "2025-03-04T18:42:57.287Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "CreateNumismatics-1.0.15+forge-mc1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/Jdbbtt0i/versions/wjKJbg4D/CreateNumismatics-1.0.15+forge-mc1.20.1.jar",
+                    "id": "wjKJbg4D",
+                    "parent_id": "Jdbbtt0i",
+                    "hashes": {
+                        "sha512": "775481ce32bc34f580d4e2bd6b9084f003370b0a61a6938549857b4cdf9d483e19e838214ae15fba4b4732cc9a077849851b744a4a1156049ed5e555573b8b83",
+                        "sha1": "f49daf6ea32cd7b15816dafff5cf8fe291c89218"
+                    },
+                    "required_dependencies": [
+                        "LNytGWDc"
+                    ],
+                    "size": 885623,
+                    "date_published": "2025-03-04T18:42:58.471417Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "dyrzI1hsGBiRffB4",
             "pakku_links": [
                 "zbfQnX92suDRNbq4",
@@ -7275,67 +7283,6 @@
                     ],
                     "size": 275713,
                     "date_published": "2025-12-25T16:10:43.623Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "WqzcWD0eyPXvCEsa",
-            "type": "MOD",
-            "side": "BOTH",
-            "slug": {
-                "curseforge": "dungeon-now-loading",
-                "modrinth": "dungeon-now-loading"
-            },
-            "name": {
-                "curseforge": "Dungeon Now Loading 2%",
-                "modrinth": "Dungeon Now Loading"
-            },
-            "id": {
-                "curseforge": "638535",
-                "modrinth": "vZoqTqwv"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "Dungeon Now Loading-forge-1.20.1-2.11.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/vZoqTqwv/versions/MoLb6Oqn/Dungeon Now Loading-forge-1.20.1-2.11.jar",
-                    "id": "MoLb6Oqn",
-                    "parent_id": "vZoqTqwv",
-                    "hashes": {
-                        "sha512": "3ffda76a6faa490f0660bab3f360db2a04600f4cfe84028d47110391c86bb6a9e7f68b8f77c0821774239249b25d82ce32cf2543ace7f57d81dd89d6362a0ca0",
-                        "sha1": "8e3640696d86a71b7305c76381e84e3f703b55ce"
-                    },
-                    "required_dependencies": [],
-                    "size": 66861448,
-                    "date_published": "2025-11-02T06:50:24.275315Z"
-                },
-                {
-                    "type": "curseforge",
-                    "file_name": "Dungeon Now Loading-forge-1.20.1-2.11.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7176/781/Dungeon Now Loading-forge-1.20.1-2.11.jar",
-                    "id": "7176781",
-                    "parent_id": "638535",
-                    "hashes": {
-                        "sha1": "8e3640696d86a71b7305c76381e84e3f703b55ce",
-                        "md5": "98b11d11dcd0256a5f13808d4384938f"
-                    },
-                    "required_dependencies": [],
-                    "size": 66861448,
-                    "date_published": "2025-11-02T06:50:09.750Z"
                 }
             ]
         },
@@ -11106,6 +11053,67 @@
                     "required_dependencies": [],
                     "size": 12129396,
                     "date_published": "2025-02-18T16:55:44.973Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "4bAEbXY8Nu8mmNAW",
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "immersive-paintings",
+                "modrinth": "immersive-paintings"
+            },
+            "name": {
+                "curseforge": "Immersive Paintings [Fabric/Forge]",
+                "modrinth": "Immersive Paintings"
+            },
+            "id": {
+                "curseforge": "639584",
+                "modrinth": "6txNkua3"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "immersive_paintings-0.6.8+1.20.1-forge.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6672/642/immersive_paintings-0.6.8+1.20.1-forge.jar",
+                    "id": "6672642",
+                    "parent_id": "639584",
+                    "hashes": {
+                        "sha1": "f3a464ae2cb3173c7a7b765b4b9e61591f71833c",
+                        "md5": "a89b2f9c4c8f59c98aace3a20667b226"
+                    },
+                    "required_dependencies": [],
+                    "size": 4854834,
+                    "date_published": "2025-06-19T20:51:43.750Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "immersive_paintings-0.6.8+1.20.1-forge.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/6txNkua3/versions/vvLA2zs9/immersive_paintings-0.6.8+1.20.1-forge.jar",
+                    "id": "vvLA2zs9",
+                    "parent_id": "6txNkua3",
+                    "hashes": {
+                        "sha512": "2e0e73eadc2bdb5bfcac43945f87678799475d3c9be33c419abefe0ba59d3d97d8644d7270cdb661fdf4484af7190a8f7849b050d5f055e7b744eab89ada9f78",
+                        "sha1": "f3a464ae2cb3173c7a7b765b4b9e61591f71833c"
+                    },
+                    "required_dependencies": [],
+                    "size": 4854834,
+                    "date_published": "2025-06-19T20:51:47.870633Z"
                 }
             ]
         },
@@ -17066,69 +17074,6 @@
             ]
         },
         {
-            "pakku_id": "fPIluzaTdyGnD0Ks",
-            "type": "MOD",
-            "side": "CLIENT",
-            "slug": {
-                "curseforge": "particle-rain",
-                "modrinth": "particle-rain"
-            },
-            "name": {
-                "curseforge": "Particle Rain",
-                "modrinth": "Particle Rain"
-            },
-            "id": {
-                "curseforge": "421897",
-                "modrinth": "nrikgvxm"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "particlerain-4.0.0-beta.5+1.20.1-forge.jar",
-                    "mc_versions": [
-                        "1.20",
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://cdn.modrinth.com/data/nrikgvxm/versions/DoKcxpR8/particlerain-4.0.0-beta.5+1.20.1-forge.jar",
-                    "id": "DoKcxpR8",
-                    "parent_id": "nrikgvxm",
-                    "hashes": {
-                        "sha512": "64373b4ec54fb9b7d15616e1ab1e0cf85eb5dac647a7c5647dfcb8279e450f6f04a94e63e38fb562d843e635ae254dabf5949e7eb7535838ef302703011f94ab",
-                        "sha1": "f0776c78f8ef74b34137ce3acb5ce229a8152d3b"
-                    },
-                    "required_dependencies": [],
-                    "size": 1226152,
-                    "date_published": "2025-12-26T00:44:09.654296Z"
-                },
-                {
-                    "type": "curseforge",
-                    "file_name": "particlerain-4.0.0-beta.5+1.20.1-forge.jar",
-                    "mc_versions": [
-                        "1.20.1",
-                        "1.20"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/7378/848/particlerain-4.0.0-beta.5+1.20.1-forge.jar",
-                    "id": "7378848",
-                    "parent_id": "421897",
-                    "hashes": {
-                        "sha1": "f0776c78f8ef74b34137ce3acb5ce229a8152d3b",
-                        "md5": "de69e6b8aba913513305cbe469fc5d3d"
-                    },
-                    "required_dependencies": [],
-                    "size": 1226152,
-                    "date_published": "2025-12-26T00:44:06.273Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "NmtGo4jkgnOtudro",
             "type": "MOD",
             "side": "BOTH",
@@ -20287,6 +20232,67 @@
                     ],
                     "size": 122014,
                     "date_published": "2025-07-09T13:03:51.383Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "KpH1pT9NpM55YbhE",
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "simple-clouds",
+                "modrinth": "simple-clouds"
+            },
+            "name": {
+                "curseforge": "Simple Clouds",
+                "modrinth": "Simple Clouds"
+            },
+            "id": {
+                "curseforge": "1121215",
+                "modrinth": "LtZfKhel"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "simpleclouds-0.7.3+1.20.1-forge-all.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/6928/978/simpleclouds-0.7.3+1.20.1-forge-all.jar",
+                    "id": "6928978",
+                    "parent_id": "1121215",
+                    "hashes": {
+                        "sha1": "73a2d9a17d3052ea51d68c3213246d9543be3230",
+                        "md5": "2269152496bd684d06f75192e33a1d4a"
+                    },
+                    "required_dependencies": [],
+                    "size": 2207554,
+                    "date_published": "2025-08-26T02:13:26.933Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "simpleclouds-0.7.3+1.20.1-forge-all.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://cdn.modrinth.com/data/LtZfKhel/versions/mcVeYqAI/simpleclouds-0.7.3+1.20.1-forge-all.jar",
+                    "id": "mcVeYqAI",
+                    "parent_id": "LtZfKhel",
+                    "hashes": {
+                        "sha512": "cdcdaf9ecb6443723ceb6fb59b492ffd3167fd65bf196262d9d564a84a45b865caef34e11188ad89b86023cc7bfb855b0ff67e48e5cf9365513370c96c512427",
+                        "sha1": "73a2d9a17d3052ea51d68c3213246d9543be3230"
+                    },
+                    "required_dependencies": [],
+                    "size": 2207554,
+                    "date_published": "2025-08-26T02:16:09.217275Z"
                 }
             ]
         },
@@ -24805,6 +24811,74 @@
                     "required_dependencies": [],
                     "size": 1105891,
                     "date_published": "2025-03-23T19:12:56.087Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "DdeCQXALomlW2C4R",
+            "pakku_links": [
+                "zbfQnX92suDRNbq4"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "yori3os-grappling-hooks",
+                "modrinth": "yori3os-grappling-hooks"
+            },
+            "name": {
+                "curseforge": "Yori3o's Grappling Hooks",
+                "modrinth": "Yori3o's Grappling Hooks"
+            },
+            "id": {
+                "curseforge": "1376009",
+                "modrinth": "t1p8V2nl"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "yo_hooks-forge-3.7.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7425/179/yo_hooks-forge-3.7.0.jar",
+                    "id": "7425179",
+                    "parent_id": "1376009",
+                    "hashes": {
+                        "sha1": "d2352cdc49248f7e363d501ae1157df6f12f8ecb",
+                        "md5": "2a9ecec1d27a166f14a98826e10e497b"
+                    },
+                    "required_dependencies": [
+                        "419699"
+                    ],
+                    "size": 447026,
+                    "date_published": "2026-01-06T12:54:42.430Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "yo_hooks-forge-3.7.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/t1p8V2nl/versions/whXH4iVj/yo_hooks-forge-3.7.0.jar",
+                    "id": "whXH4iVj",
+                    "parent_id": "t1p8V2nl",
+                    "hashes": {
+                        "sha512": "746be593b6560fb2ed8af83995accc343a532d0d45ba83f35cc9ee5920479fd637afe31a53574c234ed0b88a609115922a7fb882526e9a13bc2a28f95ebcf3a1",
+                        "sha1": "d2352cdc49248f7e363d501ae1157df6f12f8ecb"
+                    },
+                    "required_dependencies": [
+                        "lhGA9TYQ"
+                    ],
+                    "size": 447026,
+                    "date_published": "2026-01-06T12:52:40.948704Z"
                 }
             ]
         },

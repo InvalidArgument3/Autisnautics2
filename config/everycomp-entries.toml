@@ -539,11 +539,6 @@
 			nebulite = true
 			polished_nebulite = true
 
-		[types.cut_block_type.dungeonnowloading]
-			coiling_stone_pillar = true
-			stone_tile = true
-			azuro_oak_plank = true
-
 		[types.cut_block_type.tconstruct]
 			nahuatl = true
 			blazewood = true
@@ -705,9 +700,6 @@
 		[types.wood_type.architects_palette]
 			twisted = true
 
-		[types.wood_type.dungeonnowloading]
-			azuro_oak = true
-
 		[types.wood_type.tconstruct]
 			greenheart = true
 			skyroot = true
@@ -782,9 +774,6 @@
 
 		[types.leaves_type.architects_palette]
 			twisted = true
-
-		[types.leaves_type.dungeonnowloading]
-			azuro = true
 
 		[types.leaves_type.tconstruct]
 			earth_slime = true

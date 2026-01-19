@@ -84,7 +84,7 @@ ServerEvents.recipes(event => {
     event.remove({ type: "create:fan_blasting", output: "immersiveengineering:slag_glass" })
 
     // conflict with thermal:slag_block: slag brick is now stonecutting only
-    //event.remove({ type: "minecraft:crafting_shaped", output: "immersiveengineering:slag_brick" })
+    // event.remove({ type: "minecraft:crafting_shaped", output: "immersiveengineering:slag_brick" })
 
     // get all our slags in one place
     event.replaceInput({}, "thermal:slag", "#forge:slag")
@@ -527,7 +527,7 @@ ServerEvents.recipes(event => {
 
     // remove redundant "rose quartz" for polished rose quartz
     event.replaceOutput({}, "create:rose_quartz", "create:polished_rose_quartz")// jaopca only
-    //event.replaceInput({}, "create:rose_quartz", "create:polished_rose_quartz")// jaopca, cosmetic stonecutting block, rock candy
+    // event.replaceInput({}, "create:rose_quartz", "create:polished_rose_quartz")// jaopca, cosmetic stonecutting block, rock candy
 
     // remove bugged melting recipe for "raw tungsten" which doesn't exist
     event.remove({ id: "tconstruct:smeltery/melting/metal/tungsten/raw" })
@@ -550,7 +550,7 @@ ServerEvents.recipes(event => {
         Item.of("thermal:lead_dust", 1).withChance(.05),
         Item.of("create:crushed_raw_lead", 1).withChance(.01),
         Item.of("thermal:raw_lead", 1).withChance(.001)],// concentrated
-        "alexscaves:galena").processingTime(500)
+    "alexscaves:galena").processingTime(500)
 
     // alexscaves scrap metal gacha
     event.recipes.create.crushing([
@@ -584,7 +584,7 @@ ServerEvents.recipes(event => {
 
         Item.of("tconstruct:debris_nugget", 1).withChance(.000001)
     ],
-        "alexscaves:scrap_metal").processingTime(1)
+    "alexscaves:scrap_metal").processingTime(1)
 
     // synthesize alexscaves neodymium using nuclearcraft neodymium dust which is otherwise useless
     event.custom({

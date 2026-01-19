@@ -1,16 +1,16 @@
 // priority: 100
 
-var colours = ["white", "orange", "magenta", "light_blue", "lime", "pink", "purple", "light_gray", "gray", "cyan", "brown", "green", "blue", "red", "black", "yellow"]
-var native_metals = ["iron", "zinc", "lead", "copper", "nickel", "gold",
+let colours = ["white", "orange", "magenta", "light_blue", "lime", "pink", "purple", "light_gray", "gray", "cyan", "brown", "green", "blue", "red", "black", "yellow"]
+let native_metals = ["iron", "zinc", "lead", "copper", "nickel", "gold",
     // A2: more metals
     "tin", "aluminum", "boron", "calorite", "cobalt", "desh", "lithium", "magnesium", "ostrum", "platinum", "silver", "thorium", "anthralite", "uranium"]
 
-var wood_types = ["minecraft:oak", "minecraft:spruce", "minecraft:birch", "minecraft:jungle", "minecraft:acacia", "minecraft:dark_oak", "minecraft:mangrove", "minecraft:cherry", "minecraft:crimson", "minecraft:warped"]
+let wood_types = ["minecraft:oak", "minecraft:spruce", "minecraft:birch", "minecraft:jungle", "minecraft:acacia", "minecraft:dark_oak", "minecraft:mangrove", "minecraft:cherry", "minecraft:crimson", "minecraft:warped"]
 
-var unregistered_axes = []
+let unregistered_axes = []
 
 // helper for 3x3 shaped recipes with a center item
-var donutCraft = (event, output, outer, inner) => {
+let donutCraft = (event, output, outer, inner) => {
     return event.shaped(output, [
         "AAA",
         "ABA",
@@ -28,7 +28,7 @@ var donutCraft = (event, output, outer, inner) => {
  * @param {ItemStackJS|string} outputIngredient
  * @param {ItemStackJS|string} inputIngredient
  */
-var createMachine = (machineItem, event, outputIngredient, inputIngredient) => {
+let createMachine = (machineItem, event, outputIngredient, inputIngredient) => {
     console.log(`createMachine called with: machineItem=${machineItem}, outputIngredient=${outputIngredient}, inputIngredient=${inputIngredient}`)
 
     if (!event) {
@@ -92,44 +92,44 @@ var createMachine = (machineItem, event, outputIngredient, inputIngredient) => {
     }
 }
 
-var andesiteMachine = (event, outputIngredient, inputIngredient) => {
+let andesiteMachine = (event, outputIngredient, inputIngredient) => {
     return createMachine("kubejs:andesite_machine", event, outputIngredient, inputIngredient)
 }
 
-var copperMachine = (event, outputIngredient, inputIngredient) => {
+let copperMachine = (event, outputIngredient, inputIngredient) => {
     return createMachine("kubejs:copper_machine", event, outputIngredient, inputIngredient)
 }
 
-var goldMachine = (event, outputIngredient, inputIngredient) => {
+let goldMachine = (event, outputIngredient, inputIngredient) => {
     return createMachine("kubejs:gold_machine", event, outputIngredient, inputIngredient)
 }
 
-var brassMachine = (event, outputIngredient, inputIngredient) => {
+let brassMachine = (event, outputIngredient, inputIngredient) => {
     return createMachine("kubejs:brass_machine", event, outputIngredient, inputIngredient)
 }
 
-var zincMachine = (event, outputIngredient, inputIngredient) => {
+let zincMachine = (event, outputIngredient, inputIngredient) => {
     return createMachine("kubejs:zinc_machine", event, outputIngredient, inputIngredient)
 }
 
-var leadMachine = (event, outputIngredient, inputIngredient) => {
+let leadMachine = (event, outputIngredient, inputIngredient) => {
     return createMachine("kubejs:lead_machine", event, outputIngredient, inputIngredient)
 }
 
 
-var invarMachine = (event, outputIngredient, inputIngredient) => {
+let invarMachine = (event, outputIngredient, inputIngredient) => {
     return createMachine("thermal:machine_frame", event, outputIngredient, inputIngredient)
 }
 
-var enderiumMachine = (event, outputIngredient, inputIngredient) => {
+let enderiumMachine = (event, outputIngredient, inputIngredient) => {
     return createMachine("kubejs:enderium_machine", event, outputIngredient, inputIngredient)
 }
 
-var fluixMachine = (event, outputIngredient, inputIngredient) => {
+let fluixMachine = (event, outputIngredient, inputIngredient) => {
     return createMachine("ae2:controller", event, outputIngredient, inputIngredient)
 }
 
-var toThermalInputJson = (value) => {
+let toThermalInputJson = (value) => {
     if (value == null) return {};
     let item = Item.of(value);
     if (!item.isEmpty()) {
@@ -156,7 +156,7 @@ var toThermalInputJson = (value) => {
     }
 }
 
-var toThermalOutputJson = (value) => {
+let toThermalOutputJson = (value) => {
     if (value == null) return {};
     let item = Item.of(value);
     if (!item.isEmpty()) {
@@ -179,7 +179,7 @@ var toThermalOutputJson = (value) => {
     return {};
 }
 
-var addTreeOutput = (event, trunk, leaf, fluid) => {
+let addTreeOutput = (event, trunk, leaf, fluid) => {
     return event.custom({
         type: "thermal:tree_extractor",
         trunk: {
@@ -209,7 +209,7 @@ var addTreeOutput = (event, trunk, leaf, fluid) => {
  * @param {string} metalName the name of the metal to create casting recipes (ex: "forge:ingots/{metalName}")
  * @param {number} castingTime the time it takes to cast a block in a casting table (nugget and ingot casting times will be calculated based on that)
  */
-var metalCasting = (event, metalName, castingTime) => {
+let metalCasting = (event, metalName, castingTime) => {
     let fluidTag = "forge:molten_" + metalName
     let blockTag = "forge:storage_blocks/" + metalName
 
@@ -294,7 +294,7 @@ var metalCasting = (event, metalName, castingTime) => {
  * @param {number} meltingTime the time it takes to melt a block in the smeltery
  * @param {number} temperature the temperature required to melt a block in the smeltery
  */
-var metalMelting = (event, metalName, outputFluid, meltingTime, temperature) => {
+let metalMelting = (event, metalName, outputFluid, meltingTime, temperature) => {
     let blockTag = "forge:storage_blocks/" + metalName
 
     // block melting
@@ -355,7 +355,7 @@ var metalMelting = (event, metalName, outputFluid, meltingTime, temperature) => 
 }
 
 /** Used in datapack events instead of recipe events */
-var addChiselingRecipe = (event, id, items, overwrite) => {
+let addChiselingRecipe = (event, id, items, overwrite) => {
     const json = {
         type: "rechiseled:chiseling",
         entries: [],
@@ -370,7 +370,7 @@ var addChiselingRecipe = (event, id, items, overwrite) => {
 }
 
 /** Used in a datapack event to remove a configured feature by its resource location */
-var removeFeature = function (event, featureName) {
+let removeFeature = function (event, featureName) {
     featureName = featureName.split(":")
     let namespace = featureName[0]
     let identifier = featureName[1]
@@ -383,7 +383,7 @@ var removeFeature = function (event, featureName) {
 /** Used in a datapack event to add ore generation for an ore to the overworld
  * This function only works for ores with both a stone and deepslate variant
 */
-var addOregenOverworld = function (event, featureName, blockName, heightType, heightMin, heightMax, veinCount, veinSize, discardChanceOnAirExposure, biomeTag) {
+let addOregenOverworld = function (event, featureName, blockName, heightType, heightMin, heightMax, veinCount, veinSize, discardChanceOnAirExposure, biomeTag) {
     featureName = featureName.split(":")
     let namespace = featureName[0]
     let identifier = featureName[1]

@@ -312,30 +312,30 @@ ServerEvents.recipes(event => {
         let crushedOre = "create:crushed_raw_" + materialName
         let fluid = "tconstruct:molten_" + materialName
         switch (materialName) {
-            case "anthralite":
-                crushedOre = "scguns:crushed_raw_" + materialName
-                fluid = "kubejs:molten_" + materialName// made in generate.js
-                break
-            case "boron":
-            case "lithium":
-            case "magnesium":
-            case "thorium":
-                crushedOre = "jaopca:create_crushed." + materialName
-                fluid = "nuclearcraft:" + materialName
-                break
-            case "cobalt":
-                crushedOre = "jaopca:create_crushed." + materialName
-                fluid = "tconstruct:molten_" + materialName
-                break
-            case "calorite":
-            case "desh":
-            case "ostrum":
-                crushedOre = "jaopca:create_crushed." + materialName
-                fluid = "tcintegrations:molten_" + materialName
-                break
-            default:
-                crushedOre = "create:crushed_raw_" + materialName
-                fluid = "tconstruct:molten_" + materialName
+        case "anthralite":
+            crushedOre = "scguns:crushed_raw_" + materialName
+            fluid = "kubejs:molten_" + materialName// made in generate.js
+            break
+        case "boron":
+        case "lithium":
+        case "magnesium":
+        case "thorium":
+            crushedOre = "jaopca:create_crushed." + materialName
+            fluid = "nuclearcraft:" + materialName
+            break
+        case "cobalt":
+            crushedOre = "jaopca:create_crushed." + materialName
+            fluid = "tconstruct:molten_" + materialName
+            break
+        case "calorite":
+        case "desh":
+        case "ostrum":
+            crushedOre = "jaopca:create_crushed." + materialName
+            fluid = "tcintegrations:molten_" + materialName
+            break
+        default:
+            crushedOre = "create:crushed_raw_" + materialName
+            fluid = "tconstruct:molten_" + materialName
         }
 
         let oreTag = ("#forge:ores/" + materialName)

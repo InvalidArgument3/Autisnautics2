@@ -407,13 +407,21 @@
 				""
 				"{cabin.quest.58B534C4AEB4139D.description2}"
 			]
-			icon: "thermal:flux_magnet"
+			icon: {
+				Count: 1
+				id: "thermal:flux_magnet"
+				tag: { }
+			}
 			id: "58B534C4AEB4139D"
 			subtitle: "{cabin.quest.58B534C4AEB4139D.subtitle}"
 			tasks: [
 				{
 					id: "7538F2E8CFAF69F6"
-					item: "thermal:flux_magnet"
+					item: {
+						Count: 1
+						id: "thermal:flux_magnet"
+						tag: { }
+					}
 					type: "item"
 				}
 				{
@@ -456,13 +464,21 @@
 				""
 				"{cabin.quest.6D1519B746E032FB.description2}"
 			]
-			icon: "ae2:entropy_manipulator"
+			icon: {
+				Count: 1
+				id: "ae2:entropy_manipulator"
+				tag: { }
+			}
 			id: "6D1519B746E032FB"
 			subtitle: "{cabin.quest.6D1519B746E032FB.subtitle}"
 			tasks: [
 				{
 					id: "641183133CA49CCA"
-					item: "ae2:entropy_manipulator"
+					item: {
+						Count: 1
+						id: "ae2:entropy_manipulator"
+						tag: { }
+					}
 					type: "item"
 				}
 				{

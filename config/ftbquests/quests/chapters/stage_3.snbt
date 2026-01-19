@@ -234,13 +234,21 @@
 		{
 			dependencies: ["3BE15AA5C237AB80"]
 			description: ["{cabin.quest.7B23C933D76458BA.description1}"]
-			icon: "create:chromatic_compound"
+			icon: {
+				Count: 1
+				id: "create:chromatic_compound"
+				tag: { }
+			}
 			id: "7B23C933D76458BA"
 			subtitle: "{cabin.quest.7B23C933D76458BA.subtitle}"
 			tasks: [
 				{
 					id: "2F334C3D67DE059C"
-					item: "create:chromatic_compound"
+					item: {
+						Count: 1
+						id: "create:chromatic_compound"
+						tag: { }
+					}
 					type: "item"
 				}
 				{

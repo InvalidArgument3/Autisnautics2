@@ -242,7 +242,11 @@
 			size: 2.0d
 			tasks: [{
 				dimension: "ad_astra:moon"
-				icon: "ad_astra:tier_1_rocket"
+				icon: {
+					Count: 1
+					id: "ad_astra:tier_1_rocket"
+					tag: { }
+				}
 				id: "696B878D65A6BFCC"
 				title: "{cabin.task.696B878D65A6BFCC}"
 				type: "dimension"

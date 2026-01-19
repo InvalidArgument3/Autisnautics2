@@ -773,13 +773,21 @@
 				"69311E02A8B3451D"
 			]
 			description: ["{cabin.quest.73473DC7269EC5B0.description1}"]
-			icon: "ad_astra:tier_1_rocket"
+			icon: {
+				Count: 1
+				id: "ad_astra:tier_1_rocket"
+				tag: { }
+			}
 			id: "73473DC7269EC5B0"
 			shape: "circle"
 			subtitle: "{cabin.quest.73473DC7269EC5B0.subtitle}"
 			tasks: [{
 				id: "40C42947058AA817"
-				item: "ad_astra:tier_1_rocket"
+				item: {
+					Count: 1
+					id: "ad_astra:tier_1_rocket"
+					tag: { }
+				}
 				type: "item"
 				weak_nbt_match: true
 			}]

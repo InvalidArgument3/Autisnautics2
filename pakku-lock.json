@@ -22601,7 +22601,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "tide-forge-1.20.1-2.0.1.jar",
+                    "file_name": "tide-forge-1.20.1-2.0.2.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -22609,20 +22609,20 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/die1AF7i/versions/jfjBsPjl/tide-forge-1.20.1-2.0.1.jar",
-                    "id": "jfjBsPjl",
+                    "url": "https://cdn.modrinth.com/data/die1AF7i/versions/9Gjg49L8/tide-forge-1.20.1-2.0.2.jar",
+                    "id": "9Gjg49L8",
                     "parent_id": "die1AF7i",
                     "hashes": {
-                        "sha512": "bebc3763763b23b6c074f50af1b4955e17f99b39acbc88fc6df5d4e5b97b627c4038d6f19c621cb5f9cb0a288b8f0783e5866cc690c4e74c34ddd859ff45dcb2",
-                        "sha1": "0c8fcbeee0173330cb598b7b9f886f4ec45992ff"
+                        "sha512": "d2ff31f3958ccb3e093106f519f9c57add03f13876c8e8578a2356f47d444dc3b3839a359f7366fd953f88f7cffe5680d83e4b2490bbec3d65bf43d88571cf00",
+                        "sha1": "049c4488370fc69380dab045addff54b631ae793"
                     },
                     "required_dependencies": [],
-                    "size": 1979750,
-                    "date_published": "2026-01-14T03:13:31.746652Z"
+                    "size": 1990058,
+                    "date_published": "2026-01-19T13:04:47.061149Z"
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "tide-forge-1.20.1-2.0.1.jar",
+                    "file_name": "tide-forge-1.20.1-2.0.2.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -22630,18 +22630,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7457/3/tide-forge-1.20.1-2.0.1.jar",
-                    "id": "7457003",
+                    "url": "https://edge.forgecdn.net/files/7488/320/tide-forge-1.20.1-2.0.2.jar",
+                    "id": "7488320",
                     "parent_id": "884685",
                     "hashes": {
-                        "sha1": "0c8fcbeee0173330cb598b7b9f886f4ec45992ff",
-                        "md5": "ca8b26eef8312fc934cd0f98d6e8692c"
+                        "sha1": "049c4488370fc69380dab045addff54b631ae793",
+                        "md5": "440e9e71528198ae04e12c084208a5bd"
                     },
                     "required_dependencies": [
                         "348521"
                     ],
-                    "size": 1979750,
-                    "date_published": "2026-01-14T03:09:55.807Z"
+                    "size": 1990058,
+                    "date_published": "2026-01-19T13:01:08.150Z"
                 }
             ]
         },

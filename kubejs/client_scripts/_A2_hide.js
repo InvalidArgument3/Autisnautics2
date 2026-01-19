@@ -14,9 +14,9 @@ JEIEvents.hideItems(event => {
     // replaced with polished equivalent
     event.hide("create:rose_quartz")
     // tfmg meme stones
-    event.hide("tfmg:lignite")
-    event.hide(/.*tfmg.*galena.*/)
-    event.hide(/.*tfmg.*bauxite.*/)
+    // event.hide("tfmg:lignite")
+    // event.hide(/.*tfmg.*galena.*/)
+    // event.hide(/.*tfmg.*bauxite.*/)
     // useless entry
     event.hide("nuclearcraft:portal")
     // redundant
@@ -33,23 +33,23 @@ JEIEvents.hideItems(event => {
     hiddenNCMetals.forEach(metal => { event.hide("nuclearcraft:" + metal + "_bucket") })
     event.hide("createbigcannons:molten_steel_bucket")
     event.hide("createbigcannons:molten_bronze_bucket")
-    event.hide("tfmg:molten_steel_bucket")
+    // event.hide("tfmg:molten_steel_bucket")
     // crimes against humanity
-    event.hide("tfmg:casting_basin")
-    event.hide("tfmg:casting_spout")
-    event.hide("tfmg:block_mold")
-    event.hide("tfmg:ingot_mold")
+    // event.hide("tfmg:casting_basin")
+    // event.hide("tfmg:casting_spout")
+    // event.hide("tfmg:block_mold")
+    // event.hide("tfmg:ingot_mold")
     // removed
     event.hide("jaopca:create_crushed.netherite_scrap")
     event.hide("jaopca:dusts.netherite_scrap")
     event.hide("jaopca:molten.netherite_scrap")
     event.hide("jaopca:molten.coal")
     // coal coke unification - thermal
-    event.hide("tfmg:coal_coke")
+    // event.hide("tfmg:coal_coke")
     event.hide("immersiveengineering:coal_coke")
     // creosote unification - IE
     event.hide("thermal:creosote_bucket")
-    event.hide("tfmg:creosote_bucket")
+    // event.hide("tfmg:creosote_bucket")
 })
 
 JEIEvents.hideFluids(event => {
@@ -61,12 +61,12 @@ JEIEvents.hideFluids(event => {
     hiddenNCMetals.forEach(metal => { event.hide("nuclearcraft:" + metal) })
     event.hide("createbigcannons:molten_steel")
     event.hide("createbigcannons:molten_bronze")
-    event.hide("tfmg:molten_steel")
+    // event.hide("tfmg:molten_steel")
     // coal dupe
     event.hide("jaopca:molten.coal")
     // creosote unification - IE
     event.hide("thermal:creosote")
-    event.hide("tfmg:creosote")
+    // event.hide("tfmg:creosote")
 })
 
 JEIEvents.addItems(event => {

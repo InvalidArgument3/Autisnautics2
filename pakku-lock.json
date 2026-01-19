@@ -5071,6 +5071,49 @@
             ]
         },
         {
+            "pakku_id": "gREy8LDJJ2Ndtr0u",
+            "pakku_links": [
+                "er7YMGNXucfCGs2W",
+                "TEFUsnpPFy2T7cvQ"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "create-better-fps"
+            },
+            "name": {
+                "curseforge": "Create Better FPS"
+            },
+            "id": {
+                "curseforge": "1217518"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "createbetterfps-1.20.1-1.1.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6716/449/createbetterfps-1.20.1-1.1.1.jar",
+                    "id": "6716449",
+                    "parent_id": "1217518",
+                    "hashes": {
+                        "sha1": "519f436f67c316db546cbab54a03fdbfd17fe9f1",
+                        "md5": "36f7928d52a27109536bcd5a21f5214d"
+                    },
+                    "required_dependencies": [
+                        "908741",
+                        "581495"
+                    ],
+                    "size": 24819,
+                    "date_published": "2025-07-01T12:41:36.603Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "GWxv68UoOTLr2vAk",
             "type": "MOD",
             "side": "BOTH",
@@ -5642,6 +5685,72 @@
             ]
         },
         {
+            "pakku_id": "VEiA0SwpYlstMeYt",
+            "pakku_links": [
+                "6MJf6KGhCAEF1t9w"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "create-diesel-generators",
+                "modrinth": "create-diesel-generators"
+            },
+            "name": {
+                "curseforge": "Create: Diesel Generators",
+                "modrinth": "Create: Diesel Generators"
+            },
+            "id": {
+                "curseforge": "869316",
+                "modrinth": "ZM3tt6p1"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "createdieselgenerators-1.20.1-1.3.8.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7350/909/createdieselgenerators-1.20.1-1.3.8.jar",
+                    "id": "7350909",
+                    "parent_id": "869316",
+                    "hashes": {
+                        "sha1": "abef5050bd1a700a892208ed4dd913011093d0e2",
+                        "md5": "af761b171cffdea81b27e398d0b2520d"
+                    },
+                    "required_dependencies": [],
+                    "size": 3121891,
+                    "date_published": "2025-12-18T19:11:38.897Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "createdieselgenerators-1.20.1-1.3.8.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/ZM3tt6p1/versions/co8qZn3O/createdieselgenerators-1.20.1-1.3.8.jar",
+                    "id": "co8qZn3O",
+                    "parent_id": "ZM3tt6p1",
+                    "hashes": {
+                        "sha512": "f8afa8393c684a59ff227815dbf6feb1538681ec79e9077ee13c7e5063a6608dfc43807c7f054d7c70b1edd4cb767cf37e4a305d7a225536496281cb3d3e3c6b",
+                        "sha1": "abef5050bd1a700a892208ed4dd913011093d0e2"
+                    },
+                    "required_dependencies": [
+                        "LNytGWDc"
+                    ],
+                    "size": 3121891,
+                    "date_published": "2025-12-18T19:14:43.602430Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "cAs4HD6vvoL6tihI",
             "type": "MOD",
             "side": "BOTH",
@@ -5833,6 +5942,77 @@
             ]
         },
         {
+            "pakku_id": "dyrzI1hsGBiRffB4",
+            "pakku_links": [
+                "zbfQnX92suDRNbq4",
+                "6MJf6KGhCAEF1t9w"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "power-grid",
+                "modrinth": "power-grid"
+            },
+            "name": {
+                "curseforge": "Create: Power Grid",
+                "modrinth": "Create: Power Grid"
+            },
+            "id": {
+                "curseforge": "1321420",
+                "modrinth": "eWiBLJ9R"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "powergrid-mc1.20.1-0.4.2.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7411/795/powergrid-mc1.20.1-0.4.2.jar",
+                    "id": "7411795",
+                    "parent_id": "1321420",
+                    "hashes": {
+                        "sha1": "778d7fbf19b194c82dfcecae29aff397846fac13",
+                        "md5": "9c21515defdb89bd9dae41c9ed0e2d81"
+                    },
+                    "required_dependencies": [
+                        "419699",
+                        "328085"
+                    ],
+                    "size": 3697645,
+                    "date_published": "2026-01-03T11:11:16.170Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "powergrid-mc1.20.1-0.4.2.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/eWiBLJ9R/versions/cpEJxSm0/powergrid-mc1.20.1-0.4.2.jar",
+                    "id": "cpEJxSm0",
+                    "parent_id": "eWiBLJ9R",
+                    "hashes": {
+                        "sha512": "69d94de4f7b17b185d9e6b988af9b0c5f4a79c15c9b4a2f05fa7bf8bf33a4a73ebe3491d51cae641167d73b30a0e6052be388695ac1847ebcf0f78074fe89e23",
+                        "sha1": "778d7fbf19b194c82dfcecae29aff397846fac13"
+                    },
+                    "required_dependencies": [
+                        "lhGA9TYQ",
+                        "LNytGWDc"
+                    ],
+                    "size": 3697645,
+                    "date_published": "2026-01-03T11:11:16.663897Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "vB5nha5wNVVykTcu",
             "type": "MOD",
             "side": "BOTH",
@@ -5896,76 +6076,6 @@
                     ],
                     "size": 10000104,
                     "date_published": "2026-01-10T22:37:20.943Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "tDjzfJx46zBnVfZL",
-            "type": "MOD",
-            "side": "BOTH",
-            "slug": {
-                "curseforge": "create-industry",
-                "modrinth": "create-tfmg"
-            },
-            "name": {
-                "curseforge": "Create: The Factory Must Grow",
-                "modrinth": "Create: The Factory Must Grow"
-            },
-            "id": {
-                "curseforge": "693815",
-                "modrinth": "USgVjXsk"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "tfmg-1.0.2f.jar",
-                    "mc_versions": [
-                        "1.20.1",
-                        "1.20.2",
-                        "1.20.3",
-                        "1.20.4",
-                        "1.20.5",
-                        "1.20.6"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/USgVjXsk/versions/ZNOx0jhg/tfmg-1.0.2f.jar",
-                    "id": "ZNOx0jhg",
-                    "parent_id": "USgVjXsk",
-                    "hashes": {
-                        "sha512": "11e9c2007ace7bfc3ef0d166a48980b058ed30b7673996edfbbce14e4ca97b110d1b2db30d8f5ff0e81d4f3cc1bec78bdcd1a47925d2ac052e64cbdc5c91407f",
-                        "sha1": "48e6b058f0d515cbb0e673d823e6e4042f9b1d37"
-                    },
-                    "required_dependencies": [
-                        "LNytGWDc"
-                    ],
-                    "size": 5343749,
-                    "date_published": "2025-12-17T16:06:07.880180Z"
-                },
-                {
-                    "type": "curseforge",
-                    "file_name": "tfmg-1.0.2f.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7344/584/tfmg-1.0.2f.jar",
-                    "id": "7344584",
-                    "parent_id": "693815",
-                    "hashes": {
-                        "sha1": "48e6b058f0d515cbb0e673d823e6e4042f9b1d37",
-                        "md5": "fd033fc4132f7cd26a0f30e6181d8fde"
-                    },
-                    "required_dependencies": [
-                        "328085"
-                    ],
-                    "size": 5343749,
-                    "date_published": "2025-12-17T16:05:38.493Z"
                 }
             ]
         },
@@ -13015,6 +13125,76 @@
                     "required_dependencies": [],
                     "size": 13371,
                     "date_published": "2024-08-01T07:25:04.183Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "TwdPC4cPuQIOMEGc",
+            "pakku_links": [
+                "VEiA0SwpYlstMeYt",
+                "bS1HEDnAlvT9akhV",
+                "LKYoNZVCHCEREEq9"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "kubejs-diesel-generators",
+                "modrinth": "kubejs-diesel-generators"
+            },
+            "name": {
+                "curseforge": "KubeJS Diesel Generators",
+                "modrinth": "KubeJS Diesel Generators"
+            },
+            "id": {
+                "curseforge": "1152400",
+                "modrinth": "10UMLVgM"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "dg_js-1.20.1-1.2.5.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7351/285/dg_js-1.20.1-1.2.5.jar",
+                    "id": "7351285",
+                    "parent_id": "1152400",
+                    "hashes": {
+                        "sha1": "2c9867a682a28db36047e6fbb09132373c90f805",
+                        "md5": "3683c6847c69b3fd832df377b0893586"
+                    },
+                    "required_dependencies": [
+                        "869316",
+                        "429371",
+                        "238086"
+                    ],
+                    "size": 72039,
+                    "date_published": "2025-12-18T21:14:45.610Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "dg_js-1.20.1-1.2.5.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/10UMLVgM/versions/B8xAKwWN/dg_js-1.20.1-1.2.5.jar",
+                    "id": "B8xAKwWN",
+                    "parent_id": "10UMLVgM",
+                    "hashes": {
+                        "sha512": "067bbf74b1cbfe5c7235b01890b0787ef901c0df897c5661d9b8f59dd6cf8f75831679c771b8cfb84daa51a6e440101fb3ddebb8b07c561b2923afeb42269c30",
+                        "sha1": "2c9867a682a28db36047e6fbb09132373c90f805"
+                    },
+                    "required_dependencies": [],
+                    "size": 72039,
+                    "date_published": "2025-12-18T21:15:42.257282Z"
                 }
             ]
         },
@@ -20652,6 +20832,82 @@
                     ],
                     "size": 1674201,
                     "date_published": "2026-01-10T20:22:55.903Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "nVJGqzjwl62atDrj",
+            "pakku_links": [
+                "HGiQAaEJg3zT3msX",
+                "6MJf6KGhCAEF1t9w",
+                "oPtS7Vv9q4YiX7y8"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "sophisticated-storage-create-integration",
+                "modrinth": "sophisticated-storage-create-integration"
+            },
+            "name": {
+                "curseforge": "Sophisticated Storage Create Integration",
+                "modrinth": "Sophisticated Storage Create Integration"
+            },
+            "id": {
+                "curseforge": "1226755",
+                "modrinth": "MJ0hdevs"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "sophisticatedstoragecreateintegration-1.20.1-0.1.15.63.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7397/710/sophisticatedstoragecreateintegration-1.20.1-0.1.15.63.jar",
+                    "id": "7397710",
+                    "parent_id": "1226755",
+                    "hashes": {
+                        "sha1": "3f9a878b8f454a1c6af6d05dab8c4bc04bb70592",
+                        "md5": "0145afade683ea99a9a236818cf22300"
+                    },
+                    "required_dependencies": [
+                        "618298",
+                        "328085",
+                        "619320"
+                    ],
+                    "size": 127365,
+                    "date_published": "2025-12-30T20:37:19.837Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "sophisticatedstoragecreateintegration-1.20.1-0.1.15.63.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/MJ0hdevs/versions/92dcbT4E/sophisticatedstoragecreateintegration-1.20.1-0.1.15.63.jar",
+                    "id": "92dcbT4E",
+                    "parent_id": "MJ0hdevs",
+                    "hashes": {
+                        "sha512": "6c2678c01173e040442b948efd7798a72fef87b10bdfefb681f7106564861cc76c6ab669d944ffc344987298260dec5867b3d38afbb59d77a7590aa154306fe9",
+                        "sha1": "494319eca4d2430b5abb699d28194c37dbdf3d92"
+                    },
+                    "required_dependencies": [
+                        "hMlaZH8f",
+                        "nmoqTijg",
+                        "LNytGWDc"
+                    ],
+                    "size": 127365,
+                    "date_published": "2025-12-30T20:37:35.552742Z"
                 }
             ]
         },

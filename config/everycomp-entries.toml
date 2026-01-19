@@ -615,54 +615,6 @@
 			cracked_dean_brick = true
 			mossy_dean_brick = true
 
-		[types.cut_block_type.tfmg]
-			slag_bricks = true
-			factory_floor = true
-			hardened_planks = true
-			concrete = true
-			rebar_concrete = true
-			white_concrete = true
-			blue_concrete = true
-			light_blue_concrete = true
-			red_concrete = true
-			green_concrete = true
-			lime_concrete = true
-			pink_concrete = true
-			magenta_concrete = true
-			yellow_concrete = true
-			gray_concrete = true
-			light_gray_concrete = true
-			brown_concrete = true
-			cyan_concrete = true
-			purple_concrete = true
-			orange_concrete = true
-			black_concrete = true
-			white_rebar_concrete = true
-			blue_rebar_concrete = true
-			light_blue_rebar_concrete = true
-			red_rebar_concrete = true
-			green_rebar_concrete = true
-			lime_rebar_concrete = true
-			pink_rebar_concrete = true
-			magenta_rebar_concrete = true
-			yellow_rebar_concrete = true
-			gray_rebar_concrete = true
-			light_gray_rebar_concrete = true
-			brown_rebar_concrete = true
-			cyan_rebar_concrete = true
-			purple_rebar_concrete = true
-			orange_rebar_concrete = true
-			black_rebar_concrete = true
-			asphalt = true
-			cut_bauxite = true
-			polished_cut_bauxite = true
-			cut_bauxite_brick = true
-			small_bauxite_brick = true
-			cut_galena = true
-			polished_cut_galena = true
-			cut_galena_brick = true
-			small_galena_brick = true
-
 		[types.cut_block_type.scguns]
 			cut_diamond_steel = true
 			diamond_steel_tiles = true
@@ -764,6 +716,9 @@
 
 		[types.wood_type.minecraft]
 			pale_oak = true
+
+		[types.wood_type.createdieselgenerators]
+			chip_wood = true
 
 	[types.leaves_type]
 

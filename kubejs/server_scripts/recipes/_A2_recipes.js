@@ -78,20 +78,20 @@ ServerEvents.recipes(event => {
 
     // //tfmg/IE integration
     // re-add blasting mixture recipe as metallurgy.js removes all input:#create:crushed_raw_materials
-    event.recipes.create.mixing("tfmg:blasting_mixture", [Item.of("thermal:iron_dust", 3), "tfmg:limesand"])// Item.of(#tag) doesnt work right for some reason
+    // event.recipes.create.mixing("tfmg:blasting_mixture", [Item.of("thermal:iron_dust", 3), "tfmg:limesand"])// Item.of(#tag) doesnt work right for some reason
     // thermal rockwool and IE slag glass conflict: rockwool is now blasting only, slag glass is smelting only
     event.remove({ type: "minecraft:smelting", output: "thermal:white_rockwool" })
     event.remove({ type: "create:fan_blasting", output: "immersiveengineering:slag_glass" })
 
     // conflict with thermal:slag_block: slag brick is now stonecutting only
-    event.remove({ type: "minecraft:crafting_shaped", output: "immersiveengineering:slag_brick" })
+    //event.remove({ type: "minecraft:crafting_shaped", output: "immersiveengineering:slag_brick" })
 
     // get all our slags in one place
     event.replaceInput({}, "thermal:slag", "#forge:slag")
-    event.replaceInput({}, "tfmg:slag", "#forge:slag")
-    event.replaceInput({}, "immersiveengineering:slag", "#forge:slag")
-    event.replaceOutput({}, "thermal:slag", "tfmg:slag")
-    event.replaceOutput({}, "immersiveengineering:slag", "tfmg:slag")// IE might still give IE slag
+    // event.replaceInput({}, "tfmg:slag", "#forge:slag")
+    // event.replaceInput({}, "immersiveengineering:slag", "#forge:slag")
+    // event.replaceOutput({}, "thermal:slag", "tfmg:slag")
+    // event.replaceOutput({}, "immersiveengineering:slag", "tfmg:slag")// IE might still give IE slag
     // isn't almostunified supposed to do this?
 
     event.remove({ output: "immersiveengineering:sawdust" })// sawdust floor conflicts with JAOPCA storage block
@@ -158,11 +158,11 @@ ServerEvents.recipes(event => {
     event.replaceInput({ output: "thermal:junk_net" }, "minecraft:stick", "rats:garbage_pile")
 
     // tfmg/ie synthetic leathers and strings support
-    event.replaceInput({}, "minecraft:leather", "#forge:leathers")
-    event.replaceInput({}, "minecraft:string", "#forge:string")
+    // event.replaceInput({}, "minecraft:leather", "#forge:leathers")
+    // event.replaceInput({}, "minecraft:string", "#forge:string")
     // fix synthetic leather recipe collision with immersiveengineering:plate_duroplast
-    event.remove({ output: "tfmg:synthetic_leather" })
-    event.recipes.create.deploying("tfmg:synthetic_leather", ["#forge:ingots/plastic", "minecraft:paper"])
+    // event.remove({ output: "tfmg:synthetic_leather" })
+    // event.recipes.create.deploying("tfmg:synthetic_leather", ["#forge:ingots/plastic", "minecraft:paper"])
 
     // make tome of alkahestry an endgame item
     event.remove({ type: "minecraft:crafting_shapeless", input: "reliquary:witch_hat", output: "reliquary:alkahestry_tome" })
@@ -341,7 +341,7 @@ ServerEvents.recipes(event => {
         "outputFluids": [
             {
                 "amount": 250,
-                "tag": "forge:radaway"
+                "fluid": "nuclearcraft:radaway"
             }
         ],
         "powerModifier": 1.0,
@@ -365,7 +365,7 @@ ServerEvents.recipes(event => {
         "outputFluids": [
             {
                 "amount": 250,
-                "tag": "forge:radaway_slow"
+                "fluid": "nuclearcraft:radaway_slow"
             }
         ],
         "powerModifier": 1.0,
@@ -381,13 +381,14 @@ ServerEvents.recipes(event => {
     // tag/integrate nuclearcraft:bioplastic and rats:raw_plastic
     // remove rats:raw_plastic, replace with plastic sheet
     event.remove({ output: "rats:raw_plastic" })
-    event.replaceInput({}, "rats:raw_plastic", "tfmg:plastic_sheet")
+    // event.replaceInput({}, "rats:raw_plastic", "tfmg:plastic_sheet")
     // loot removal below
     event.remove({ input: "rats:plastic_waste" })// just in case?
 
     // converting plastic waste to liquid plastic by "recycling"
-    event.recipes.create.mixing([Fluid.of("tfmg:liquid_plastic", 200), "quark:dirty_shard"], [Item.of("rats:plastic_waste", 9), Fluid.of("minecraft:water", 1000)]).heated()
+    // event.recipes.create.mixing([Fluid.of("tfmg:liquid_plastic", 200), "quark:dirty_shard"], [Item.of("rats:plastic_waste", 9), Fluid.of("minecraft:water", 1000)]).heated()
     // glass shard gives em an extra step to process plus it's a glass source I guess
+    /*
     // alt recipe: nuclearcraft melter, 1 plastic waste -> 25mb liquid plastic (8:1 and no waste product)
     event.custom({
         "type": "nuclearcraft:melter",
@@ -400,7 +401,7 @@ ServerEvents.recipes(event => {
         "outputFluids": [
             {
                 "amount": 25,
-                "tag": "kubejs:liquid_plastic"// might have to tag this too?
+                "fluid": "kubejs:liquid_plastic"
             }
         ],
         "powerModifier": 1.0,
@@ -418,7 +419,7 @@ ServerEvents.recipes(event => {
         "outputFluids": [
             {
                 "amount": 200,
-                "tag": "kubejs:liquid_plastic"
+                "fluid": "kubejs:liquid_plastic"
             }
         ],
         "powerModifier": 1.0,
@@ -426,7 +427,7 @@ ServerEvents.recipes(event => {
         "timeModifier": 1.0
     })
     // same as above but for "raw plastic" (found as loot only since i couldn't remove it with kube i guess)
-    event.recipes.create.mixing([Fluid.of("tfmg:liquid_plastic", 25)], [Item.of("rats:raw_plastic", 1), Fluid.of("minecraft:water", 250)]).heated()
+    // event.recipes.create.mixing([Fluid.of("tfmg:liquid_plastic", 25)], [Item.of("rats:raw_plastic", 1), Fluid.of("minecraft:water", 250)]).heated()
     event.custom({
         "type": "nuclearcraft:melter",
         "input": [
@@ -438,13 +439,14 @@ ServerEvents.recipes(event => {
         "outputFluids": [
             {
                 "amount": 25,
-                "tag": "kubejs:liquid_plastic"// might have to tag this too?
+                "fluid": "kubejs:liquid_plastic"
             }
         ],
         "powerModifier": 1.0,
         "radiation": 1.0,
         "timeModifier": 1.0
     })
+    */
     // replace sugarcane for bioplastic with biomass
     event.remove({ output: "nuclearcraft:bioplastic" })
     event.custom({
@@ -466,7 +468,7 @@ ServerEvents.recipes(event => {
         "timeModifier": 1.0
     })
     // oredict the plastics
-    event.replaceInput({}, "tfmg:plastic_sheet", "#forge:ingots/plastic")
+    // event.replaceInput({}, "tfmg:plastic_sheet", "#forge:ingots/plastic")
     event.replaceInput({}, "nuclearcraft:bioplastic", "#forge:ingots/plastic")
 
     // fix broken radaway item recipes
@@ -525,19 +527,19 @@ ServerEvents.recipes(event => {
 
     // remove redundant "rose quartz" for polished rose quartz
     event.replaceOutput({}, "create:rose_quartz", "create:polished_rose_quartz")// jaopca only
-    event.replaceInput({}, "create:rose_quartz", "create:polished_rose_quartz")// jaopca, cosmetic stonecutting block, rock candy
+    //event.replaceInput({}, "create:rose_quartz", "create:polished_rose_quartz")// jaopca, cosmetic stonecutting block, rock candy
 
     // remove bugged melting recipe for "raw tungsten" which doesn't exist
     event.remove({ id: "tconstruct:smeltery/melting/metal/tungsten/raw" })
     event.remove({ id: "tconstruct:smeltery/melting/metal/tungsten/raw_block" })
 
     // tfmg meme stones
-    event.remove({ input: /.*tfmg.*galena.*/ })
-    event.remove({ input: /.*tfmg.*bauxite.*/ })
-    event.remove({ input: "tfmg:lignite" })
-    event.remove({ output: /.*tfmg.*galena.*/ })
-    event.remove({ output: /.*tfmg.*bauxite.*/ })
-    event.remove({ output: "tfmg:lignite" })
+    // event.remove({ input: /.*tfmg.*galena.*/ })
+    // event.remove({ input: /.*tfmg.*bauxite.*/ })
+    // event.remove({ input: "tfmg:lignite" })
+    // event.remove({ output: /.*tfmg.*galena.*/ })
+    // event.remove({ output: /.*tfmg.*bauxite.*/ })
+    // event.remove({ output: "tfmg:lignite" })
 
     // alexscaves limestone integration
     event.replaceInput({}, "alexscaves:limestone", "#create:stone_types/limestone")
@@ -548,7 +550,7 @@ ServerEvents.recipes(event => {
         Item.of("thermal:lead_dust", 1).withChance(.05),
         Item.of("create:crushed_raw_lead", 1).withChance(.01),
         Item.of("thermal:raw_lead", 1).withChance(.001)],// concentrated
-    "alexscaves:galena").processingTime(500)
+        "alexscaves:galena").processingTime(500)
 
     // alexscaves scrap metal gacha
     event.recipes.create.crushing([
@@ -582,7 +584,7 @@ ServerEvents.recipes(event => {
 
         Item.of("tconstruct:debris_nugget", 1).withChance(.000001)
     ],
-    "alexscaves:scrap_metal").processingTime(1)
+        "alexscaves:scrap_metal").processingTime(1)
 
     // synthesize alexscaves neodymium using nuclearcraft neodymium dust which is otherwise useless
     event.custom({
@@ -701,15 +703,15 @@ ServerEvents.recipes(event => {
     // fixing weird coal coke storage block recipes
     event.remove({ id: "thermal:storage/coal_coke_block" })
     event.remove({ id: "immersiveengineering:crafting/coal_coke_to_coke" })
-    event.remove({ id: "tfmg:crafting/coal_coke_block" })
-
-    event.remove({ id: "tfmg:crafting/coal_coke_from_block" })
+    // event.remove({ id: "tfmg:crafting/coal_coke_block" })
+    //
+    // event.remove({ id: "tfmg:crafting/coal_coke_from_block" })
     event.remove({ id: "immersiveengineering:crafting/coke_to_coal_coke" })
-    event.remove({ output: "tfmg:coal_coke_block" })
+    // event.remove({ output: "tfmg:coal_coke_block" })
     event.shapeless("thermal:coal_coke_block", ["9x #forge:coal_coke"])
 
     // //creosote unification - have to use IE because it's hardcoded
     // tfmg hardened wood block = treated wood block + 125mb more creosote
-    event.remove({ id: "tfmg:filling/hardened_wood_creosote" })
-    event.recipes.create.filling("tfmg:hardened_planks", ["#forge:treated_wood", Fluid.of("immersiveengineering:creosote", 125)])
+    // event.remove({ id: "tfmg:filling/hardened_wood_creosote" })
+    // event.recipes.create.filling("tfmg:hardened_planks", ["#forge:treated_wood", Fluid.of("immersiveengineering:creosote", 125)])
 })

@@ -11,21 +11,21 @@ StartupEvents.registry("item", event => {
     types.forEach(e => {
         let id = e.toLowerCase()
         event.create(id + "_crystal_seed").texture("cabin:item/crystal_seed_" + id).displayName(e + " Quartz Seed")
-        event.create("growing_" + id + "_seed","create:sequenced_assembly").texture("cabin:item/crystal_seed_" + id).displayName(e + " Quartz Seed")
+        event.create("growing_" + id + "_seed", "create:sequenced_assembly").texture("cabin:item/crystal_seed_" + id).displayName(e + " Quartz Seed")
         event.create("tiny_" + id + "_crystal").texture("cabin:item/crystal_seed_" + id + "2").displayName("Tiny " + e + " Quartz Crystal")
-        event.create("growing_tiny_" + id + "_crystal","create:sequenced_assembly").texture("cabin:item/crystal_seed_" + id + "2").displayName("Tiny " + e + " Quartz Crystal")
+        event.create("growing_tiny_" + id + "_crystal", "create:sequenced_assembly").texture("cabin:item/crystal_seed_" + id + "2").displayName("Tiny " + e + " Quartz Crystal")
         event.create("small_" + id + "_crystal").texture("cabin:item/crystal_seed_" + id + "3").displayName("Small " + e + " Quartz Crystal")
-        event.create("growing_small_" + id + "_crystal","create:sequenced_assembly").texture("cabin:item/crystal_seed_" + id + "3").displayName("Small " + e + " Quartz Crystal")
+        event.create("growing_small_" + id + "_crystal", "create:sequenced_assembly").texture("cabin:item/crystal_seed_" + id + "3").displayName("Small " + e + " Quartz Crystal")
     });
 
     let processors = ["Calculation", "Logic", "Engineering"]
     processors.forEach(name => {
         let e = name.toLowerCase()
-        event.create("incomplete_" + e + "_processor","create:sequenced_assembly").texture("cabin:item/incomplete_" + e + "_processor").displayName("Incomplete " + name + " Processor")
+        event.create("incomplete_" + e + "_processor", "create:sequenced_assembly").texture("cabin:item/incomplete_" + e + "_processor").displayName("Incomplete " + name + " Processor")
     })
 
-    event.create("incomplete_flight_anchor","create:sequenced_assembly").modelJson({parent: "minecraft:block/beacon"}).displayName("Incomplete Flight Anchor")
-    event.create("incomplete_gravity_normalizer","create:sequenced_assembly").modelJson({parent: "ad_astra:block/gravity_normalizer"}).displayName("Incomplete Gravity Normalizer")
+    event.create("incomplete_flight_anchor", "create:sequenced_assembly").modelJson({ parent: "minecraft:block/beacon" }).displayName("Incomplete Flight Anchor")
+    event.create("incomplete_gravity_normalizer", "create:sequenced_assembly").modelJson({ parent: "ad_astra:block/gravity_normalizer" }).displayName("Incomplete Gravity Normalizer")
 
     let number = (name) => {
         let id = name.toLowerCase()
@@ -50,7 +50,7 @@ StartupEvents.registry("item", event => {
     let mechanism = (name, rarity) => {
         let id = name.toLowerCase()
         event.create(id + "_mechanism").texture("cabin:item/" + id + "_mechanism").displayName(name + " Mechanism").rarity(rarity ? rarity : "common")
-        event.create("incomplete_" + id + "_mechanism","create:sequenced_assembly").texture("cabin:item/incomplete_" + id + "_mechanism").displayName("Incomplete " + name + " Mechanism")
+        event.create("incomplete_" + id + "_mechanism", "create:sequenced_assembly").texture("cabin:item/incomplete_" + id + "_mechanism").displayName("Incomplete " + name + " Mechanism")
     }
 
     event.create("radiant_coil").glow(true).texture("cabin:item/radiant_coil").displayName("Radiant Induction Coil")
@@ -96,13 +96,13 @@ StartupEvents.registry("item", event => {
     event.create("rough_sand").texture("cabin:item/rough_sand").displayName("Sand Chunks")
     event.create("purified_sand").texture("cabin:item/purified_sand").displayName("Purified Sand")
     event.create("silicon_compound").texture("cabin:item/silicon_compound").displayName("Silicon Compound")
-    event.create("incomplete_coke_chunk","create:sequenced_assembly").texture("cabin:item/incomplete_coke_chunk").displayName("Cut Coke")
+    event.create("incomplete_coke_chunk", "create:sequenced_assembly").texture("cabin:item/incomplete_coke_chunk").displayName("Cut Coke")
     event.create("coke_chunk").texture("cabin:item/coke_chunk").displayName("Coke Chunks")
     // event.create('smoke_mote').texture("cabin:item/smoke_mote").displayName('Tiny Smoke Cloud')
 
     event.create("matter_plastics").texture("cabin:item/matter_plastics").displayName("Matter Plastics")
     event.create("nickel_compound").texture("cabin:item/nickel_compound").displayName("Nickel Compound").unstackable()
-    event.create("invar_compound","create:sequenced_assembly").texture("cabin:item/invar_compound").displayName("Unprocessed Invar Ingot")
+    event.create("invar_compound", "create:sequenced_assembly").texture("cabin:item/invar_compound").displayName("Unprocessed Invar Ingot")
     event.create("dye_entangled_singularity").texture("cabin:item/dye_entangled_singularity").unstackable().displayName("Chromatic Singularity")
 
     // event.create("strainer_filter").texture("waterstrainer:items/strainer_survivalist").displayName("Strainer Filter").maxDamage(384)
@@ -147,8 +147,8 @@ StartupEvents.registry("block", event => {
     event.create("invar_casing").textureAll("cabin:block/invar_casing").soundType("metal").tagBlock("mineable/pickaxe").tagBlock("create:wrench_pickup").requiresTool(true).hardness(3.0).displayName("Invar Casing")
     event.create("fluix_casing").textureAll("cabin:block/fluix_casing").soundType("metal").tagBlock("mineable/pickaxe").tagBlock("create:wrench_pickup").requiresTool(true).hardness(3.0).displayName("Fluix Casing")
 
-    event.create("computation_matrix").model("cabin:block/computation_matrix").soundType("lantern").hardness(0.1).displayName("Computation Matrix").fullBlock(false).notSolid().box(1,1,1,15,15,15).waterlogged().opaque(false).lightLevel(7).renderType("translucent")
-        .item(i=>{i.rarity("uncommon")})
+    event.create("computation_matrix").model("cabin:block/computation_matrix").soundType("lantern").hardness(0.1).displayName("Computation Matrix").fullBlock(false).notSolid().box(1, 1, 1, 15, 15, 15).waterlogged().opaque(false).lightLevel(7).renderType("translucent")
+        .item(i => { i.rarity("uncommon") })
 
     // event.create("ponder_laser_lamp").model("cabin:block/ponder_laser_lamp").notSolid().renderType("translucent").displayName("Laser Lamp (For Ponder)")
     // event.create("ponder_laser_lamp_on").model("cabin:block/ponder_laser_lamp_on").notSolid().lightLevel(15).renderType("translucent").displayName("Laser Lamp (For Ponder)")
@@ -168,7 +168,7 @@ StartupEvents.registry("block", event => {
             .renderType(layer)
             .redstoneConductor(false)
             .tagBlock("create:wrench_pickup")
-            .defaultState(blockState =>{
+            .defaultState(blockState => {
                 blockState.set(BlockStateProperties.HORIZONTAL_FACING, "south")
             })
     }
@@ -266,7 +266,7 @@ StartupEvents.registry("block", event => {
     }
     let catalyst = (c1, c2, id, prefix, ingredient) => {
         let substrate = createSubstrate(c1, c2, id, `${prefix} Catalyst`, "catalyst", ingredient)
-        substrate.item(item=>{item.rarity("uncommon")})
+        substrate.item(item => { item.rarity("uncommon") })
         return substrate
     }
 
@@ -327,7 +327,7 @@ StartupEvents.registry("block", event => {
         .item(item => item.rarity("rare"))
 
     substrateblock(0x9FADB4, 0xBECCD2, "substrate_silver", "Silver Reagent", "cabin:block/substrate")
-        .item(item=>item.rarity("rare"))
+        .item(item => item.rarity("rare"))
 
     acceleratorBlock(0xFFBC5E, "accellerator_glowstone", "Glowstone Accelerator", "cabin:block/accellerator")
 
@@ -346,7 +346,7 @@ StartupEvents.registry("fluid", event => {
     event.create("chromatic_waste").displayName("Chromatic Waste").stillTexture("tconstruct:fluid/molten/compat_alloy/enderium/still").flowingTexture("tconstruct:fluid/molten/compat_alloy/enderium/flowing").color(0x0B3E36)
     // A2: molten anthralite
     event.create("molten_anthralite").displayName("Molten Anthralite").stillTexture("tconstruct:fluid/molten/compat_alloy/pewter/still").flowingTexture("tconstruct:fluid/molten/compat_alloy/pewter/still").color(0xb4a498)
-//	event.create('liquid_smoke').displayName(`Liquid Smoke`).stillTexture('advancedrocketry:blocks/fluid/oxygen_still').flowingTexture('advancedrocketry:blocks/fluid/oxygen_flow').bucketColor(0xEBEBEB)
+    //	event.create('liquid_smoke').displayName(`Liquid Smoke`).stillTexture('advancedrocketry:blocks/fluid/oxygen_still').flowingTexture('advancedrocketry:blocks/fluid/oxygen_flow').bucketColor(0xEBEBEB)
 })
 
 ItemEvents.modification(event => {

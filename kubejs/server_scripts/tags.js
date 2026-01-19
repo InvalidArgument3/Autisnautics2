@@ -218,7 +218,7 @@ ServerEvents.tags("item", event => {
     event.remove("create:create_ingots", "create:andesite_alloy")
 
     // A2
-    event.add("forge:slag", "tfmg:slag")
+    // event.add("forge:slag", "tfmg:slag")
     event.add(`forge:dusts/wood`, "nuclearcraft:sawdust")// useless?
     event.get("kubejs:saws")
         .add("projectred_exploration:gold_saw")
@@ -231,8 +231,8 @@ ServerEvents.tags("item", event => {
     event.add("forge:plates/zinc", "createdeco:zinc_sheet")
 
     // coal coke unification
-    event.add("forge:coal_coke", "tfmg:coal_coke")
-    event.add("forge:storage_blocks/coal_coke", "tfmg:coal_coke_block")
+    // event.add("forge:coal_coke", "tfmg:coal_coke")
+    // event.add("forge:storage_blocks/coal_coke", "tfmg:coal_coke_block")
     // coal coke is not coal
     event.remove("forge:coal", "immersiveengineering:coal_coke")
     event.remove("minecraft:coals", "immersiveengineering:coal_coke")
@@ -378,7 +378,7 @@ ServerEvents.tags("fluid", event => {
     event.remove("minecraft:water", "createaddition:bioethanol")
     event.remove("minecraft:water", "createaddition:flowing_bioethanol")
 
-    event.add("kubejs:liquid_plastic", "tfmg:liquid_plastic")
+    // event.add("kubejs:liquid_plastic", "tfmg:liquid_plastic")
 
     // kubejs molten anthralite
     event.add("forge:molten_anthralite", "kubejs:molten_anthralite")
@@ -386,5 +386,5 @@ ServerEvents.tags("fluid", event => {
     event.add("tconstruct:molten_anthralite", "kubejs:molten_anthralite")
 
     // creosote tagging
-    event.add("forge:creosote", "tfmg:creosote")
+    // event.add("forge:creosote", "tfmg:creosote")
 })

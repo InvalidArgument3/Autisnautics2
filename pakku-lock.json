@@ -3529,7 +3529,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "clockwork-0.5.4.5.jar",
+                    "file_name": "clockwork-0.5.4.6.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -3537,19 +3537,19 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/84USeAvk/versions/v9oJ9IHd/clockwork-0.5.4.5.jar",
-                    "id": "v9oJ9IHd",
+                    "url": "https://cdn.modrinth.com/data/84USeAvk/versions/IP7OOk86/clockwork-0.5.4.6.jar",
+                    "id": "IP7OOk86",
                     "parent_id": "84USeAvk",
                     "hashes": {
-                        "sha512": "1ec99e497fdbfa2b3942f4120bb4f9d4179d6d5904c63971953de4b7eeeec7069bdb904197733d729b094ebcf5282a215985f829d7b6b885ce9ccf1b9af79a97",
-                        "sha1": "6442f203c88a6f8897bac5445975fde91d4570b0"
+                        "sha512": "0482fac74cb6c0efe394e8ab8eaaadb5dc2991b055420c94f66a3d23af5367d9e54951655afba9224d01cf023835aab86dfbcf183adf2af0f825108d7a7a24bb",
+                        "sha1": "bccec545f69fd1422c6d7b000d6d3da97a34fa72"
                     },
                     "required_dependencies": [
-                        "LNytGWDc",
-                        "V5ujR2yw"
+                        "V5ujR2yw",
+                        "LNytGWDc"
                     ],
-                    "size": 10838550,
-                    "date_published": "2026-01-12T17:41:03.324111Z"
+                    "size": 10853410,
+                    "date_published": "2026-01-19T17:35:25.360673Z"
                 }
             ]
         },
@@ -10141,7 +10141,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "fzzy_config-0.7.4+1.20.1+forge.jar",
+                    "file_name": "fzzy_config-0.7.5+1.20.1+forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -10150,18 +10150,18 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/wnhd0CI1/fzzy_config-0.7.4+1.20.1+forge.jar",
-                    "id": "wnhd0CI1",
+                    "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/Dt5erL4a/fzzy_config-0.7.5+1.20.1+forge.jar",
+                    "id": "Dt5erL4a",
                     "parent_id": "hYykXjDp",
                     "hashes": {
-                        "sha512": "108f00ce546fd87ae2be853233bfe8f4deeb6abad6a61769a4ddf2735db098fd42d9b0a6ab1f98974717235e9fdf122767bdff82c042cd972cdbc14add039ebf",
-                        "sha1": "b0213984f7591c3d1ec4ab5eebd87c605728d451"
+                        "sha512": "a5e86b8ea8a63bf8b9102b351314393aad5ede26b2480ae8ecaf55eefc482824a27e63ffa088a6d4e30a1ab814502f5e19bc77ac5a09e5120902f191ded59439",
+                        "sha1": "7e890f8b527ccb4523fed54a2864549a53f65fed"
                     },
                     "required_dependencies": [
                         "ordsPcFz"
                     ],
-                    "size": 2353402,
-                    "date_published": "2025-12-14T05:56:34.040088Z"
+                    "size": 2372465,
+                    "date_published": "2026-01-19T17:33:10.246513Z"
                 },
                 {
                     "type": "curseforge",
@@ -23684,7 +23684,7 @@
             "files": [
                 {
                     "type": "modrinth",
-                    "file_name": "valkyrienskies-120-2.4.8.1.jar",
+                    "file_name": "valkyrienskies-120-2.4.9.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -23692,18 +23692,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/V5ujR2yw/versions/k94WJFZD/valkyrienskies-120-2.4.8.1.jar",
-                    "id": "k94WJFZD",
+                    "url": "https://cdn.modrinth.com/data/V5ujR2yw/versions/leF4D8yr/valkyrienskies-120-2.4.9.jar",
+                    "id": "leF4D8yr",
                     "parent_id": "V5ujR2yw",
                     "hashes": {
-                        "sha512": "7af66a0877a3c2f09cf24ed811a972b57eb7b172c96b4fbceba620378723f8ef130b411fe349177e9c81fed69072d2e3fc9cfbc477014a6d9d88c634e821ebba",
-                        "sha1": "c482f6b126db0afd61a8c8ad78c69ea06328883d"
+                        "sha512": "647ae4bbf5dba8e1b989a92b2dea5ff809dd7e541a6c7a2f3e3990462be074a3024e84344b3667a3391360aa9f80a349f628639c47ffbaa94012ba01f4162e70",
+                        "sha1": "473edbb5fa10355cacf2c072d8b329abafbc6237"
                     },
                     "required_dependencies": [
                         "ordsPcFz"
                     ],
-                    "size": 24136667,
-                    "date_published": "2026-01-14T22:09:50.561664Z"
+                    "size": 24155952,
+                    "date_published": "2026-01-19T17:25:59.480443Z"
                 }
             ]
         },

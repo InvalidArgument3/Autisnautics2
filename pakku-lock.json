@@ -9022,7 +9022,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "ftb-teams-forge-2001.3.1.jar",
+                    "file_name": "ftb-teams-forge-2001.3.2.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9030,19 +9030,19 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6130/786/ftb-teams-forge-2001.3.1.jar",
-                    "id": "6130786",
+                    "url": "https://edge.forgecdn.net/files/7499/810/ftb-teams-forge-2001.3.2.jar",
+                    "id": "7499810",
                     "parent_id": "404468",
                     "hashes": {
-                        "sha1": "c2af94e0b86631cb75daa8de2377ff72527651ca",
-                        "md5": "98efb58ba7cecfb39034544eced0389f"
+                        "sha1": "c49023f5d471aa1ba7fc624d2565fe9e82b7117e",
+                        "md5": "1c547d6f1b22f461f84c5fb79067b0ec"
                     },
                     "required_dependencies": [
-                        "404465",
-                        "419699"
+                        "419699",
+                        "404465"
                     ],
-                    "size": 248592,
-                    "date_published": "2025-01-27T16:07:52.110Z"
+                    "size": 252579,
+                    "date_published": "2026-01-21T10:11:35.007Z"
                 }
             ]
         },
@@ -10165,7 +10165,7 @@
                 },
                 {
                     "type": "curseforge",
-                    "file_name": "fzzy_config-0.7.4+1.20.1+forge.jar",
+                    "file_name": "fzzy_config-0.7.5+1.20.1+forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -10174,18 +10174,18 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7331/237/fzzy_config-0.7.4+1.20.1+forge.jar",
-                    "id": "7331237",
+                    "url": "https://edge.forgecdn.net/files/7489/457/fzzy_config-0.7.5+1.20.1+forge.jar",
+                    "id": "7489457",
                     "parent_id": "1005914",
                     "hashes": {
-                        "sha1": "b0213984f7591c3d1ec4ab5eebd87c605728d451",
-                        "md5": "b6bcf0a1abc530257fcaa054157a8a16"
+                        "sha1": "7e890f8b527ccb4523fed54a2864549a53f65fed",
+                        "md5": "0519be93c6e6b9183c9416031db4c715"
                     },
                     "required_dependencies": [
                         "351264"
                     ],
-                    "size": 2353402,
-                    "date_published": "2025-12-14T05:56:25.963Z"
+                    "size": 2372465,
+                    "date_published": "2026-01-19T17:33:01.213Z"
                 }
             ]
         },
@@ -20855,7 +20855,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "sophisticatedcore-1.20.1-1.2.119.1369.jar",
+                    "file_name": "sophisticatedcore-1.20.1-1.2.122.1415.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -20864,16 +20864,16 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7455/151/sophisticatedcore-1.20.1-1.2.119.1369.jar",
-                    "id": "7455151",
+                    "url": "https://edge.forgecdn.net/files/7497/202/sophisticatedcore-1.20.1-1.2.122.1415.jar",
+                    "id": "7497202",
                     "parent_id": "618298",
                     "hashes": {
-                        "sha1": "86d8fa869a8d89f7d1a05f2714e4faf0821ebc9a",
-                        "md5": "32312142e7d407a90fb65d0141acd844"
+                        "sha1": "e5c0bf2aecc4ccec0d6bc610ec17ee004f823917",
+                        "md5": "f9255ec8adcfa4049446230c11be06ac"
                     },
                     "required_dependencies": [],
-                    "size": 1407708,
-                    "date_published": "2026-01-13T17:06:59.433Z"
+                    "size": 1410567,
+                    "date_published": "2026-01-20T22:57:58.153Z"
                 }
             ]
         },
@@ -20892,7 +20892,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "sophisticatedstorage-1.20.1-1.4.20.1423.jar",
+                    "file_name": "sophisticatedstorage-1.20.1-1.4.21.1446.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -20901,18 +20901,18 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7443/286/sophisticatedstorage-1.20.1-1.4.20.1423.jar",
-                    "id": "7443286",
+                    "url": "https://edge.forgecdn.net/files/7495/23/sophisticatedstorage-1.20.1-1.4.21.1446.jar",
+                    "id": "7495023",
                     "parent_id": "619320",
                     "hashes": {
-                        "sha1": "d25837b01ca64cefde68d9dc059600abccee1a87",
-                        "md5": "5453fce033f94fac1bcda743ef020b77"
+                        "sha1": "531ac0792b0bcc77fccc526697269a44356d0c67",
+                        "md5": "de0782f3bd57b6b8154ea56e84fe2220"
                     },
                     "required_dependencies": [
                         "618298"
                     ],
-                    "size": 1674201,
-                    "date_published": "2026-01-10T20:22:55.903Z"
+                    "size": 1674395,
+                    "date_published": "2026-01-20T16:37:31.060Z"
                 }
             ]
         },

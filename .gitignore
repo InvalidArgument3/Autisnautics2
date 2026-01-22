@@ -139,3 +139,9 @@ squaremap/*
 
 # simpleclouds
 !simpleclouds-client.toml
+
+# SHUT THE FUCK UP ALEXMOBS-INTERACTION
+!alexsmobsinteraction-client.toml
+
+# forge experimental pipeline for models, mna recommends it
+!forge-client.toml

@@ -103,6 +103,9 @@
         },
         "particle-rain": {
             "side": "CLIENT"
+        },
+        "crash-assistant": {
+            "side": "CLIENT"
         }
     }
 }

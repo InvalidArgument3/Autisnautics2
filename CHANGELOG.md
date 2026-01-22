@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.0.25]
+### Changes
+- removing some redundant mods 1
+- nailing down memory usage
+
 ## [0.0.24]
 ### Changes
 - chunk utils, squaremap serverside only

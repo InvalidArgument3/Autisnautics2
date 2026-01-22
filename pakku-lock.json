@@ -8928,50 +8928,6 @@
             ]
         },
         {
-            "pakku_id": "CSrawX0MeVfTcbIw",
-            "pakku_links": [
-                "5NGMM2bfSjS1voUB"
-            ],
-            "type": "MOD",
-            "slug": {
-                "curseforge": "ftb-backups-2"
-            },
-            "name": {
-                "curseforge": "FTB Backups 2"
-            },
-            "id": {
-                "curseforge": "622737"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "ftbbackups2-forge-1.20-1.0.23.jar",
-                    "mc_versions": [
-                        "1.20.1",
-                        "1.20"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/4834/403/ftbbackups2-forge-1.20-1.0.23.jar",
-                    "id": "4834403",
-                    "parent_id": "622737",
-                    "hashes": {
-                        "sha1": "4b100de40338247a3fbf4d1fd1846257c5338189",
-                        "md5": "d03cc8191ad47156c977d53468421559"
-                    },
-                    "required_dependencies": [
-                        "576589",
-                        "419699"
-                    ],
-                    "size": 1954591,
-                    "date_published": "2023-11-02T08:11:16.840Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "HXUrGEK3DyUHkrOY",
             "pakku_links": [
                 "sZo9lF1AMRdTa1sf",
@@ -18600,50 +18556,6 @@
                     "required_dependencies": [],
                     "size": 52205,
                     "date_published": "2023-07-17T22:39:15.030Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "jSIFyxKQCGtHLJ4S",
-            "pakku_links": [
-                "35bzbvSQjkntLpWn"
-            ],
-            "type": "MOD",
-            "side": "CLIENT",
-            "slug": {
-                "curseforge": "probejs"
-            },
-            "name": {
-                "curseforge": "ProbeJS"
-            },
-            "id": {
-                "curseforge": "585406"
-            },
-            "export": false,
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "probejs-6.0.1-forge.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5227/399/probejs-6.0.1-forge.jar",
-                    "id": "5227399",
-                    "parent_id": "585406",
-                    "hashes": {
-                        "sha1": "5380211b1c2891f454a136545721526b184d8513",
-                        "md5": "69dfe15b710b9b213feb7eb788ed83a9"
-                    },
-                    "required_dependencies": [
-                        "238086"
-                    ],
-                    "size": 2365466,
-                    "date_published": "2024-04-01T14:08:56.003Z"
                 }
             ]
         },

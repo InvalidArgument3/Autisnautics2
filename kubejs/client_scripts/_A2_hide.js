@@ -50,10 +50,10 @@ JEIEvents.hideItems(event => {
     // creosote unification - IE
     event.hide("thermal:creosote_bucket")
     // event.hide("tfmg:creosote_bucket")
-	
-	//removed in favor of powergrid
-	event.hide("createaddition:electric_motor")
-	event.hide("createaddition:alternator")
+
+    // removed in favor of powergrid
+    event.hide("createaddition:electric_motor")
+    event.hide("createaddition:alternator")
 })
 
 JEIEvents.hideFluids(event => {

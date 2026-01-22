@@ -347,8 +347,8 @@ StartupEvents.registry("fluid", event => {
     // A2: molten anthralite
     event.create("molten_anthralite").displayName("Molten Anthralite").stillTexture("tconstruct:fluid/molten/compat_alloy/pewter/still").flowingTexture("tconstruct:fluid/molten/compat_alloy/pewter/flowing").color(0xb4a498)
     //	event.create('liquid_smoke').displayName(`Liquid Smoke`).stillTexture('advancedrocketry:blocks/fluid/oxygen_still').flowingTexture('advancedrocketry:blocks/fluid/oxygen_flow').bucketColor(0xEBEBEB)
-	// A2: liquid plastic (tfmg replacement)
-	event.create("liquid_plastic").displayName("Liquid Plastic").stillTexture("tconstruct:fluid/molten/ore/quartz/still").flowingTexture("tconstruct:fluid/molten/ore/quartz/flowing").color(0xfafafa)
+    // A2: liquid plastic (tfmg replacement)
+    event.create("liquid_plastic").displayName("Liquid Plastic").stillTexture("tconstruct:fluid/molten/ore/quartz/still").flowingTexture("tconstruct:fluid/molten/ore/quartz/flowing").color(0xfafafa)
 })
 
 ItemEvents.modification(event => {

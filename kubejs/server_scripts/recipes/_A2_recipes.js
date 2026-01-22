@@ -377,17 +377,17 @@ ServerEvents.recipes(event => {
     // potion of glowing recipe in startup_scripts
 
 
-    ////just one word: PLASTICS
-	//tfmg-less edition: end product is now nuclearcraft:bioplastic
-	
-	//remove rats plastic recipes
+    // //just one word: PLASTICS
+    // tfmg-less edition: end product is now nuclearcraft:bioplastic
+
+    // remove rats plastic recipes
     event.remove({ output: "rats:raw_plastic" })
     event.remove({ input: "rats:plastic_waste" })
-	event.replaceInput({}, "rats:raw_plastic", "#forge:ingots/plastic")
+    event.replaceInput({}, "rats:raw_plastic", "#forge:ingots/plastic")
 
     // converting plastic waste to liquid plastic by "recycling", now with kubejs:liquid_plastic
     event.recipes.create.mixing([Fluid.of("kubejs:liquid_plastic", 10), "quark:dirty_shard"], [Item.of("rats:plastic_waste", 9), Fluid.of("minecraft:water", 1000)]).heated()
-	// glass shard gives em an extra step to process plus it's a glass source I guess
+    // glass shard gives em an extra step to process plus it's a glass source I guess
     // alt liquid_plastic recipe: nuclearcraft melter, 1 plastic waste -> 10mb liquid plastic (9x more efficient and no waste product)
     event.custom({
         "type": "nuclearcraft:melter",
@@ -407,7 +407,7 @@ ServerEvents.recipes(event => {
         "radiation": 1.0,
         "timeModifier": 1.0
     })
-	//melting bioplastic to liquid for whatever reason
+    // melting bioplastic to liquid for whatever reason
     event.custom({
         "type": "nuclearcraft:melter",
         "input": [
@@ -446,18 +446,18 @@ ServerEvents.recipes(event => {
         "radiation": 1.0,
         "timeModifier": 1.0
     })
-	
-	// forming bioplastic from liquid plastic 
-	//tconstruct casting table, plate cast
-	event.custom({
+
+    // forming bioplastic from liquid plastic
+    // tconstruct casting table, plate cast
+    event.custom({
         "type": "tconstruct:casting_table",
         "cast": { "tag": "tconstruct:casts/multi_use/plate" },
         "cast_consumed": false,
-        "fluid": { "tag": "forge:liquid_plastic", "amount": 90 },//one ingot
+        "fluid": { "tag": "forge:liquid_plastic", "amount": 90 },// one ingot
         "result": { "item": "nuclearcraft:bioplastic" },
         "cooling_time": 100
     })
-	event.custom({
+    event.custom({
         "type": "tconstruct:casting_table",
         "cast": { "tag": "tconstruct:casts/single_use/plate" },
         "cast_consumed": true,
@@ -465,25 +465,25 @@ ServerEvents.recipes(event => {
         "result": { "item": "nuclearcraft:bioplastic" },
         "cooling_time": 100
     })
-	//NC ingot former
-	event.custom({
-		"type": "nuclearcraft:ingot_former",
-		"inputFluids": [
-			{
-				"amount": 90,
-				"tag": "forge:liquid_plastic"
-			}
-		],
-		"output": [
-			{
-				"item": "nuclearcraft:bioplastic"
-			}
-		],
-		"powerModifier": 1.0,
-		"radiation": 1.0,
-		"timeModifier": 1.0
-	})
-	
+    // NC ingot former
+    event.custom({
+        "type": "nuclearcraft:ingot_former",
+        "inputFluids": [
+            {
+                "amount": 90,
+                "tag": "forge:liquid_plastic"
+            }
+        ],
+        "output": [
+            {
+                "item": "nuclearcraft:bioplastic"
+            }
+        ],
+        "powerModifier": 1.0,
+        "radiation": 1.0,
+        "timeModifier": 1.0
+    })
+
     // replace sugarcane for bioplastic with biomass
     event.remove({ output: "nuclearcraft:bioplastic" })
     event.custom({
@@ -504,8 +504,8 @@ ServerEvents.recipes(event => {
         "radiation": 1.0,
         "timeModifier": 1.0
     })
-	
-	
+
+
     // fix broken radaway item recipes
     event.remove({ output: Item.of("nuclearcraft:radaway") })
     event.remove({ output: Item.of("nuclearcraft:radaway_slow") })

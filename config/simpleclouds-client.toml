@@ -12,7 +12,7 @@ clientSideSpeedModifier = 1.0
 #Specifies the render Y offset for the clouds.
 #Default: 128
 #Range: 0 ~ 2048
-clientSideCloudHeight = 128
+clientSideCloudHeight = 512
 #Specifies the allowed dimensions that Simple Clouds is active in.
 dimensionWhitelist = ["minecraft:overworld"]
 #Specifies if the dimension whitelist should instead be use as a blacklist.

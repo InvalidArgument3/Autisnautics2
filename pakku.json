@@ -99,6 +99,9 @@
         },
         "squaremap": {
             "side": "SERVER"
+        },
+        "particle-rain": {
+            "side": "CLIENT"
         }
     }
 }

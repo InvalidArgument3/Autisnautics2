@@ -2217,6 +2217,45 @@
             ]
         },
         {
+            "pakku_id": "WthHyF94Cs04cFOI",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "better-chunk-loading-forge-fabric"
+            },
+            "name": {
+                "curseforge": "Better chunk loading[Forge/Fabric]"
+            },
+            "id": {
+                "curseforge": "899487"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "betterchunkloading-1.20.1-5.4.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6210/180/betterchunkloading-1.20.1-5.4.jar",
+                    "id": "6210180",
+                    "parent_id": "899487",
+                    "hashes": {
+                        "sha1": "cd7e61a4f5eca956094e0844560382ca58d79bc6",
+                        "md5": "0ec0d97c0f52b5b13762b293189487af"
+                    },
+                    "required_dependencies": [
+                        "326652"
+                    ],
+                    "size": 55968,
+                    "date_published": "2025-02-19T17:03:30.233Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "YsWRnovQks8CwtuJ",
             "pakku_links": [
                 "Xj0e2DdaAoUuTDv7"
@@ -3302,6 +3341,77 @@
                     ],
                     "size": 11842662,
                     "date_published": "2026-01-12T20:56:19.423Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "wC7uTkIz3iq34WWv",
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "chunky-pregenerator-forge",
+                "modrinth": "chunky"
+            },
+            "name": {
+                "curseforge": "Chunky (Forge/NeoForge)",
+                "modrinth": "Chunky"
+            },
+            "id": {
+                "curseforge": "485681",
+                "modrinth": "fALzjamp"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "Chunky-1.3.146.jar",
+                    "mc_versions": [
+                        "1.20",
+                        "1.20.1",
+                        "1.20.2",
+                        "1.20.3",
+                        "1.20.4"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/fALzjamp/versions/4FTDk9wv/Chunky-1.3.146.jar",
+                    "id": "4FTDk9wv",
+                    "parent_id": "fALzjamp",
+                    "hashes": {
+                        "sha512": "13ef9d5bfea1895118eec45aa3071e2d79408241f29990624f67e157d4c525391753b0a1539ff3359dad79a6e5ab5e0b84fffbe528bdefcaaefd579ec794d9c9",
+                        "sha1": "0b782d12b4ac3b03a94c28f32e9b2d5587d1dd50"
+                    },
+                    "required_dependencies": [],
+                    "size": 341451,
+                    "date_published": "2024-05-06T07:28:42.102951Z"
+                },
+                {
+                    "type": "curseforge",
+                    "file_name": "Chunky-1.3.146.jar",
+                    "mc_versions": [
+                        "1.20.2",
+                        "1.20.5",
+                        "1.20.3",
+                        "1.20.1",
+                        "1.20",
+                        "1.20.6",
+                        "1.20.4"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5320/28/Chunky-1.3.146.jar",
+                    "id": "5320028",
+                    "parent_id": "485681",
+                    "hashes": {
+                        "sha1": "0b782d12b4ac3b03a94c28f32e9b2d5587d1dd50",
+                        "md5": "ed46120ac4f30ec8e03f6416e295577c"
+                    },
+                    "required_dependencies": [],
+                    "size": 341451,
+                    "date_published": "2024-05-06T07:10:57.567Z"
                 }
             ]
         },
@@ -17514,6 +17624,69 @@
                     "required_dependencies": [],
                     "size": 188673,
                     "date_published": "2025-11-14T17:34:13.517155Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "H7oXlKaPNjRvzYmo",
+            "type": "MOD",
+            "side": "CLIENT",
+            "slug": {
+                "curseforge": "particle-rain",
+                "modrinth": "particle-rain"
+            },
+            "name": {
+                "curseforge": "Particle Rain",
+                "modrinth": "Particle Rain"
+            },
+            "id": {
+                "curseforge": "421897",
+                "modrinth": "nrikgvxm"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "particlerain-4.0.0-beta.5+1.20.1-forge.jar",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/7378/848/particlerain-4.0.0-beta.5+1.20.1-forge.jar",
+                    "id": "7378848",
+                    "parent_id": "421897",
+                    "hashes": {
+                        "sha1": "f0776c78f8ef74b34137ce3acb5ce229a8152d3b",
+                        "md5": "de69e6b8aba913513305cbe469fc5d3d"
+                    },
+                    "required_dependencies": [],
+                    "size": 1226152,
+                    "date_published": "2025-12-26T00:44:06.273Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "particlerain-4.0.0-beta.5+1.20.1-forge.jar",
+                    "mc_versions": [
+                        "1.20",
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://cdn.modrinth.com/data/nrikgvxm/versions/DoKcxpR8/particlerain-4.0.0-beta.5+1.20.1-forge.jar",
+                    "id": "DoKcxpR8",
+                    "parent_id": "nrikgvxm",
+                    "hashes": {
+                        "sha512": "64373b4ec54fb9b7d15616e1ab1e0cf85eb5dac647a7c5647dfcb8279e450f6f04a94e63e38fb562d843e635ae254dabf5949e7eb7535838ef302703011f94ab",
+                        "sha1": "f0776c78f8ef74b34137ce3acb5ce229a8152d3b"
+                    },
+                    "required_dependencies": [],
+                    "size": 1226152,
+                    "date_published": "2025-12-26T00:44:09.654296Z"
                 }
             ]
         },

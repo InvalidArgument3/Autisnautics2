@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.24]
+### Changes
+- chunk utils, squaremap serverside only
+
 ## [0.0.23]
 ### Changes
 - more bloat delight addons

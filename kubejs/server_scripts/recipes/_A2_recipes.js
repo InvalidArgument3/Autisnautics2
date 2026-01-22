@@ -84,14 +84,14 @@ ServerEvents.recipes(event => {
     event.remove({ type: "create:fan_blasting", output: "immersiveengineering:slag_glass" })
 
     // conflict with thermal:slag_block: slag brick is now stonecutting only
-    // event.remove({ type: "minecraft:crafting_shaped", output: "immersiveengineering:slag_brick" })
+    event.remove({ type: "minecraft:crafting_shaped", output: "immersiveengineering:slag_brick" })
 
     // get all our slags in one place
     event.replaceInput({}, "thermal:slag", "#forge:slag")
     // event.replaceInput({}, "tfmg:slag", "#forge:slag")
-    // event.replaceInput({}, "immersiveengineering:slag", "#forge:slag")
+    event.replaceInput({}, "immersiveengineering:slag", "#forge:slag")
     // event.replaceOutput({}, "thermal:slag", "tfmg:slag")
-    // event.replaceOutput({}, "immersiveengineering:slag", "tfmg:slag")// IE might still give IE slag
+    event.replaceOutput({}, "immersiveengineering:slag", "thermal:slag")// IE might still give IE slag
     // isn't almostunified supposed to do this?
 
     event.remove({ output: "immersiveengineering:sawdust" })// sawdust floor conflicts with JAOPCA storage block
@@ -121,7 +121,7 @@ ServerEvents.recipes(event => {
     event.remove({ type: "tconstruct:damagable_melting", input: "minecraft:chainmail_boots" })
 
 
-    // Create Addition: disable rotational force/energy conversion because tfmg does it better
+    // Create Addition: disable rotational force/energy conversion because powergrid does it better
     event.remove({ output: "createaddition:electric_motor" })
     event.remove({ input: "createaddition:electric_motor" })
     event.remove({ output: "createaddition:alternator" })
@@ -158,7 +158,7 @@ ServerEvents.recipes(event => {
     event.replaceInput({ output: "thermal:junk_net" }, "minecraft:stick", "rats:garbage_pile")
 
     // tfmg/ie synthetic leathers and strings support
-    // event.replaceInput({}, "minecraft:leather", "#forge:leathers")
+    event.replaceInput({}, "minecraft:leather", "#forge:leathers")
     // event.replaceInput({}, "minecraft:string", "#forge:string")
     // fix synthetic leather recipe collision with immersiveengineering:plate_duroplast
     // event.remove({ output: "tfmg:synthetic_leather" })
@@ -377,19 +377,18 @@ ServerEvents.recipes(event => {
     // potion of glowing recipe in startup_scripts
 
 
-    // //just one word: PLASTICS
-    // tag/integrate nuclearcraft:bioplastic and rats:raw_plastic
-    // remove rats:raw_plastic, replace with plastic sheet
+    ////just one word: PLASTICS
+	//tfmg-less edition: end product is now nuclearcraft:bioplastic
+	
+	//remove rats plastic recipes
     event.remove({ output: "rats:raw_plastic" })
-    // event.replaceInput({}, "rats:raw_plastic", "tfmg:plastic_sheet")
-    // loot removal below
-    event.remove({ input: "rats:plastic_waste" })// just in case?
+    event.remove({ input: "rats:plastic_waste" })
+	event.replaceInput({}, "rats:raw_plastic", "#forge:ingots/plastic")
 
-    // converting plastic waste to liquid plastic by "recycling"
-    // event.recipes.create.mixing([Fluid.of("tfmg:liquid_plastic", 200), "quark:dirty_shard"], [Item.of("rats:plastic_waste", 9), Fluid.of("minecraft:water", 1000)]).heated()
-    // glass shard gives em an extra step to process plus it's a glass source I guess
-    /*
-    // alt recipe: nuclearcraft melter, 1 plastic waste -> 25mb liquid plastic (8:1 and no waste product)
+    // converting plastic waste to liquid plastic by "recycling", now with kubejs:liquid_plastic
+    event.recipes.create.mixing([Fluid.of("kubejs:liquid_plastic", 10), "quark:dirty_shard"], [Item.of("rats:plastic_waste", 9), Fluid.of("minecraft:water", 1000)]).heated()
+	// glass shard gives em an extra step to process plus it's a glass source I guess
+    // alt liquid_plastic recipe: nuclearcraft melter, 1 plastic waste -> 10mb liquid plastic (9x more efficient and no waste product)
     event.custom({
         "type": "nuclearcraft:melter",
         "input": [
@@ -400,14 +399,15 @@ ServerEvents.recipes(event => {
         ],
         "outputFluids": [
             {
-                "amount": 25,
-                "fluid": "kubejs:liquid_plastic"
+                "amount": 10,
+                "fluid": "forge:liquid_plastic"
             }
         ],
         "powerModifier": 1.0,
         "radiation": 1.0,
         "timeModifier": 1.0
     })
+	//melting bioplastic to liquid for whatever reason
     event.custom({
         "type": "nuclearcraft:melter",
         "input": [
@@ -418,7 +418,7 @@ ServerEvents.recipes(event => {
         ],
         "outputFluids": [
             {
-                "amount": 200,
+                "amount": 90,
                 "fluid": "kubejs:liquid_plastic"
             }
         ],
@@ -426,8 +426,8 @@ ServerEvents.recipes(event => {
         "radiation": 1.0,
         "timeModifier": 1.0
     })
-    // same as above but for "raw plastic" (found as loot only since i couldn't remove it with kube i guess)
-    // event.recipes.create.mixing([Fluid.of("tfmg:liquid_plastic", 25)], [Item.of("rats:raw_plastic", 1), Fluid.of("minecraft:water", 250)]).heated()
+    // converting raw_plastic (loot only) to liquid_plastic
+    event.recipes.create.mixing([Fluid.of("kubejs:liquid_plastic", 90)], [Item.of("rats:raw_plastic", 1), Fluid.of("minecraft:water", 250)]).heated()
     event.custom({
         "type": "nuclearcraft:melter",
         "input": [
@@ -438,7 +438,7 @@ ServerEvents.recipes(event => {
         ],
         "outputFluids": [
             {
-                "amount": 25,
+                "amount": 90,
                 "fluid": "kubejs:liquid_plastic"
             }
         ],
@@ -446,7 +446,44 @@ ServerEvents.recipes(event => {
         "radiation": 1.0,
         "timeModifier": 1.0
     })
-    */
+	
+	// forming bioplastic from liquid plastic 
+	//tconstruct casting table, plate cast
+	event.custom({
+        "type": "tconstruct:casting_table",
+        "cast": { "tag": "tconstruct:casts/multi_use/plate" },
+        "cast_consumed": false,
+        "fluid": { "tag": "forge:liquid_plastic", "amount": 90 },//one ingot
+        "result": { "item": "nuclearcraft:bioplastic" },
+        "cooling_time": 100
+    })
+	event.custom({
+        "type": "tconstruct:casting_table",
+        "cast": { "tag": "tconstruct:casts/single_use/plate" },
+        "cast_consumed": true,
+        "fluid": { "tag": "forge:liquid_plastic", "amount": 90 },
+        "result": { "item": "nuclearcraft:bioplastic" },
+        "cooling_time": 100
+    })
+	//NC ingot former
+	event.custom({
+		"type": "nuclearcraft:ingot_former",
+		"inputFluids": [
+			{
+				"amount": 90,
+				"tag": "forge:liquid_plastic"
+			}
+		],
+		"output": [
+			{
+				"item": "nuclearcraft:bioplastic"
+			}
+		],
+		"powerModifier": 1.0,
+		"radiation": 1.0,
+		"timeModifier": 1.0
+	})
+	
     // replace sugarcane for bioplastic with biomass
     event.remove({ output: "nuclearcraft:bioplastic" })
     event.custom({
@@ -467,10 +504,8 @@ ServerEvents.recipes(event => {
         "radiation": 1.0,
         "timeModifier": 1.0
     })
-    // oredict the plastics
-    // event.replaceInput({}, "tfmg:plastic_sheet", "#forge:ingots/plastic")
-    event.replaceInput({}, "nuclearcraft:bioplastic", "#forge:ingots/plastic")
-
+	
+	
     // fix broken radaway item recipes
     event.remove({ output: Item.of("nuclearcraft:radaway") })
     event.remove({ output: Item.of("nuclearcraft:radaway_slow") })

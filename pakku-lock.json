@@ -7287,6 +7287,48 @@
             ]
         },
         {
+            "pakku_id": "X7MF0Bk7BFsVMwzZ",
+            "pakku_links": [
+                "sFC4uR8xhd0LaVfc"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "modrinth": "dungeons_delight"
+            },
+            "name": {
+                "modrinth": "Dungeon's Delight"
+            },
+            "id": {
+                "modrinth": "qPfNr476"
+            },
+            "files": [
+                {
+                    "type": "modrinth",
+                    "file_name": "forge-dungeonsdelight-1.20.1-1.2.10.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/qPfNr476/versions/rDboPrwk/forge-dungeonsdelight-1.20.1-1.2.10.jar",
+                    "id": "rDboPrwk",
+                    "parent_id": "qPfNr476",
+                    "hashes": {
+                        "sha512": "fd676f83bc21bf6b8c4e60731e50154a9c027db1581e79dc149878db12737ca1a51c472d11a600816fd332bcb436feb62ca9f30c08d05043414b3547584bfc34",
+                        "sha1": "8e33417981dfe50155410c818622b03444705350"
+                    },
+                    "required_dependencies": [
+                        "mk0Htq87"
+                    ],
+                    "size": 1844636,
+                    "date_published": "2025-09-14T21:08:45.980890Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "ACo7UiRDTHX1UJc7",
             "type": "MOD",
             "side": "CLIENT",
@@ -8126,6 +8168,47 @@
                     ],
                     "size": 279150,
                     "date_published": "2025-02-11T02:25:51.077Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "5ylNVspQD3qdtmdS",
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "engineers-delight",
+                "modrinth": "engineers-delight"
+            },
+            "name": {
+                "curseforge": "Engineers Delight",
+                "modrinth": "Engineers Delight"
+            },
+            "id": {
+                "curseforge": "861437",
+                "modrinth": "4fb7lmRe"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "Engineers Delight 1.20.1 B.1.4.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5522/764/Engineers Delight 1.20.1 B.1.4.jar",
+                    "id": "5522764",
+                    "parent_id": "861437",
+                    "hashes": {
+                        "sha1": "9e10c79c3d1075fb4dcfebfc45582af656b55a90",
+                        "md5": "9fcc6ee44105049f80e01284995c6768"
+                    },
+                    "required_dependencies": [],
+                    "size": 142507,
+                    "date_published": "2024-07-11T11:20:39.690Z"
                 }
             ]
         },
@@ -9919,6 +10002,76 @@
             ]
         },
         {
+            "pakku_id": "Pxkkao42cnKVEG3q",
+            "pakku_links": [
+                "WEkBJyD8hFbV9LvG"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "fruits-delight",
+                "modrinth": "fruits-delight"
+            },
+            "name": {
+                "curseforge": "Fruits Delight",
+                "modrinth": "Fruits Delight"
+            },
+            "id": {
+                "curseforge": "943774",
+                "modrinth": "g6sbyCTu"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "fruitsdelight-1.1.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6951/298/fruitsdelight-1.1.1.jar",
+                    "id": "6951298",
+                    "parent_id": "943774",
+                    "hashes": {
+                        "sha1": "3ecef6a32c36cffd14de39c3be7c5e16463781fd",
+                        "md5": "8727b74cbc8ff10962e5f0918185a9d4"
+                    },
+                    "required_dependencies": [
+                        "398521"
+                    ],
+                    "size": 1892593,
+                    "date_published": "2025-09-01T06:46:52.277Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "fruitsdelight-1.1.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/g6sbyCTu/versions/qPyefm6m/fruitsdelight-1.1.1.jar",
+                    "id": "qPyefm6m",
+                    "parent_id": "g6sbyCTu",
+                    "hashes": {
+                        "sha512": "21aa0f50df1d4f9c6bbee6913eba3369b47cc7f0cee4e20f7dc1d7f4d2f3f3da4e4df8cc11eb94c0d5e17f264f3909f78ee23ebcc93db24c9f149823202d7f68",
+                        "sha1": "1461c33f3aeeb4703b41c3603238db26f52d5604"
+                    },
+                    "required_dependencies": [
+                        "R2OftAxM"
+                    ],
+                    "size": 1892593,
+                    "date_published": "2025-09-01T06:48:40.967202Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "mys1sWEn5iFG2PyZ",
             "type": "MOD",
             "side": "SERVER",
@@ -11057,6 +11210,73 @@
             ]
         },
         {
+            "pakku_id": "GnY3vnN8jwoYLn6B",
+            "pakku_links": [
+                "uJLkIvdkiKqojTEl"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "immersive-fixes",
+                "modrinth": "immersive-fixes"
+            },
+            "name": {
+                "curseforge": "Immersive Fixes",
+                "modrinth": "Immersive Fixes"
+            },
+            "id": {
+                "curseforge": "1326199",
+                "modrinth": "AWRXGq2t"
+            },
+            "redistributable": false,
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "immersivefixes-1.0.3-all.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7119/124/immersivefixes-1.0.3-all.jar",
+                    "id": "7119124",
+                    "parent_id": "1326199",
+                    "hashes": {
+                        "sha1": "e9db8df6d62eedbd49ef0c03cb9d6f71f909be67",
+                        "md5": "96e93dd5f7e91399ee67adcf4eb2f93b"
+                    },
+                    "required_dependencies": [],
+                    "size": 644007,
+                    "date_published": "2025-10-18T01:22:06.077Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "immersivefixes-1.0.3-all.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/AWRXGq2t/versions/3ZLqbGsf/immersivefixes-1.0.3-all.jar",
+                    "id": "3ZLqbGsf",
+                    "parent_id": "AWRXGq2t",
+                    "hashes": {
+                        "sha512": "cf2828ca1d70ee3c531f6a9a69454ad0ff9c7e3a62a0638ee94735c629974d8c09b795b73be79ab27346dc53b47c5b8d1dd4a4a624a05175de1f81e430d6fb86",
+                        "sha1": "e9db8df6d62eedbd49ef0c03cb9d6f71f909be67"
+                    },
+                    "required_dependencies": [
+                        "tIm2nV03"
+                    ],
+                    "size": 644007,
+                    "date_published": "2025-10-18T01:28:08.618617Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "4bAEbXY8Nu8mmNAW",
             "type": "MOD",
             "side": "BOTH",
@@ -11114,6 +11334,118 @@
                     "required_dependencies": [],
                     "size": 4854834,
                     "date_published": "2025-06-19T20:51:47.870633Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "9Cdoji0G3va6jRmb",
+            "pakku_links": [
+                "uJLkIvdkiKqojTEl"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "immersive-petroleum"
+            },
+            "name": {
+                "curseforge": "Immersive Petroleum"
+            },
+            "id": {
+                "curseforge": "268250"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "ImmersivePetroleum-1.20.1-4.3.0-31.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7308/297/ImmersivePetroleum-1.20.1-4.3.0-31.jar",
+                    "id": "7308297",
+                    "parent_id": "268250",
+                    "hashes": {
+                        "sha1": "1c6964a3f7eddb232a671bbd5f33c9247b9bb14c",
+                        "md5": "8dd3ac63427dabacccdce3afee163478"
+                    },
+                    "required_dependencies": [
+                        "231951"
+                    ],
+                    "size": 1962547,
+                    "date_published": "2025-12-08T15:33:08.207Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "w10x0JyODC9ArWM6",
+            "pakku_links": [
+                "GnY3vnN8jwoYLn6B",
+                "uJLkIvdkiKqojTEl"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "mct-immersive-technology",
+                "modrinth": "mct-immersive-technology"
+            },
+            "name": {
+                "curseforge": "Immersive Technology",
+                "modrinth": "Immersive Technology"
+            },
+            "id": {
+                "curseforge": "359407",
+                "modrinth": "DvaEUke2"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "MCT-ImmersiveTechnology-1.20.1-2.0.1-b4196-beta.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/7493/212/MCT-ImmersiveTechnology-1.20.1-2.0.1-b4196-beta.jar",
+                    "id": "7493212",
+                    "parent_id": "359407",
+                    "hashes": {
+                        "sha1": "6fc09d9e14a55373f9d8be5d064aefa75046acee",
+                        "md5": "ef1d778dd0d9d3594ff6ec1162f4551a"
+                    },
+                    "required_dependencies": [
+                        "1326199",
+                        "231951"
+                    ],
+                    "size": 9247621,
+                    "date_published": "2026-01-20T08:20:54.250Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "MCT-ImmersiveTechnology-1.20.1-2.0.1-b4196-beta.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://cdn.modrinth.com/data/DvaEUke2/versions/HnP2KLX0/MCT-ImmersiveTechnology-1.20.1-2.0.1-b4196-beta.jar",
+                    "id": "HnP2KLX0",
+                    "parent_id": "DvaEUke2",
+                    "hashes": {
+                        "sha512": "1999332881d695625f7c015bc3334becb8805d2f270f5b0d8c9a3387d1d3fed0fa44493150d72455e7eca86a1ed21564a7ccfe4ea558311681c02468ab3429e9",
+                        "sha1": "6fc09d9e14a55373f9d8be5d064aefa75046acee"
+                    },
+                    "required_dependencies": [
+                        "AWRXGq2t",
+                        "tIm2nV03"
+                    ],
+                    "size": 9247621,
+                    "date_published": "2026-01-20T08:21:37.596368Z"
                 }
             ]
         },
@@ -11863,6 +12195,50 @@
             ]
         },
         {
+            "pakku_id": "gZfYZyQhW6XZG025",
+            "pakku_links": [
+                "k4HTADCAVJdCpq9n",
+                "uJLkIvdkiKqojTEl"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "just-enough-immersive-multiblocks"
+            },
+            "name": {
+                "curseforge": "Just Enough Immersive Multiblocks"
+            },
+            "id": {
+                "curseforge": "634571"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "jeimultiblocks-1.20.1-1.0.6.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7131/221/jeimultiblocks-1.20.1-1.0.6.jar",
+                    "id": "7131221",
+                    "parent_id": "634571",
+                    "hashes": {
+                        "sha1": "e1aea2a60db221bbf2c2dc476b8969501186f48a",
+                        "md5": "1f25284e85703ddcb200cc46f18d028a"
+                    },
+                    "required_dependencies": [
+                        "238222",
+                        "231951"
+                    ],
+                    "size": 15818,
+                    "date_published": "2025-10-20T22:29:49.260Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "k4HTADCAVJdCpq9n",
             "type": "MOD",
             "side": "BOTH",
@@ -11920,6 +12296,74 @@
                     "required_dependencies": [],
                     "size": 1409642,
                     "date_published": "2025-12-29T08:42:52.580Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "Xr0QVDlzHiro9BO7",
+            "pakku_links": [
+                "NqVz0o4Aenkgp2yO"
+            ],
+            "type": "MOD",
+            "side": "CLIENT",
+            "slug": {
+                "curseforge": "just-zoom",
+                "modrinth": "just-zoom"
+            },
+            "name": {
+                "curseforge": "Just Zoom",
+                "modrinth": "Just Zoom"
+            },
+            "id": {
+                "curseforge": "561885",
+                "modrinth": "iAiqcykM"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "justzoom_forge_2.1.1_MC_1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6290/336/justzoom_forge_2.1.1_MC_1.20.1.jar",
+                    "id": "6290336",
+                    "parent_id": "561885",
+                    "hashes": {
+                        "sha1": "8bbcdfb61e9f0f738af0efff12c93b8f9daf2fb0",
+                        "md5": "758fe904b5a22ce7b2df824c1a064858"
+                    },
+                    "required_dependencies": [
+                        "410295"
+                    ],
+                    "size": 204574,
+                    "date_published": "2025-03-10T23:02:44.620Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "justzoom_forge_2.1.1_MC_1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/iAiqcykM/versions/HrSzoCLd/justzoom_forge_2.1.1_MC_1.20.1.jar",
+                    "id": "HrSzoCLd",
+                    "parent_id": "iAiqcykM",
+                    "hashes": {
+                        "sha512": "f74d01e2085f3242029dfc4dc0b49599679e36334c1dc0fcb76e75f229f49705ef0538cc06004ee6e4e909c7ff027be818a4daf5cf9c7437537e6adc754d2879",
+                        "sha1": "8bbcdfb61e9f0f738af0efff12c93b8f9daf2fb0"
+                    },
+                    "required_dependencies": [
+                        "J81TRJWm"
+                    ],
+                    "size": 204574,
+                    "date_published": "2025-03-10T23:02:48.420757Z"
                 }
             ]
         },
@@ -19908,6 +20352,67 @@
             ]
         },
         {
+            "pakku_id": "sFC4uR8xhd0LaVfc",
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "runiclib",
+                "modrinth": "runiclib"
+            },
+            "name": {
+                "curseforge": "RunicLib",
+                "modrinth": "RunicLib"
+            },
+            "id": {
+                "curseforge": "880879",
+                "modrinth": "mk0Htq87"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "forge-runiclib-1.20.1-4.3.7.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6981/571/forge-runiclib-1.20.1-4.3.7.jar",
+                    "id": "6981571",
+                    "parent_id": "880879",
+                    "hashes": {
+                        "sha1": "6001d68ec8058350c50e851b04440511c2ea5051",
+                        "md5": "f0de6adba795934a6defd101e0d5f3d9"
+                    },
+                    "required_dependencies": [],
+                    "size": 134746,
+                    "date_published": "2025-09-10T01:20:23.580Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "forge-runiclib-1.20.1-4.3.8.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/mk0Htq87/versions/SGMIvE0e/forge-runiclib-1.20.1-4.3.8.jar",
+                    "id": "SGMIvE0e",
+                    "parent_id": "mk0Htq87",
+                    "hashes": {
+                        "sha512": "48dd522fd470dd7e104e76c248c953635bef9e091ae5084c9a9f5a3c4ad189a69f31ebf56be99c0194af767ac3a871ae166ba61c2fcc1c24229d8e22e054f75d",
+                        "sha1": "267895a8c528b7a670e4a5a75e18fd122981b82c"
+                    },
+                    "required_dependencies": [],
+                    "size": 134878,
+                    "date_published": "2025-10-20T07:20:18.778399Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "hC3CRMphhmEmmrCl",
             "type": "MOD",
             "side": "BOTH",
@@ -23834,6 +24339,77 @@
                     ],
                     "size": 94747,
                     "date_published": "2025-01-15T11:00:58.317Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "sLAY5r4zePOP4gVQ",
+            "pakku_links": [
+                "WEkBJyD8hFbV9LvG"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "vintage-delight",
+                "modrinth": "vintage-delight"
+            },
+            "name": {
+                "curseforge": "Vintage Delight",
+                "modrinth": "Vintage Delight"
+            },
+            "id": {
+                "curseforge": "949719",
+                "modrinth": "T7XZLHGD"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "vintagedelight-0.1.6.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5847/856/vintagedelight-0.1.6.jar",
+                    "id": "5847856",
+                    "parent_id": "949719",
+                    "hashes": {
+                        "sha1": "279a68afc8d815e957cabc689e925cdaf7578109",
+                        "md5": "7fd01c5fec5c8ed7c8c99c100696c91c"
+                    },
+                    "required_dependencies": [
+                        "398521"
+                    ],
+                    "size": 1120218,
+                    "date_published": "2024-10-26T14:54:26.820Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "vintagedelight-0.1.6.jar",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20.2",
+                        "1.20.3",
+                        "1.20.4",
+                        "1.20.5",
+                        "1.20.6"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/T7XZLHGD/versions/q8Ght7Bo/vintagedelight-0.1.6.jar",
+                    "id": "q8Ght7Bo",
+                    "parent_id": "T7XZLHGD",
+                    "hashes": {
+                        "sha512": "aa8a527c0db8f0b24f3444bf072ca98130fb1cf4e59a273922d874cd6a2bf1c992d5b717db278e778543aaa967a5b78131b25ae318beeb6eb63b5e3b3bb29e56",
+                        "sha1": "279a68afc8d815e957cabc689e925cdaf7578109"
+                    },
+                    "required_dependencies": [],
+                    "size": 1120218,
+                    "date_published": "2024-10-26T14:54:52.507994Z"
                 }
             ]
         },

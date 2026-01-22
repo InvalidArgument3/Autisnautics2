@@ -1,0 +1,13 @@
+
+#Solid Boiler options
+[boiler_solid]
+	#Divider for burn time in solid boiler (Default: 10)
+	#Range: > 1
+	burnTimeDivider = 10
+
+#Creative Barrel options
+[barrel_creative]
+	#Maximum fluid amount to output per tick from the creative barrel (Default: 2147483647)
+	#Range: > 1
+	creativeBarrelOutputAmount = 2147483647
+

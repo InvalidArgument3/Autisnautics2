@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.0.23]
+### Changes
+- more bloat delight addons
+- immersive tech and petroleum
+
 ## [0.0.22]
 ### Changes
 - updates

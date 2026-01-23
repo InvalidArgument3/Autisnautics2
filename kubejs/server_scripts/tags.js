@@ -267,8 +267,8 @@ ServerEvents.tags("item", event => {
     // Plastic and Milk (moved from fluid block)
     event.add("forge:ingots/plastic", "nuclearcraft:bioplastic")
     event.get("kubejs:milk").add("minecraft:milk")
-    
-    //oredict simpleradios wire
+
+    // oredict simpleradios wire
     event.add("forge:wires/copper", "simpleradio:copper_wire")
 })
 

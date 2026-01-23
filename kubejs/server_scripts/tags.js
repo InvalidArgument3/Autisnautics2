@@ -379,11 +379,17 @@ ServerEvents.tags("fluid", event => {
     event.remove("minecraft:water", "createaddition:flowing_bioethanol")
 
     // event.add("kubejs:liquid_plastic", "tfmg:liquid_plastic")
+    // ^ deprecated, fluid tag was required for NC recipe
 
     // kubejs molten anthralite
     event.add("forge:molten_anthralite", "kubejs:molten_anthralite")
     event.add("forge:anthralite", "kubejs:molten_anthralite")
     event.add("tconstruct:molten_anthralite", "kubejs:molten_anthralite")
+
+    // kubejs liquid plastic
+    event.add("forge:liquid_plastic", "kubejs:liquid_plastic")
+    event.add("forge:molten_plastic", "kubejs:liquid_plastic")
+    event.add("forge:plastic", "kubejs:liquid_plastic")
 
     // creosote tagging
     // event.add("forge:creosote", "tfmg:creosote")

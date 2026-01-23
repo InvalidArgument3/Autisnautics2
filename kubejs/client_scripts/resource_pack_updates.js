@@ -1,3 +1,4 @@
+/*
 const Minecraft = Java.loadClass("net.minecraft.client.Minecraft");
 const ResourceOverridesManager = Java.loadClass("fuzs.resourcepackoverrides.client.data.ResourceOverridesManager")
 
@@ -31,3 +32,4 @@ const FILE_NAME = "kubejs_client_data.json";
         JsonIO.write(FILE_NAME, data)
     }
 }
+*/

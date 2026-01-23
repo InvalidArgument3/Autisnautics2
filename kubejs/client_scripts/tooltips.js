@@ -62,6 +62,7 @@ ItemEvents.tooltip(tooltip => {
         "tconstruct:raw_cobalt",
         "immersiveengineering:raw_bauxite",
         // "tfmg:raw_lithium",
+        "nuclearcraft:lithium_chunk",
         "scguns:raw_anthralite",
         "thermal:raw_silver", "thermal:raw_tin"];
     pureore.forEach(pureore => {

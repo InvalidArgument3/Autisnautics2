@@ -14781,73 +14781,6 @@
             ]
         },
         {
-            "pakku_id": "2uEw6IbHZxDwmHig",
-            "type": "MOD",
-            "side": "CLIENT",
-            "slug": {
-                "curseforge": "magical-psi-revival",
-                "modrinth": "magical-psi-revival"
-            },
-            "name": {
-                "curseforge": "Magical Psi: Revival",
-                "modrinth": "Magical Psi: Revival"
-            },
-            "id": {
-                "curseforge": "1320084",
-                "modrinth": "DvvYZ4Cd"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "MagicalPsiRevival-1.20.1-1.1.0.4.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge",
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/DvvYZ4Cd/versions/kdpi6bL8/MagicalPsiRevival-1.20.1-1.1.0.4.jar",
-                    "id": "kdpi6bL8",
-                    "parent_id": "DvvYZ4Cd",
-                    "hashes": {
-                        "sha512": "409734a9ced53ecd65d86a10d04237ecebb0ec6e9180d8f3c45627510a064ae90aff5aa1f49a836887761c251e51db4c01285d82897ca9aafca09f8dcc343061",
-                        "sha1": "79e7f8f4cedbaa655dfe1d0e553a6355082a8acd"
-                    },
-                    "required_dependencies": [
-                        "pOeA0exL"
-                    ],
-                    "size": 794332,
-                    "date_published": "2025-10-01T17:26:31.792370Z"
-                },
-                {
-                    "type": "curseforge",
-                    "file_name": "MagicalPsiRevival-1.20.1-1.1.0.4.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7054/436/MagicalPsiRevival-1.20.1-1.1.0.4.jar",
-                    "id": "7054436",
-                    "parent_id": "1320084",
-                    "hashes": {
-                        "sha1": "79e7f8f4cedbaa655dfe1d0e553a6355082a8acd",
-                        "md5": "396e4bc75621ffb374556605bb783499"
-                    },
-                    "required_dependencies": [
-                        "241665"
-                    ],
-                    "size": 794332,
-                    "date_published": "2025-10-01T17:26:30.677Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "PTKdiItzLXwwLc62",
             "type": "MOD",
             "side": "BOTH",
@@ -25934,43 +25867,6 @@
                     "required_dependencies": [],
                     "size": 3114590,
                     "date_published": "2023-09-05T08:02:20.050Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "Ete5K3nL2Y0oWKIm",
-            "type": "MOD",
-            "side": "SERVER",
-            "slug": {
-                "modrinth": "squaremap"
-            },
-            "name": {
-                "modrinth": "squaremap"
-            },
-            "id": {
-                "modrinth": "PFb7ZqK6"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "squaremap-forge-mc1.20.1-1.2.0.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/PFb7ZqK6/versions/kuGh8mjN/squaremap-forge-mc1.20.1-1.2.0.jar",
-                    "id": "kuGh8mjN",
-                    "parent_id": "PFb7ZqK6",
-                    "hashes": {
-                        "sha512": "35f35e4f84a4f93f0dcd247f0f26916b0dc02a1ba07b7384f9da5304175b5ce6d95de862dbe0ec7bd0cb79727405f53ffc354ff25127b916e188a9a6ece9027b",
-                        "sha1": "199db4b1f962ab4bf76b4027909c5a0a9e8615ec"
-                    },
-                    "required_dependencies": [],
-                    "size": 7910734,
-                    "date_published": "2023-09-15T19:22:14.635701Z"
                 }
             ]
         },

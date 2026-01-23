@@ -400,7 +400,7 @@ ServerEvents.recipes(event => {
         "outputFluids": [
             {
                 "amount": 10,
-                "fluid": "forge:liquid_plastic"
+                "tag": "kubejs:liquid_plastic"
             }
         ],
         "powerModifier": 1.0,
@@ -749,4 +749,88 @@ ServerEvents.recipes(event => {
     // tfmg hardened wood block = treated wood block + 125mb more creosote
     // event.remove({ id: "tfmg:filling/hardened_wood_creosote" })
     // event.recipes.create.filling("tfmg:hardened_planks", ["#forge:treated_wood", Fluid.of("immersiveengineering:creosote", 125)])
+    
+    // //powergrid integration
+    //replace conductive casing recipes with zinc machine
+    event.replaceInput({}, "powergrid:conductive_casing", "kubejs:zinc_machine")
+    //it's now a cosmetic block so make it cheaper
+    event.remove({ output: "powergrid:conductive_casing" })
+    event.shapeless(Item.of("powergrid:conductive_casing", 8), ["#forge:ingots/zinc", "create:andesite_casing"])
+    //various junctions, connectors, etc. are now from stonecutting zinc machine 8:1
+    let powergridWidgets = ["cord_junction", "lv_switch", "lv_button", "light_fixture", "device_connector", "socket", "fuse_holder"]
+    powergridWidgets.forEach(widget => {
+        event.remove({ output: "powergrid:" + widget })
+        zincMachine(event, Item.of("powergrid:" + widget, 8))
+    })
+    //machinify some more recipes
+    event.remove({ output: "powergrid:mv_switch" })
+    zincMachine(event, Item.of("powergrid:mv_switch", 4))
+    event.remove({ output: "powergrid:spark_gap" })
+    zincMachine(event, Item.of("powergrid:spark_gap", 4))
+    event.remove({ id: "powergrid:crafting/generator_housing" })
+    zincMachine(event, Item.of("powergrid:generator_housing", 2))
+    event.remove({ output: "powergrid:hv_switch" })
+    zincMachine(event, Item.of("powergrid:hv_switch", 1), "#forge:rods/iron")
+    event.remove({ output: "powergrid:hv_breaker" })
+    zincMachine(event, Item.of("powergrid:hv_breaker", 1), "create:precision_mechanism")
+    event.remove({ output: "powergrid:contactor" })
+    zincMachine(event, Item.of("powergrid:contactor", 1), "powergrid:copper_coil")
+    //add superior automated versions of some common recipes
+    //coils: deploy stick on wire, 3:1 instead of 4:1
+    event.recipes.create.deploying("powergrid:copper_coil", [Item.of("#forge:wires/copper", 3), "minecraft:stick"])
+    event.recipes.create.deploying("powergrid:resistive_coil", [Item.of("#forge:wires/iron", 3), "minecraft:stick"])
+    //connectors: filling metal on substrate, 10:1 instead of 30:1
+    event.recipes.create.filling("powergrid:wire_connector", ["create:andesite_alloy", Fluid.of("tconstruct:molten_copper", 10)])
+    event.recipes.create.filling("powergrid:heavy_wire_connector", ["minecraft:terracotta", Fluid.of("tconstruct:molten_iron", 10)])
+    //insulated wire: always uses rubber not kelp, can deploy for 2:1 rubber efficiency
+    event.replaceInput({ output: /^powergrid:.*copper.*/ }, "minecraft:dried_kelp", "thermal:cured_rubber")
+    event.recipes.create.deploying(Item.of("powergrid:insulated_copper_wire", 2), [Item.of("#forge:wires/copper", 2), "thermal:cured_rubber"])
+    event.recipes.create.deploying(Item.of("powergrid:copper_cord", 2), [Item.of("powergrid:insulated_copper_wire", 4), "thermal:cured_rubber"])
+    
+    //wires
+    //unify wire recipes by removing sawing versions
+    event.remove({ type: "create:sawing", output: /.*_wire$/ })
+    event.remove({ type: "create:sawing", output: /^immersiveengineering:wire_.*/ })
+    //add createdieselgenerators cutting recipe for IE lead wire
+    event.custom({
+        "type": "createdieselgenerators:wire_cutting",
+        "ingredients": [{
+            "tag": "forge:plates/lead"
+        }],
+        "results": [{
+            "item": "immersiveengineering:wire_lead"
+        }]
+    })
+    //unify simpleradios copper wire
+    event.remove({ id: "simpleradio:copper_wire" })
+    //creating projectred red alloy wire with wiremaking machines (1:8)
+    event.custom({
+        "type":"createaddition:rolling",
+        "input": {
+            "item": "projectred_core:red_ingot"
+        },
+        "result": {
+            "item": "projectred_transmission:red_alloy_wire",
+            "count": 8
+        }
+    })
+    event.custom({
+        "type": "immersiveengineering:metal_press",
+        "energy": 2400,
+        "input": {
+            "item": "projectred_core:red_ingot"
+        },
+        "mold": "immersiveengineering:mold_wire",
+        "result": {
+            "base_ingredient": {
+                "item": "projectred_transmission:red_alloy_wire"
+            },
+            "count": 8
+        }
+    })
+    //recipe to insulate already-made red alloy wire
+    event.recipes.create.deploying("projectred_transmission:white_insulated_wire", ["projectred_transmission:red_alloy_wire", "minecraft:white_wool"])
+    //automating createaddition barbed wire and IE razor wire
+    event.recipes.create.deploying("createaddition:barbed_wire", [Item.of("#forge:wires/iron", 2), "#forge:wires/iron"])
+    event.recipes.create.deploying("immersiveengineering:razor_wire", ["immersiveengineering:treated_fence", "#forge:wires/steel"])
 })

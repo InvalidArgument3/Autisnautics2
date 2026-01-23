@@ -484,7 +484,7 @@
 			}]
 			title: "{cabin.quest.3C50B4556375178E.title}"
 			x: -4.0d
-			y: 17.0d
+			y: 19.0d
 		}
 		{
 			dependencies: [
@@ -516,7 +516,7 @@
 			]
 			title: "{cabin.quest.1D9D65FBD06DD481.title}"
 			x: -5.5d
-			y: 16.5d
+			y: 17.5d
 		}
 		{
 			dependencies: [
@@ -525,6 +525,7 @@
 				"5DCF9C8212AA3BE3"
 			]
 			description: ["{cabin.quest.239C64263B91350D.description1}"]
+			hide_until_deps_visible: true
 			icon: "tconstruct:liquid_soul_bucket"
 			id: "239C64263B91350D"
 			subtitle: "{cabin.quest.239C64263B91350D.subtitle}"
@@ -542,7 +543,7 @@
 			]
 			title: "{cabin.quest.239C64263B91350D.title}"
 			x: -4.0d
-			y: 15.5d
+			y: 17.0d
 		}
 		{
 			dependencies: [
@@ -663,7 +664,7 @@
 			}]
 			title: "{cabin.quest.047FD4E54147D8F7.title}"
 			x: -4.0d
-			y: 19.0d
+			y: 21.0d
 		}
 		{
 			dependencies: ["727B43FD95C4A512"]
@@ -692,11 +693,13 @@
 			dependencies: [
 				"19715EBCBBA1B4AD"
 				"21753CBB528EAADF"
+				"6EDA86E4BE0F096B"
 			]
-			description: ["{cabin.quest.5DCF9C8212AA3BE3.description1}"]
+			description: ["For the first time in the progression, a Blaze Burner may be required. Obtain them by using Empty Blaze Burners on Blazes or their Spawners."]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "5DCF9C8212AA3BE3"
+			min_required_dependencies: 2
 			shape: "circle"
 			tasks: [{
 				id: "3BBAFB33D9E2BB24"
@@ -704,8 +707,8 @@
 				type: "item"
 			}]
 			title: "{cabin.quest.5DCF9C8212AA3BE3.title}"
-			x: -2.5d
-			y: 16.5d
+			x: -1.0d
+			y: 17.0d
 		}
 		{
 			dependencies: [
@@ -731,7 +734,7 @@
 				}
 			]
 			title: "{cabin.quest.6C029983EE2035A5.title}"
-			x: 0.0d
+			x: 6.0d
 			y: 15.0d
 		}
 		{
@@ -753,7 +756,6 @@
 							Potion: "kubejs:haste"
 						}
 					}
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -763,7 +765,7 @@
 				}
 			]
 			title: "{cabin.quest.2131996D22A87667.title}"
-			x: 2.0d
+			x: 8.0d
 			y: 15.5d
 		}
 		{
@@ -790,7 +792,7 @@
 				}
 			]
 			title: "{cabin.quest.4B891E9ED8DE6BB2.title}"
-			x: 4.0d
+			x: 10.0d
 			y: 15.0d
 		}
 		{
@@ -812,7 +814,7 @@
 				type: "item"
 			}]
 			title: "{cabin.quest.44540B11F341AE09.title}"
-			x: 2.0d
+			x: 8.0d
 			y: 17.0d
 		}
 		{
@@ -839,7 +841,7 @@
 				}
 			]
 			title: "{cabin.quest.1A06FA866B74E75B.title}"
-			x: 3.5d
+			x: 9.0d
 			y: 16.5d
 		}
 		{
@@ -874,8 +876,615 @@
 				type: "item"
 			}]
 			title: "{cabin.quest.7BE0F4512FE4936D.title}"
+			x: 8.0d
+			y: 19.0d
+		}
+		{
+			dependencies: [
+				"19715EBCBBA1B4AD"
+				"6EDA86E4BE0F096B"
+			]
+			description: [
+				"To enter the Atomic age, you'll need Radaway, a synthetic fluid that dulls the effects of deadly radiation."
+				""
+				"Though there are alternative ways to farm the Glowing Mushrooms needed to make Radaway, one option is to manufacture them: brew Potions of Glowing and apply them to Brown Mushrooms. "
+				""
+				"But first you'll need to head into the Nether and grab some Nether Wart, for Awkward Potions."
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: "minecraft:nether_wart"
+			id: "4FFA0F65FA89D867"
+			subtitle: "Contraption 19-1"
+			tasks: [
+				{
+					id: "3AB4E06BD8DB2874"
+					item: "minecraft:nether_wart"
+					type: "item"
+				}
+				{
+					id: "0408B3CFBA95E2D6"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			title: "Glow in the Dark I"
+			x: -0.5d
+			y: 15.0d
+		}
+		{
+			dependencies: ["15978ED5A6E3DFFE"]
+			description: ["Excellent! Lead Machines are built to operate under extreme radiation, so they're an essential foundation for Nuclearcraft machines. The power of the atom is in the palm of your hand..."]
+			id: "3B930AA32F92246B"
+			rewards: [
+				{
+					count: 16
+					id: "3C029AFF20C882D8"
+					item: "kubejs:logistic_mechanism"
+					type: "item"
+				}
+				{
+					id: "00D2BA3BAF6B81A7"
+					item: "nuclearcraft:radaway"
+					random_bonus: 4
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "2402D45212D4CD6A"
+				item: "kubejs:lead_machine"
+				type: "item"
+			}]
+			title: "{cabin.quest.7BE0F4512FE4936D.title}"
+			x: 2.0d
+			y: 21.0d
+		}
+		{
+			dependencies: [
+				"68A8C2CB135ECA87"
+				"319D13EA51472303"
+				"5943F8F91AA79D59"
+			]
+			description: [
+				"Start with a Precision Mechanism. Cast it a new base with Molten Steel, delicately apply Molten Uranium, pour Molten Lead for shielding, and infuse the whole thing with Radaway. Welcome to the Atomic age."
+				""
+				"{cabin.quest.3C50B4556375178E.description2}"
+				"{cabin.quest.3C50B4556375178E.description3}"
+			]
+			id: "15978ED5A6E3DFFE"
+			shape: "circle"
+			subtitle: "{cabin.quest.44540B11F341AE09.subtitle}"
+			tasks: [{
+				id: "16BCC957A6178A32"
+				item: "kubejs:logistic_mechanism"
+				type: "item"
+			}]
+			title: "Uranium Enrichment"
 			x: 2.0d
 			y: 19.0d
+		}
+		{
+			dependencies: [
+				"4FFA0F65FA89D867"
+				"10E93BEB78219368"
+			]
+			description: [
+				"Glow Lichen + Awkward Potion = Potion of Glowing."
+				""
+				"Don't forget potions can be mass-brewed as fluids, by heated mixing in a Basin. You'll need a Blaze Burner for that option."
+			]
+			icon: "minecraft:brewing_stand"
+			id: "15368864A6946A93"
+			subtitle: "Contraption 19-3"
+			tasks: [
+				{
+					id: "1FBF559810708A05"
+					item: {
+						Count: 1
+						id: "minecraft:potion"
+						tag: {
+							Potion: "alexscaves:glowing"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6EE69ADFC26E5948"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			title: "Bright Brew"
+			x: 0.5d
+			y: 16.0d
+		}
+		{
+			dependencies: [
+				"19715EBCBBA1B4AD"
+				"6EDA86E4BE0F096B"
+			]
+			description: [
+				"The good news: Glow Lichen is easily found growing on the bottom of floating islands, harvested with shears."
+				""
+				"The bad news: Glow Lichen doesn't spread on its own. To farm it automatically, you'll have to fertilize it somehow."
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: "minecraft:glow_lichen"
+			id: "10E93BEB78219368"
+			subtitle: "Contraption 19-2"
+			tasks: [
+				{
+					id: "1B1BBF1FA5A20B4C"
+					item: "minecraft:glow_lichen"
+					type: "item"
+				}
+				{
+					id: "38ACBCB650804809"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			title: "Glow in the Dark II"
+			x: 1.5d
+			y: 15.0d
+		}
+		{
+			dependencies: [
+				"19715EBCBBA1B4AD"
+				"6EDA86E4BE0F096B"
+			]
+			description: ["There are countless ways to farm mushrooms, but only the brown ones can absorb Potion of Glowing to become the Glowing Mushrooms we need."]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: "minecraft:brown_mushroom"
+			id: "74D22D54CA80E7FD"
+			subtitle: "Contraption 19-4"
+			tasks: [
+				{
+					id: "7D941711FE9786C9"
+					item: "minecraft:brown_mushroom"
+					type: "item"
+				}
+				{
+					id: "2FA5130D892A7C3B"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			title: "mmm, musroom"
+			x: 2.5d
+			y: 16.0d
+		}
+		{
+			dependencies: [
+				"02E41EDC1899468D"
+				"2F1B9FE2E9C2FFEC"
+				"5DCF9C8212AA3BE3"
+				"6EDA86E4BE0F096B"
+			]
+			description: [
+				"Mixing Glowing Mushrooms into Milk at high temperatures boils away unwanted byproducts and leaves behind Radaway, a wondrous chemical that clears deadly radiation with only moderate side effects.*"
+				""
+				"You might wish to reserve some Radaway for personal consumption later, just in case..."
+			]
+			hide_until_deps_visible: true
+			icon: "nuclearcraft:radaway_bucket"
+			id: "319D13EA51472303"
+			subtitle: "Contraption 19-7"
+			tasks: [
+				{
+					id: "79B213EBA35838B4"
+					item: "nuclearcraft:radaway_bucket"
+					type: "item"
+				}
+				{
+					id: "64713708298099CA"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			title: "Rads, Away"
+			x: 2.0d
+			y: 18.0d
+		}
+		{
+			dependencies: [
+				"19715EBCBBA1B4AD"
+				"6EDA86E4BE0F096B"
+			]
+			description: [
+				"Like some other rare minerals, this world seems to lack natural reserves of Uranium. They're thought to have been depleted long long ago, in a time so ancient even the Daemons' logs don't speak of it."
+				""
+				"However, there may still be &ounnatural&r deposits, lying deep in irradiated caverns buried by eons. If such a bounty really does exist, it would be more than enough to supply the Molten Uranium you need..."
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "5943F8F91AA79D59"
+			tasks: [{
+				id: "5BE7FCD9CA40366E"
+				item: "alexscaves:uranium"
+				type: "item"
+			}]
+			title: "Lost Technology"
+			x: 3.5d
+			y: 18.5d
+		}
+		{
+			dependencies: [
+				"19715EBCBBA1B4AD"
+				"6EDA86E4BE0F096B"
+			]
+			description: [
+				"Atomic Mechanisms are so heavy-duty they need a base casted from Molten Steel. It's possible to fully automate Steel production, but not strictly necessary."
+				""
+				"If you don't have Steel production already, you can make it with a Blast Furnace from The Factory Must Grow or Immersive Engineering, or IE's Arc Furnace. Once you develop Lead Machines, you'll also have access to Nuclearcraft's Alloy Smelter."
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: "tconstruct:molten_steel_bucket"
+			id: "68A8C2CB135ECA87"
+			subtitle: "Contraption 20-1"
+			tasks: [
+				{
+					id: "5708394524C3F225"
+					item: "tconstruct:molten_steel_bucket"
+					type: "item"
+				}
+				{
+					id: "5A26A34DF149B618"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			title: "A Source of Steel"
+			x: 0.5d
+			y: 18.5d
+		}
+		{
+			dependencies: [
+				"74D22D54CA80E7FD"
+				"15368864A6946A93"
+			]
+			description: ["Glowing Mushrooms are an essential ingredient for Radaway. Whether you used the potion method or something else, as long as you've got a steady supply, you're good."]
+			icon: "nuclearcraft:glowing_mushroom"
+			id: "02E41EDC1899468D"
+			subtitle: "Contraption 19-5"
+			tasks: [
+				{
+					id: "2E047220154B72B7"
+					item: "nuclearcraft:glowing_mushroom"
+					type: "item"
+				}
+				{
+					id: "283ADD7E81BB311C"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			title: "Rad-Scrubbing Fungi"
+			x: 1.5d
+			y: 17.0d
+		}
+		{
+			dependencies: [
+				"6EDA86E4BE0F096B"
+				"19715EBCBBA1B4AD"
+			]
+			description: [
+				"The effect-clearing properties of Milk are necessary to clear your bones of deadly radiation. It's also nutritious and delicious."
+				""
+				"Automatic Milk production isn't that hard. You should be able to solve this."
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: "minecraft:milk_bucket"
+			id: "2F1B9FE2E9C2FFEC"
+			subtitle: "Contraption 19-6"
+			tasks: [
+				{
+					id: "54FEF7F786C3D743"
+					item: "minecraft:milk_bucket"
+					type: "item"
+				}
+				{
+					id: "31F55AFB8BC96E4D"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			title: "Milk: It's Legal"
+			x: 3.5d
+			y: 17.0d
+		}
+		{
+			dependencies: ["3B930AA32F92246B"]
+			description: [
+				"Although some Uranium yet persists in this world in ancient waste dump sites, several other elements critical to nuclear technology, like Boron and Magnesium, have been truly depleted."
+				""
+				"However, analysis suggests these ores must have existed in the past."
+				""
+				"If the past is the only place to find them..."
+			]
+			hide_until_deps_complete: true
+			id: "6EE9AA6D2A8FE0AD"
+			shape: "circle"
+			tasks: [{
+				id: "64DA726B37D98050"
+				item: "supplementaries:globe_sepia"
+				type: "item"
+			}]
+			title: "Epilogue: Rewriting History"
+			x: 2.0d
+			y: 25.5d
+		}
+		{
+			dependencies: ["6EE9AA6D2A8FE0AD"]
+			description: [
+				"The history of this world is shrouded in mystery, but two things are certain. An ancient cataclysm tore the land from the sea; and long before that, the critical elements for nuclear technology were already used up."
+				""
+				"But what if history followed a different path? What if there were a parallel world, where nobody was around to consume those precious resources... because their world had already ended?"
+			]
+			id: "7A3C54CE8AD783D4"
+			rewards: [{
+				id: "4B3FB9BB344E408F"
+				item: "nuclearcraft:geiger_counter"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				dimension: "nuclearcraft:wasteland"
+				icon: "alexscaves:nuclear_bomb"
+				id: "78A8586BA98B22EF"
+				title: "&cBring an end to the world you've created, and witness what comes after."
+				type: "dimension"
+			}]
+			title: "The End of the World"
+			x: 2.0d
+			y: 28.0d
+		}
+		{
+			dependencies: [
+				"2809AE02EA018BFA"
+				"6EE9AA6D2A8FE0AD"
+			]
+			hide_dependency_lines: true
+			hide_details_until_startable: true
+			hide_lock_icon: true
+			hide_text_until_complete: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: true
+			icon: "alexscaves:uranium_rod"
+			icon_scale: 2.0d
+			id: "6199E449AF2BADBA"
+			shape: "none"
+			size: 0.67d
+			title: "Uranium Rod"
+			x: 3.0149999999999997d
+			y: 26.130000000000003d
+		}
+		{
+			dependencies: [
+				"2809AE02EA018BFA"
+				"6EE9AA6D2A8FE0AD"
+			]
+			hide_dependency_lines: true
+			hide_details_until_startable: true
+			hide_lock_icon: true
+			hide_text_until_complete: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: true
+			icon: "kubejs:lead_casing"
+			icon_scale: 2.0d
+			id: "46BF1AE437F27403"
+			shape: "none"
+			size: 0.67d
+			title: "Lead Casing"
+			x: 3.0149999999999997d
+			y: 26.8d
+		}
+		{
+			dependencies: [
+				"2809AE02EA018BFA"
+				"6EE9AA6D2A8FE0AD"
+			]
+			hide_dependency_lines: true
+			hide_details_until_startable: true
+			hide_lock_icon: true
+			hide_text_until_complete: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: true
+			icon: "kubejs:lead_casing"
+			icon_scale: 2.0d
+			id: "0AD8C8E5491278E1"
+			shape: "none"
+			size: 0.67d
+			title: "Lead Casing"
+			x: 2.0100000000000002d
+			y: 26.8d
+		}
+		{
+			dependencies: [
+				"2809AE02EA018BFA"
+				"6EE9AA6D2A8FE0AD"
+			]
+			hide_dependency_lines: true
+			hide_details_until_startable: true
+			hide_lock_icon: true
+			hide_text_until_complete: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: true
+			icon: "kubejs:lead_casing"
+			icon_scale: 2.0d
+			id: "5A6926E64EEE7729"
+			shape: "none"
+			size: 0.67d
+			title: "Lead Casing"
+			x: 1.0050000000000001d
+			y: 26.8d
+		}
+		{
+			dependencies: [
+				"2809AE02EA018BFA"
+				"6EE9AA6D2A8FE0AD"
+			]
+			hide_dependency_lines: true
+			hide_details_until_startable: true
+			hide_lock_icon: true
+			hide_text_until_complete: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: true
+			icon: "kubejs:lead_casing"
+			icon_scale: 2.0d
+			id: "17AA221C7B7E6734"
+			shape: "none"
+			size: 0.67d
+			title: "Lead Casing"
+			x: 1.0050000000000001d
+			y: 29.145000000000003d
+		}
+		{
+			dependencies: [
+				"2809AE02EA018BFA"
+				"6EE9AA6D2A8FE0AD"
+			]
+			hide_dependency_lines: true
+			hide_details_until_startable: true
+			hide_lock_icon: true
+			hide_text_until_complete: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: true
+			icon: "kubejs:lead_casing"
+			icon_scale: 2.0d
+			id: "7021A2BD8775DC07"
+			shape: "none"
+			size: 0.67d
+			title: "Lead Casing"
+			x: 3.015d
+			y: 29.145000000000003d
+		}
+		{
+			dependencies: [
+				"2809AE02EA018BFA"
+				"6EE9AA6D2A8FE0AD"
+			]
+			hide_dependency_lines: true
+			hide_details_until_startable: true
+			hide_lock_icon: true
+			hide_text_until_complete: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: true
+			icon: "kubejs:lead_casing"
+			icon_scale: 2.0d
+			id: "08367CEDF13CB65C"
+			shape: "none"
+			size: 0.67d
+			title: "Lead Casing"
+			x: 2.0100000000000002d
+			y: 29.145000000000003d
+		}
+		{
+			dependencies: [
+				"2809AE02EA018BFA"
+				"6EE9AA6D2A8FE0AD"
+			]
+			hide_dependency_lines: true
+			hide_details_until_startable: true
+			hide_lock_icon: true
+			hide_text_until_complete: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: true
+			icon: "kubejs:lead_casing"
+			icon_scale: 2.0d
+			id: "4815DA7B77DD7175"
+			shape: "none"
+			size: 0.67d
+			title: "Lead Casing"
+			x: 3.0149999999999997d
+			y: 27.67d
+		}
+		{
+			dependencies: [
+				"2809AE02EA018BFA"
+				"6EE9AA6D2A8FE0AD"
+			]
+			hide_dependency_lines: true
+			hide_details_until_startable: true
+			hide_lock_icon: true
+			hide_text_until_complete: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: true
+			icon: "kubejs:lead_casing"
+			icon_scale: 2.0d
+			id: "2C196D41B3B087C6"
+			shape: "none"
+			size: 0.67d
+			title: "Lead Casing"
+			x: 1.0050000000000001d
+			y: 27.67d
+		}
+		{
+			dependencies: [
+				"2809AE02EA018BFA"
+				"6EE9AA6D2A8FE0AD"
+			]
+			hide_dependency_lines: true
+			hide_details_until_startable: true
+			hide_lock_icon: true
+			hide_text_until_complete: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: true
+			icon: "alexscaves:uranium_rod"
+			icon_scale: 2.0d
+			id: "31DA3A80C6E23004"
+			shape: "none"
+			size: 0.67d
+			title: "Uranium Rod"
+			x: 1.0050000000000001d
+			y: 26.130000000000003d
+		}
+		{
+			dependencies: [
+				"2809AE02EA018BFA"
+				"6EE9AA6D2A8FE0AD"
+			]
+			hide_dependency_lines: true
+			hide_details_until_startable: true
+			hide_lock_icon: true
+			hide_text_until_complete: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: true
+			icon: "alexscaves:uranium_rod"
+			icon_scale: 2.0d
+			id: "0504DC3275C4F49D"
+			shape: "none"
+			size: 0.67d
+			title: "Uranium Rod"
+			x: 1.0050000000000001d
+			y: 28.5d
+		}
+		{
+			dependencies: [
+				"2809AE02EA018BFA"
+				"6EE9AA6D2A8FE0AD"
+			]
+			hide_dependency_lines: true
+			hide_details_until_startable: true
+			hide_lock_icon: true
+			hide_text_until_complete: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: true
+			icon: "alexscaves:uranium_rod"
+			icon_scale: 2.0d
+			id: "7C31A0611CC62360"
+			shape: "none"
+			size: 0.67d
+			title: "Uranium Rod"
+			x: 3.0d
+			y: 28.5d
 		}
 	]
 	title: "{cabin.chapter.3CEC7BECE6B40994.title}"

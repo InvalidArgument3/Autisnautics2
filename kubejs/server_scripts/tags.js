@@ -269,35 +269,35 @@ ServerEvents.tags("item", event => {
 
     // oredict simpleradios wire
     event.add("forge:wires/copper", "simpleradio:copper_wire")
-    
-    //tagging all chisels with durability
+
+    // tagging all chisels with durability
     event.get("forge:chisels")
         .add("chisel:iron_chisel")
         .add("chisel:diamond_chisel")
         .add("chisel:hitech_chisel")
         .add("tinkers_things:chisel")
-        
-    //meme stones (chisel, alexscaves, projectred_exploration)
-    //limestone
-    event.get("create:stone_types/limestone")//all block types
+
+    // meme stones (chisel, alexscaves, projectred_exploration)
+    // limestone
+    event.get("create:stone_types/limestone")// all block types
         .add(/alexscaves:limestone(?!_spear).*/)
         .add(/chisel:limestone.*/)
         .add(/v_slab_compat:.*limestone.*/)
-    event.get("forge:stone/limestone")//full blocks only
+    event.get("forge:stone/limestone")// full blocks only
         .add(/create:.*limestone(?!.*wall|.*slab|.*stair).*/)
         .add(/alexscaves:.*limestone(?!.*wall|.*slab|.*stair|_spear).*/)
         .add(/chisel:limestone.*/)
-    event.get("chisel:carving/limestone")//full blocks only
+    event.get("chisel:carving/limestone")// full blocks only
         .add(/create:.*limestone(?!.*wall|.*slab|.*stair).*/)
         .add(/alexscaves:.*limestone(?!.*wall|.*slab|.*stair|_spear).*/)
-    //marble
-    event.get("forge:stone/marble")//full blocks only
+    // marble
+    event.get("forge:stone/marble")// full blocks only
         .add(/chisel:marble.*/)
-    event.get("chisel:carving/marble")//full blocks only
+    event.get("chisel:carving/marble")// full blocks only
         .add("projectred_exploration:marble")
         .add("projectred_exploration:marble_brick")
-    //basalt
-    event.get("chisel:carving/basalt")//full blocks only
+    // basalt
+    event.get("chisel:carving/basalt")// full blocks only
         .add("projectred_exploration:basalt")
         .add("projectred_exploration:basalt_brick")
         .add("projectred_exploration:basalt_cobble")
@@ -391,24 +391,24 @@ ServerEvents.tags("block", event => {
 
     // why?
     event.remove("forge:storage_blocks/iron", "scguns:treated_iron_block")
-    
-    //meme stones (chisel, alexscaves, projectred_exploration)
-    //limestone
-    event.get("forge:stone/limestone")//full blocks only
+
+    // meme stones (chisel, alexscaves, projectred_exploration)
+    // limestone
+    event.get("forge:stone/limestone")// full blocks only
         .add(/create:.*limestone(?!.*wall|.*slab|.*stair).*/)
         .add(/alexscaves:.*limestone(?!.*wall|.*slab|.*stair|_spear).*/)
         .add(/chisel:limestone.*/)
-    event.get("chisel:carving/limestone")//full blocks only
+    event.get("chisel:carving/limestone")// full blocks only
         .add(/create:.*limestone(?!.*wall|.*slab|.*stair).*/)
         .add(/alexscaves:.*limestone(?!.*wall|.*slab|.*stair|_spear).*/)
-    //marble
-    event.get("forge:stone/marble")//full blocks only
+    // marble
+    event.get("forge:stone/marble")// full blocks only
         .add(/chisel:marble.*/)
-    event.get("chisel:carving/marble")//full blocks only
+    event.get("chisel:carving/marble")// full blocks only
         .add("projectred_exploration:marble")
         .add("projectred_exploration:marble_brick")
-    //basalt
-    event.get("chisel:carving/basalt")//full blocks only
+    // basalt
+    event.get("chisel:carving/basalt")// full blocks only
         .add("projectred_exploration:basalt")
         .add("projectred_exploration:basalt_brick")
         .add("projectred_exploration:basalt_cobble")

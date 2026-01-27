@@ -54,7 +54,7 @@ JEIEvents.hideItems(event => {
     // removed in favor of powergrid
     event.hide("createaddition:electric_motor")
     event.hide("createaddition:alternator")
-    
+
     // pointless clone of basalt
     event.hide(/chisel:diabase.*/)
 })

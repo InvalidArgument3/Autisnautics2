@@ -834,14 +834,14 @@ ServerEvents.recipes(event => {
     // automating createaddition barbed wire and IE razor wire
     event.recipes.create.deploying("createaddition:barbed_wire", [Item.of("#forge:wires/iron", 2), "#forge:wires/iron"])
     event.recipes.create.deploying("immersiveengineering:razor_wire", ["immersiveengineering:treated_fence", "#forge:wires/steel"])
-    
-    
+
+
     // //chisel integration
-    //remove crafting recipes for chisel stones that are now chiseling only
+    // remove crafting recipes for chisel stones that are now chiseling only
     event.remove({ type: "minecraft:crafting_shaped", output: "chisel:marble/raw" })
     event.remove({ type: "minecraft:crafting_shaped", output: "chisel:limestone/raw" })
     event.remove({ type: "minecraft:crafting_shaped", output: "chisel:marblepillar/pillar" })
-    //new marble pillar recipe
+    // new marble pillar recipe
     event.shaped(Item.of("chisel:marblepillar/pillar", 6), [
         "MM",
         "MM",
@@ -849,7 +849,7 @@ ServerEvents.recipes(event => {
     ], {
         M: "#forge:stone/marble"
     })
-    //delete diabase (pointless clone of basalt)
+    // delete diabase (pointless clone of basalt)
     event.remove({ output: /chisel:diabase.*/ })
     event.remove({ input: /chisel:diabase.*/ })
 })

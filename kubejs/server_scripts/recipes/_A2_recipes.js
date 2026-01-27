@@ -243,8 +243,8 @@ ServerEvents.recipes(event => {
     event.recipes.create.deploying("createbigcannons:autocannon_recoil_spring_cast_mould", ["createbigcannons:autocannon_breech_cast_mould", "#kubejs:saws"])
     event.recipes.create.deploying("createbigcannons:autocannon_barrel_cast_mould", ["createbigcannons:autocannon_recoil_spring_cast_mould", "#kubejs:saws"])
     // the other moulds branch off from the generic ones by chiseling or sawing
-    // event.recipes.create.deploying("createbigcannons:sliding_breech_cast_mould", ["createbigcannons:large_cast_mould", "#chiselsandbits:chisel"])
-    // event.recipes.create.deploying("createbigcannons:cannon_end_cast_mould", ["createbigcannons:medium_cast_mould", "#chiselsandbits:chisel"])
+    event.recipes.create.deploying("createbigcannons:sliding_breech_cast_mould", ["createbigcannons:large_cast_mould", "#forge:chisels"])
+    event.recipes.create.deploying("createbigcannons:cannon_end_cast_mould", ["createbigcannons:medium_cast_mould", "#forge:chisels"])
     event.recipes.create.deploying("createbigcannons:screw_breech_cast_mould", ["createbigcannons:cannon_end_cast_mould", "#kubejs:saws"])
 
     // might as well fix this createbigcannons shit while i'm at it
@@ -577,8 +577,8 @@ ServerEvents.recipes(event => {
     // event.remove({ output: "tfmg:lignite" })
 
     // alexscaves limestone integration
-    event.replaceInput({}, "alexscaves:limestone", "#create:stone_types/limestone")
-    event.replaceInput({}, "create:limestone", "#create:stone_types/limestone")
+    event.replaceInput({}, "alexscaves:limestone", "#forge:stone/limestone")
+    event.replaceInput({}, "create:limestone", "#forge:stone/limestone")
 
     // alexscaves galena to lead
     event.recipes.create.crushing([
@@ -763,6 +763,7 @@ ServerEvents.recipes(event => {
         zincMachine(event, Item.of("powergrid:" + widget, 8))
     })
     // machinify some more recipes
+    event.recipes.create.filling("powergrid:battery", ["kubejs:zinc_machine", Fluid.of("powergrid:acid", 250)])
     event.remove({ output: "powergrid:mv_switch" })
     zincMachine(event, Item.of("powergrid:mv_switch", 4))
     event.remove({ output: "powergrid:spark_gap" })
@@ -833,4 +834,22 @@ ServerEvents.recipes(event => {
     // automating createaddition barbed wire and IE razor wire
     event.recipes.create.deploying("createaddition:barbed_wire", [Item.of("#forge:wires/iron", 2), "#forge:wires/iron"])
     event.recipes.create.deploying("immersiveengineering:razor_wire", ["immersiveengineering:treated_fence", "#forge:wires/steel"])
+    
+    
+    // //chisel integration
+    //remove crafting recipes for chisel stones that are now chiseling only
+    event.remove({ type: "minecraft:crafting_shaped", output: "chisel:marble/raw" })
+    event.remove({ type: "minecraft:crafting_shaped", output: "chisel:limestone/raw" })
+    event.remove({ type: "minecraft:crafting_shaped", output: "chisel:marblepillar/pillar" })
+    //new marble pillar recipe
+    event.shaped(Item.of("chisel:marblepillar/pillar", 6), [
+        "MM",
+        "MM",
+        "MM"
+    ], {
+        M: "#forge:stone/marble"
+    })
+    //delete diabase (pointless clone of basalt)
+    event.remove({ output: /chisel:diabase.*/ })
+    event.remove({ input: /chisel:diabase.*/ })
 })

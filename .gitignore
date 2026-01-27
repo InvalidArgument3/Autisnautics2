@@ -137,9 +137,6 @@ config/forgeendertech/*
 squaremap/*
 !squaremap/config.yml
 
-# simpleclouds
-!simpleclouds-client.toml
-
 # SHUT THE FUCK UP ALEXMOBS-INTERACTION
 !alexsmobsinteraction-client.toml
 

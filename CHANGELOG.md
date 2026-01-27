@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.30]
+### Changes
+- chisel modern integration + worldgen
+
 ## [0.0.29]
 ### Changes
 - didnt work b0ss

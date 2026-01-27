@@ -89,6 +89,8 @@
 	#The weight for kaomoji emoji to be selected
 	#Range: 0 ~ 100
 	KaomojiEmojiWeight = 10
+	#When installed Curios mod, whether to enable maid curios slot support
+	EnableMaidCurios = true
 
 [chair]
 	#Chair can switch models freely

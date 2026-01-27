@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.0.29]
+### Changes
+- didnt work b0ss
+
+## [0.0.28]
+### Changes
+- cloud height fix
+- trying out c2me and other (allegedly) incompat chunkloading mods removed
+
+## [0.0.27]
+### Changes
+- mod updates
+
 ## [0.0.26]
 ### Changes
 - port change

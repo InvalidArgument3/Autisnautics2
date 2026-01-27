@@ -29,7 +29,7 @@
     "syncRegistries": true,
     "crossBiomeBorder": false,
     "useHeightmapTemp": true,
-    "doSpawnHeightLimit": true,
+    "doSpawnHeightLimit": false,
     "spawnHeightLimit": 0
   },
   "particles": [

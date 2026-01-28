@@ -142,3 +142,6 @@ squaremap/*
 
 # forge experimental pipeline for models, mna recommends it
 !forge-client.toml
+
+# simpleclouds
+!simpleclouds-client.toml

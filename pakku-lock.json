@@ -2217,45 +2217,6 @@
             ]
         },
         {
-            "pakku_id": "WthHyF94Cs04cFOI",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "better-chunk-loading-forge-fabric"
-            },
-            "name": {
-                "curseforge": "Better chunk loading[Forge/Fabric]"
-            },
-            "id": {
-                "curseforge": "899487"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "betterchunkloading-1.20.1-5.4.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6210/180/betterchunkloading-1.20.1-5.4.jar",
-                    "id": "6210180",
-                    "parent_id": "899487",
-                    "hashes": {
-                        "sha1": "cd7e61a4f5eca956094e0844560382ca58d79bc6",
-                        "md5": "0ec0d97c0f52b5b13762b293189487af"
-                    },
-                    "required_dependencies": [
-                        "326652"
-                    ],
-                    "size": 55968,
-                    "date_published": "2025-02-19T17:03:30.233Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "YsWRnovQks8CwtuJ",
             "pakku_links": [
                 "Xj0e2DdaAoUuTDv7"
@@ -9458,45 +9419,6 @@
                     "required_dependencies": [],
                     "size": 537307,
                     "date_published": "2024-07-18T15:56:05.670Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "RzGEfQrvp0UBg3Wy",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "fast-async-world-save-forge-fabric"
-            },
-            "name": {
-                "curseforge": "Fast Async World Save[Forge/Fabric]"
-            },
-            "id": {
-                "curseforge": "951499"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "fastasyncworldsave-1.20.1-2.6.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6935/203/fastasyncworldsave-1.20.1-2.6.jar",
-                    "id": "6935203",
-                    "parent_id": "951499",
-                    "hashes": {
-                        "sha1": "3a3180f5fc9d1209ca0ad69084afe8ee42ba44d6",
-                        "md5": "6c24d9c3cc17e4e5052c21c2b2d188ad"
-                    },
-                    "required_dependencies": [
-                        "326652"
-                    ],
-                    "size": 14812,
-                    "date_published": "2025-08-27T19:36:05.070Z"
                 }
             ]
         },
@@ -20590,43 +20512,6 @@
                     "required_dependencies": [],
                     "size": 77732,
                     "date_published": "2024-04-23T06:56:49.313Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "7p5sdV9czHmKrOai",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "smooth-chunk-save"
-            },
-            "name": {
-                "curseforge": "Server Performance - Smooth Chunk Save[Forge/Fabric]"
-            },
-            "id": {
-                "curseforge": "582327"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "smoothchunk-1.20.1-4.1.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6296/598/smoothchunk-1.20.1-4.1.jar",
-                    "id": "6296598",
-                    "parent_id": "582327",
-                    "hashes": {
-                        "sha1": "3e142e4a2e12db1c9a3777879cc021aff49da088",
-                        "md5": "66c9037777d4cafe6d5464f6eff5d8e2"
-                    },
-                    "required_dependencies": [],
-                    "size": 14249,
-                    "date_published": "2025-03-12T16:39:35.327Z"
                 }
             ]
         },

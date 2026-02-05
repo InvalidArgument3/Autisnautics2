@@ -1,8 +1,8 @@
 # Changelog
 
-## [@version@]
+## [0.0.34]
 ### Changes
-- version bump to test text replacing
+- version bump 2?
 
 ## [0.0.33]
 ### Changes

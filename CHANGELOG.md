@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.32]
+### Changes
+- test automatic bettercompatchecker config
+
 ## [0.0.31]
 ### Changes
 - rm smooth chunk save

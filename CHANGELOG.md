@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.33]
+### Changes
+- version bump
+
 ## [0.0.32]
 ### Changes
 - test automatic bettercompatchecker config

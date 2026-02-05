@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.0.31]
+### Changes
+- rm smooth chunk save
+- rm fast async world save
+
 ## [0.0.30]
 ### Changes
 - chisel modern integration + worldgen

@@ -1,13 +1,19 @@
 
-#Solid Boiler options
-[boiler_solid]
-	#Divider for burn time in solid boiler (Default: 10)
-	#Range: > 1
-	burnTimeDivider = 10
+#Options shared by all boiler types
+[boiler_shared]
+	#Target heat level for full operation when a recipe does not specify its own requirement (applies to all boilers).
+	#Range: 0.0 ~ 1.7976931348623157E308
+	default_working_heat = 100.0
 
-#Creative Barrel options
-[barrel_creative]
-	#Maximum fluid amount to output per tick from the creative barrel (Default: 2147483647)
-	#Range: > 1
-	creativeBarrelOutputAmount = 2147483647
+#Solar Tower settings
+[solar_tower]
+	#Default target heat for full-speed operation (when recipe unspecified).
+	#Range: 100.0 ~ 1.7976931348623157E308
+	working_heat_level = 400.0
+
+#Solar Melter settings
+[solar_melter]
+	#Default target heat for full-speed operation (when recipe unspecified).
+	#Range: 100.0 ~ 1.7976931348623157E308
+	working_heat_level = 1000.0
 

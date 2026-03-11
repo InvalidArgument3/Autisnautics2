@@ -37,7 +37,7 @@
         },
         "watermedia": {
             "side": "CLIENT",
-            "update_strategy": "NONE"
+            "update_strategy": "LATEST"
         },
         "embeddium": {
             "side": "CLIENT"
@@ -106,6 +106,9 @@
         },
         "crash-assistant": {
             "side": "CLIENT"
+        },
+        "valkyrienskies": {
+            "update_strategy": "LATEST"
         }
     }
 }

@@ -90,7 +90,7 @@ ServerEvents.lowPriorityData(event => {
     addOregenOverworld(event, "kubejs:ore_lead_underground_bottom", "thermal:lead_ore", "minecraft:trapezoid", -104, -24, 6, 10, 0, "#minecraft:is_overworld")
     // //tfmg:galena disabled, alexscaves:galena exists
     // lithium - using nuclearcraft instead of tfmg because it spawns in the wasteland (exception in unify.json)
-    addOregenOverworld(event, "kubejs:ore_lithium_islands_pale", "nuclearcraft:lithium_ore", "minecraft:uniform", 92, 400, 10, 9, 0, "vanillabackport:pale_garden")
+    // addOregenOverworld(event, "kubejs:ore_lithium_islands_pale", "nuclearcraft:lithium_ore", "minecraft:uniform", 92, 400, 10, 9, 0, "vanillabackport:pale_garden")
     // nickel
     addOregenOverworld(event, "kubejs:ore_nickel_underground", "thermal:nickel_ore", "minecraft:trapezoid", -40, 40, 4, 8, 0, "#minecraft:is_overworld")
     addOregenOverworld(event, "kubejs:ore_nickel_underground_big", "thermal:nickel_ore", "minecraft:trapezoid", -40, 40, 0.002, 64, 0, "#minecraft:is_overworld")

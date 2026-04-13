@@ -15,3 +15,11 @@
 	#The color of this material.
 	color = 13223383
 
+[theurgy]
+	#The alchemical sulfur tier of this material.
+	tier = "common"
+
+[create]
+	#The default byproduct material to output in Create's crushing.
+	byproduct = "minecraft:cobblestone"
+

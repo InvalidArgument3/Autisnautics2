@@ -89,7 +89,7 @@ showVivecraftNotice = true
 	#Specifies the quality of the level of detail. A lower setting makes clouds lower quality faster.
 	#Default: HIGH
 	#Allowed Values: LOW, MEDIUM, HIGH
-	levelOfDetail = "HIGH"
+	levelOfDetail = "LOW"
 	#Culls cloud chunks not visible to the player. Generally should not be disabled, but can fix visual issues when looking around fast with higher frames per mesh generation values.
 	#Default: true
 	frustumCulling = true

@@ -2809,73 +2809,6 @@
             ]
         },
         {
-            "pakku_id": "m2SvxOL0LfChyiMK",
-            "type": "MOD",
-            "side": "BOTH",
-            "slug": {
-                "curseforge": "cb-multipart",
-                "modrinth": "cb-multipart"
-            },
-            "name": {
-                "curseforge": "CB Multipart",
-                "modrinth": "CB Multipart"
-            },
-            "id": {
-                "curseforge": "258426",
-                "modrinth": "LmvnWWSV"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "CBMultipart-1.20.1-3.3.0.159-universal.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge",
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/LmvnWWSV/versions/fNgu12bx/CBMultipart-1.20.1-3.3.0.159-universal.jar",
-                    "id": "fNgu12bx",
-                    "parent_id": "LmvnWWSV",
-                    "hashes": {
-                        "sha512": "ebbef1b58d670fa8f000caf0e5e43490e5991f4f3fb522aa98a0eabebd51f5ec018de5cd1b8d680602535935b1fbca160ae8463d611ee65ac0d86413df6e150e",
-                        "sha1": "a7c111c320c35077ef4667315cdea11053652acc"
-                    },
-                    "required_dependencies": [
-                        "2gq0ALnz"
-                    ],
-                    "size": 527817,
-                    "date_published": "2026-03-30T11:47:22.717240Z"
-                },
-                {
-                    "type": "curseforge",
-                    "file_name": "CBMultipart-1.20.1-3.3.0.159-universal.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge",
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7845/318/CBMultipart-1.20.1-3.3.0.159-universal.jar",
-                    "id": "7845318",
-                    "parent_id": "258426",
-                    "hashes": {
-                        "sha1": "a7c111c320c35077ef4667315cdea11053652acc",
-                        "md5": "97314cd03dc4ccf850b3dd29e3770f8b"
-                    },
-                    "required_dependencies": [
-                        "242818"
-                    ],
-                    "size": 527817,
-                    "date_published": "2026-03-30T11:47:25.003Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "DnmxDEkaQMzuFgw1",
             "type": "MOD",
             "side": "BOTH",
@@ -15747,6 +15680,69 @@
             ]
         },
         {
+            "pakku_id": "gvToBEC6T7yPqXXb",
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "more-red",
+                "modrinth": "more-red"
+            },
+            "name": {
+                "curseforge": "More Red",
+                "modrinth": "More Red"
+            },
+            "id": {
+                "curseforge": "387638",
+                "modrinth": "UxYNfnfx"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "morered-1.20.1-4.0.0.4.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/4691/333/morered-1.20.1-4.0.0.4.jar",
+                    "id": "4691333",
+                    "parent_id": "387638",
+                    "hashes": {
+                        "sha1": "1e49a2fca02e1059bf6c94f6292463ed6e4f6122",
+                        "md5": "ea6af92f666cdff46a0a22ea68aa532f"
+                    },
+                    "required_dependencies": [],
+                    "size": 756905,
+                    "date_published": "2023-08-09T22:13:16.500Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "morered-1.20.1-4.0.0.4.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/UxYNfnfx/versions/nmvr3DB5/morered-1.20.1-4.0.0.4.jar",
+                    "id": "nmvr3DB5",
+                    "parent_id": "UxYNfnfx",
+                    "hashes": {
+                        "sha512": "f7597a4cb98d40bfb9bc344a1389db6a498b339ae10cdc710a3ab83ed993788cc332b899f3876b0dec79e12c57dd93fb72b950c240cae4ac818f68d7fa48f48f",
+                        "sha1": "1e49a2fca02e1059bf6c94f6292463ed6e4f6122"
+                    },
+                    "required_dependencies": [],
+                    "size": 756905,
+                    "date_published": "2023-08-09T22:13:45.806904Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "ak7TkJMVtj73U2aL",
             "type": "MOD",
             "side": "BOTH",
@@ -18411,505 +18407,6 @@
                     "required_dependencies": [],
                     "size": 52205,
                     "date_published": "2023-07-17T22:39:15.030Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "2lf8bsSLB4LXTysD",
-            "type": "MOD",
-            "side": "BOTH",
-            "slug": {
-                "curseforge": "project-red-core",
-                "modrinth": "project-red-core"
-            },
-            "name": {
-                "curseforge": "Project Red - Core",
-                "modrinth": "Project Red Core"
-            },
-            "id": {
-                "curseforge": "228702",
-                "modrinth": "zIlxygxr"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "ProjectRed-1.20.1-4.21.0-core.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge",
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/zIlxygxr/versions/jhpBRUqn/ProjectRed-1.20.1-4.21.0-core.jar",
-                    "id": "jhpBRUqn",
-                    "parent_id": "zIlxygxr",
-                    "hashes": {
-                        "sha512": "62a473831234f860216e2dc8195f89f5ffe3725a20017e8e45be0b2904199be7ff8f51cd4e4fb598eadd89b97021a4bc994b354fe3781009b44f111b12062eeb",
-                        "sha1": "3c7a62527958c199fb30a08b37f1a634dfb6a715"
-                    },
-                    "required_dependencies": [
-                        "LmvnWWSV",
-                        "2gq0ALnz"
-                    ],
-                    "size": 806997,
-                    "date_published": "2025-08-09T16:57:31.317738Z"
-                },
-                {
-                    "type": "curseforge",
-                    "file_name": "ProjectRed-1.20.1-4.21.0-core.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge",
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6868/143/ProjectRed-1.20.1-4.21.0-core.jar",
-                    "id": "6868143",
-                    "parent_id": "228702",
-                    "hashes": {
-                        "sha1": "3c7a62527958c199fb30a08b37f1a634dfb6a715",
-                        "md5": "3ad04d9bea9bdd9252352bab1bdb71a2"
-                    },
-                    "required_dependencies": [
-                        "242818",
-                        "258426"
-                    ],
-                    "size": 806997,
-                    "date_published": "2025-08-09T16:57:24.970Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "iaIIqtVPGIkRug9v",
-            "type": "MOD",
-            "side": "BOTH",
-            "slug": {
-                "curseforge": "project-red-expansion",
-                "modrinth": "project-red-expansion"
-            },
-            "name": {
-                "curseforge": "Project Red - Expansion",
-                "modrinth": "Project Red Expansion"
-            },
-            "id": {
-                "curseforge": "229048",
-                "modrinth": "fn5zBLFv"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "ProjectRed-1.20.1-4.21.0-expansion.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge",
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/fn5zBLFv/versions/mUZSrnRK/ProjectRed-1.20.1-4.21.0-expansion.jar",
-                    "id": "mUZSrnRK",
-                    "parent_id": "fn5zBLFv",
-                    "hashes": {
-                        "sha512": "2bd9aef814f90d3576fe55ecb62848f917bca03d2968955194f1cfe9d134c5efa38d350fd813eab2d3a27909b9bb7ab3d90a192eebafa4333caff9a56df366e2",
-                        "sha1": "8dba04d7e727fd58d83b9361fa4c2e12a767dc57"
-                    },
-                    "required_dependencies": [
-                        "LmvnWWSV",
-                        "zIlxygxr",
-                        "2gq0ALnz"
-                    ],
-                    "size": 1118821,
-                    "date_published": "2025-08-09T16:57:32.757742Z"
-                },
-                {
-                    "type": "curseforge",
-                    "file_name": "ProjectRed-1.20.1-4.21.0-expansion.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge",
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6868/144/ProjectRed-1.20.1-4.21.0-expansion.jar",
-                    "id": "6868144",
-                    "parent_id": "229048",
-                    "hashes": {
-                        "sha1": "8dba04d7e727fd58d83b9361fa4c2e12a767dc57",
-                        "md5": "b60ffc70e848609250f3f0de15461702"
-                    },
-                    "required_dependencies": [
-                        "228702",
-                        "242818",
-                        "258426"
-                    ],
-                    "size": 1118821,
-                    "date_published": "2025-08-09T16:57:25.903Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "K9wupY5A7KmOX8XS",
-            "type": "MOD",
-            "side": "BOTH",
-            "slug": {
-                "curseforge": "project-red-exploration",
-                "modrinth": "project-red-exploration"
-            },
-            "name": {
-                "curseforge": "Project Red - Exploration",
-                "modrinth": "Project Red Exploration"
-            },
-            "id": {
-                "curseforge": "229049",
-                "modrinth": "TVQMH6pX"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "ProjectRed-1.20.1-4.21.0-exploration.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge",
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/TVQMH6pX/versions/piADj6R5/ProjectRed-1.20.1-4.21.0-exploration.jar",
-                    "id": "piADj6R5",
-                    "parent_id": "TVQMH6pX",
-                    "hashes": {
-                        "sha512": "fa2870955a136997348ee59b4d8cece5d15f0965e3e2ec1c55e0aacbc497a4c819c8fa0559c43cfe23f61a66b942a81a475537639c4da29af38d3b20a97c0437",
-                        "sha1": "8973852066055991cc72a154673ae7c19aaad7b5"
-                    },
-                    "required_dependencies": [
-                        "zIlxygxr",
-                        "2gq0ALnz",
-                        "LmvnWWSV"
-                    ],
-                    "size": 500601,
-                    "date_published": "2025-08-09T16:57:33.766634Z"
-                },
-                {
-                    "type": "curseforge",
-                    "file_name": "ProjectRed-1.20.1-4.21.0-exploration.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge",
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6868/145/ProjectRed-1.20.1-4.21.0-exploration.jar",
-                    "id": "6868145",
-                    "parent_id": "229049",
-                    "hashes": {
-                        "sha1": "8973852066055991cc72a154673ae7c19aaad7b5",
-                        "md5": "5da18a5ef81dea165e3002ba4521ef3d"
-                    },
-                    "required_dependencies": [
-                        "228702",
-                        "242818",
-                        "258426"
-                    ],
-                    "size": 500601,
-                    "date_published": "2025-08-09T16:57:26.653Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "ozAs8wrO8kVh7xxT",
-            "type": "MOD",
-            "side": "BOTH",
-            "slug": {
-                "curseforge": "project-red-fabrication",
-                "modrinth": "project-red-fabrication"
-            },
-            "name": {
-                "curseforge": "Project Red - Fabrication",
-                "modrinth": "Project Red Fabrication"
-            },
-            "id": {
-                "curseforge": "230111",
-                "modrinth": "5H1VMCiY"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "ProjectRed-1.20.1-4.21.0-fabrication.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge",
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/5H1VMCiY/versions/CDc9EZEc/ProjectRed-1.20.1-4.21.0-fabrication.jar",
-                    "id": "CDc9EZEc",
-                    "parent_id": "5H1VMCiY",
-                    "hashes": {
-                        "sha512": "b0d7f41f307cdf4763cda8a4fdb09a6f610943a814b0fe8ca982f2856766438b6fbe3a6ea39117dea5033ebbe93575bf6207fadebba83574e733276110050f8d",
-                        "sha1": "24c0f8a2fb6abab7fba4cc9dd893b770c6b26a83"
-                    },
-                    "required_dependencies": [
-                        "2gq0ALnz",
-                        "zIlxygxr",
-                        "dXmH4rEw",
-                        "3JruZJb0",
-                        "LmvnWWSV"
-                    ],
-                    "size": 764281,
-                    "date_published": "2025-08-09T16:57:35.456219Z"
-                },
-                {
-                    "type": "curseforge",
-                    "file_name": "ProjectRed-1.20.1-4.21.0-fabrication.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge",
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6868/146/ProjectRed-1.20.1-4.21.0-fabrication.jar",
-                    "id": "6868146",
-                    "parent_id": "230111",
-                    "hashes": {
-                        "sha1": "24c0f8a2fb6abab7fba4cc9dd893b770c6b26a83",
-                        "md5": "d35d114a803351a7a054641613326c4b"
-                    },
-                    "required_dependencies": [
-                        "258426",
-                        "242818",
-                        "478939",
-                        "229045",
-                        "228702"
-                    ],
-                    "size": 764281,
-                    "date_published": "2025-08-09T16:57:27.407Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "vLLR3ndF0MHWyaEb",
-            "type": "MOD",
-            "side": "BOTH",
-            "slug": {
-                "curseforge": "project-red-illumination",
-                "modrinth": "project-red-illumination"
-            },
-            "name": {
-                "curseforge": "Project Red - Illumination",
-                "modrinth": "Project Red Illumination"
-            },
-            "id": {
-                "curseforge": "229046",
-                "modrinth": "9a4Zqq1k"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "ProjectRed-1.20.1-4.21.0-illumination.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge",
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/9a4Zqq1k/versions/gY5ES9Az/ProjectRed-1.20.1-4.21.0-illumination.jar",
-                    "id": "gY5ES9Az",
-                    "parent_id": "9a4Zqq1k",
-                    "hashes": {
-                        "sha512": "dcd8d38bd936496d922fe440d4262f5cfadb335ae0bc531f8b60e659312388f9fda0f835bd2ba12c3dec0b9eb151362dc3e06be67a383f7922af0df5d6ce6e2a",
-                        "sha1": "a1818c65f001d2dd7bfb16fab3c8c94c9abb0fbb"
-                    },
-                    "required_dependencies": [
-                        "zIlxygxr",
-                        "LmvnWWSV",
-                        "2gq0ALnz"
-                    ],
-                    "size": 771005,
-                    "date_published": "2025-08-09T16:57:36.939176Z"
-                },
-                {
-                    "type": "curseforge",
-                    "file_name": "ProjectRed-1.20.1-4.21.0-illumination.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge",
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6868/147/ProjectRed-1.20.1-4.21.0-illumination.jar",
-                    "id": "6868147",
-                    "parent_id": "229046",
-                    "hashes": {
-                        "sha1": "a1818c65f001d2dd7bfb16fab3c8c94c9abb0fbb",
-                        "md5": "b44a24357f01137c1db59c5c05b974c9"
-                    },
-                    "required_dependencies": [
-                        "242818",
-                        "228702",
-                        "258426"
-                    ],
-                    "size": 771005,
-                    "date_published": "2025-08-09T16:57:28.137Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "7HwguVdcEgAITKkw",
-            "type": "MOD",
-            "side": "BOTH",
-            "slug": {
-                "curseforge": "project-red-integration",
-                "modrinth": "project-red-integration"
-            },
-            "name": {
-                "curseforge": "Project Red - Integration",
-                "modrinth": "Project Red Integration"
-            },
-            "id": {
-                "curseforge": "229045",
-                "modrinth": "3JruZJb0"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "ProjectRed-1.20.1-4.21.0-integration.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge",
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/3JruZJb0/versions/FY2tuztw/ProjectRed-1.20.1-4.21.0-integration.jar",
-                    "id": "FY2tuztw",
-                    "parent_id": "3JruZJb0",
-                    "hashes": {
-                        "sha512": "e74efbf21a288ff00565ad2ba1beb3c5df86a18b34baf4f23ce19d5e3ff472efa5347b9a9b78f3394a29f42a1dae828fe6415eda43e67da5a2e81cf1a37d146a",
-                        "sha1": "1b36e0dd14c852c76e8b719ecdf269f65dd5fc5d"
-                    },
-                    "required_dependencies": [
-                        "LmvnWWSV",
-                        "zIlxygxr",
-                        "2gq0ALnz"
-                    ],
-                    "size": 3539788,
-                    "date_published": "2025-08-09T16:57:39.218392Z"
-                },
-                {
-                    "type": "curseforge",
-                    "file_name": "ProjectRed-1.20.1-4.21.0-integration.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge",
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6868/148/ProjectRed-1.20.1-4.21.0-integration.jar",
-                    "id": "6868148",
-                    "parent_id": "229045",
-                    "hashes": {
-                        "sha1": "1b36e0dd14c852c76e8b719ecdf269f65dd5fc5d",
-                        "md5": "29ea203471f019c2d269e6145a244f61"
-                    },
-                    "required_dependencies": [
-                        "228702",
-                        "258426",
-                        "242818"
-                    ],
-                    "size": 3539788,
-                    "date_published": "2025-08-09T16:57:28.917Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "7yyxTqWezfzL9nKC",
-            "type": "MOD",
-            "side": "BOTH",
-            "slug": {
-                "curseforge": "project-red-transmission",
-                "modrinth": "project-red-transmission"
-            },
-            "name": {
-                "curseforge": "Project Red - Transmission",
-                "modrinth": "Project Red Transmission"
-            },
-            "id": {
-                "curseforge": "478939",
-                "modrinth": "dXmH4rEw"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "ProjectRed-1.20.1-4.21.0-transmission.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge",
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/dXmH4rEw/versions/Gxifp83B/ProjectRed-1.20.1-4.21.0-transmission.jar",
-                    "id": "Gxifp83B",
-                    "parent_id": "dXmH4rEw",
-                    "hashes": {
-                        "sha512": "5540697dab54da3053a75cdbb645bd2045866c434b3c5a3332e0300e16b854fc2a1006904cc7684003e094f15bbdaae9d5fbe6bb8ec695d33293d5df083b871a",
-                        "sha1": "df540136f2ddb27c046ff71a1058716152f3065f"
-                    },
-                    "required_dependencies": [
-                        "zIlxygxr",
-                        "LmvnWWSV",
-                        "2gq0ALnz"
-                    ],
-                    "size": 461444,
-                    "date_published": "2025-08-09T16:57:40.248767Z"
-                },
-                {
-                    "type": "curseforge",
-                    "file_name": "ProjectRed-1.20.1-4.21.0-transmission.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge",
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6868/149/ProjectRed-1.20.1-4.21.0-transmission.jar",
-                    "id": "6868149",
-                    "parent_id": "478939",
-                    "hashes": {
-                        "sha1": "df540136f2ddb27c046ff71a1058716152f3065f",
-                        "md5": "f4d60027f53e5a7362cd1e56b8f41d08"
-                    },
-                    "required_dependencies": [
-                        "242818",
-                        "228702",
-                        "258426"
-                    ],
-                    "size": 461444,
-                    "date_published": "2025-08-09T16:57:29.777Z"
                 }
             ]
         },
